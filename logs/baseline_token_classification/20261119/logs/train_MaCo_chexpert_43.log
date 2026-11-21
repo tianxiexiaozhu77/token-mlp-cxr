@@ -1,0 +1,47 @@
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo chexpert seed43 epoch1 val=0.768073 best=0.768073 sec=1.0
+MaCo chexpert seed43 epoch2 val=0.773994 best=0.773994 sec=0.5
+MaCo chexpert seed43 epoch3 val=0.783280 best=0.783280 sec=0.5
+MaCo chexpert seed43 epoch4 val=0.788712 best=0.788712 sec=0.4
+MaCo chexpert seed43 epoch5 val=0.795499 best=0.795499 sec=0.4
+MaCo chexpert seed43 epoch6 val=0.801485 best=0.801485 sec=0.4
+MaCo chexpert seed43 epoch7 val=0.814687 best=0.814687 sec=0.4
+MaCo chexpert seed43 epoch8 val=0.838778 best=0.838778 sec=0.4
+MaCo chexpert seed43 epoch9 val=0.857695 best=0.857695 sec=0.5
+MaCo chexpert seed43 epoch10 val=0.869399 best=0.869399 sec=0.4
+MaCo chexpert seed43 epoch11 val=0.877112 best=0.877112 sec=0.4
+MaCo chexpert seed43 epoch12 val=0.883169 best=0.883169 sec=0.4
+MaCo chexpert seed43 epoch13 val=0.888088 best=0.888088 sec=0.5
+MaCo chexpert seed43 epoch14 val=0.885670 best=0.888088 sec=0.4
+MaCo chexpert seed43 epoch15 val=0.886140 best=0.888088 sec=0.4
+MaCo chexpert seed43 epoch16 val=0.887594 best=0.888088 sec=0.4
+MaCo chexpert seed43 epoch17 val=0.889925 best=0.889925 sec=0.4
+MaCo chexpert seed43 epoch18 val=0.890266 best=0.890266 sec=0.5
+MaCo chexpert seed43 epoch19 val=0.888422 best=0.890266 sec=0.4
+MaCo chexpert seed43 epoch20 val=0.889408 best=0.890266 sec=0.4
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+COMPLETE MaCo chexpert 43 0.932919008631083

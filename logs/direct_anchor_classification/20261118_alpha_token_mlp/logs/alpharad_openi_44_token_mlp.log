@@ -1,0 +1,17 @@
+/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+/storage/3090group2/zjx/code/medical/experiments/direct_anchor_classification/train.py:244: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  losses += float(loss) * len(index); seen_train += len(index)
+alpharad OpenI token_mlp seed=44 epoch=1 val=0.880980 best=0.880980 sec=25.6
+alpharad OpenI token_mlp seed=44 epoch=2 val=0.883309 best=0.883309 sec=25.6
+alpharad OpenI token_mlp seed=44 epoch=3 val=0.883224 best=0.883309 sec=24.9
+alpharad OpenI token_mlp seed=44 epoch=4 val=0.885809 best=0.885809 sec=25.5
+alpharad OpenI token_mlp seed=44 epoch=5 val=0.887520 best=0.887520 sec=24.5
+alpharad OpenI token_mlp seed=44 epoch=6 val=0.888183 best=0.888183 sec=25.2
+alpharad OpenI token_mlp seed=44 epoch=7 val=0.886978 best=0.888183 sec=24.2
+alpharad OpenI token_mlp seed=44 epoch=8 val=0.887460 best=0.888183 sec=26.1
+alpharad OpenI token_mlp seed=44 epoch=9 val=0.886235 best=0.888183 sec=32.2
+alpharad OpenI token_mlp seed=44 epoch=10 val=0.886612 best=0.888183 sec=24.3
+alpharad OpenI token_mlp seed=44 epoch=11 val=0.884387 best=0.888183 sec=27.9
+COMPLETE alpharad OpenI token_mlp seed=44 test_AUROC=0.867203

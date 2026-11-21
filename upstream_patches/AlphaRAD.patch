@@ -1,0 +1,238 @@
+diff --git a/cxrclip/base_evaluator.py b/cxrclip/base_evaluator.py
+index 5b4a03e..998bffe 100644
+--- a/cxrclip/base_evaluator.py
++++ b/cxrclip/base_evaluator.py
+@@ -1,4 +1,6 @@
+ import logging
++import json
++from pathlib import Path
+ from typing import Dict, Union, List
+ import numpy as np
+ import torch
+@@ -39,6 +41,7 @@ class BaseEvaluator:
+ 
+         # set by subclasses from the eval-time config; None means don't save
+         self.seg_save_dir = None
++        self.prediction_save_dir = None
+ 
+         self.keep_prompt_queried_image_embeddings = False
+         if 'loss' in self.config['designs'] and 'keep_prompt_queried_image_embeddings' in self.config['designs']['loss']:
+@@ -239,9 +242,42 @@ class BaseEvaluator:
+             if self.zero_shot_method == 'zeroshot_binary_dqn':
+                 zs_results, class_counts = self.gather_zeroshot_dqn_classification_statistics(class_list, predictions, label_names)
+                 results['zeroshot_binary'] = classification_score(zs_results, class_counts)
++                if self.prediction_save_dir is not None:
++                    self._save_classification_predictions(dataset_name, predictions, class_list, label_names, image_paths)
+ 
+         return results
+ 
++    def _save_classification_predictions(self, dataset_name, predictions, class_list, label_names, image_paths):
++        """Export the exact author scores and the labels used by its metric code."""
++        predictions = np.asarray(predictions)
++        labels = np.asarray([
++            [int(disease_name_mapping(name) in disease_list_mapping(row)) for name in class_list]
++            for row in label_names
++        ], dtype=np.uint8)
++        if predictions.shape != (*labels.shape, 1):
++            raise ValueError(f"Unexpected prediction/label shapes: {predictions.shape}, {labels.shape}")
++        if len(image_paths) != len(labels) or not np.isfinite(predictions).all():
++            raise ValueError("Cannot export inconsistent or nonfinite predictions")
++        checkpoint = getattr(self, "prediction_checkpoint", "unspecified_checkpoint")
++        output = Path(self.prediction_save_dir) / Path(checkpoint).stem / dataset_name
++        output.mkdir(parents=True, exist_ok=True)
++        np.save(output / "predictions.npy", predictions, allow_pickle=False)
++        np.save(output / "labels.npy", labels, allow_pickle=False)
++        (output / "class_names.json").write_text(json.dumps(list(class_list), indent=2) + "\n")
++        (output / "image_paths.json").write_text(json.dumps(list(image_paths), indent=2) + "\n")
++        metadata = {
++            "status": "complete",
++            "dataset": dataset_name,
++            "checkpoint": checkpoint,
++            "ignored_checkpoint_keys": getattr(self, "ignored_checkpoint_keys", []),
++            "prediction_shape": list(predictions.shape),
++            "label_shape": list(labels.shape),
++            "score_meaning": "Original author's sigmoid classification scores; not raw logits",
++            "labels_meaning": "Same disease_name_mapping of class strings used by author metrics",
++            "author_PR_AUROC_meaning": "sklearn average_precision_score (AP), not trapezoidal PR AUC",
++        }
++        (output / "metadata.json").write_text(json.dumps(metadata, indent=2) + "\n")
++
+     def evaluate_clip_online(self):
+ 
+         eval_results = {
+@@ -451,7 +487,7 @@ class BaseEvaluator:
+     ):
+         # unwrap safely if using DDP
+         model = self.model.module if hasattr(self.model, "module") else self.model
+-        device = 'cuda' #next(model.dqn.parameters()).device
++        device = self.device
+         class_list = [disease_name_mapping(l) for l in class_list]
+         model.eval()
+         with torch.no_grad():
+@@ -530,7 +566,7 @@ class BaseEvaluator:
+ 
+         # unwrap safely if using DDP
+         model = self.model.module if hasattr(self.model, "module") else self.model
+-        device = 'cuda' #next(model.dqn.parameters()).device
++        device = self.device
+         class_list = [disease_name_mapping(l) for l in class_list]
+         model.eval()
+         with torch.no_grad():
+diff --git a/cxrclip/evaluator.py b/cxrclip/evaluator.py
+index 4edfd3b..6f8bdfb 100644
+--- a/cxrclip/evaluator.py
++++ b/cxrclip/evaluator.py
+@@ -1,4 +1,6 @@
+ import logging
++import os
++from pathlib import Path
+ from typing import Dict
+ import torch
+ from cxrclip.base_evaluator import BaseEvaluator
+@@ -8,6 +10,18 @@ from cxrclip.evaluator_utils import *
+ 
+ log = logging.getLogger(__name__)
+ 
++
++def _strict_load_published_checkpoint(model, state_dict):
++    """Allow only the released checkpoint's unused auxiliary-loss scalar."""
++    state_dict = state_dict.copy()
++    ignored = []
++    if "logit_scale_aux" in state_dict and "logit_scale_aux" not in model.state_dict():
++        state_dict.pop("logit_scale_aux")
++        ignored.append("logit_scale_aux")
++    model.load_state_dict(state_dict, strict=True)
++    return ignored
++
++
+ class Evaluator(BaseEvaluator):
+     def __init__(self, eval_config: Dict, ckpt_paths, split: str ='valid'):
+         """expand the original implementation to handle validation on the valid split.
+@@ -17,9 +31,12 @@ class Evaluator(BaseEvaluator):
+         """
+         ckpt = torch.load(ckpt_paths[0], map_location="cpu", weights_only=False)
+ 
+-        # TODO: set the cache_dir for both the text encoder and the image encoder.
+-        ckpt['config']['model']['text_encoder']['cache_dir'] = 'cache_path/to/ sentence-transformers/all-mpnet-base-v2 or Laihaoran/BioClinicalMPBERT'
+-        ckpt['config']['model']['image_encoder']['cache_dir'] = 'cache_path/to/xraydinov2'
++        assets = Path(os.environ.get('ALPHARAD_ASSETS', Path(__file__).resolve().parents[1] / 'local_assets'))
++        text_path = str(assets / 'pretrained/sentence-transformers/all-mpnet-base-v2')
++        image_path = str(assets / 'pretrained/StanfordAIMI/dinov2-base-xray-224')
++        ckpt['config']['model']['text_encoder']['cache_dir'] = text_path
++        ckpt['config']['model']['image_encoder']['cache_dir'] = image_path
++        ckpt['config']['tokenizer']['cache_dir'] = text_path
+ 
+         super(Evaluator, self).__init__(
+             ckpt["config"], 
+@@ -60,6 +77,8 @@ class Evaluator(BaseEvaluator):
+ 
+         # optional: save per-image segmentation data for model comparison
+         self.seg_save_dir = eval_config.get('seg_save_dir', None)
++        # Optional raw classification scores for independently recomputed metrics.
++        self.prediction_save_dir = eval_config.get('prediction_save_dir', None)
+ 
+         # load a brand new model and load it with pretrained weights later in evaluate_clip_online
+         self.model = build_model(
+@@ -74,9 +93,9 @@ class Evaluator(BaseEvaluator):
+ 
+         log.info(f"Load model {checkpoint} for evaluation.")
+         ckpt = torch.load(checkpoint, map_location="cpu", weights_only=False)
+-        missing, unexpected = self.model.load_state_dict(ckpt["model"], strict=False)
+-        print(f'missing: {missing}')
+-        print(f'unexpected: {unexpected}')
++        self.ignored_checkpoint_keys = _strict_load_published_checkpoint(self.model, ckpt["model"])
++        self.prediction_checkpoint = str(Path(checkpoint).resolve())
++        print(f'Strict checkpoint load; ignored unused keys: {self.ignored_checkpoint_keys}')
+         self.model.eval()
+         with torch.no_grad():
+             results = self.on_the_fly_evaluation_one_data(test_dataset_name, self.similarity_type)
+diff --git a/cxrclip/model/baseclip.py b/cxrclip/model/baseclip.py
+index 57d312a..ad47bae 100644
+--- a/cxrclip/model/baseclip.py
++++ b/cxrclip/model/baseclip.py
+@@ -94,7 +94,8 @@ class BaseClip(nn.Module):
+         feat_embeddings_raw = projector(feats) if projector is not None else feats
+         feat_embeddings_normed = feat_embeddings_raw / feat_embeddings_raw.norm(dim=2, keepdim=True)
+         
+-        feat_embeddings_raw, feat_embeddings_normed = feat_embeddings_raw.squeeze(), feat_embeddings_normed.squeeze()
++        # Remove the singleton CLS-token axis, preserving batch size 1.
++        feat_embeddings_raw, feat_embeddings_normed = feat_embeddings_raw.squeeze(1), feat_embeddings_normed.squeeze(1)
+         return (feat_embeddings_raw, feat_embeddings_normed) if return_raw_and_normed else feat_embeddings_normed
+ 
+     def forward(self, batch, device=None):
+@@ -126,4 +127,4 @@ class AttentionBasedClip(BaseClip):
+ 
+     def gloria_attention(self, image_feats, text_feats, text_mask):
+         """this might need even smaller batch size due to 4d tensor in the similarity matrix"""
+-        return
+\ No newline at end of file
++        return
+diff --git a/cxrclip/model/cxrclip_plus_dqn.py b/cxrclip/model/cxrclip_plus_dqn.py
+index 2da1ce2..a63f6a0 100644
+--- a/cxrclip/model/cxrclip_plus_dqn.py
++++ b/cxrclip/model/cxrclip_plus_dqn.py
+@@ -149,6 +149,7 @@ class CXRClipPlusWithDQN(AttentionBasedClip):
+         self, 
+         image_embeddings, 
+         label_embeddings, 
++        aggregation_label_embeddings=None,
+         # label_attention_masks,
+         generate_grounding_map=False
+     ):
+@@ -166,7 +167,16 @@ class CXRClipPlusWithDQN(AttentionBasedClip):
+         image_patches = image_embeddings['image_patch_raw_features'] 
+         assert len(image_cls) == 1 and len(image_patches) == 1, 'currently only support single layer'
+         image_cls, image_patches = image_cls[0], image_patches[0]
+-        label_cls = label_embeddings['text_cls_raw_features'] 
++        label_cls = label_embeddings['text_cls_raw_features']
++        # ``label_cls`` is the readout query.  A separate aggregation query
++        # is accepted for the readout-only QCA control: visual tokens are
++        # reweighted with q^(0), while the final dot product uses q^(1).
++        # Keeping this optional preserves the released branch bit-for-bit for
++        # every existing caller.
++        if aggregation_label_embeddings is None:
++            aggregation_label_cls = label_cls
++        else:
++            aggregation_label_cls = aggregation_label_embeddings['text_cls_raw_features']
+ 
+         # Build image keys/values
+         if self.radzero_head_enable_cross_attend_cls_token:
+@@ -176,6 +186,8 @@ class CXRClipPlusWithDQN(AttentionBasedClip):
+ 
+         B, K, Total_D = image_kv.shape
+         Q, _ = label_cls.shape
++        if aggregation_label_cls.shape != label_cls.shape:
++            raise ValueError("Aggregation and readout query shapes must match")
+         H = self.num_radzero_heads
+         
+         # Safety Check
+@@ -188,14 +200,16 @@ class CXRClipPlusWithDQN(AttentionBasedClip):
+         
+         # label_cls: [Q, Total_D] -> [Q, H, D_head]
+         label_cls_h = label_cls.view(Q, H, D_head)
++        aggregation_label_cls_h = aggregation_label_cls.view(Q, H, D_head)
+ 
+         # 2. Normalize Per Head (Subspace L2 Normalization)
+         image_kv_h = F.normalize(image_kv_h, p=2, dim=-1)
+         label_cls_h = F.normalize(label_cls_h, p=2, dim=-1)
++        aggregation_label_cls_h = F.normalize(aggregation_label_cls_h, p=2, dim=-1)
+ 
+         # 3. Calculate Attention Logits (Similarity) Per Head
+         # [B, K, H, D_head] vs [Q, H, D_head] -> [B, Q, K, H]
+-        attention_logits_h = torch.einsum("bkhd,qhd->bqkh", image_kv_h, label_cls_h)
++        attention_logits_h = torch.einsum("bkhd,qhd->bqkh", image_kv_h, aggregation_label_cls_h)
+         
+         # Scale by temperature before softmax
+         attention_logits_h_scaled = attention_logits_h * radzero_logit_scale
+@@ -258,6 +272,11 @@ class CXRClipPlusWithDQN(AttentionBasedClip):
+             'radzero_logit_scale': radzero_logit_scale,
+             'radzero_enriched_image_context': image_context_h
+         }
++        # Optional frozen-token audit outputs.  They are consumed only by
++        # support-side contrastive grounding transport and do not alter the
++        # released logits or grounding maps.
++        results['radzero_attention_weights_h'] = attn_weights_h
++        results['radzero_image_kv_h'] = image_kv_h
+         return results | grounding_stuffs
+ 
+     def get_grounding_maps(self, image_patch_normed, label_cls_normed):

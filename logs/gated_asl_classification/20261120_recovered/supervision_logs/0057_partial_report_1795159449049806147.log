@@ -1,0 +1,28 @@
+{
+  "status": "partial",
+  "generated_at": "2026-11-20T07:24:34.474349+00:00",
+  "protocol_sha256": "f45a19ed0a9f67755af77893af7b85dc2931488e99a76e1b7c788a56db3bdb08",
+  "expected_new_fits": 252,
+  "completed_new_fits": 109,
+  "expected_reference_evaluations": 120,
+  "completed_reference_evaluations": 120,
+  "historical_supervised_fits": 90,
+  "deterministic_reference_evaluations": 30,
+  "old_fits_counted_as_new": 0,
+  "migration": {
+    "manifest_sha256": "f5b1d85190f329fd2b57bf3a9b33abfca0eee89e8a2da094641ffae697b715dc",
+    "origin_run": "/storage/3090group2/zjx/code/medical/experiments/gated_asl_classification/runs/20261119",
+    "destination_run": "/storage/3090group2/zjx/code/medical/experiments/gated_asl_classification/runs/20261120_recovered",
+    "copied_fits": 20,
+    "copied_files": 120,
+    "runtime_sources_verified": 65,
+    "historical_references_verified": 120,
+    "protocol_sha256": "f45a19ed0a9f67755af77893af7b85dc2931488e99a76e1b7c788a56db3bdb08",
+    "source_manifest_sha256": "55e781b375d315a545db091c0e137a65c599a20fa0ed0e273b047b50b3ee9bc3",
+    "validation_policy": "Working validation/ is an initial snapshot only and may be rewritten by the frozen worker. Immutable origin copies retain the previous audit evidence.",
+    "transfer": "independent_regular_file_byte_copies",
+    "origin_evidence": "migration/origin",
+    "immutable_files": 247
+  },
+  "errors": []
+}

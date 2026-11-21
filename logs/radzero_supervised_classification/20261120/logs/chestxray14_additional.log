@@ -1,0 +1,5 @@
+chestxray14 RadZero pre_mlp seconds 6
+chestxray14 RadZero original seconds 8
+chestxray14 RadZero post_mlp seconds 13
+chestxray14 RadZero linear_probe seconds 19
+chestxray14 RadZero clip_global seconds 24

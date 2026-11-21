@@ -1,0 +1,25 @@
+/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+/storage/3090group2/zjx/code/medical/experiments/direct_anchor_classification/train.py:244: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  losses += float(loss) * len(index); seen_train += len(index)
+alpharad chexpert token_mlp seed=44 epoch=1 val=0.923909 best=0.923909 sec=3.2
+alpharad chexpert token_mlp seed=44 epoch=2 val=0.919237 best=0.923909 sec=2.3
+alpharad chexpert token_mlp seed=44 epoch=3 val=0.923934 best=0.923934 sec=2.2
+alpharad chexpert token_mlp seed=44 epoch=4 val=0.924962 best=0.924962 sec=2.2
+alpharad chexpert token_mlp seed=44 epoch=5 val=0.926422 best=0.926422 sec=2.3
+alpharad chexpert token_mlp seed=44 epoch=6 val=0.927643 best=0.927643 sec=2.3
+alpharad chexpert token_mlp seed=44 epoch=7 val=0.931028 best=0.931028 sec=2.3
+alpharad chexpert token_mlp seed=44 epoch=8 val=0.933368 best=0.933368 sec=2.2
+alpharad chexpert token_mlp seed=44 epoch=9 val=0.934180 best=0.934180 sec=2.3
+alpharad chexpert token_mlp seed=44 epoch=10 val=0.932652 best=0.934180 sec=2.3
+alpharad chexpert token_mlp seed=44 epoch=11 val=0.936185 best=0.936185 sec=2.2
+alpharad chexpert token_mlp seed=44 epoch=12 val=0.935907 best=0.936185 sec=2.3
+alpharad chexpert token_mlp seed=44 epoch=13 val=0.934891 best=0.936185 sec=2.3
+alpharad chexpert token_mlp seed=44 epoch=14 val=0.938281 best=0.938281 sec=2.3
+alpharad chexpert token_mlp seed=44 epoch=15 val=0.936713 best=0.938281 sec=2.3
+alpharad chexpert token_mlp seed=44 epoch=16 val=0.934585 best=0.938281 sec=2.4
+alpharad chexpert token_mlp seed=44 epoch=17 val=0.937062 best=0.938281 sec=2.4
+alpharad chexpert token_mlp seed=44 epoch=18 val=0.937248 best=0.938281 sec=2.3
+alpharad chexpert token_mlp seed=44 epoch=19 val=0.935102 best=0.938281 sec=2.3
+COMPLETE alpharad chexpert token_mlp seed=44 test_AUROC=0.950762

@@ -1,0 +1,90 @@
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/experiments/radzero_supervised_classification/external.py", line 149, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/storage/3090group2/zjx/code/medical/experiments/radzero_supervised_classification/external.py", line 145, in main
+    try:worker(a,gpu)
+        ^^^^^^^^^^^^^
+  File "/storage/3090group2/zjx/code/medical/experiments/radzero_supervised_classification/external.py", line 69, in worker
+    backend,batches,native,cache=radzero_encoder(source_meta,images,out,batch_size)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/3090group2/zjx/code/medical/experiments/radzero_supervised_classification/external.py", line 21, in radzero_encoder
+    from exp.cxr_pt.inference.dataset import InferDataset, collate_fn
+  File "/storage/3090group2/zjx/code/medical/RadZero/exp/cxr_pt/inference/dataset.py", line 10, in <module>
+    from exp.cxr_pt.inference.segmentation_utils import read_from_dicom
+  File "/storage/3090group2/zjx/code/medical/RadZero/exp/cxr_pt/inference/segmentation_utils.py", line 15, in <module>
+    from exp.cxr_pt.model.processing import (
+  File "/storage/3090group2/zjx/code/medical/RadZero/exp/cxr_pt/model/__init__.py", line 7, in <module>
+    from common.trainer import logger
+ModuleNotFoundError: No module named 'common.trainer'; 'common' is not a package
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/experiments/radzero_supervised_classification/external_entry.py", line 22, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/storage/3090group2/zjx/code/medical/experiments/radzero_supervised_classification/external.py", line 145, in main
+    try:worker(a,gpu)
+        ^^^^^^^^^^^^^
+  File "/storage/3090group2/zjx/code/medical/experiments/radzero_supervised_classification/external.py", line 69, in worker
+    backend,batches,native,cache=radzero_encoder(source_meta,images,out,batch_size)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/3090group2/zjx/code/medical/experiments/radzero_supervised_classification/external.py", line 21, in radzero_encoder
+    from exp.cxr_pt.inference.dataset import InferDataset, collate_fn
+  File "/storage/3090group2/zjx/code/medical/RadZero/exp/cxr_pt/inference/dataset.py", line 10, in <module>
+    from exp.cxr_pt.inference.segmentation_utils import read_from_dicom
+  File "/storage/3090group2/zjx/code/medical/RadZero/exp/cxr_pt/inference/segmentation_utils.py", line 15, in <module>
+    from exp.cxr_pt.model.processing import (
+  File "/storage/3090group2/zjx/code/medical/RadZero/exp/cxr_pt/model/__init__.py", line 10, in <module>
+    from .modeling import CxrAlignModel
+  File "/storage/3090group2/zjx/code/medical/RadZero/exp/cxr_pt/model/modeling.py", line 20, in <module>
+    from .vision_encoders import MRM, Dinov2Model, build_vision_encoder
+  File "/storage/3090group2/zjx/code/medical/RadZero/exp/cxr_pt/model/vision_encoders.py", line 14, in <module>
+    from external.CARZero.CARZero.models.transformer_backbones import MRM, load_weight
+ModuleNotFoundError: No module named 'external.CARZero'; 'external' is not a package
+[2026-11-20 23:40:40 INFO] Build vision model ...
+[2026-11-20 23:40:51 INFO] Build text model ...
+[2026-11-20 23:41:04 INFO] Build align transformer model ...
+[2026-11-20 23:41:04 INFO] Build loss functions ...
+[2026-11-20 23:41:04 INFO] Build KeyPhraseAlignmentLoss loss function ...
+RadZero 128 / 5300 seconds 5
+RadZero 256 / 5300 seconds 9
+RadZero 384 / 5300 seconds 14
+RadZero 512 / 5300 seconds 18
+RadZero 640 / 5300 seconds 22
+RadZero 768 / 5300 seconds 27
+RadZero 896 / 5300 seconds 31
+RadZero 1024 / 5300 seconds 35
+RadZero 1152 / 5300 seconds 39
+RadZero 1280 / 5300 seconds 43
+RadZero 1408 / 5300 seconds 47
+RadZero 1536 / 5300 seconds 52
+RadZero 1664 / 5300 seconds 57
+RadZero 1792 / 5300 seconds 62
+RadZero 1920 / 5300 seconds 66
+RadZero 2048 / 5300 seconds 70
+RadZero 2176 / 5300 seconds 75
+RadZero 2304 / 5300 seconds 79
+RadZero 2432 / 5300 seconds 83
+RadZero 2560 / 5300 seconds 89
+RadZero 2688 / 5300 seconds 93
+RadZero 2816 / 5300 seconds 97
+RadZero 2944 / 5300 seconds 101
+RadZero 3072 / 5300 seconds 106
+RadZero 3200 / 5300 seconds 110
+RadZero 3328 / 5300 seconds 114
+RadZero 3456 / 5300 seconds 119
+RadZero 3584 / 5300 seconds 124
+RadZero 3712 / 5300 seconds 128
+RadZero 3840 / 5300 seconds 133
+RadZero 3968 / 5300 seconds 137
+RadZero 4096 / 5300 seconds 141
+RadZero 4224 / 5300 seconds 146
+RadZero 4352 / 5300 seconds 150
+RadZero 4480 / 5300 seconds 154
+RadZero 4608 / 5300 seconds 158
+RadZero 4736 / 5300 seconds 164
+RadZero 4864 / 5300 seconds 168
+RadZero 4992 / 5300 seconds 172
+RadZero 5120 / 5300 seconds 176
+RadZero 5248 / 5300 seconds 181
+RadZero 5300 / 5300 seconds 183
+COMPLETE RadZero RSNA transfer

@@ -1,0 +1,12 @@
+BOOTSTRAP AlphaRAD original 2000 patient draws
+BOOTSTRAP AlphaRAD linear_probe 2000 patient draws
+BOOTSTRAP AlphaRAD clip_global 2000 patient draws
+BOOTSTRAP AlphaRAD post_mlp 2000 patient draws
+BOOTSTRAP AlphaRAD pre_mlp 2000 patient draws
+BOOTSTRAP RadZero original 2000 patient draws
+BOOTSTRAP RadZero linear_probe 2000 patient draws
+BOOTSTRAP RadZero clip_global 2000 patient draws
+BOOTSTRAP RadZero post_mlp 2000 patient draws
+BOOTSTRAP RadZero pre_mlp 2000 patient draws
+AlphaRAD | 90.55 / 62.55 | 84.85 / 46.60 | 85.96 / 44.85 | 88.11 / 60.68 | 88.56 / 58.46
+RadZero | 89.10 / 51.63 | 74.60 / 30.70 | 80.90 / 34.93 | 89.02 / 51.33 | 89.25 / 51.29

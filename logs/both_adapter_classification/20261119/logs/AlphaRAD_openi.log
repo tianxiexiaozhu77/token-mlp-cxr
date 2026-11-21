@@ -1,0 +1,37 @@
+/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+CACHE_PARITY AlphaRAD openi 0 7470
+CACHE_PARITY AlphaRAD openi 6400 7470
+AlphaRAD openi both_mlp seed42 epoch1 val=0.881851 best=0.881851 sec=27.3
+AlphaRAD openi both_mlp seed42 epoch2 val=0.884098 best=0.884098 sec=26.0
+AlphaRAD openi both_mlp seed42 epoch3 val=0.885825 best=0.885825 sec=25.5
+AlphaRAD openi both_mlp seed42 epoch4 val=0.888682 best=0.888682 sec=25.9
+AlphaRAD openi both_mlp seed42 epoch5 val=0.887848 best=0.888682 sec=27.6
+AlphaRAD openi both_mlp seed42 epoch6 val=0.886233 best=0.888682 sec=23.7
+AlphaRAD openi both_mlp seed42 epoch7 val=0.888474 best=0.888682 sec=22.4
+AlphaRAD openi both_mlp seed42 epoch8 val=0.886525 best=0.888682 sec=21.8
+AlphaRAD openi both_mlp seed42 epoch9 val=0.887808 best=0.888682 sec=26.3
+COMPLETE AlphaRAD openi 42 0.8667925093387464 0.40352924752699504
+AlphaRAD openi both_mlp seed43 epoch1 val=0.880633 best=0.880889 sec=97.2
+AlphaRAD openi both_mlp seed43 epoch2 val=0.884082 best=0.884082 sec=26.5
+AlphaRAD openi both_mlp seed43 epoch3 val=0.884771 best=0.884771 sec=26.6
+AlphaRAD openi both_mlp seed43 epoch4 val=0.884368 best=0.884771 sec=26.1
+AlphaRAD openi both_mlp seed43 epoch5 val=0.887093 best=0.887093 sec=26.5
+AlphaRAD openi both_mlp seed43 epoch6 val=0.884474 best=0.887093 sec=25.8
+AlphaRAD openi both_mlp seed43 epoch7 val=0.887036 best=0.887093 sec=25.7
+AlphaRAD openi both_mlp seed43 epoch8 val=0.884543 best=0.887093 sec=26.0
+AlphaRAD openi both_mlp seed43 epoch9 val=0.885353 best=0.887093 sec=25.7
+AlphaRAD openi both_mlp seed43 epoch10 val=0.884284 best=0.887093 sec=26.4
+COMPLETE AlphaRAD openi 43 0.866771835770678 0.4112435940600677
+AlphaRAD openi both_mlp seed44 epoch1 val=0.880773 best=0.880889 sec=26.8
+AlphaRAD openi both_mlp seed44 epoch2 val=0.883557 best=0.883557 sec=27.5
+AlphaRAD openi both_mlp seed44 epoch3 val=0.883957 best=0.883957 sec=26.9
+AlphaRAD openi both_mlp seed44 epoch4 val=0.886972 best=0.886972 sec=26.3
+AlphaRAD openi both_mlp seed44 epoch5 val=0.887917 best=0.887917 sec=27.9
+AlphaRAD openi both_mlp seed44 epoch6 val=0.889075 best=0.889075 sec=26.6
+AlphaRAD openi both_mlp seed44 epoch7 val=0.887991 best=0.889075 sec=26.3
+AlphaRAD openi both_mlp seed44 epoch8 val=0.888937 best=0.889075 sec=26.6
+AlphaRAD openi both_mlp seed44 epoch9 val=0.886905 best=0.889075 sec=26.5
+AlphaRAD openi both_mlp seed44 epoch10 val=0.887162 best=0.889075 sec=26.8
+AlphaRAD openi both_mlp seed44 epoch11 val=0.884622 best=0.889075 sec=23.7
+COMPLETE AlphaRAD openi 44 0.8689811117868328 0.4174833574816754

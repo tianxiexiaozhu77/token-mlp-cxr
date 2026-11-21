@@ -1,0 +1,20 @@
+{
+  "status": "verified",
+  "displayed_method_summaries": 10,
+  "underlying_evaluations": 26,
+  "additional_fits": 24,
+  "source_run": "experiments/large_patient_multilabel/runs/20261121",
+  "source_sha256": {
+    "COMPLETION.json": "aee331e5093962ebe0551bbaf71a2bc6b3aeb6930d3e9aa08959806d88432ce6",
+    "FINAL_VERIFICATION.json": "db63c3f5f719b59deecb3e41210c2c40b4bf38c566986352487659eba2f17651",
+    "PROTOCOL.json": "f73f691594fa9d573910c79d8ffd0a0632f02fffe9c587e5b3c241bc17715d2a",
+    "SPLIT_AUDIT.json": "8fe1321e6ebbb37d55d800b715a5cd8ec936aeacde114ccbd4e7f0b93fed7e23",
+    "SELECTION_LOCK.json": "e00d761f5e5a88e0b4a4ebcc38733d8f5b49c6a741556e8f52682962962aa067",
+    "summary.csv": "ae36c0e915138940d621b6903375b0b9ee98da571d294eaad5a894c3ac37d1b0",
+    "per_seed_results.csv": "a94e93c507361b069ede45374b8694893ad27056f4e4d6921070073b3392cee1",
+    "uncertainty/summary.json": "e84513d29164fb057224fc58dadbd660c7447c9fa9f7a96b2a8123ed30004ae2"
+  },
+  "table_sha256": "51197ad563d090d2929684738d5d0b58a9915381a3fa0a0b9ef91b3478af9846",
+  "csv_sha256": "5934c044441d61e09ccfdc469a3ae533046ee51442c085426e33b91800bb9843",
+  "exporter_sha256": "2b12e88c93da7a1fb0d01c505f04f635bd7357017eaf3f6ba3d04fe9f7e93030"
+}

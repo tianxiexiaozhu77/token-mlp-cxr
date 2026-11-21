@@ -1,0 +1,40 @@
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+CACHE_PARITY BiomedCLIP openi 0 7470
+CACHE_PARITY BiomedCLIP openi 6400 7470
+BiomedCLIP openi both_mlp seed42 epoch1 val=0.650196 best=0.650196 sec=2.6
+BiomedCLIP openi both_mlp seed42 epoch2 val=0.643615 best=0.650196 sec=2.1
+BiomedCLIP openi both_mlp seed42 epoch3 val=0.644707 best=0.650196 sec=2.1
+BiomedCLIP openi both_mlp seed42 epoch4 val=0.654652 best=0.654652 sec=2.2
+BiomedCLIP openi both_mlp seed42 epoch5 val=0.547611 best=0.654652 sec=2.1
+BiomedCLIP openi both_mlp seed42 epoch6 val=0.588774 best=0.654652 sec=2.1
+BiomedCLIP openi both_mlp seed42 epoch7 val=0.609183 best=0.654652 sec=2.0
+BiomedCLIP openi both_mlp seed42 epoch8 val=0.611020 best=0.654652 sec=2.0
+BiomedCLIP openi both_mlp seed42 epoch9 val=0.619830 best=0.654652 sec=2.0
+COMPLETE BiomedCLIP openi 42 0.6305577054100471 0.10711645104508948
+BiomedCLIP openi both_mlp seed43 epoch1 val=0.653784 best=0.653784 sec=2.3
+BiomedCLIP openi both_mlp seed43 epoch2 val=0.663626 best=0.663626 sec=2.1
+BiomedCLIP openi both_mlp seed43 epoch3 val=0.626137 best=0.663626 sec=2.0
+BiomedCLIP openi both_mlp seed43 epoch4 val=0.665793 best=0.665793 sec=2.1
+BiomedCLIP openi both_mlp seed43 epoch5 val=0.626770 best=0.665793 sec=2.0
+BiomedCLIP openi both_mlp seed43 epoch6 val=0.626519 best=0.665793 sec=2.7
+BiomedCLIP openi both_mlp seed43 epoch7 val=0.615466 best=0.665793 sec=2.0
+BiomedCLIP openi both_mlp seed43 epoch8 val=0.536545 best=0.665793 sec=2.0
+BiomedCLIP openi both_mlp seed43 epoch9 val=0.561505 best=0.665793 sec=2.0
+COMPLETE BiomedCLIP openi 43 0.6384943203772306 0.10711314953709408
+BiomedCLIP openi both_mlp seed44 epoch1 val=0.640023 best=0.640023 sec=2.1
+BiomedCLIP openi both_mlp seed44 epoch2 val=0.645175 best=0.645175 sec=2.2
+BiomedCLIP openi both_mlp seed44 epoch3 val=0.633079 best=0.645175 sec=2.1
+BiomedCLIP openi both_mlp seed44 epoch4 val=0.627917 best=0.645175 sec=2.4
+BiomedCLIP openi both_mlp seed44 epoch5 val=0.659888 best=0.659888 sec=4.0
+BiomedCLIP openi both_mlp seed44 epoch6 val=0.684917 best=0.684917 sec=2.3
+BiomedCLIP openi both_mlp seed44 epoch7 val=0.633677 best=0.684917 sec=2.2
+BiomedCLIP openi both_mlp seed44 epoch8 val=0.618377 best=0.684917 sec=2.1
+BiomedCLIP openi both_mlp seed44 epoch9 val=0.635681 best=0.684917 sec=2.1
+BiomedCLIP openi both_mlp seed44 epoch10 val=0.633538 best=0.684917 sec=2.0
+BiomedCLIP openi both_mlp seed44 epoch11 val=0.569453 best=0.684917 sec=2.0
+COMPLETE BiomedCLIP openi 44 0.6356307231273032 0.10728814545206398

@@ -1,0 +1,87 @@
+Frozen: 24 fresh fits, 28 test evaluations; TEST held until ALL fits selected.
+Launched AlphaRAD_pre_mlp_42 physical GPU 4
+Launched RadZero_pre_mlp_42 physical GPU 5
+Launched AlphaRAD_pre_mlp_43 physical GPU 6
+Launched RadZero_pre_mlp_43 physical GPU 7
+Launched AlphaRAD_pre_mlp_44 physical GPU 5
+Launched RadZero_pre_mlp_44 physical GPU 7
+Launched AlphaRAD_post_mlp_42 physical GPU 6
+Launched RadZero_post_mlp_42 physical GPU 6
+Launched AlphaRAD_post_mlp_43 physical GPU 6
+Launched RadZero_post_mlp_43 physical GPU 6
+Launched AlphaRAD_post_mlp_44 physical GPU 4
+Launched RadZero_post_mlp_44 physical GPU 6
+Launched AlphaRAD_linear_probe_42 physical GPU 4
+Launched RadZero_linear_probe_42 physical GPU 4
+Launched AlphaRAD_linear_probe_43 physical GPU 6
+Launched RadZero_linear_probe_43 physical GPU 4
+Launched AlphaRAD_linear_probe_44 physical GPU 6
+Launched RadZero_linear_probe_44 physical GPU 4
+Launched AlphaRAD_clip_global_42 physical GPU 6
+Launched RadZero_clip_global_42 physical GPU 4
+Launched AlphaRAD_clip_global_43 physical GPU 4
+Launched RadZero_clip_global_43 physical GPU 6
+Launched AlphaRAD_clip_global_44 physical GPU 6
+Launched RadZero_clip_global_44 physical GPU 4
+Launched evaluate_AlphaRAD physical GPU 4
+Launched evaluate_RadZero physical GPU 5
+Bootstrap AlphaRAD original elapsed 7
+Bootstrap AlphaRAD pre_mlp elapsed 26
+Bootstrap AlphaRAD post_mlp elapsed 44
+Bootstrap AlphaRAD linear_probe elapsed 63
+Bootstrap AlphaRAD clip_global elapsed 81
+Bootstrap RadZero original elapsed 88
+Bootstrap RadZero pre_mlp elapsed 107
+Bootstrap RadZero post_mlp elapsed 125
+Bootstrap RadZero linear_probe elapsed 144
+Bootstrap RadZero clip_global elapsed 162
+ChestXray14 large patient-disjoint test replication
+AUROC/AP in percent; fitted methods average per-seed metrics, without prediction ensembling.
+24 fresh fits, 28 TEST evaluations, 8 paired comparisons (16 macro metric differences).
+All 24 validation-selected checkpoint hashes locked before TEST evaluation.
+Patient counts and image counts:
+  train: 13406 images, 3712 patients
+  val: 2300 images, 619 patients
+  test: 6727 images, 1856 patients
+
+Model | method | AUROC mean +/- SD | AP mean +/- SD | selected epochs
+AlphaRAD | original | 82.35 +/- 0.00 | 25.81 +/- 0.00 | 0
+AlphaRAD | global_frozen | 65.87 +/- 0.00 | 10.09 +/- 0.00 | 0
+AlphaRAD | linear_probe | 82.92 +/- 0.39 | 25.77 +/- 0.27 | 13,18,10
+AlphaRAD | clip_global | 81.61 +/- 0.15 | 20.24 +/- 0.19 | 20,20,18
+AlphaRAD | post_mlp | 84.89 +/- 0.05 | 29.19 +/- 0.13 | 19,19,20
+AlphaRAD | pre_mlp | 85.24 +/- 0.28 | 29.34 +/- 0.28 | 18,12,20
+RadZero | original | 79.83 +/- 0.00 | 20.64 +/- 0.00 | 0
+RadZero | global_frozen | 63.84 +/- 0.00 | 9.06 +/- 0.00 | 0
+RadZero | linear_probe | 77.63 +/- 0.26 | 19.34 +/- 0.39 | 11,11,8
+RadZero | clip_global | 79.11 +/- 0.10 | 18.71 +/- 0.16 | 9,10,9
+RadZero | post_mlp | 84.01 +/- 0.09 | 26.78 +/- 0.22 | 12,16,12
+RadZero | pre_mlp | 84.09 +/- 0.15 | 27.00 +/- 0.21 | 5,6,7
+
+Paired patient-group bootstrap (percentage points):
+AlphaRAD Pre - original auroc: +2.89 [2.19, 3.67]; valid 2000/2000
+AlphaRAD Pre - original ap: +3.53 [2.24, 4.40]; valid 2000/2000
+AlphaRAD Pre - post_mlp auroc: +0.36 [0.03, 0.64]; valid 2000/2000
+AlphaRAD Pre - post_mlp ap: +0.16 [-0.39, 0.79]; valid 2000/2000
+AlphaRAD Pre - linear_probe auroc: +2.32 [0.80, 3.99]; valid 2000/2000
+AlphaRAD Pre - linear_probe ap: +3.57 [2.17, 4.96]; valid 2000/2000
+AlphaRAD Pre - clip_global auroc: +3.64 [2.80, 4.82]; valid 2000/2000
+AlphaRAD Pre - clip_global ap: +9.10 [6.21, 11.53]; valid 2000/2000
+RadZero Pre - original auroc: +4.26 [3.18, 5.08]; valid 2000/2000
+RadZero Pre - original ap: +6.36 [4.85, 7.30]; valid 2000/2000
+RadZero Pre - post_mlp auroc: +0.08 [-0.70, 0.67]; valid 2000/2000
+RadZero Pre - post_mlp ap: +0.23 [-0.47, 1.06]; valid 2000/2000
+RadZero Pre - linear_probe auroc: +6.47 [5.09, 8.21]; valid 2000/2000
+RadZero Pre - linear_probe ap: +7.66 [4.96, 10.40]; valid 2000/2000
+RadZero Pre - clip_global auroc: +4.98 [3.50, 6.55]; valid 2000/2000
+RadZero Pre - clip_global ap: +8.29 [5.58, 11.19]; valid 2000/2000
+
+Scope and limitations:
+Repartition of a previously used local NIH cohort, not a new blind cohort or official benchmark split.
+Patient independence applies to the NEW adaptation splits, not prior studies or backbone pretraining.
+Single-site 14-label evaluation; does not expand the small CheXpert cohort or establish cross-institution generalization.
+Exact pixel duplicates checked; semantic/near-duplicate equivalence is not exhaustively audited.
+Paired group resampling of fixed checkpoints; average per-seed metrics, not predictions. No training-cohort uncertainty or multiplicity adjustment. A missing class invalidates the entire macro draw; intervals conditional on full class presence when invalid draws occur.
+The global CLS route replaces native disease aggregation; its difference from Pre is not a pure insertion-point effect.
+All methods used the fixed prior protocol; no claim that each baseline is optimally tuned.
+Hernia has 11 positive TEST images from 9 patients; per-class support and bootstrap validity are retained.

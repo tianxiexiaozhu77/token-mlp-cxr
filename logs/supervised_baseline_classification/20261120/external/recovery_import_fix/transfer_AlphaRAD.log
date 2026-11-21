@@ -1,0 +1,12 @@
+/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+xFormers is not available (Attention)
+Device: cuda
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/experiments/supervised_baseline_classification/external.py", line 164, in <module>
+    if __name__=='__main__':main()
+  File "/storage/3090group2/zjx/code/medical/experiments/supervised_baseline_classification/external.py", line 160, in main
+    try:worker(a,gpu)
+  File "/storage/3090group2/zjx/code/medical/experiments/supervised_baseline_classification/external.py", line 98, in worker
+    module=residual_mlp(768,64);module.load_state_dict(saved['adapter_state_dict'])
+NameError: name 'residual_mlp' is not defined

@@ -1,0 +1,264 @@
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/lightning_fabric/__init__.py:29: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__("pkg_resources").declare_namespace(__name__)
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+CACHE_PARITY CARZero chestxray14 0 22433
+CACHE_PARITY CARZero chestxray14 1600 22433
+CACHE_PARITY CARZero chestxray14 3200 22433
+CACHE_PARITY CARZero chestxray14 4800 22433
+CACHE_PARITY CARZero chestxray14 6400 22433
+CACHE_PARITY CARZero chestxray14 8000 22433
+CACHE_PARITY CARZero chestxray14 9600 22433
+CACHE_PARITY CARZero chestxray14 11200 22433
+CACHE_PARITY CARZero chestxray14 12800 22433
+CACHE_PARITY CARZero chestxray14 14400 22433
+CACHE_PARITY CARZero chestxray14 16000 22433
+CACHE_PARITY CARZero chestxray14 17600 22433
+CACHE_PARITY CARZero chestxray14 19200 22433
+CACHE_PARITY CARZero chestxray14 20800 22433
+CACHE_PARITY CARZero chestxray14 22400 22433
+CARZero chestxray14 pre_bce seed42 epoch1 val=0.825793 best=0.825793 sec=59.6
+CARZero chestxray14 pre_bce seed42 epoch2 val=0.833355 best=0.833355 sec=58.4
+CARZero chestxray14 pre_bce seed42 epoch3 val=0.836876 best=0.836876 sec=58.2
+CARZero chestxray14 pre_bce seed42 epoch4 val=0.840159 best=0.840159 sec=58.3
+CARZero chestxray14 pre_bce seed42 epoch5 val=0.841848 best=0.841848 sec=58.9
+CARZero chestxray14 pre_bce seed42 epoch6 val=0.842966 best=0.842966 sec=57.8
+CARZero chestxray14 pre_bce seed42 epoch7 val=0.843523 best=0.843523 sec=58.3
+CARZero chestxray14 pre_bce seed42 epoch8 val=0.844705 best=0.844705 sec=57.9
+CARZero chestxray14 pre_bce seed42 epoch9 val=0.844989 best=0.844989 sec=57.8
+CARZero chestxray14 pre_bce seed42 epoch10 val=0.845989 best=0.845989 sec=58.6
+CARZero chestxray14 pre_bce seed42 epoch11 val=0.845334 best=0.845989 sec=58.4
+CARZero chestxray14 pre_bce seed42 epoch12 val=0.845457 best=0.845989 sec=58.4
+CARZero chestxray14 pre_bce seed42 epoch13 val=0.846192 best=0.846192 sec=58.6
+CARZero chestxray14 pre_bce seed42 epoch14 val=0.846203 best=0.846203 sec=59.5
+CARZero chestxray14 pre_bce seed42 epoch15 val=0.844960 best=0.846203 sec=58.9
+CARZero chestxray14 pre_bce seed42 epoch16 val=0.846302 best=0.846302 sec=58.7
+CARZero chestxray14 pre_bce seed42 epoch17 val=0.844639 best=0.846302 sec=58.9
+CARZero chestxray14 pre_bce seed42 epoch18 val=0.843836 best=0.846302 sec=57.1
+CARZero chestxray14 pre_bce seed42 epoch19 val=0.845187 best=0.846302 sec=57.9
+CARZero chestxray14 pre_bce seed42 epoch20 val=0.844537 best=0.846302 sec=57.4
+COMPLETE CARZero chestxray14 pre_bce 42 0.838916791188084 0.3113871476457775
+CARZero chestxray14 pre_bce seed43 epoch1 val=0.824800 best=0.824800 sec=59.2
+CARZero chestxray14 pre_bce seed43 epoch2 val=0.833227 best=0.833227 sec=55.7
+CARZero chestxray14 pre_bce seed43 epoch3 val=0.837318 best=0.837318 sec=59.2
+CARZero chestxray14 pre_bce seed43 epoch4 val=0.839084 best=0.839084 sec=58.7
+CARZero chestxray14 pre_bce seed43 epoch5 val=0.841186 best=0.841186 sec=58.0
+CARZero chestxray14 pre_bce seed43 epoch6 val=0.842613 best=0.842613 sec=58.8
+CARZero chestxray14 pre_bce seed43 epoch7 val=0.843563 best=0.843563 sec=57.9
+CARZero chestxray14 pre_bce seed43 epoch8 val=0.844049 best=0.844049 sec=56.8
+CARZero chestxray14 pre_bce seed43 epoch9 val=0.844190 best=0.844190 sec=58.9
+CARZero chestxray14 pre_bce seed43 epoch10 val=0.844239 best=0.844239 sec=58.7
+CARZero chestxray14 pre_bce seed43 epoch11 val=0.844256 best=0.844256 sec=59.0
+CARZero chestxray14 pre_bce seed43 epoch12 val=0.844561 best=0.844561 sec=58.9
+CARZero chestxray14 pre_bce seed43 epoch13 val=0.844579 best=0.844579 sec=57.4
+CARZero chestxray14 pre_bce seed43 epoch14 val=0.844750 best=0.844750 sec=56.8
+CARZero chestxray14 pre_bce seed43 epoch15 val=0.844500 best=0.844750 sec=57.7
+CARZero chestxray14 pre_bce seed43 epoch16 val=0.844283 best=0.844750 sec=59.2
+CARZero chestxray14 pre_bce seed43 epoch17 val=0.842075 best=0.844750 sec=59.4
+CARZero chestxray14 pre_bce seed43 epoch18 val=0.844673 best=0.844750 sec=58.2
+CARZero chestxray14 pre_bce seed43 epoch19 val=0.840811 best=0.844750 sec=58.4
+COMPLETE CARZero chestxray14 pre_bce 43 0.839237695826353 0.3115734077670803
+CARZero chestxray14 pre_bce seed44 epoch1 val=0.825370 best=0.825370 sec=57.0
+CARZero chestxray14 pre_bce seed44 epoch2 val=0.833177 best=0.833177 sec=59.3
+CARZero chestxray14 pre_bce seed44 epoch3 val=0.837238 best=0.837238 sec=58.3
+CARZero chestxray14 pre_bce seed44 epoch4 val=0.839461 best=0.839461 sec=59.6
+CARZero chestxray14 pre_bce seed44 epoch5 val=0.841771 best=0.841771 sec=58.2
+CARZero chestxray14 pre_bce seed44 epoch6 val=0.842968 best=0.842968 sec=58.7
+CARZero chestxray14 pre_bce seed44 epoch7 val=0.843792 best=0.843792 sec=58.6
+CARZero chestxray14 pre_bce seed44 epoch8 val=0.843959 best=0.843959 sec=57.7
+CARZero chestxray14 pre_bce seed44 epoch9 val=0.844424 best=0.844424 sec=59.0
+CARZero chestxray14 pre_bce seed44 epoch10 val=0.843869 best=0.844424 sec=57.8
+CARZero chestxray14 pre_bce seed44 epoch11 val=0.844734 best=0.844734 sec=58.9
+CARZero chestxray14 pre_bce seed44 epoch12 val=0.844302 best=0.844734 sec=59.4
+CARZero chestxray14 pre_bce seed44 epoch13 val=0.846063 best=0.846063 sec=59.8
+CARZero chestxray14 pre_bce seed44 epoch14 val=0.845664 best=0.846063 sec=58.3
+CARZero chestxray14 pre_bce seed44 epoch15 val=0.846276 best=0.846276 sec=56.8
+CARZero chestxray14 pre_bce seed44 epoch16 val=0.845889 best=0.846276 sec=55.3
+CARZero chestxray14 pre_bce seed44 epoch17 val=0.845435 best=0.846276 sec=58.4
+CARZero chestxray14 pre_bce seed44 epoch18 val=0.846077 best=0.846276 sec=50.2
+CARZero chestxray14 pre_bce seed44 epoch19 val=0.846257 best=0.846276 sec=59.3
+CARZero chestxray14 pre_bce seed44 epoch20 val=0.846431 best=0.846431 sec=57.9
+COMPLETE CARZero chestxray14 pre_bce 44 0.8402853550560684 0.3121708094297776
+CARZero chestxray14 gated_bce seed42 epoch1 val=0.821588 best=0.821588 sec=60.7
+CARZero chestxray14 gated_bce seed42 epoch2 val=0.829378 best=0.829378 sec=60.5
+CARZero chestxray14 gated_bce seed42 epoch3 val=0.833758 best=0.833758 sec=61.0
+CARZero chestxray14 gated_bce seed42 epoch4 val=0.836964 best=0.836964 sec=60.6
+CARZero chestxray14 gated_bce seed42 epoch5 val=0.838717 best=0.838717 sec=60.5
+CARZero chestxray14 gated_bce seed42 epoch6 val=0.839711 best=0.839711 sec=60.2
+CARZero chestxray14 gated_bce seed42 epoch7 val=0.840059 best=0.840059 sec=62.0
+CARZero chestxray14 gated_bce seed42 epoch8 val=0.841410 best=0.841410 sec=59.2
+CARZero chestxray14 gated_bce seed42 epoch9 val=0.841476 best=0.841476 sec=59.7
+CARZero chestxray14 gated_bce seed42 epoch10 val=0.842875 best=0.842875 sec=60.9
+CARZero chestxray14 gated_bce seed42 epoch11 val=0.842273 best=0.842875 sec=61.2
+CARZero chestxray14 gated_bce seed42 epoch12 val=0.842011 best=0.842875 sec=61.8
+CARZero chestxray14 gated_bce seed42 epoch13 val=0.843476 best=0.843476 sec=62.8
+CARZero chestxray14 gated_bce seed42 epoch14 val=0.842790 best=0.843476 sec=62.1
+CARZero chestxray14 gated_bce seed42 epoch15 val=0.842178 best=0.843476 sec=62.3
+CARZero chestxray14 gated_bce seed42 epoch16 val=0.843447 best=0.843476 sec=59.6
+CARZero chestxray14 gated_bce seed42 epoch17 val=0.841970 best=0.843476 sec=60.9
+CARZero chestxray14 gated_bce seed42 epoch18 val=0.841154 best=0.843476 sec=60.5
+COMPLETE CARZero chestxray14 gated_bce 42 0.8480841731704867 0.30237681680373224
+CARZero chestxray14 gated_bce seed43 epoch1 val=0.821124 best=0.821124 sec=60.6
+CARZero chestxray14 gated_bce seed43 epoch2 val=0.830947 best=0.830947 sec=59.2
+CARZero chestxray14 gated_bce seed43 epoch3 val=0.835546 best=0.835546 sec=62.1
+CARZero chestxray14 gated_bce seed43 epoch4 val=0.837464 best=0.837464 sec=61.6
+CARZero chestxray14 gated_bce seed43 epoch5 val=0.839787 best=0.839787 sec=61.4
+CARZero chestxray14 gated_bce seed43 epoch6 val=0.841027 best=0.841027 sec=60.7
+CARZero chestxray14 gated_bce seed43 epoch7 val=0.841678 best=0.841678 sec=60.8
+CARZero chestxray14 gated_bce seed43 epoch8 val=0.842074 best=0.842074 sec=61.1
+CARZero chestxray14 gated_bce seed43 epoch9 val=0.842316 best=0.842316 sec=61.2
+CARZero chestxray14 gated_bce seed43 epoch10 val=0.842387 best=0.842387 sec=60.8
+CARZero chestxray14 gated_bce seed43 epoch11 val=0.841899 best=0.842387 sec=61.0
+CARZero chestxray14 gated_bce seed43 epoch12 val=0.843110 best=0.843110 sec=62.3
+CARZero chestxray14 gated_bce seed43 epoch13 val=0.842488 best=0.843110 sec=59.0
+CARZero chestxray14 gated_bce seed43 epoch14 val=0.842305 best=0.843110 sec=62.0
+CARZero chestxray14 gated_bce seed43 epoch15 val=0.842203 best=0.843110 sec=61.9
+CARZero chestxray14 gated_bce seed43 epoch16 val=0.841942 best=0.843110 sec=60.2
+CARZero chestxray14 gated_bce seed43 epoch17 val=0.839903 best=0.843110 sec=59.9
+COMPLETE CARZero chestxray14 gated_bce 43 0.8449788934398805 0.3023753516416633
+CARZero chestxray14 gated_bce seed44 epoch1 val=0.821177 best=0.821177 sec=61.8
+CARZero chestxray14 gated_bce seed44 epoch2 val=0.829890 best=0.829890 sec=60.9
+CARZero chestxray14 gated_bce seed44 epoch3 val=0.834735 best=0.834735 sec=61.2
+CARZero chestxray14 gated_bce seed44 epoch4 val=0.837232 best=0.837232 sec=61.2
+CARZero chestxray14 gated_bce seed44 epoch5 val=0.838691 best=0.838691 sec=60.0
+CARZero chestxray14 gated_bce seed44 epoch6 val=0.840102 best=0.840102 sec=60.6
+CARZero chestxray14 gated_bce seed44 epoch7 val=0.840971 best=0.840971 sec=61.1
+CARZero chestxray14 gated_bce seed44 epoch8 val=0.841766 best=0.841766 sec=60.0
+CARZero chestxray14 gated_bce seed44 epoch9 val=0.841892 best=0.841892 sec=60.5
+CARZero chestxray14 gated_bce seed44 epoch10 val=0.841654 best=0.841892 sec=60.7
+CARZero chestxray14 gated_bce seed44 epoch11 val=0.842321 best=0.842321 sec=60.3
+CARZero chestxray14 gated_bce seed44 epoch12 val=0.842365 best=0.842365 sec=59.4
+CARZero chestxray14 gated_bce seed44 epoch13 val=0.843734 best=0.843734 sec=59.6
+CARZero chestxray14 gated_bce seed44 epoch14 val=0.843351 best=0.843734 sec=59.4
+CARZero chestxray14 gated_bce seed44 epoch15 val=0.843579 best=0.843734 sec=59.6
+CARZero chestxray14 gated_bce seed44 epoch16 val=0.843242 best=0.843734 sec=60.7
+CARZero chestxray14 gated_bce seed44 epoch17 val=0.842373 best=0.843734 sec=60.5
+CARZero chestxray14 gated_bce seed44 epoch18 val=0.842868 best=0.843734 sec=63.2
+COMPLETE CARZero chestxray14 gated_bce 44 0.8478644013403943 0.3062426789749061
+CARZero chestxray14 pre_asl seed42 epoch1 val=0.814890 best=0.814890 sec=61.4
+CARZero chestxray14 pre_asl seed42 epoch2 val=0.826435 best=0.826435 sec=60.5
+CARZero chestxray14 pre_asl seed42 epoch3 val=0.831493 best=0.831493 sec=60.9
+CARZero chestxray14 pre_asl seed42 epoch4 val=0.834885 best=0.834885 sec=62.6
+CARZero chestxray14 pre_asl seed42 epoch5 val=0.837076 best=0.837076 sec=60.7
+CARZero chestxray14 pre_asl seed42 epoch6 val=0.838700 best=0.838700 sec=63.4
+CARZero chestxray14 pre_asl seed42 epoch7 val=0.839617 best=0.839617 sec=62.2
+CARZero chestxray14 pre_asl seed42 epoch8 val=0.840121 best=0.840121 sec=59.7
+CARZero chestxray14 pre_asl seed42 epoch9 val=0.840913 best=0.840913 sec=61.3
+CARZero chestxray14 pre_asl seed42 epoch10 val=0.841749 best=0.841749 sec=60.4
+CARZero chestxray14 pre_asl seed42 epoch11 val=0.842492 best=0.842492 sec=59.5
+CARZero chestxray14 pre_asl seed42 epoch12 val=0.841242 best=0.842492 sec=60.4
+CARZero chestxray14 pre_asl seed42 epoch13 val=0.843864 best=0.843864 sec=60.5
+CARZero chestxray14 pre_asl seed42 epoch14 val=0.842978 best=0.843864 sec=60.3
+CARZero chestxray14 pre_asl seed42 epoch15 val=0.844541 best=0.844541 sec=61.9
+CARZero chestxray14 pre_asl seed42 epoch16 val=0.844455 best=0.844541 sec=61.5
+CARZero chestxray14 pre_asl seed42 epoch17 val=0.843830 best=0.844541 sec=59.8
+CARZero chestxray14 pre_asl seed42 epoch18 val=0.845089 best=0.845089 sec=59.3
+CARZero chestxray14 pre_asl seed42 epoch19 val=0.844934 best=0.845089 sec=61.1
+CARZero chestxray14 pre_asl seed42 epoch20 val=0.845938 best=0.845938 sec=61.3
+COMPLETE CARZero chestxray14 pre_asl 42 0.8448500388591438 0.3199678621427964
+CARZero chestxray14 pre_asl seed43 epoch1 val=0.816496 best=0.816496 sec=61.3
+CARZero chestxray14 pre_asl seed43 epoch2 val=0.826153 best=0.826153 sec=61.0
+CARZero chestxray14 pre_asl seed43 epoch3 val=0.830847 best=0.830847 sec=60.1
+CARZero chestxray14 pre_asl seed43 epoch4 val=0.832923 best=0.832923 sec=61.2
+CARZero chestxray14 pre_asl seed43 epoch5 val=0.835708 best=0.835708 sec=61.3
+CARZero chestxray14 pre_asl seed43 epoch6 val=0.837222 best=0.837222 sec=60.2
+CARZero chestxray14 pre_asl seed43 epoch7 val=0.837791 best=0.837791 sec=60.2
+CARZero chestxray14 pre_asl seed43 epoch8 val=0.838630 best=0.838630 sec=59.7
+CARZero chestxray14 pre_asl seed43 epoch9 val=0.839163 best=0.839163 sec=60.5
+CARZero chestxray14 pre_asl seed43 epoch10 val=0.839551 best=0.839551 sec=60.1
+CARZero chestxray14 pre_asl seed43 epoch11 val=0.840045 best=0.840045 sec=59.4
+CARZero chestxray14 pre_asl seed43 epoch12 val=0.841058 best=0.841058 sec=59.1
+CARZero chestxray14 pre_asl seed43 epoch13 val=0.840646 best=0.841058 sec=58.4
+CARZero chestxray14 pre_asl seed43 epoch14 val=0.840393 best=0.841058 sec=59.5
+CARZero chestxray14 pre_asl seed43 epoch15 val=0.841327 best=0.841327 sec=59.7
+CARZero chestxray14 pre_asl seed43 epoch16 val=0.841167 best=0.841327 sec=62.0
+CARZero chestxray14 pre_asl seed43 epoch17 val=0.840915 best=0.841327 sec=59.4
+CARZero chestxray14 pre_asl seed43 epoch18 val=0.842685 best=0.842685 sec=62.3
+CARZero chestxray14 pre_asl seed43 epoch19 val=0.840074 best=0.842685 sec=60.2
+CARZero chestxray14 pre_asl seed43 epoch20 val=0.842559 best=0.842685 sec=60.1
+COMPLETE CARZero chestxray14 pre_asl 43 0.8460157873485858 0.31837895397282295
+CARZero chestxray14 pre_asl seed44 epoch1 val=0.817423 best=0.817423 sec=60.4
+CARZero chestxray14 pre_asl seed44 epoch2 val=0.827444 best=0.827444 sec=60.9
+CARZero chestxray14 pre_asl seed44 epoch3 val=0.831731 best=0.831731 sec=60.6
+CARZero chestxray14 pre_asl seed44 epoch4 val=0.834396 best=0.834396 sec=59.2
+CARZero chestxray14 pre_asl seed44 epoch5 val=0.836516 best=0.836516 sec=60.9
+CARZero chestxray14 pre_asl seed44 epoch6 val=0.838293 best=0.838293 sec=59.8
+CARZero chestxray14 pre_asl seed44 epoch7 val=0.838646 best=0.838646 sec=58.5
+CARZero chestxray14 pre_asl seed44 epoch8 val=0.839905 best=0.839905 sec=62.0
+CARZero chestxray14 pre_asl seed44 epoch9 val=0.840044 best=0.840044 sec=60.7
+CARZero chestxray14 pre_asl seed44 epoch10 val=0.840227 best=0.840227 sec=60.4
+CARZero chestxray14 pre_asl seed44 epoch11 val=0.841045 best=0.841045 sec=60.1
+CARZero chestxray14 pre_asl seed44 epoch12 val=0.841254 best=0.841254 sec=60.9
+CARZero chestxray14 pre_asl seed44 epoch13 val=0.842224 best=0.842224 sec=59.5
+CARZero chestxray14 pre_asl seed44 epoch14 val=0.842359 best=0.842359 sec=58.2
+CARZero chestxray14 pre_asl seed44 epoch15 val=0.842110 best=0.842359 sec=60.1
+CARZero chestxray14 pre_asl seed44 epoch16 val=0.842426 best=0.842426 sec=60.8
+CARZero chestxray14 pre_asl seed44 epoch17 val=0.842216 best=0.842426 sec=60.8
+CARZero chestxray14 pre_asl seed44 epoch18 val=0.842841 best=0.842841 sec=60.3
+CARZero chestxray14 pre_asl seed44 epoch19 val=0.841871 best=0.842841 sec=61.0
+CARZero chestxray14 pre_asl seed44 epoch20 val=0.843122 best=0.843122 sec=59.2
+COMPLETE CARZero chestxray14 pre_asl 44 0.8462921377745761 0.317953409970151
+CARZero chestxray14 gated_asl seed42 epoch1 val=0.806342 best=0.806342 sec=61.4
+CARZero chestxray14 gated_asl seed42 epoch2 val=0.823687 best=0.823687 sec=62.4
+CARZero chestxray14 gated_asl seed42 epoch3 val=0.830262 best=0.830262 sec=61.5
+CARZero chestxray14 gated_asl seed42 epoch4 val=0.833849 best=0.833849 sec=60.5
+CARZero chestxray14 gated_asl seed42 epoch5 val=0.835659 best=0.835659 sec=61.8
+CARZero chestxray14 gated_asl seed42 epoch6 val=0.837360 best=0.837360 sec=63.0
+CARZero chestxray14 gated_asl seed42 epoch7 val=0.838304 best=0.838304 sec=61.7
+CARZero chestxray14 gated_asl seed42 epoch8 val=0.838756 best=0.838756 sec=61.8
+CARZero chestxray14 gated_asl seed42 epoch9 val=0.838650 best=0.838756 sec=63.3
+CARZero chestxray14 gated_asl seed42 epoch10 val=0.839853 best=0.839853 sec=62.8
+CARZero chestxray14 gated_asl seed42 epoch11 val=0.841038 best=0.841038 sec=63.0
+CARZero chestxray14 gated_asl seed42 epoch12 val=0.839170 best=0.841038 sec=60.3
+CARZero chestxray14 gated_asl seed42 epoch13 val=0.842023 best=0.842023 sec=62.5
+CARZero chestxray14 gated_asl seed42 epoch14 val=0.840859 best=0.842023 sec=63.2
+CARZero chestxray14 gated_asl seed42 epoch15 val=0.842054 best=0.842054 sec=62.3
+CARZero chestxray14 gated_asl seed42 epoch16 val=0.842265 best=0.842265 sec=62.4
+CARZero chestxray14 gated_asl seed42 epoch17 val=0.841362 best=0.842265 sec=63.4
+CARZero chestxray14 gated_asl seed42 epoch18 val=0.842048 best=0.842265 sec=62.9
+CARZero chestxray14 gated_asl seed42 epoch19 val=0.842029 best=0.842265 sec=62.7
+CARZero chestxray14 gated_asl seed42 epoch20 val=0.842393 best=0.842393 sec=62.6
+COMPLETE CARZero chestxray14 gated_asl 42 0.8441580357101649 0.3236320158503845
+CARZero chestxray14 gated_asl seed43 epoch1 val=0.808981 best=0.808981 sec=62.2
+CARZero chestxray14 gated_asl seed43 epoch2 val=0.823264 best=0.823264 sec=62.5
+CARZero chestxray14 gated_asl seed43 epoch3 val=0.828768 best=0.828768 sec=62.1
+CARZero chestxray14 gated_asl seed43 epoch4 val=0.831292 best=0.831292 sec=61.5
+CARZero chestxray14 gated_asl seed43 epoch5 val=0.834358 best=0.834358 sec=59.4
+CARZero chestxray14 gated_asl seed43 epoch6 val=0.835978 best=0.835978 sec=63.8
+CARZero chestxray14 gated_asl seed43 epoch7 val=0.837058 best=0.837058 sec=62.0
+CARZero chestxray14 gated_asl seed43 epoch8 val=0.838066 best=0.838066 sec=62.3
+CARZero chestxray14 gated_asl seed43 epoch9 val=0.838545 best=0.838545 sec=62.5
+CARZero chestxray14 gated_asl seed43 epoch10 val=0.838903 best=0.838903 sec=61.1
+CARZero chestxray14 gated_asl seed43 epoch11 val=0.839522 best=0.839522 sec=63.4
+CARZero chestxray14 gated_asl seed43 epoch12 val=0.839975 best=0.839975 sec=62.1
+CARZero chestxray14 gated_asl seed43 epoch13 val=0.839932 best=0.839975 sec=62.5
+CARZero chestxray14 gated_asl seed43 epoch14 val=0.839469 best=0.839975 sec=63.2
+CARZero chestxray14 gated_asl seed43 epoch15 val=0.839760 best=0.839975 sec=60.2
+CARZero chestxray14 gated_asl seed43 epoch16 val=0.838876 best=0.839975 sec=64.1
+CARZero chestxray14 gated_asl seed43 epoch17 val=0.838978 best=0.839975 sec=58.6
+COMPLETE CARZero chestxray14 gated_asl 43 0.8445801639973439 0.3121839381086775
+CARZero chestxray14 gated_asl seed44 epoch1 val=0.809841 best=0.809841 sec=63.5
+CARZero chestxray14 gated_asl seed44 epoch2 val=0.825199 best=0.825199 sec=62.3
+CARZero chestxray14 gated_asl seed44 epoch3 val=0.830616 best=0.830616 sec=62.8
+CARZero chestxray14 gated_asl seed44 epoch4 val=0.834069 best=0.834069 sec=61.9
+CARZero chestxray14 gated_asl seed44 epoch5 val=0.835969 best=0.835969 sec=60.7
+CARZero chestxray14 gated_asl seed44 epoch6 val=0.837710 best=0.837710 sec=61.9
+CARZero chestxray14 gated_asl seed44 epoch7 val=0.838250 best=0.838250 sec=62.2
+CARZero chestxray14 gated_asl seed44 epoch8 val=0.839740 best=0.839740 sec=61.7
+CARZero chestxray14 gated_asl seed44 epoch9 val=0.839850 best=0.839850 sec=61.0
+CARZero chestxray14 gated_asl seed44 epoch10 val=0.839534 best=0.839850 sec=61.8
+CARZero chestxray14 gated_asl seed44 epoch11 val=0.840765 best=0.840765 sec=62.9
+CARZero chestxray14 gated_asl seed44 epoch12 val=0.840787 best=0.840787 sec=61.3
+CARZero chestxray14 gated_asl seed44 epoch13 val=0.841953 best=0.841953 sec=63.0
+CARZero chestxray14 gated_asl seed44 epoch14 val=0.842013 best=0.842013 sec=62.9
+CARZero chestxray14 gated_asl seed44 epoch15 val=0.841723 best=0.842013 sec=62.9
+CARZero chestxray14 gated_asl seed44 epoch16 val=0.841708 best=0.842013 sec=62.6
+CARZero chestxray14 gated_asl seed44 epoch17 val=0.841875 best=0.842013 sec=60.5
+CARZero chestxray14 gated_asl seed44 epoch18 val=0.842642 best=0.842642 sec=60.8
+CARZero chestxray14 gated_asl seed44 epoch19 val=0.841218 best=0.842642 sec=60.4
+CARZero chestxray14 gated_asl seed44 epoch20 val=0.842855 best=0.842855 sec=62.3
+COMPLETE CARZero chestxray14 gated_asl 44 0.8466913275925249 0.3285435840937881

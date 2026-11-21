@@ -1,0 +1,70 @@
+% Seven separate implementation-specific diagrams; only presentation changes.
+\onecolumn
+\section{Backbone-Specific Token Adaptation Diagrams}
+\label{app:architectures}
+\input{figures/token_mlp_models/styles}
+
+\begingroup\small
+Figures~\ref{fig:tokens_alpharad}--\ref{fig:tokens_maco} expand Figure~\ref{fig:token_mlp_pipeline} into seven backbone-specific scoring paths. Red marks additions to each Original baseline. The residual MLP is $g_\theta(t)=t+W_u\GELU(W_dt+b_d)+b_u$, with parameters shared over tokens and diseases within each model fit.
+
+\begin{center}
+\begin{tikzpicture}[tokenmodel,font=\footnotesize]
+\node[tmold,text width=3.45cm,minimum height=.6cm] at (0,0) {Retained frozen operation};
+\node[tmnew,text width=3.45cm,minimum height=.6cm] at (4.4,0) {Added trainable Token MLP};
+\node[tmfixed,text width=4.1cm,minimum height=.6cm] at (9.2,0) {Added operation / use; weights fixed};
+\end{tikzpicture}
+\end{center}
+Only the Token MLP is trained. Arrows show data flow; frozen downstream operations remain differentiable during adapter fitting.
+
+\medskip
+\noindent\textbf{Backbones requiring ``NEW fixed pooling''.}
+AlphaRAD (FLaS), RadZero (VL-CABS), CARZero (bidirectional cross-attention), and KAD (disease-query decoder) already aggregate or fuse visual tokens using disease text. We retain these operations after the MLP. The Original classification paths used here for BiomedCLIP, BioViL-T, and MaCo instead score global image representations; we add text-guided pooling to form disease-specific contexts from adapted tokens. ``Fixed'' means no fitted pooling parameters, with temperature 1; attention weights still depend on the adapted tokens and disease query. Aggregation-only controls separate this change from MLP learning.
+
+\medskip
+\noindent\textbf{Meaning of ``Same frozen CLS projection / NEW patch use''.}
+BiomedCLIP's native global path projects the CLS feature. We apply the same frozen projection to patches as well, producing 512-dimensional tokens. Red marks this new application of existing weights; no projection is trained. The four native-fusion models and BioViL-T already expose projected local tokens at the adapter input. MaCo applies its existing linear projection per patch: for its original mean pooling, $P(\frac{1}{N}\sum_i x_i)=\frac{1}{N}\sum_i P(x_i)$. This preserves the original mean-pooled feature and is labeled ``Same linear projection''; the equivalence does not extend to the added MLP or text-guided pooling.
+\par\endgroup
+
+\newcommand{\tokenmodelpanel}[3]{%
+  \par\noindent\begin{minipage}{\textwidth}
+  \centering
+  \captionsetup{hypcap=false}
+  \input{figures/token_mlp_models/#1}
+  \captionof{figure}{#2}
+  \label{#3}
+  \end{minipage}\par
+}
+
+\bigskip
+\tokenmodelpanel{alpharad}{\textbf{AlphaRAD: shared token adaptation before native FLaS.} The only added module is the red $768\to64\to768$ MLP. It precedes the eight-head split and per-head normalization. Native attention aggregates normalized token values; the normalized per-head contexts are scored with the same frozen disease queries and averaged across heads.}{fig:tokens_alpharad}
+
+\vspace{.3cm}
+\tokenmodelpanel{radzero}{\textbf{RadZero: shared token adaptation before native VL-CABS.} The red MLP is before the original LayerNorm and attention, with CLS retained. Both the attention and final similarity use frozen disease queries and temperatures. The existing local residual adapter is the added module relative to the frozen Original baseline.}{fig:tokens_radzero}
+
+\clearpage
+\noindent\textbf{Native query-decoder architectures.}
+The following paths retain their pretrained fusion and classification heads. Their text features enter the decoder rather than an additional direct text-to-readout similarity branch.
+
+\bigskip
+\tokenmodelpanel{carzero}{\textbf{CARZero: token adaptation before bidirectional native fusion.} The red MLP changes all visual tokens used as memory in one direction and the global visual token used as a query in the reverse direction. Both branches use the same frozen DQN and MLP readout parameters; their logits are averaged. The fixed text memory contains global and local text features for each disease.}{fig:tokens_carzero}
+
+\vspace{.8cm}
+\tokenmodelpanel{kad}{\textbf{KAD: token adaptation before the native disease-query decoder.} The red MLP acts on projected spatial tokens without CLS. The original decoder retains disease-query self-attention and cross-attention to image memory. Its frozen two-class head produces the positive-minus-negative margin. The original paper calls the decoder DQN; the local implementation uses the TQN class name.}{fig:tokens_kad}
+
+\clearpage
+\noindent\textbf{Global baselines with added fixed text-guided pooling.}
+Each red dashed pooling block forms two independent contexts, using different positive and negative attention weights:
+\[
+a_i^\pm=\softmax_i\!\left(\bar{\tilde t}_i^\top\bar q_c^\pm\right),
+\qquad h_c^\pm=\sum_i a_i^\pm\tilde t_i.
+\]
+Bars denote L2 normalization. Attention temperature is 1, and values remain the raw adapted tokens. The final context normalization differs between the cosine and raw-dot readouts below.
+
+\bigskip
+\tokenmodelpanel{biomedclip}{\textbf{BiomedCLIP: added pooling over projected CLS and patch tokens.} Red marks the trainable MLP and the added fixed operations. Applying the existing frozen CLS projection to patches is a new use of those weights, not a newly trained projection. Each positive/negative context is normalized before its corresponding cosine score; the final score is their difference.}{fig:tokens_biomedclip}
+
+\vspace{.35cm}
+\tokenmodelpanel{biovilt}{\textbf{BioViL-T: added pooling of native projected patches.} The path uses a single image, a $128\to64\to128$ MLP, and two separately normalized contexts. The OpenI runs select epoch zero: the red MLP remains an identity map, so their final predictions match the added-pooling control up to floating-point differences.}{fig:tokens_biovilt}
+
+\vspace{.35cm}
+\tokenmodelpanel{maco}{\textbf{MaCo: added pooling with the original raw-dot readout.} The frozen linear projection is applied per patch; it commutes with the original mean pooling. The two contexts are not normalized before scoring. Raw positive and negative text vectors are retained for the final dot products, while normalized copies determine attention weights.}{fig:tokens_maco}

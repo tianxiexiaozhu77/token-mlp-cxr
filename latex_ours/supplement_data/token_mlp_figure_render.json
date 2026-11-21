@@ -1,0 +1,28 @@
+{
+  "status": "rendered",
+  "assets_sha256": "eca15fee9b7bdaefcde2b871c290e47e97558121ff3f70772ec339b020b637e0",
+  "provenance_sha256": "2950b6ab63356a511c9a41ed91d4fefa87711e2cc9416d88049fd077ff98b709",
+  "query_order": [
+    "Effusion",
+    "Atelectasis"
+  ],
+  "methods": [
+    "Original",
+    "Pre MLP"
+  ],
+  "attention_normalization": {
+    "vmin": 0.0,
+    "vmax": 0.03725980967283249,
+    "shared_across_all_four_maps": true,
+    "clipping": false,
+    "patch_renormalization": false,
+    "colormap": "magma",
+    "overlay_alpha": 0.45
+  },
+  "output_sha256": {
+    "token_mlp_pipeline_real.pdf": "330ba5b1ccfb178d6e45ca14839840f29fbe0b57ff7c001c873c1c3a06f4f065",
+    "token_mlp_pipeline_real.svg": "3686e6cb319e53d32894b286f444a11892c96d766a972cc22cdf02969dbe9eae",
+    "token_mlp_pipeline_real.png": "9836dcae712f063848c2c97a669ade04408d2afb20e56f458cbebdaa0d870690"
+  },
+  "renderer_sha256": "ff1d93692185f66446af260b85957e262bbb17b369ce61d98a909a99c1454808"
+}

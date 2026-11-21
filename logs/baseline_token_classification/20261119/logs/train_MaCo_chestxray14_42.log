@@ -1,0 +1,42 @@
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo chestxray14 seed42 epoch1 val=0.784705 best=0.784705 sec=8.1
+MaCo chestxray14 seed42 epoch2 val=0.802444 best=0.802444 sec=7.8
+MaCo chestxray14 seed42 epoch3 val=0.811305 best=0.811305 sec=7.6
+MaCo chestxray14 seed42 epoch4 val=0.817604 best=0.817604 sec=7.6
+MaCo chestxray14 seed42 epoch5 val=0.823982 best=0.823982 sec=7.6
+MaCo chestxray14 seed42 epoch6 val=0.822841 best=0.823982 sec=7.7
+MaCo chestxray14 seed42 epoch7 val=0.830335 best=0.830335 sec=7.6
+MaCo chestxray14 seed42 epoch8 val=0.830819 best=0.830819 sec=7.7
+MaCo chestxray14 seed42 epoch9 val=0.831016 best=0.831016 sec=7.4
+MaCo chestxray14 seed42 epoch10 val=0.833359 best=0.833359 sec=7.6
+MaCo chestxray14 seed42 epoch11 val=0.833280 best=0.833359 sec=7.6
+MaCo chestxray14 seed42 epoch12 val=0.830883 best=0.833359 sec=7.8
+MaCo chestxray14 seed42 epoch13 val=0.833158 best=0.833359 sec=8.0
+MaCo chestxray14 seed42 epoch14 val=0.831840 best=0.833359 sec=8.0
+MaCo chestxray14 seed42 epoch15 val=0.831271 best=0.833359 sec=7.6
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+COMPLETE MaCo chestxray14 42 0.8276957889283807

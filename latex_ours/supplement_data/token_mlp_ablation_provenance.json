@@ -1,0 +1,105 @@
+{
+  "scope": "Validate exported per-seed arithmetic and protocol identity; no inference replay.",
+  "generator_sha256": "1eede70ea0d8a551b27932351ada14b012a711ea077712e007385ad4c409ab1d",
+  "campaigns": {
+    "placement": {
+      "sources": {
+        "summary.csv": {
+          "path": "/storage/3090group2/zjx/code/medical/experiments/adapter_placement_classification/runs/20261119/summary.csv",
+          "sha256": "72f3ff5845c7c9d07e1dc5e72e58dcc35c4c224132a14d0b690b1251e204ceb5"
+        },
+        "per_seed.csv": {
+          "path": "/storage/3090group2/zjx/code/medical/experiments/adapter_placement_classification/runs/20261119/per_seed.csv",
+          "sha256": "08dc3ea938202d69dbdc924d9ad668ae256b0c8a116e9f1f788be2ff2c3ae97d"
+        },
+        "PROTOCOL.json": {
+          "path": "/storage/3090group2/zjx/code/medical/experiments/adapter_placement_classification/runs/20261119/PROTOCOL.json",
+          "sha256": "26c4998bc97c22d84809b349c0df3b4f9c903f75249f5a0e595981ffdc93a683"
+        },
+        "AUDIT.json": {
+          "path": "/storage/3090group2/zjx/code/medical/experiments/adapter_placement_classification/runs/20261119/AUDIT.json",
+          "sha256": "a4cb063a87795b8ebfde4307460165d97cbcdd7e860125b71c346e223675aa58"
+        }
+      },
+      "seed_records": 72,
+      "additional_fits": 45,
+      "source_audit_status": "passed",
+      "epoch_zero_counts": {
+        "native_mean_post": 0,
+        "native_mean_pre": 0,
+        "post_mlp": 3,
+        "pre_mlp": 0
+      }
+    },
+    "both": {
+      "sources": {
+        "summary.csv": {
+          "path": "/storage/3090group2/zjx/code/medical/experiments/both_adapter_classification/runs/20261119/summary.csv",
+          "sha256": "4a273550aa993e8405f36a6e354913d98675a3df52aa0807415dcdf03692b2d7"
+        },
+        "per_seed.csv": {
+          "path": "/storage/3090group2/zjx/code/medical/experiments/both_adapter_classification/runs/20261119/per_seed.csv",
+          "sha256": "ccaeb3a1ddc1f1154f9225bae2be94320b32d8ae6ff7513fd4c645f4ecc0f6e7"
+        },
+        "PROTOCOL.json": {
+          "path": "/storage/3090group2/zjx/code/medical/experiments/both_adapter_classification/runs/20261119/PROTOCOL.json",
+          "sha256": "1a8ec270b7e620f46e6b16bea5478eb04feafb4706e1cb92d6ee917f171acf6c"
+        },
+        "AUDIT.json": {
+          "path": "/storage/3090group2/zjx/code/medical/experiments/both_adapter_classification/runs/20261119/AUDIT.json",
+          "sha256": "ce372f6c1d4ee8e513f827bbaa0f92be73d5c4d36ef7bb11556a21cdefc6b5eb"
+        }
+      },
+      "seed_records": 183,
+      "additional_fits": 63,
+      "source_audit_status": "passed",
+      "epoch_zero_counts": {
+        "aggregation_only": 9,
+        "both_mlp": 3,
+        "original": 21,
+        "post_mlp": 3,
+        "pre_mlp": 3
+      }
+    },
+    "gated_asl": {
+      "sources": {
+        "summary.csv": {
+          "path": "/storage/3090group2/zjx/code/medical/experiments/gated_asl_classification/runs/20261120_recovered/summary.csv",
+          "sha256": "987d9bf53c70b3dc616d0c915f3fa3a48869483f142dc46ff58a194e303745cc"
+        },
+        "per_seed.csv": {
+          "path": "/storage/3090group2/zjx/code/medical/experiments/gated_asl_classification/runs/20261120_recovered/per_seed.csv",
+          "sha256": "75d0c0b157b81dd3086722164ad122d9304ecdca665d4bd6c803266bfc122e7e"
+        },
+        "PROTOCOL.json": {
+          "path": "/storage/3090group2/zjx/code/medical/experiments/gated_asl_classification/runs/20261120_recovered/PROTOCOL.json",
+          "sha256": "f45a19ed0a9f67755af77893af7b85dc2931488e99a76e1b7c788a56db3bdb08"
+        },
+        "AUDIT.json": {
+          "path": "/storage/3090group2/zjx/code/medical/experiments/gated_asl_classification/runs/20261120_recovered/AUDIT.json",
+          "sha256": "71a6e5aae822ff359fbc92f592aa100a44e18dcbe350904c7567690bc830e844"
+        }
+      },
+      "seed_records": 252,
+      "additional_fits": 252,
+      "source_audit_status": "passed",
+      "epoch_zero_counts": {
+        "gated_asl": 14,
+        "gated_bce": 4,
+        "pre_asl": 13,
+        "pre_bce": 3
+      }
+    }
+  },
+  "tables": {
+    "tables/token_mlp_pooling_placement.tex": "18d9941e0374cd6717527e2332902efdc89a3c9aee27564a993bc4e4dafa69e8",
+    "tables/token_mlp_both_openi.tex": "c40feaf28e2f08829afd9a5538cd2099e65f470d23944be8e95af3dab51542eb",
+    "tables/token_mlp_gated_asl_openi.tex": "a534fd9c2248f443a34907fb736fbab3a37ec2b76b664e06fa697422bb8ad3bd",
+    "tables/token_mlp_both_chexpert.tex": "71b1ef553c40f2b62415154d36fcc8eeefb07335cb0e41401c38503c4e51f6db",
+    "tables/token_mlp_gated_asl_chexpert.tex": "91b1b54bcb902b09a0ef68c74ccded904ab4a3d4bb4261038eb4e073576bd724",
+    "tables/token_mlp_both_chestxray14.tex": "b80ab41ec39d8b0738904a62ddcf0e07f3c4075e473fe83e0e5ce02baef9dbb1",
+    "tables/token_mlp_gated_asl_chestxray14.tex": "d8230802abe61a356efa4cacb978c12ebdf296381aa84959c06589cca8f31797"
+  },
+  "unique_supervised_fits_including_main_study": 423,
+  "additional_fits": 360
+}

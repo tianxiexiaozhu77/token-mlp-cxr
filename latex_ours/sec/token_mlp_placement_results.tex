@@ -1,0 +1,9 @@
+\subsection{Does MaCo Require Text-Guided Pooling?}
+\label{sec:pooling_placement_results}
+\input{tables/token_mlp_pooling_placement}
+Table~\ref{tab:token_mlp_pooling_placement} crosses MLP placement with MaCo's native mean pooling and the added text-guided pooling. With Pre MLP, mean pooling reaches 83.17/29.61 on OpenI and 82.99/26.62 on ChestXray14, compared with 82.94/29.42 and 82.80/26.24 for text-guided pooling. Text-guided pooling is slightly higher on CheXpert, at 93.31/70.10 versus 93.27/70.03. Native mean pooling also supports substantial learned gains over Original. Consequently, the earlier aggregation-only controls establish that learning matters, but the factorial comparison does not establish that added disease-conditioned pooling is necessary for those gains.
+
+To distinguish a general placement effect from one specific to text-guided pooling, define the interaction as the Pre-minus-Post difference under text-guided pooling minus the corresponding difference under mean pooling. Computed from unrounded paired seed results, this interaction is $-0.24/-0.18$ AUROC/AP points on OpenI, $-0.05/-0.27$ on CheXpert, and $+0.13/+0.07$ on ChestXray14. Its direction is not consistent across datasets. This comparison does not separately intervene on attention weights and token values, so the observed gains cannot be assigned uniquely to improved attention weighting.
+
+\paragraph{Joint adaptation and gating/loss extensions.}
+Appendices~\ref{app:both_mlp} and~\ref{app:gated_asl} report all seven backbones for joint Pre+Post adaptation and a gating $\times$ loss experiment. Both uses two independent MLPs and twice the parameters; the gating/loss experiment newly trains all four conditions. These extensions produce mixed results and do not replace the primary Pre MLP comparison or justify selecting a different method for each test cohort.

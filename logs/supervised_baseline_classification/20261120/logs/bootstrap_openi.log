@@ -1,0 +1,12 @@
+openi AlphaRAD pre_mlp seconds 3
+openi AlphaRAD post_mlp seconds 6
+openi AlphaRAD linear_probe seconds 9
+openi AlphaRAD clip_global seconds 11
+openi KAD pre_mlp seconds 14
+openi KAD post_mlp seconds 18
+openi KAD linear_probe seconds 21
+openi KAD clip_global seconds 24
+openi MaCo pre_mlp seconds 30
+openi MaCo post_mlp seconds 32
+openi MaCo linear_probe seconds 36
+openi MaCo clip_global seconds 39

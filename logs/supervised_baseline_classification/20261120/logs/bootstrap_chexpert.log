@@ -1,0 +1,12 @@
+chexpert AlphaRAD pre_mlp seconds 2
+chexpert AlphaRAD post_mlp seconds 2
+chexpert AlphaRAD linear_probe seconds 3
+chexpert AlphaRAD clip_global seconds 3
+chexpert KAD pre_mlp seconds 4
+chexpert KAD post_mlp seconds 4
+chexpert KAD linear_probe seconds 4
+chexpert KAD clip_global seconds 5
+chexpert MaCo pre_mlp seconds 5
+chexpert MaCo post_mlp seconds 6
+chexpert MaCo linear_probe seconds 6
+chexpert MaCo clip_global seconds 7

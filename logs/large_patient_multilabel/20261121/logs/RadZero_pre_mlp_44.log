@@ -1,0 +1,13 @@
+RadZero pre_mlp 44 epoch 1 val 0.835976 best 1
+RadZero pre_mlp 44 epoch 2 val 0.841337 best 2
+RadZero pre_mlp 44 epoch 3 val 0.843266 best 3
+RadZero pre_mlp 44 epoch 4 val 0.844255 best 4
+RadZero pre_mlp 44 epoch 5 val 0.845695 best 5
+RadZero pre_mlp 44 epoch 6 val 0.84511 best 5
+RadZero pre_mlp 44 epoch 7 val 0.845849 best 7
+RadZero pre_mlp 44 epoch 8 val 0.845422 best 7
+RadZero pre_mlp 44 epoch 9 val 0.845591 best 7
+RadZero pre_mlp 44 epoch 10 val 0.845331 best 7
+RadZero pre_mlp 44 epoch 11 val 0.84413 best 7
+RadZero pre_mlp 44 epoch 12 val 0.843315 best 7
+FIT COMPLETE RadZero pre_mlp 44 TEST remains locked

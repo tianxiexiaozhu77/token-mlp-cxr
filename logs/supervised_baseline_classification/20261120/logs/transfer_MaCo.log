@@ -1,0 +1,45 @@
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+MaCo 128 / 5300 seconds 2
+MaCo 256 / 5300 seconds 3
+MaCo 384 / 5300 seconds 4
+MaCo 512 / 5300 seconds 5
+MaCo 640 / 5300 seconds 7
+MaCo 768 / 5300 seconds 8
+MaCo 896 / 5300 seconds 9
+MaCo 1024 / 5300 seconds 10
+MaCo 1152 / 5300 seconds 11
+MaCo 1280 / 5300 seconds 12
+MaCo 1408 / 5300 seconds 13
+MaCo 1536 / 5300 seconds 14
+MaCo 1664 / 5300 seconds 15
+MaCo 1792 / 5300 seconds 16
+MaCo 1920 / 5300 seconds 17
+MaCo 2048 / 5300 seconds 18
+MaCo 2176 / 5300 seconds 19
+MaCo 2304 / 5300 seconds 20
+MaCo 2432 / 5300 seconds 23
+MaCo 2560 / 5300 seconds 24
+MaCo 2688 / 5300 seconds 25
+MaCo 2816 / 5300 seconds 26
+MaCo 2944 / 5300 seconds 27
+MaCo 3072 / 5300 seconds 28
+MaCo 3200 / 5300 seconds 29
+MaCo 3328 / 5300 seconds 31
+MaCo 3456 / 5300 seconds 32
+MaCo 3584 / 5300 seconds 33
+MaCo 3712 / 5300 seconds 34
+MaCo 3840 / 5300 seconds 35
+MaCo 3968 / 5300 seconds 36
+MaCo 4096 / 5300 seconds 37
+MaCo 4224 / 5300 seconds 38
+MaCo 4352 / 5300 seconds 39
+MaCo 4480 / 5300 seconds 40
+MaCo 4608 / 5300 seconds 41
+MaCo 4736 / 5300 seconds 42
+MaCo 4864 / 5300 seconds 43
+MaCo 4992 / 5300 seconds 44
+MaCo 5120 / 5300 seconds 45
+MaCo 5248 / 5300 seconds 46
+MaCo 5300 / 5300 seconds 47
+COMPLETE MaCo RSNA transfer

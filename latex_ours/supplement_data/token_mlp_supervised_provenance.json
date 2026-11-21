@@ -1,0 +1,28 @@
+{
+  "status": "verified",
+  "scope": "AlphaRAD and RadZero; three source datasets; five displayed methods. No external results included.",
+  "source_sha256": {
+    "experiments/supervised_baseline_classification/runs/20261120/audit.json": "cce7928f23036654aca49b15509fdbff906b79ab00115f155cbefe42f539b6b6",
+    "experiments/supervised_baseline_classification/runs/20261120/COMPLETION.json": "0483da931306293e458fd88459c2121b3ea5139390ac8b83b1cd8752de772942",
+    "experiments/supervised_baseline_classification/runs/20261120/PROTOCOL.json": "4a70fcc2bc862e6cf56dd8e027afb50f677ebf0348083358cdb4c5ad07c85491",
+    "experiments/supervised_baseline_classification/runs/20261120/supervised_comparison.csv": "2ba07b63e9c93b7329e95cd50efa723af7cccc82c7a7661d91268c53f0a13d38",
+    "experiments/supervised_baseline_classification/runs/20261120/all_runs.csv": "729f9deba6e5079c8296a11ab87a5cfdf6d02d5995d0154456da56912be666fd",
+    "experiments/radzero_supervised_classification/runs/20261120/audit.json": "c4ef215ca10d75388bf2998a696f0047caadb964a42273d5251ac3a77ac28ac7",
+    "experiments/radzero_supervised_classification/runs/20261120/COMPLETION.json": "ac1dc4afc908991b9e8f1a768e249212687fadf6dc17317951ac11249b484318",
+    "experiments/radzero_supervised_classification/runs/20261120/PROTOCOL.json": "74225accf70e505c75914fc3abd1c39e0a2424f85bb836ce52fed2792353dded",
+    "experiments/radzero_supervised_classification/runs/20261120/supervised_comparison.csv": "a4bf0b633f7296ec287e61607a4fdee4fe4c2ff372dbb9d3ebf2f3a5fbf2f0b6",
+    "experiments/radzero_supervised_classification/runs/20261120/all_runs.csv": "61f9370e78c67bba7e8bf25654c1d80fb57f95491e6757f09b082b064083214c"
+  },
+  "summary_rows": 30,
+  "underlying_evaluations": 78,
+  "additional_fits_beyond_previous_manuscript": 45,
+  "checks": [
+    "means and sample SDs recomputed from all seeds",
+    "shared datasets and training protocol",
+    "parameter counts",
+    "completed source audits"
+  ],
+  "table_sha256": "cd7e0f0b26e43161d6a0991c17e52d4c1caf01ef6a40876374b558c8ed512938",
+  "csv_sha256": "03e5c49d220eeeb74a41849d57aeb7bcfc781bbadeb44977d7aa0dfa1112ed2a",
+  "exporter_sha256": "821c520e26c195f5326ab2a227001705fb0e170523b009ff8dc7508d61715ee3"
+}

@@ -1,0 +1,53 @@
+/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+CACHE_PARITY RadZero chestxray14 0 22433
+CACHE_PARITY RadZero chestxray14 6400 22433
+CACHE_PARITY RadZero chestxray14 12800 22433
+CACHE_PARITY RadZero chestxray14 19200 22433
+RadZero chestxray14 both_mlp seed42 epoch1 val=0.836174 best=0.836174 sec=99.9
+RadZero chestxray14 both_mlp seed42 epoch2 val=0.843282 best=0.843282 sec=86.3
+RadZero chestxray14 both_mlp seed42 epoch3 val=0.846620 best=0.846620 sec=74.4
+RadZero chestxray14 both_mlp seed42 epoch4 val=0.848422 best=0.848422 sec=82.5
+RadZero chestxray14 both_mlp seed42 epoch5 val=0.849743 best=0.849743 sec=75.7
+RadZero chestxray14 both_mlp seed42 epoch6 val=0.850645 best=0.850645 sec=71.9
+RadZero chestxray14 both_mlp seed42 epoch7 val=0.851092 best=0.851092 sec=75.5
+RadZero chestxray14 both_mlp seed42 epoch8 val=0.851413 best=0.851413 sec=72.3
+RadZero chestxray14 both_mlp seed42 epoch9 val=0.851534 best=0.851534 sec=73.5
+RadZero chestxray14 both_mlp seed42 epoch10 val=0.852240 best=0.852240 sec=75.8
+RadZero chestxray14 both_mlp seed42 epoch11 val=0.851628 best=0.852240 sec=77.5
+RadZero chestxray14 both_mlp seed42 epoch12 val=0.851563 best=0.852240 sec=87.0
+RadZero chestxray14 both_mlp seed42 epoch13 val=0.850412 best=0.852240 sec=76.4
+RadZero chestxray14 both_mlp seed42 epoch14 val=0.849267 best=0.852240 sec=76.3
+RadZero chestxray14 both_mlp seed42 epoch15 val=0.849312 best=0.852240 sec=79.4
+COMPLETE RadZero chestxray14 42 0.8496145997619463 0.30912795323579695
+RadZero chestxray14 both_mlp seed43 epoch1 val=0.834755 best=0.834755 sec=69.3
+RadZero chestxray14 both_mlp seed43 epoch2 val=0.842237 best=0.842237 sec=69.6
+RadZero chestxray14 both_mlp seed43 epoch3 val=0.846512 best=0.846512 sec=68.2
+RadZero chestxray14 both_mlp seed43 epoch4 val=0.848461 best=0.848461 sec=75.8
+RadZero chestxray14 both_mlp seed43 epoch5 val=0.849303 best=0.849303 sec=85.1
+RadZero chestxray14 both_mlp seed43 epoch6 val=0.849923 best=0.849923 sec=80.2
+RadZero chestxray14 both_mlp seed43 epoch7 val=0.851338 best=0.851338 sec=81.7
+RadZero chestxray14 both_mlp seed43 epoch8 val=0.850902 best=0.851338 sec=89.8
+RadZero chestxray14 both_mlp seed43 epoch9 val=0.851223 best=0.851338 sec=88.6
+RadZero chestxray14 both_mlp seed43 epoch10 val=0.851522 best=0.851522 sec=89.1
+RadZero chestxray14 both_mlp seed43 epoch11 val=0.851748 best=0.851748 sec=91.9
+RadZero chestxray14 both_mlp seed43 epoch12 val=0.850999 best=0.851748 sec=93.5
+RadZero chestxray14 both_mlp seed43 epoch13 val=0.851476 best=0.851748 sec=82.4
+RadZero chestxray14 both_mlp seed43 epoch14 val=0.850576 best=0.851748 sec=76.5
+RadZero chestxray14 both_mlp seed43 epoch15 val=0.849266 best=0.851748 sec=76.5
+RadZero chestxray14 both_mlp seed43 epoch16 val=0.850151 best=0.851748 sec=75.3
+COMPLETE RadZero chestxray14 43 0.8497432415296335 0.3101526090529653
+RadZero chestxray14 both_mlp seed44 epoch1 val=0.835453 best=0.835453 sec=74.7
+RadZero chestxray14 both_mlp seed44 epoch2 val=0.841974 best=0.841974 sec=74.6
+RadZero chestxray14 both_mlp seed44 epoch3 val=0.846168 best=0.846168 sec=82.1
+RadZero chestxray14 both_mlp seed44 epoch4 val=0.848357 best=0.848357 sec=75.8
+RadZero chestxray14 both_mlp seed44 epoch5 val=0.849208 best=0.849208 sec=71.4
+RadZero chestxray14 both_mlp seed44 epoch6 val=0.849918 best=0.849918 sec=71.0
+RadZero chestxray14 both_mlp seed44 epoch7 val=0.850537 best=0.850537 sec=71.2
+RadZero chestxray14 both_mlp seed44 epoch8 val=0.850884 best=0.850884 sec=65.7
+RadZero chestxray14 both_mlp seed44 epoch9 val=0.850472 best=0.850884 sec=66.2
+RadZero chestxray14 both_mlp seed44 epoch10 val=0.850073 best=0.850884 sec=66.9
+RadZero chestxray14 both_mlp seed44 epoch11 val=0.849592 best=0.850884 sec=76.7
+RadZero chestxray14 both_mlp seed44 epoch12 val=0.850115 best=0.850884 sec=68.7
+RadZero chestxray14 both_mlp seed44 epoch13 val=0.849335 best=0.850884 sec=68.4
+COMPLETE RadZero chestxray14 44 0.8476492481682122 0.30787226209049495

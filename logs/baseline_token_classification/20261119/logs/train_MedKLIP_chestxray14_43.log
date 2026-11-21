@@ -1,0 +1,31 @@
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MedKLIP/local_assets/Bio_ClinicalBERT
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+Image feature extractor: resnet50
+MedKLIP chestxray14 seed43 epoch1 val=0.741721 best=0.756074 sec=13.2
+MedKLIP chestxray14 seed43 epoch2 val=0.755774 best=0.756074 sec=12.9
+MedKLIP chestxray14 seed43 epoch3 val=0.778207 best=0.778207 sec=12.9
+MedKLIP chestxray14 seed43 epoch4 val=0.789571 best=0.789571 sec=12.7
+MedKLIP chestxray14 seed43 epoch5 val=0.796929 best=0.796929 sec=12.6
+MedKLIP chestxray14 seed43 epoch6 val=0.800900 best=0.800900 sec=12.5
+MedKLIP chestxray14 seed43 epoch7 val=0.803708 best=0.803708 sec=13.2
+MedKLIP chestxray14 seed43 epoch8 val=0.806382 best=0.806382 sec=13.2
+MedKLIP chestxray14 seed43 epoch9 val=0.807020 best=0.807020 sec=13.4
+MedKLIP chestxray14 seed43 epoch10 val=0.807787 best=0.807787 sec=13.2
+MedKLIP chestxray14 seed43 epoch11 val=0.809622 best=0.809622 sec=12.8
+MedKLIP chestxray14 seed43 epoch12 val=0.809656 best=0.809656 sec=13.4
+MedKLIP chestxray14 seed43 epoch13 val=0.810104 best=0.810104 sec=11.2
+MedKLIP chestxray14 seed43 epoch14 val=0.811770 best=0.811770 sec=12.5
+MedKLIP chestxray14 seed43 epoch15 val=0.811722 best=0.811770 sec=12.6
+MedKLIP chestxray14 seed43 epoch16 val=0.811983 best=0.811983 sec=12.5
+MedKLIP chestxray14 seed43 epoch17 val=0.813217 best=0.813217 sec=12.8
+MedKLIP chestxray14 seed43 epoch18 val=0.813748 best=0.813748 sec=12.5
+MedKLIP chestxray14 seed43 epoch19 val=0.813757 best=0.813757 sec=12.5
+MedKLIP chestxray14 seed43 epoch20 val=0.814400 best=0.814400 sec=12.7
+COMPLETE MedKLIP chestxray14 43 0.8023299524304411

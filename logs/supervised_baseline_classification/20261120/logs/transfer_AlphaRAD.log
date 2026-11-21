@@ -1,0 +1,59 @@
+/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+xFormers is not available (Attention)
+Device: cuda
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/experiments/supervised_baseline_classification/external.py", line 164, in <module>
+    if __name__=='__main__':main()
+  File "/storage/3090group2/zjx/code/medical/experiments/supervised_baseline_classification/external.py", line 160, in main
+    try:worker(a,gpu)
+  File "/storage/3090group2/zjx/code/medical/experiments/supervised_baseline_classification/external.py", line 98, in worker
+    module=residual_mlp(768,64);module.load_state_dict(saved['adapter_state_dict'])
+NameError: name 'residual_mlp' is not defined
+/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+xFormers is not available (Attention)
+Device: cuda
+AlphaRAD 128 / 5300 seconds 7
+AlphaRAD 256 / 5300 seconds 10
+AlphaRAD 384 / 5300 seconds 13
+AlphaRAD 512 / 5300 seconds 16
+AlphaRAD 640 / 5300 seconds 20
+AlphaRAD 768 / 5300 seconds 23
+AlphaRAD 896 / 5300 seconds 26
+AlphaRAD 1024 / 5300 seconds 29
+AlphaRAD 1152 / 5300 seconds 32
+AlphaRAD 1280 / 5300 seconds 35
+AlphaRAD 1408 / 5300 seconds 39
+AlphaRAD 1536 / 5300 seconds 42
+AlphaRAD 1664 / 5300 seconds 45
+AlphaRAD 1792 / 5300 seconds 48
+AlphaRAD 1920 / 5300 seconds 51
+AlphaRAD 2048 / 5300 seconds 54
+AlphaRAD 2176 / 5300 seconds 58
+AlphaRAD 2304 / 5300 seconds 61
+AlphaRAD 2432 / 5300 seconds 64
+AlphaRAD 2560 / 5300 seconds 67
+AlphaRAD 2688 / 5300 seconds 70
+AlphaRAD 2816 / 5300 seconds 73
+AlphaRAD 2944 / 5300 seconds 77
+AlphaRAD 3072 / 5300 seconds 80
+AlphaRAD 3200 / 5300 seconds 83
+AlphaRAD 3328 / 5300 seconds 86
+AlphaRAD 3456 / 5300 seconds 89
+AlphaRAD 3584 / 5300 seconds 93
+AlphaRAD 3712 / 5300 seconds 96
+AlphaRAD 3840 / 5300 seconds 100
+AlphaRAD 3968 / 5300 seconds 103
+AlphaRAD 4096 / 5300 seconds 106
+AlphaRAD 4224 / 5300 seconds 110
+AlphaRAD 4352 / 5300 seconds 113
+AlphaRAD 4480 / 5300 seconds 116
+AlphaRAD 4608 / 5300 seconds 119
+AlphaRAD 4736 / 5300 seconds 122
+AlphaRAD 4864 / 5300 seconds 126
+AlphaRAD 4992 / 5300 seconds 129
+AlphaRAD 5120 / 5300 seconds 132
+AlphaRAD 5248 / 5300 seconds 135
+AlphaRAD 5300 / 5300 seconds 136
+COMPLETE AlphaRAD RSNA transfer

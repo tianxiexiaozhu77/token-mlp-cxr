@@ -1,0 +1,70 @@
+diff --git a/cxrclip/base_evaluator.py b/cxrclip/base_evaluator.py
+index 5b4a03e..d377f80 100644
+--- a/cxrclip/base_evaluator.py
++++ b/cxrclip/base_evaluator.py
+@@ -451,7 +451,7 @@ class BaseEvaluator:
+     ):
+         # unwrap safely if using DDP
+         model = self.model.module if hasattr(self.model, "module") else self.model
+-        device = 'cuda' #next(model.dqn.parameters()).device
++        device = self.device
+         class_list = [disease_name_mapping(l) for l in class_list]
+         model.eval()
+         with torch.no_grad():
+@@ -530,7 +530,7 @@ class BaseEvaluator:
+ 
+         # unwrap safely if using DDP
+         model = self.model.module if hasattr(self.model, "module") else self.model
+-        device = 'cuda' #next(model.dqn.parameters()).device
++        device = self.device
+         class_list = [disease_name_mapping(l) for l in class_list]
+         model.eval()
+         with torch.no_grad():
+diff --git a/cxrclip/evaluator.py b/cxrclip/evaluator.py
+index 4edfd3b..428aabf 100644
+--- a/cxrclip/evaluator.py
++++ b/cxrclip/evaluator.py
+@@ -1,4 +1,6 @@
+ import logging
++import os
++from pathlib import Path
+ from typing import Dict
+ import torch
+ from cxrclip.base_evaluator import BaseEvaluator
+@@ -17,9 +19,12 @@ class Evaluator(BaseEvaluator):
+         """
+         ckpt = torch.load(ckpt_paths[0], map_location="cpu", weights_only=False)
+ 
+-        # TODO: set the cache_dir for both the text encoder and the image encoder.
+-        ckpt['config']['model']['text_encoder']['cache_dir'] = 'cache_path/to/ sentence-transformers/all-mpnet-base-v2 or Laihaoran/BioClinicalMPBERT'
+-        ckpt['config']['model']['image_encoder']['cache_dir'] = 'cache_path/to/xraydinov2'
++        assets = Path(os.environ.get('ALPHARAD_ASSETS', Path(__file__).resolve().parents[2] / 'alpharad-assets'))
++        text_path = str(assets / 'pretrained/sentence-transformers/all-mpnet-base-v2')
++        image_path = str(assets / 'pretrained/StanfordAIMI/dinov2-base-xray-224')
++        ckpt['config']['model']['text_encoder']['cache_dir'] = text_path
++        ckpt['config']['model']['image_encoder']['cache_dir'] = image_path
++        ckpt['config']['tokenizer']['cache_dir'] = text_path
+ 
+         super(Evaluator, self).__init__(
+             ckpt["config"], 
+diff --git a/cxrclip/model/baseclip.py b/cxrclip/model/baseclip.py
+index 57d312a..ad47bae 100644
+--- a/cxrclip/model/baseclip.py
++++ b/cxrclip/model/baseclip.py
+@@ -94,7 +94,8 @@ class BaseClip(nn.Module):
+         feat_embeddings_raw = projector(feats) if projector is not None else feats
+         feat_embeddings_normed = feat_embeddings_raw / feat_embeddings_raw.norm(dim=2, keepdim=True)
+         
+-        feat_embeddings_raw, feat_embeddings_normed = feat_embeddings_raw.squeeze(), feat_embeddings_normed.squeeze()
++        # Remove the singleton CLS-token axis, preserving batch size 1.
++        feat_embeddings_raw, feat_embeddings_normed = feat_embeddings_raw.squeeze(1), feat_embeddings_normed.squeeze(1)
+         return (feat_embeddings_raw, feat_embeddings_normed) if return_raw_and_normed else feat_embeddings_normed
+ 
+     def forward(self, batch, device=None):
+@@ -126,4 +127,4 @@ class AttentionBasedClip(BaseClip):
+ 
+     def gloria_attention(self, image_feats, text_feats, text_mask):
+         """this might need even smaller batch size due to 4d tensor in the similarity matrix"""
+-        return
+\ No newline at end of file
++        return

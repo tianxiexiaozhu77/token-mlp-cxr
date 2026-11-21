@@ -1,0 +1,21 @@
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Image feature extractor: resnet50
+/storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Text feature extractor: /storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+bert encoder layers: 12
+KAD chexpert seed42 epoch1 val=0.882437 best=0.885606 sec=2.4
+KAD chexpert seed42 epoch2 val=0.881416 best=0.885606 sec=1.6
+KAD chexpert seed42 epoch3 val=0.880984 best=0.885606 sec=1.1
+KAD chexpert seed42 epoch4 val=0.884111 best=0.885606 sec=1.4
+KAD chexpert seed42 epoch5 val=0.896155 best=0.896155 sec=1.6
+KAD chexpert seed42 epoch6 val=0.896119 best=0.896155 sec=1.6
+KAD chexpert seed42 epoch7 val=0.903027 best=0.903027 sec=1.6
+KAD chexpert seed42 epoch8 val=0.902530 best=0.903027 sec=1.4
+KAD chexpert seed42 epoch9 val=0.901396 best=0.903027 sec=1.6
+KAD chexpert seed42 epoch10 val=0.901211 best=0.903027 sec=1.5
+KAD chexpert seed42 epoch11 val=0.900042 best=0.903027 sec=1.5
+KAD chexpert seed42 epoch12 val=0.896360 best=0.903027 sec=1.6
+COMPLETE KAD chexpert 42 0.9020062470062471

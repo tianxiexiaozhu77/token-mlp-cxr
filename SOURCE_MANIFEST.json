@@ -1,0 +1,1496 @@
+{
+  "scope": "Exact copies of selected original source and aggregate results",
+  "manuscript_sha256": "59f725cb97d6800aa20c1cb0ccea38120fa10172d62f5c251b3fe5670ef599bc",
+  "files": [
+    {
+      "path": "AlphaRAD/LICENSE",
+      "category": "AlphaRAD upstream metadata",
+      "size": 11356,
+      "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1"
+    },
+    {
+      "path": "AlphaRAD/local_setup/activate.sh",
+      "category": "AlphaRAD integration/environment",
+      "size": 838,
+      "sha256": "4299b1a02fd7708fc757b4f2c39432b6e1d855c5ca2e639eb4944c8a44ba1867"
+    },
+    {
+      "path": "AlphaRAD/local_setup/direct_anchor_model.py",
+      "category": "AlphaRAD integration/environment",
+      "size": 739,
+      "sha256": "d73140e436fbb37c514c5c446b05ab4c4bb616fdc356a53792d48d0163a04a08"
+    },
+    {
+      "path": "AlphaRAD/local_setup/python_local.sh",
+      "category": "AlphaRAD integration/environment",
+      "size": 198,
+      "sha256": "dd776e74f48397c4a8c3eb6d89a98b27c9305c407b85c592dfe3233d04650325"
+    },
+    {
+      "path": "AlphaRAD/local_setup/query_refinement.py",
+      "category": "AlphaRAD integration/environment",
+      "size": 127312,
+      "sha256": "0afd7e2ac1f957cad3a01c49e040cbadb6687dc4cab6485b0d3afbb31c8a8d9f"
+    },
+    {
+      "path": "AlphaRAD/local_setup/run_pretrained.py",
+      "category": "AlphaRAD integration/environment",
+      "size": 12885,
+      "sha256": "db4718a8b3e8090ae1cc30fda257a5c816faaaaacfca2f361c132427015fec34"
+    },
+    {
+      "path": "AlphaRAD/local_setup/runtime-constraints.txt",
+      "category": "AlphaRAD integration/environment",
+      "size": 5021,
+      "sha256": "abc3fc319b7ab429618325031704a0b765f6f8aabe906221272d4c80027e2073"
+    },
+    {
+      "path": "AlphaRAD/local_setup/runtime-requirements.txt",
+      "category": "AlphaRAD integration/environment",
+      "size": 536,
+      "sha256": "3ef997b9d9f48246ccab9b76ba77f731c1bff59d9f013c5c5d45ca132424c63b"
+    },
+    {
+      "path": "AlphaRAD/local_setup/runtime-resolved.txt",
+      "category": "AlphaRAD integration/environment",
+      "size": 9978,
+      "sha256": "40c8730a593d8bd3f5185fb0d504b5b1d39f3bb1dcf5309d688ef5723942c1b0"
+    },
+    {
+      "path": "AlphaRAD/local_setup/runtime-upstream-fixes.patch",
+      "category": "AlphaRAD integration/environment",
+      "size": 3430,
+      "sha256": "e983ab7d20cf508d4a6aa7c54368e19cea257d49ddc2e9c7c2238a6744f21bab"
+    },
+    {
+      "path": "AlphaRAD/local_setup/runtime.lock.txt",
+      "category": "AlphaRAD integration/environment",
+      "size": 1645,
+      "sha256": "0a807a941a5194e421c30dba15ad077ca4f104eca217fd3018e161da8a83c753"
+    },
+    {
+      "path": "AlphaRAD/local_setup/token_adapter_model.py",
+      "category": "AlphaRAD integration/environment",
+      "size": 2255,
+      "sha256": "fc35ba5f79d7633e0f42e7389b2e592ab221266d36cb3f93b7847589d09af6d6"
+    },
+    {
+      "path": "AlphaRAD/local_setup/train_direct_anchor.py",
+      "category": "AlphaRAD integration/environment",
+      "size": 316,
+      "sha256": "a2a453ddffbeec01eb1f84f0aeb9199d93892c9243db8571bb6271d59402376c"
+    },
+    {
+      "path": "AlphaRAD/pyproject.toml",
+      "category": "AlphaRAD upstream metadata",
+      "size": 5587,
+      "sha256": "d3c4a558f834f71f6006988088d1683bcb6eedb8ea784529a398a5fab7126e92"
+    },
+    {
+      "path": "RadZero/LICENSE",
+      "category": "RadZero upstream metadata",
+      "size": 19341,
+      "sha256": "c342eb23b48463a42c846d7c041ec9c82402b24ce5faffa56189a6a8beb51741"
+    },
+    {
+      "path": "RadZero/pyproject.toml",
+      "category": "RadZero upstream metadata",
+      "size": 114,
+      "sha256": "5bb8755b1ddd51d7c0299fcffb61fd180a4c41bea23ef4a7b1e2544d52169caf"
+    },
+    {
+      "path": "RadZero/requirements.txt",
+      "category": "RadZero upstream metadata",
+      "size": 4883,
+      "sha256": "cd61a2580f1ed898aac16e1d5ca6332e2a90bc3f59ba858d62e1811eb15b177f"
+    },
+    {
+      "path": "RadZero/scripts/adapter_model.py",
+      "category": "RadZero integration/environment",
+      "size": 3312,
+      "sha256": "56ad77ea8e1de9225cb4c82b999710c46500a7bd77e862ed5fa4a671e86f8048"
+    },
+    {
+      "path": "RadZero/scripts/direct_anchor_model.py",
+      "category": "RadZero integration/environment",
+      "size": 1004,
+      "sha256": "25f2502b65f8252a340eeb0a6271a50cc497d569b20a9c09b84736bc7032fe97"
+    },
+    {
+      "path": "RadZero/scripts/eval_public.py",
+      "category": "RadZero integration/environment",
+      "size": 18125,
+      "sha256": "f8eeac4cdcfbc45136f275aa47fb8bfe8b70aa648250d13c7c517b563d1c93e3"
+    },
+    {
+      "path": "RadZero/scripts/prepare_openi_adapter.py",
+      "category": "RadZero integration/environment",
+      "size": 26258,
+      "sha256": "07352597b410bb1854a42063449e2e711a0bfb0ff22a33ffc135eac4d3eab3a9"
+    },
+    {
+      "path": "RadZero/scripts/python_local.sh",
+      "category": "RadZero integration/environment",
+      "size": 899,
+      "sha256": "86fe48e3cd93ba0dfcfac07fc061886f80fdc724c53aeebec0b49e9fc32e974b"
+    },
+    {
+      "path": "RadZero/scripts/test_adapter_model.py",
+      "category": "RadZero integration/environment",
+      "size": 9305,
+      "sha256": "1bdee7b0f115eb1117c8a052b13d630ee780c9fc7a3f7524b7b55d093ac130cb"
+    },
+    {
+      "path": "RadZero/scripts/test_gpu_lease.py",
+      "category": "RadZero integration/environment",
+      "size": 1673,
+      "sha256": "deefdde6946c58b388b35586cb05236d50a3ae0db41f61900d2268d926a02980"
+    },
+    {
+      "path": "RadZero/scripts/train_direct_anchor.py",
+      "category": "RadZero integration/environment",
+      "size": 315,
+      "sha256": "ab986ee52f4117bdd8958060a8d3ab87bf720e21384c46331a7e6bdb32874771"
+    },
+    {
+      "path": "baselines/BioViL-T/local_setup/adapter.py",
+      "category": "BioViL-T integration/environment",
+      "size": 4455,
+      "sha256": "431f542d59151619eebbeb5001162452d66ec49a19f994d5453ebdeb01c085f9"
+    },
+    {
+      "path": "baselines/BioViL-T/local_setup/python_local.sh",
+      "category": "BioViL-T integration/environment",
+      "size": 567,
+      "sha256": "3c42add5b1eec0b8556f130c5fb221b099b319bb31bda9da695b478d716946a1"
+    },
+    {
+      "path": "baselines/BioViL-T/local_setup/requirements.lock.txt",
+      "category": "BioViL-T integration/environment",
+      "size": 1429,
+      "sha256": "47c4e2b5da717fec40b5df81956d264ea16c8b4eb039888f2707d289978906b9"
+    },
+    {
+      "path": "baselines/BioViL-T/local_setup/requirements_eval.txt",
+      "category": "BioViL-T integration/environment",
+      "size": 241,
+      "sha256": "45d241bc61aa1b005ff816de4db65a1efc6ca1e968895d9939a8ef3d77e2c400"
+    },
+    {
+      "path": "baselines/BioViL-T/local_setup/token_mlp_adapter.py",
+      "category": "BioViL-T integration/environment",
+      "size": 4519,
+      "sha256": "07bdf46456fa31ed733da288da93c846c57aaa523e89cb943e17ddae9c60445c"
+    },
+    {
+      "path": "baselines/BioViL-T/official/LICENSE",
+      "category": "BioViL-T upstream metadata",
+      "size": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "baselines/BiomedCLIP/local_setup/adapter.py",
+      "category": "BiomedCLIP integration/environment",
+      "size": 2771,
+      "sha256": "42e4d2176650561f37715edf71d77b9dcfd628e9a1daaa5649a2a626ae123470"
+    },
+    {
+      "path": "baselines/BiomedCLIP/local_setup/python_local.sh",
+      "category": "BiomedCLIP integration/environment",
+      "size": 567,
+      "sha256": "3c42add5b1eec0b8556f130c5fb221b099b319bb31bda9da695b478d716946a1"
+    },
+    {
+      "path": "baselines/BiomedCLIP/local_setup/requirements.lock.txt",
+      "category": "BiomedCLIP integration/environment",
+      "size": 1429,
+      "sha256": "47c4e2b5da717fec40b5df81956d264ea16c8b4eb039888f2707d289978906b9"
+    },
+    {
+      "path": "baselines/BiomedCLIP/local_setup/requirements_eval.txt",
+      "category": "BiomedCLIP integration/environment",
+      "size": 241,
+      "sha256": "45d241bc61aa1b005ff816de4db65a1efc6ca1e968895d9939a8ef3d77e2c400"
+    },
+    {
+      "path": "baselines/BiomedCLIP/local_setup/test_token_mlp_backends.py",
+      "category": "BiomedCLIP integration/environment",
+      "size": 5654,
+      "sha256": "b6b6e5d04f3c61f5bb335fe48189183b6150222c864918be58574f0458b303f8"
+    },
+    {
+      "path": "baselines/BiomedCLIP/local_setup/token_mlp_adapter.py",
+      "category": "BiomedCLIP integration/environment",
+      "size": 5175,
+      "sha256": "41bd693a84cf98e4a58876604a6e9e35f83335caf1921e30fd0e1def7f9e137d"
+    },
+    {
+      "path": "baselines/BiomedCLIP/official/LICENSE",
+      "category": "BiomedCLIP upstream metadata",
+      "size": 1229,
+      "sha256": "4a5b4f13ea4792a8211a69f32d2b460b6d520e57cd23c6301e707c76a6e97a55"
+    },
+    {
+      "path": "baselines/BiomedCLIP/official/requirements.txt",
+      "category": "BiomedCLIP upstream metadata",
+      "size": 85,
+      "sha256": "21844aca3a902dabbfbaad1b9d1b7314406c69c60bc47c90daaa1b1f84060248"
+    },
+    {
+      "path": "baselines/CARZero/LICENSE",
+      "category": "CARZero upstream metadata",
+      "size": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "baselines/CARZero/environment.yml",
+      "category": "CARZero upstream metadata",
+      "size": 12243,
+      "sha256": "0a22ce26c794fe53f5ef68f8906a5b96e3720bdafa1fcb30874eaf85a89133d5"
+    },
+    {
+      "path": "baselines/CARZero/local_setup/adapter.py",
+      "category": "CARZero integration/environment",
+      "size": 6215,
+      "sha256": "a0acd69dbe051152911e1a7919a7e0bb9093784dd06b6fcf4b3901b74e26021c"
+    },
+    {
+      "path": "baselines/CARZero/local_setup/environment_freeze.txt",
+      "category": "CARZero integration/environment",
+      "size": 1984,
+      "sha256": "68093b755c3210789766e77367ad3589460d489a322c29c7d04d85580962963e"
+    },
+    {
+      "path": "baselines/CARZero/local_setup/python_local.sh",
+      "category": "CARZero integration/environment",
+      "size": 600,
+      "sha256": "6d06ce8b770b9f8ca36d439a96d4856d5ab5c566f709a28cd5f3f002c08963cf"
+    },
+    {
+      "path": "baselines/CARZero/local_setup/requirements_eval.txt",
+      "category": "CARZero integration/environment",
+      "size": 382,
+      "sha256": "eb80a3e543a372d0ee3d386d4581241271d70a4375f22ef57fe91a99e321608a"
+    },
+    {
+      "path": "baselines/CARZero/local_setup/test_token_mlp_adapter.py",
+      "category": "CARZero integration/environment",
+      "size": 3089,
+      "sha256": "c73cfe69111add5889cd966e7a60b44f925c76e8085a0ebc9f307929f4bc9658"
+    },
+    {
+      "path": "baselines/CARZero/local_setup/token_mlp_adapter.py",
+      "category": "CARZero integration/environment",
+      "size": 5361,
+      "sha256": "52a2665082e374f73cb7170857bd086257caad21970b868961de501b5cb613a8"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "category": "CARZero upstream metadata",
+      "size": 11675,
+      "sha256": "0baddb6b73d5a4a87d7255a5e8ec818975802b6ef1cfe376bcfc8f10f10b1bc4"
+    },
+    {
+      "path": "baselines/KAD/LICENSE",
+      "category": "KAD upstream metadata",
+      "size": 1069,
+      "sha256": "a334154e30c39028467ca6abda5986f47aa587249918bccf2f134e6653a5b3f7"
+    },
+    {
+      "path": "baselines/KAD/local_setup/adapter.py",
+      "category": "KAD integration/environment",
+      "size": 6374,
+      "sha256": "370aecaf2b869b1c9481f298f6929920bf53d8d7c56bb02d7d9c4a989e8f3acf"
+    },
+    {
+      "path": "baselines/KAD/local_setup/python_local.sh",
+      "category": "KAD integration/environment",
+      "size": 925,
+      "sha256": "d587b32e3f205ec0184c34b99084e3d59f68f762a9769f4e6d00cef42d946662"
+    },
+    {
+      "path": "baselines/KAD/local_setup/requirements.lock.txt",
+      "category": "KAD integration/environment",
+      "size": 1397,
+      "sha256": "e7ff106a07c71e75807a5cea6ba3ca186ac489a9cf65e6a6c8a1dc10bd5fa5df"
+    },
+    {
+      "path": "baselines/KAD/local_setup/test_token_mlp_adapter.py",
+      "category": "KAD integration/environment",
+      "size": 3535,
+      "sha256": "d802c9c4723cb7d8e2882635f5456c45e05240aa2c4f15c3f09c4169200a3e37"
+    },
+    {
+      "path": "baselines/KAD/local_setup/token_mlp_adapter.py",
+      "category": "KAD integration/environment",
+      "size": 8515,
+      "sha256": "d50479bd8e8aa5db24288ed0920d309336aef5b74d6fa68aacf4dd474f5be745"
+    },
+    {
+      "path": "baselines/KAD/requirements.txt",
+      "category": "KAD upstream metadata",
+      "size": 791,
+      "sha256": "c8bf86f79ef15e67c5a71f6f852742fe338c22c44cc7c35558838508cf47062b"
+    },
+    {
+      "path": "baselines/MaCo/LICENSE",
+      "category": "MaCo upstream metadata",
+      "size": 1093,
+      "sha256": "1e4a948f0ca5f0f1f1c4f35e8b9e6c408abf7045a84fcb2926d2ff1d0e00827a"
+    },
+    {
+      "path": "baselines/MaCo/local_setup/adapter.py",
+      "category": "MaCo integration/environment",
+      "size": 8743,
+      "sha256": "531d4d8feea52d294c2ce3a7351feb303008f66f298588e88eb9e2b8de925af4"
+    },
+    {
+      "path": "baselines/MaCo/local_setup/environment_freeze.txt",
+      "category": "MaCo integration/environment",
+      "size": 1172,
+      "sha256": "8f2e20b8c2fbb941a0776d290eac58f74a1f0d99d7a3902f22ba8b0a1dc86291"
+    },
+    {
+      "path": "baselines/MaCo/local_setup/python_local.sh",
+      "category": "MaCo integration/environment",
+      "size": 600,
+      "sha256": "6d06ce8b770b9f8ca36d439a96d4856d5ab5c566f709a28cd5f3f002c08963cf"
+    },
+    {
+      "path": "baselines/MaCo/local_setup/requirements_eval.txt",
+      "category": "MaCo integration/environment",
+      "size": 212,
+      "sha256": "2f1ed17605a79e049fcf6e4de61be2b7b8b9a2059508e34df9163a705a7ea871"
+    },
+    {
+      "path": "baselines/MaCo/local_setup/token_mlp_adapter.py",
+      "category": "MaCo integration/environment",
+      "size": 7658,
+      "sha256": "7cb7409f544646faf61f8565cf0db0ed1dbb74128594ece2ff1443e9002c20c7"
+    },
+    {
+      "path": "baselines/MaCo/requirements.txt",
+      "category": "MaCo upstream metadata",
+      "size": 10891,
+      "sha256": "a51974c88602026bce85c461ec156332732b36fcebf453c4257fbc484c46c9cc"
+    },
+    {
+      "path": "experiments/adapter_placement_classification/__init__.py",
+      "category": "Pre/Post and MaCo pooling controls",
+      "size": 54,
+      "sha256": "b9eef0d632bd0c53bbf7a14cba51a5baf8dfecd751858a7b4f0d06037b9f5a23"
+    },
+    {
+      "path": "experiments/adapter_placement_classification/alpharad_backend.py",
+      "category": "Pre/Post and MaCo pooling controls",
+      "size": 3705,
+      "sha256": "3fd32e6ce6c09b1d7a75c8227097a79dfd6c8d62a6a0faadbaecdae6c29e56b1"
+    },
+    {
+      "path": "experiments/adapter_placement_classification/export_tables.py",
+      "category": "Pre/Post and MaCo pooling controls",
+      "size": 11115,
+      "sha256": "b5978739194da2c28f07cb25bd58db85e5d08743a31eff865e2b11a47015f80d"
+    },
+    {
+      "path": "experiments/adapter_placement_classification/plot.py",
+      "category": "Pre/Post and MaCo pooling controls",
+      "size": 8949,
+      "sha256": "39da12e00e4df4b1b4a2c0491634192f87d10e0d947884f32971ce0e68e367da"
+    },
+    {
+      "path": "experiments/adapter_placement_classification/prepare.py",
+      "category": "Pre/Post and MaCo pooling controls",
+      "size": 4713,
+      "sha256": "659fb028b4ccc4cf57bd5657eb7a38f4571a17795c62b91c2c229cf6421b41f1"
+    },
+    {
+      "path": "experiments/adapter_placement_classification/report.py",
+      "category": "Pre/Post and MaCo pooling controls",
+      "size": 30460,
+      "sha256": "53afc23d20d68b5e45f59e568342c9d789c9ba33564f8824b3e87f36b22234b9"
+    },
+    {
+      "path": "experiments/adapter_placement_classification/run.py",
+      "category": "Pre/Post and MaCo pooling controls",
+      "size": 3574,
+      "sha256": "2bb352c4f9e7764d37ce93eee702d22a250f7336059b0b0b559abc074eb83b6d"
+    },
+    {
+      "path": "experiments/adapter_placement_classification/test_alpharad_backend.py",
+      "category": "Pre/Post and MaCo pooling controls",
+      "size": 5511,
+      "sha256": "c437f3485ce38b4f67b69e33c2da09409963ddf960c1c314203a1e134e6cdf53"
+    },
+    {
+      "path": "experiments/adapter_placement_classification/train.py",
+      "category": "Pre/Post and MaCo pooling controls",
+      "size": 20836,
+      "sha256": "42b513a93bc6e9e10c31bb502abaa1ca2fbc5b5fc35fe48aa72aa01ab66ee6d9"
+    },
+    {
+      "path": "experiments/baseline_token_classification/__init__.py",
+      "category": "Five other paper backbones; residual MLP and metrics",
+      "size": 75,
+      "sha256": "e08a4ceb82cd6fb068f59fbe7c2e2c3db52dc29612782771698e4f8afd9be3c8"
+    },
+    {
+      "path": "experiments/baseline_token_classification/cache.py",
+      "category": "Five other paper backbones; residual MLP and metrics",
+      "size": 10033,
+      "sha256": "316f2d9b5f4bc6cd5e80f50ddea57c231a89bd72156b4ac2f8f377503f761b50"
+    },
+    {
+      "path": "experiments/baseline_token_classification/common.py",
+      "category": "Five other paper backbones; residual MLP and metrics",
+      "size": 6571,
+      "sha256": "4394142effde0ccf36ff9d577ee2dfe22b2014e4221d6eaade7872c110cdc8d7"
+    },
+    {
+      "path": "experiments/baseline_token_classification/prepare.py",
+      "category": "Five other paper backbones; residual MLP and metrics",
+      "size": 4294,
+      "sha256": "4e95e8ad06b71ac380e933e2bd345a7d39bc336fb524f23697e703b95a2a9dfb"
+    },
+    {
+      "path": "experiments/baseline_token_classification/report.py",
+      "category": "Five other paper backbones; residual MLP and metrics",
+      "size": 39425,
+      "sha256": "367c8cd7e3672cfdcf7cee6801a8ee617dae370f271bd034a6eeccb69a2c658e"
+    },
+    {
+      "path": "experiments/baseline_token_classification/run.py",
+      "category": "Five other paper backbones; residual MLP and metrics",
+      "size": 7744,
+      "sha256": "e5a45cc33a7feb57794cae1059ee90b0300bac9b79d35369055e2322736f48cf"
+    },
+    {
+      "path": "experiments/baseline_token_classification/train.py",
+      "category": "Five other paper backbones; residual MLP and metrics",
+      "size": 12563,
+      "sha256": "b2dfa50e8efb189df76deae72e655cebbce3630a148f54c4c3973b0178f2bf87"
+    },
+    {
+      "path": "experiments/baseline_token_classification/warm_images.py",
+      "category": "Five other paper backbones; residual MLP and metrics",
+      "size": 1357,
+      "sha256": "0460b4f510c6fd71495831821c31222fc1f553cba78fb8f8907a075650db3973"
+    },
+    {
+      "path": "experiments/both_adapter_classification/__init__.py",
+      "category": "Joint Pre+Post adaptation",
+      "size": 80,
+      "sha256": "bed23208d71e8da06f15772ac9011b74360adf1bde1ddc2a808f3e696ff28b1c"
+    },
+    {
+      "path": "experiments/both_adapter_classification/common.py",
+      "category": "Joint Pre+Post adaptation",
+      "size": 1870,
+      "sha256": "52a3f725c8ce10565c5bc7a567ad9c93c0ea78b504565f734ca208a0d06a19d8"
+    },
+    {
+      "path": "experiments/both_adapter_classification/export_tables.py",
+      "category": "Joint Pre+Post adaptation",
+      "size": 14402,
+      "sha256": "3316fe64839b6d517e29231e63a7a1fa2a7311594d4addf55ea17b04b33dfa38"
+    },
+    {
+      "path": "experiments/both_adapter_classification/final_artifacts.py",
+      "category": "Joint Pre+Post adaptation",
+      "size": 9142,
+      "sha256": "6db520dbe438530c81b058adfb27cbf87948063078d5fc5375d3bd770bededfe"
+    },
+    {
+      "path": "experiments/both_adapter_classification/native_backends.py",
+      "category": "Joint Pre+Post adaptation",
+      "size": 7253,
+      "sha256": "810769905a7fa2a832df69ad8915ad75ed445b7883917edcd6518ff917a0fc04"
+    },
+    {
+      "path": "experiments/both_adapter_classification/pooling_backends.py",
+      "category": "Joint Pre+Post adaptation",
+      "size": 6920,
+      "sha256": "57f2aa5ff826b01481915405a05cd3c91275ac57ecd1c6eaed7c05b57ba3a5fe"
+    },
+    {
+      "path": "experiments/both_adapter_classification/prepare.py",
+      "category": "Joint Pre+Post adaptation",
+      "size": 6613,
+      "sha256": "19215acbded9cdff97a7533cdf79183b188182a75b23355b0f584f89ea144c01"
+    },
+    {
+      "path": "experiments/both_adapter_classification/release_completed_cache.py",
+      "category": "Joint Pre+Post adaptation",
+      "size": 9406,
+      "sha256": "08425d334f202593086ef857d51a2587909be98c1f035ffb8e0a7d8831a23714"
+    },
+    {
+      "path": "experiments/both_adapter_classification/report.py",
+      "category": "Joint Pre+Post adaptation",
+      "size": 35785,
+      "sha256": "1da92d514aa38e503c487f2f21c3b35273964d14a9f2c2f8de4c2e4ed7e46c3b"
+    },
+    {
+      "path": "experiments/both_adapter_classification/run.py",
+      "category": "Joint Pre+Post adaptation",
+      "size": 3579,
+      "sha256": "e82d7b15d47a1785951c4022beca5855903dae8daa56c5de49f8b28efd1fbf66"
+    },
+    {
+      "path": "experiments/both_adapter_classification/snapshot.py",
+      "category": "Joint Pre+Post adaptation",
+      "size": 1744,
+      "sha256": "864a962ca3312a5c82fa500766ac020b2cc10788e9cc4ab8d72beff2e6f775a8"
+    },
+    {
+      "path": "experiments/both_adapter_classification/status.py",
+      "category": "Joint Pre+Post adaptation",
+      "size": 1566,
+      "sha256": "8c71e64da19e5f76de4098143efccfa40194e68ef6d62782411437d0122eba05"
+    },
+    {
+      "path": "experiments/both_adapter_classification/test_native_backends.py",
+      "category": "Joint Pre+Post adaptation",
+      "size": 11035,
+      "sha256": "0366735697073368208f992d98a47e125be22e841a8d8843253d468a6b7b8f81"
+    },
+    {
+      "path": "experiments/both_adapter_classification/test_pooling_backends.py",
+      "category": "Joint Pre+Post adaptation",
+      "size": 11164,
+      "sha256": "7a91954d32ea5e43680458d718c54e9bff6ae10288e5a15868a6e6f76e7e4eed"
+    },
+    {
+      "path": "experiments/both_adapter_classification/train.py",
+      "category": "Joint Pre+Post adaptation",
+      "size": 19426,
+      "sha256": "c90a0b018497a66bc1a459aebd0bfc4c264be5e22b60110d24e0664b4d62363d"
+    },
+    {
+      "path": "experiments/both_adapter_classification/warm_missing.py",
+      "category": "Joint Pre+Post adaptation",
+      "size": 11443,
+      "sha256": "20b24510052f6ba0755d3c91896110dd140fe303a62dd53883343577fce7cfce"
+    },
+    {
+      "path": "experiments/both_adapter_classification/warm_tokens.py",
+      "category": "Joint Pre+Post adaptation",
+      "size": 3303,
+      "sha256": "94532baf622194c8a247674cccc45e384e725783e6ecd3647cbffeca4e3ab135"
+    },
+    {
+      "path": "experiments/chexchonet_stability_20261024/cluster_bootstrap.py",
+      "category": "Imported patient-bootstrap dependency",
+      "size": 16292,
+      "sha256": "8445b6c6af78a3fc6cc1f40926a2a379a41fd53c1a2fb0a63fbbefb75e4b2812"
+    },
+    {
+      "path": "experiments/classification_uncertainty/__init__.py",
+      "category": "Paired patient bootstrap and shared statistics",
+      "size": 72,
+      "sha256": "eeaf121f7bea2095f8da00b07c661b7106f64ba6544cc1f0830bdbe920ea2fe0"
+    },
+    {
+      "path": "experiments/classification_uncertainty/bootstrap.py",
+      "category": "Paired patient bootstrap and shared statistics",
+      "size": 3803,
+      "sha256": "98d2d27e88a4129109fd8e54d708a5912c16c349ac1a977dd8f07d55ba3f05fb"
+    },
+    {
+      "path": "experiments/classification_uncertainty/external.py",
+      "category": "Paired patient bootstrap and shared statistics",
+      "size": 4996,
+      "sha256": "3792499cdd3cbd8d61c8dd257011412cd4f0b8c8a0ce20e21e40ce5a632024b4"
+    },
+    {
+      "path": "experiments/classification_uncertainty/plot_transfer.py",
+      "category": "Paired patient bootstrap and shared statistics",
+      "size": 2174,
+      "sha256": "79758804b4d03a369bc0dffba5906420cbdc93152f366cc76f7aa6d700dd2816"
+    },
+    {
+      "path": "experiments/classification_uncertainty/report.py",
+      "category": "Paired patient bootstrap and shared statistics",
+      "size": 3166,
+      "sha256": "367715757c7de2d0bc64af94a33a667db93fa19de610a59c273e72c18290c8a7"
+    },
+    {
+      "path": "experiments/classification_uncertainty/run.py",
+      "category": "Paired patient bootstrap and shared statistics",
+      "size": 6182,
+      "sha256": "4665f06b5b6375c5a68e9e66727aff04a35ae1a6587f31e6cba0475100cb8d91"
+    },
+    {
+      "path": "experiments/classification_uncertainty/test_bootstrap.py",
+      "category": "Paired patient bootstrap and shared statistics",
+      "size": 2454,
+      "sha256": "d898007ff110f26a374feb76a10603838c33d8cff4509e7f8df45b96b4cfa4d7"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/__init__.py",
+      "category": "AlphaRAD/RadZero primary fits and frozen heads",
+      "size": 74,
+      "sha256": "33e3d15939a9ef2199ec6d07d30c95cba810e6154335b81265257f1904213838"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/cache.py",
+      "category": "AlphaRAD/RadZero primary fits and frozen heads",
+      "size": 11327,
+      "sha256": "cbbff3b6c939022566f0e66ff7fe280530a26570983660a409f8b1d1633a6c40"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/experiment_utils.py",
+      "category": "AlphaRAD/RadZero primary fits and frozen heads",
+      "size": 860,
+      "sha256": "127fecd99b75cd1fa6ddb171931da7ff74eeee4b9132116a2091b3538bb4a3ca"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/finish.py",
+      "category": "AlphaRAD/RadZero primary fits and frozen heads",
+      "size": 1575,
+      "sha256": "0afd4177d9ba39b95146a40ff5c186addda45c1ba29a27c619afb756c3d1ed08"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/model.py",
+      "category": "AlphaRAD/RadZero primary fits and frozen heads",
+      "size": 4819,
+      "sha256": "3032e9e21c6c2cc7ec0e91591dce2533fc79a35c8fb15d9e12e59e5b42f6ea4d"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/prepare_data.py",
+      "category": "AlphaRAD/RadZero primary fits and frozen heads",
+      "size": 5963,
+      "sha256": "79314c871d4a4abfd902c5cc416d80655515b134f9269fecb0a812abd365f48f"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/report.py",
+      "category": "AlphaRAD/RadZero primary fits and frozen heads",
+      "size": 9109,
+      "sha256": "1575e4c775d6e8eb5addc077c18e39e40df9453e2d8bb8c391e3d0412dc21ae7"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/report_alpha_token.py",
+      "category": "AlphaRAD/RadZero primary fits and frozen heads",
+      "size": 16662,
+      "sha256": "764d2d47e0a8d7bc419d593cb06b6256d38a3d376661ba1d9744ec6c5cf00fef"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/run_alpha_token.py",
+      "category": "AlphaRAD/RadZero primary fits and frozen heads",
+      "size": 6437,
+      "sha256": "d74c9b80b3f46865b7b382dce314c094e70498194c8c4f5e53ed10bb11e829ac"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/run_training.py",
+      "category": "AlphaRAD/RadZero primary fits and frozen heads",
+      "size": 5934,
+      "sha256": "3debf6c6290572368cc2634b9baf05845db6226a48feebd7d0ee43c3179d5662"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/test_alpha_token.py",
+      "category": "AlphaRAD/RadZero primary fits and frozen heads",
+      "size": 3356,
+      "sha256": "8e865508a9c1084d704b53667a228620ada11de4f1f24437677de81c48549907"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/test_model.py",
+      "category": "AlphaRAD/RadZero primary fits and frozen heads",
+      "size": 3507,
+      "sha256": "dec74be2af6785b1deefa4a741e040e5e979d8f7d9330679cc192c2f67305098"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/train.py",
+      "category": "AlphaRAD/RadZero primary fits and frozen heads",
+      "size": 16782,
+      "sha256": "2c40426ce1f0970a2ecec567f8b8e66cdf3c826fdf0c08a9f8b0b311271f5a74"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/validate_alpha_token.py",
+      "category": "AlphaRAD/RadZero primary fits and frozen heads",
+      "size": 2469,
+      "sha256": "0bb077d9dc263fa74ec57f8b83f3622ae1b7afed9b365545d3dd37615d4324a5"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/validate_native.py",
+      "category": "AlphaRAD/RadZero primary fits and frozen heads",
+      "size": 2861,
+      "sha256": "bcc494428ada46a5fbe082a562cca55ac3b3e7781e61239aed6194e8d3da12c8"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/warm_alpha_cache.py",
+      "category": "AlphaRAD/RadZero primary fits and frozen heads",
+      "size": 2084,
+      "sha256": "8491ee438d986221c81a770a9b469bf40b7c52be199349550f75ddc624ae0255"
+    },
+    {
+      "path": "experiments/gated_asl_classification/__init__.py",
+      "category": "Gating x weighted BCE/ASL",
+      "size": 80,
+      "sha256": "ec7551e92e5b60001cea00189b398befde798c43b39f4e63ff03c4c00a05ef78"
+    },
+    {
+      "path": "experiments/gated_asl_classification/common.py",
+      "category": "Gating x weighted BCE/ASL",
+      "size": 1229,
+      "sha256": "a1d3f7c254a781d514b50e9a2cdc9963e39b59c639af66abfa298b51677a4e1f"
+    },
+    {
+      "path": "experiments/gated_asl_classification/components.py",
+      "category": "Gating x weighted BCE/ASL",
+      "size": 6370,
+      "sha256": "0907941164a01ac2f3de780f21c7fa727dba17aa0cc11c7f3b75e57e5f9295a1"
+    },
+    {
+      "path": "experiments/gated_asl_classification/export_tables.py",
+      "category": "Gating x weighted BCE/ASL",
+      "size": 13929,
+      "sha256": "47c1449c49298a1765ebb1d3f4004ddb344ba04dee0e26a72183591ea5d6853a"
+    },
+    {
+      "path": "experiments/gated_asl_classification/final_artifacts.py",
+      "category": "Gating x weighted BCE/ASL",
+      "size": 25903,
+      "sha256": "dfcf3e9b57927bd65dc16dc2eca481abb81771a3270e95baef58ceba6f36f6ee"
+    },
+    {
+      "path": "experiments/gated_asl_classification/migrate.py",
+      "category": "Gating x weighted BCE/ASL",
+      "size": 34150,
+      "sha256": "8e0ec38c1874c1b4f409aca43092101003e9fbb3cfa903376ef67b78ca69fee7"
+    },
+    {
+      "path": "experiments/gated_asl_classification/prepare.py",
+      "category": "Gating x weighted BCE/ASL",
+      "size": 8773,
+      "sha256": "7dc5413d69c1277b76791b60abb088d2d92a342062e0c7c4dca30decca795b30"
+    },
+    {
+      "path": "experiments/gated_asl_classification/report.py",
+      "category": "Gating x weighted BCE/ASL",
+      "size": 43141,
+      "sha256": "0e587179a5c5d120bc83350ec1e90983811ef2663b3331cd7f61a4f2a81edc51"
+    },
+    {
+      "path": "experiments/gated_asl_classification/run.py",
+      "category": "Gating x weighted BCE/ASL",
+      "size": 5284,
+      "sha256": "c7aefb3d4f352efbe8996fe300a57a07485659a112f0424885105cb3250ce620"
+    },
+    {
+      "path": "experiments/gated_asl_classification/snapshot.py",
+      "category": "Gating x weighted BCE/ASL",
+      "size": 3206,
+      "sha256": "63badc1c66922a16cc91d31df7f127687344dafa3dc6cba4ea549e591e8d08bb"
+    },
+    {
+      "path": "experiments/gated_asl_classification/status.py",
+      "category": "Gating x weighted BCE/ASL",
+      "size": 3087,
+      "sha256": "c6868458597c53ab32949ad96488f5efe8db8807a618a93e237000692b917bb3"
+    },
+    {
+      "path": "experiments/gated_asl_classification/supervise.py",
+      "category": "Gating x weighted BCE/ASL",
+      "size": 24085,
+      "sha256": "203592a87cfd58c7aa2d1ca9c97676f6262158783572dc88e788a1615551b9e7"
+    },
+    {
+      "path": "experiments/gated_asl_classification/test_backends.py",
+      "category": "Gating x weighted BCE/ASL",
+      "size": 5693,
+      "sha256": "5326282c650d68fb8bd12f16a52a384e2f11c060671f48d3bc0f67ca5fcb984e"
+    },
+    {
+      "path": "experiments/gated_asl_classification/test_components.py",
+      "category": "Gating x weighted BCE/ASL",
+      "size": 12759,
+      "sha256": "6aff084bad37986c54ed53b5bab249d05b1a8320b4de49b99c1597bfc5db4abd"
+    },
+    {
+      "path": "experiments/gated_asl_classification/test_migrate.py",
+      "category": "Gating x weighted BCE/ASL",
+      "size": 26509,
+      "sha256": "04e3383a6d6a06a903e1fd8a6e61edea496b7565a8bdc4b5c4ca5fbd9e73eecb"
+    },
+    {
+      "path": "experiments/gated_asl_classification/train.py",
+      "category": "Gating x weighted BCE/ASL",
+      "size": 28365,
+      "sha256": "5e005cb7471d0b3582e4a46b47238f3953116cb07bd55fdaa349c2af3944512f"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/__init__.py",
+      "category": "Larger patient-disjoint NIH evaluation",
+      "size": 80,
+      "sha256": "765266568ab412ac5472b2ec5e9e1f591e1deaad7774324461ded080163e7623"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/audit_encoder.py",
+      "category": "Larger patient-disjoint NIH evaluation",
+      "size": 2811,
+      "sha256": "5d15d7ded454cc26e117676f5cd2bf9d600e2b51b954cb1ca018098f9837dd17"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/check.py",
+      "category": "Larger patient-disjoint NIH evaluation",
+      "size": 1659,
+      "sha256": "ec7a9be1d8bce7eeb8e5d43950216d6b2a95a30e90eaf74a8b8cea347409773c"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/common.py",
+      "category": "Larger patient-disjoint NIH evaluation",
+      "size": 3096,
+      "sha256": "3a3319ca0c9a28358969cb0e3c26fbeb2bf14c7459999059f806ab0a9f3145e5"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/evaluate.py",
+      "category": "Larger patient-disjoint NIH evaluation",
+      "size": 7775,
+      "sha256": "a8a5255c198f957092413db7d459f5e72c80f049f71ff00fc3fb69dc416ba0df"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/features.py",
+      "category": "Larger patient-disjoint NIH evaluation",
+      "size": 10152,
+      "sha256": "f800c190a92b13211890e9f51dfc60aa1e230f987ba53fcc544c6469f595f4a1"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/freeze.py",
+      "category": "Larger patient-disjoint NIH evaluation",
+      "size": 4124,
+      "sha256": "08ee3f8028952390c6caf0a70a9876745505e2e08fd6b869e174f587424862cd"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/pipeline.py",
+      "category": "Larger patient-disjoint NIH evaluation",
+      "size": 2254,
+      "sha256": "24fad43ac73d15f4fde834bf328aad8ae9b2f1852e4fd5213b923b9ca2cf10a5"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/prepare.py",
+      "category": "Larger patient-disjoint NIH evaluation",
+      "size": 10192,
+      "sha256": "ac32e9f95af47eab3d3779b7a13c4142f5c5b813e39348c76fdabb326bf4cab7"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/prepare_encoder_audit.py",
+      "category": "Larger patient-disjoint NIH evaluation",
+      "size": 2544,
+      "sha256": "17499adc56c4d1a640d8171da1320dce7736c1b71cca9f137ca2c2a10510024e"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/report.py",
+      "category": "Larger patient-disjoint NIH evaluation",
+      "size": 10085,
+      "sha256": "4c402c591539e2a4f2d0173b690733deca6ffbe900aae92c7448678e8e036e20"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/run.py",
+      "category": "Larger patient-disjoint NIH evaluation",
+      "size": 4994,
+      "sha256": "b07d1dad584e81e5ff1cb3279c4883db4ea3ef631c6c3b93012ab9617b4fcc61"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/test_experiment.py",
+      "category": "Larger patient-disjoint NIH evaluation",
+      "size": 5993,
+      "sha256": "b4d39ca9bc7831afe6453dbeb671aaef83277b02be77fde8dd7ae012b904bb72"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/train.py",
+      "category": "Larger patient-disjoint NIH evaluation",
+      "size": 11040,
+      "sha256": "c2b629de294669b7e5548375a32f4a7afb312a8729bd977c179418a64d9c84f1"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/uncertainty.py",
+      "category": "Larger patient-disjoint NIH evaluation",
+      "size": 4956,
+      "sha256": "c33e9dcc198b708d00355a031072c5f252d1e42b1ad0bca4262f275548950873"
+    },
+    {
+      "path": "experiments/nih_chexpert_transfer/__init__.py",
+      "category": "NIH-to-CheXpert external inference",
+      "size": 84,
+      "sha256": "2cf03772a81d0bf88c62bc69c03034f939b734449961aba33a9b0b7df09ae55a"
+    },
+    {
+      "path": "experiments/nih_chexpert_transfer/common.py",
+      "category": "NIH-to-CheXpert external inference",
+      "size": 5651,
+      "sha256": "de6e24c30cbcf02f41fa0c5e52f8112517f603f6447c754cfcc13cf39129e5f0"
+    },
+    {
+      "path": "experiments/nih_chexpert_transfer/evaluate.py",
+      "category": "NIH-to-CheXpert external inference",
+      "size": 9766,
+      "sha256": "7a475e5db102fa769922153366b84d163aa75379f49c47937f4b756f1c8d4c73"
+    },
+    {
+      "path": "experiments/nih_chexpert_transfer/prepare.py",
+      "category": "NIH-to-CheXpert external inference",
+      "size": 8795,
+      "sha256": "2d386bb48358039e4adc42f259b7c029640116c753556f24ab0d4a4f1b81830f"
+    },
+    {
+      "path": "experiments/nih_chexpert_transfer/report.py",
+      "category": "NIH-to-CheXpert external inference",
+      "size": 14987,
+      "sha256": "af0cc43096d442760cebb657d6521b070e5b2ab8d47f41669c5f3639760c0560"
+    },
+    {
+      "path": "experiments/nih_chexpert_transfer/run.py",
+      "category": "NIH-to-CheXpert external inference",
+      "size": 3690,
+      "sha256": "53a2e24bb0383c88e8d500bb580be2543c5caf09b38648c97cf0604edebe6903"
+    },
+    {
+      "path": "experiments/nih_chexpert_transfer/test_transfer.py",
+      "category": "NIH-to-CheXpert external inference",
+      "size": 5101,
+      "sha256": "c91ea2c9bd3d8c37f80d8ddaf9f0d0b8d14b673d2cadd50d14b8274d2f1644d7"
+    },
+    {
+      "path": "experiments/radzero_supervised_classification/__init__.py",
+      "category": "RadZero supervised baselines",
+      "size": 68,
+      "sha256": "db054e60e175f7a431e51a4197f09bd722cba31890d29c45973c8c346e011fb7"
+    },
+    {
+      "path": "experiments/radzero_supervised_classification/common.py",
+      "category": "RadZero supervised baselines",
+      "size": 1135,
+      "sha256": "096369c821fba76e38e93ddd36e832a4cd1530337c505884257c774fada5718e"
+    },
+    {
+      "path": "experiments/radzero_supervised_classification/external.py",
+      "category": "RadZero supervised baselines",
+      "size": 10396,
+      "sha256": "ce75a11c514a222458260560dfaeaa2efc50c8a9bd13c0160c5715e090293e49"
+    },
+    {
+      "path": "experiments/radzero_supervised_classification/external_entry.py",
+      "category": "RadZero supervised baselines",
+      "size": 1107,
+      "sha256": "0acb95795b11cb50d67868f529d67c7248dde902b22caeb16c422c6e7f9cfd46"
+    },
+    {
+      "path": "experiments/radzero_supervised_classification/features.py",
+      "category": "RadZero supervised baselines",
+      "size": 5257,
+      "sha256": "8d99ee90d3446cabc5dcc8c752dd02caa0320c339a0f6a704a8078a94d1d777e"
+    },
+    {
+      "path": "experiments/radzero_supervised_classification/finish.py",
+      "category": "RadZero supervised baselines",
+      "size": 3545,
+      "sha256": "1f7c684189ae3046537ceb473541ccf933b7cedc2de61e30de00a64bbc746ecf"
+    },
+    {
+      "path": "experiments/radzero_supervised_classification/prepare.py",
+      "category": "RadZero supervised baselines",
+      "size": 6806,
+      "sha256": "050c891b8d9296925e39c1fde335fd0e8ec236e93005a56656e571ced0a6076f"
+    },
+    {
+      "path": "experiments/radzero_supervised_classification/report.py",
+      "category": "RadZero supervised baselines",
+      "size": 13994,
+      "sha256": "e741cab8bee9699dd20b85df8dd61e2c00330ef146d0bc6666d0249135f23541"
+    },
+    {
+      "path": "experiments/radzero_supervised_classification/run.py",
+      "category": "RadZero supervised baselines",
+      "size": 2940,
+      "sha256": "52bf6fda38283877b2afa0b8e043b230ae02f1f6dbf777393c8bd8547c6584e9"
+    },
+    {
+      "path": "experiments/radzero_supervised_classification/test_radzero.py",
+      "category": "RadZero supervised baselines",
+      "size": 2533,
+      "sha256": "b89a3257ded3a44963d1f86f8cf41a745a8a254ab9730cacddf50f9a25176df3"
+    },
+    {
+      "path": "experiments/radzero_supervised_classification/train.py",
+      "category": "RadZero supervised baselines",
+      "size": 8781,
+      "sha256": "8df477bae56ed9263bd7d439a381aa4d14c5b02809d29550558362d0830b3e01"
+    },
+    {
+      "path": "experiments/radzero_supervised_classification/uncertainty.py",
+      "category": "RadZero supervised baselines",
+      "size": 6018,
+      "sha256": "20c00fcd6e59226280ac0090324a8e92dc95d2b4341ee2c7222a89680da689c5"
+    },
+    {
+      "path": "experiments/radzero_supervised_classification/uncertainty_external.py",
+      "category": "RadZero supervised baselines",
+      "size": 4961,
+      "sha256": "5e96c6d4cd9a9b4731313ca85366916266f3bcbb9e2b2811124788f6832b9dd9"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/__init__.py",
+      "category": "AlphaRAD supervised baselines",
+      "size": 75,
+      "sha256": "10bce0703f1da6fc7c8e2ab1e8169a9c8be87e83db3441db3522c4a1a47ae2ee"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/common.py",
+      "category": "AlphaRAD supervised baselines",
+      "size": 1095,
+      "sha256": "8bc44a07afc7cabf26f4642541bfa727a8864a0c8f8f0bdbc7973f3f59c3b895"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/components.py",
+      "category": "AlphaRAD supervised baselines",
+      "size": 2135,
+      "sha256": "c8328ea844a3a233466baef8cd405c9baa9509fd1c62af0f2d98746b6d9497e3"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/external.py",
+      "category": "AlphaRAD supervised baselines",
+      "size": 12375,
+      "sha256": "33328a5f9e28ca00d5eedcf7e1a956473d01cb5dd469c16e3d43f14291d7da47"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/external_audit.py",
+      "category": "AlphaRAD supervised baselines",
+      "size": 3385,
+      "sha256": "7bf876f620c3984cde0a011d5789d24b1963bcd63529fbc2ff50c147db3dc9fc"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/features.py",
+      "category": "AlphaRAD supervised baselines",
+      "size": 4188,
+      "sha256": "8fe006150b352d90d20f9e7fda5a817bce8d9c66d122accbd6c261be491abf99"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/finalize.py",
+      "category": "AlphaRAD supervised baselines",
+      "size": 3015,
+      "sha256": "dc456d1ba5a7e227126bef90ab1c4523c716652e8396ea1e9f9ed6d076601a00"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/prepare.py",
+      "category": "AlphaRAD supervised baselines",
+      "size": 6918,
+      "sha256": "b210f7edccfebba1c6b9fb1d00e91e2102676e1c06266b4b6d1d8cab78e0ea3e"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/reconcile_parallel.py",
+      "category": "AlphaRAD supervised baselines",
+      "size": 2225,
+      "sha256": "7a3e29f4fe2979a82aa1ae944637b38621c0469fe27c8a3083081f4070960d77"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/report.py",
+      "category": "AlphaRAD supervised baselines",
+      "size": 10355,
+      "sha256": "5677c73607b301f2cb5a463dd69a4ef376eb775ca54aad2e1ee9b62e3331eb8a"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/report_external.py",
+      "category": "AlphaRAD supervised baselines",
+      "size": 6848,
+      "sha256": "d9dfb92969ec7b9cd24a444f5cf598e0a809a6e0f0cd24d19600bb8717444318"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/run.py",
+      "category": "AlphaRAD supervised baselines",
+      "size": 2938,
+      "sha256": "72bb1bf352e9c3ce064a7cd1567dcb7a068227679effa4a6da4f13a89b8a0373"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/run_additional.py",
+      "category": "AlphaRAD supervised baselines",
+      "size": 3674,
+      "sha256": "acd75e3b3f12e3b8c701ba473add05ffefd3441d33d6e055d11591033c89125a"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/run_one.py",
+      "category": "AlphaRAD supervised baselines",
+      "size": 2349,
+      "sha256": "d00721693ed8c624af2d02c8e078d4fb3666efe25a53f96618cd73fb7febe2cc"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/test_components.py",
+      "category": "AlphaRAD supervised baselines",
+      "size": 1529,
+      "sha256": "4480ac3195edec7eb1098cfd3c93aa976df4ba464444ac38e4054ea1729fabca"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/train.py",
+      "category": "AlphaRAD supervised baselines",
+      "size": 8522,
+      "sha256": "5fcd7c6309f0f5602b42b061bcbeb8a508db52df1f52c3cd5695ea365fa81db0"
+    },
+    {
+      "path": "latex_ours/cvpr.sty",
+      "category": "Paper reference source",
+      "size": 17887,
+      "sha256": "1cd7f434b13d41c475df4a1901a5d82d9ca8b80b8cf6205dc4602a5c164286b4"
+    },
+    {
+      "path": "latex_ours/figures/token_mlp_pipeline.tex",
+      "category": "Paper reference source",
+      "size": 1163,
+      "sha256": "d91dc302c8ef43ca5a6149bed0ff9686718e17621cee727936fff7a96b856f6a"
+    },
+    {
+      "path": "latex_ours/ieeenat_fullname.bst",
+      "category": "Paper reference source",
+      "size": 26900,
+      "sha256": "e38e6166bd7b1e6d23a1b79dcdb55c656e4fcdbe91bdf6b50d827e6b5d1aacfc"
+    },
+    {
+      "path": "latex_ours/main_token_mlp.tex",
+      "category": "Paper reference source",
+      "size": 58195,
+      "sha256": "59f725cb97d6800aa20c1cb0ccea38120fa10172d62f5c251b3fe5670ef599bc"
+    },
+    {
+      "path": "latex_ours/scripts/build_token_mlp_ablation_tables.py",
+      "category": "Paper table/figure exporter",
+      "size": 11152,
+      "sha256": "1eede70ea0d8a551b27932351ada14b012a711ea077712e007385ad4c409ab1d"
+    },
+    {
+      "path": "latex_ours/scripts/build_token_mlp_dataset_splits.py",
+      "category": "Paper table/figure exporter",
+      "size": 7042,
+      "sha256": "44dbf3f6611687d4003a3b707e942bbb7638ad9570a4e5ec22e0f398e47524ab"
+    },
+    {
+      "path": "latex_ours/scripts/build_token_mlp_large_patient_table.py",
+      "category": "Paper table/figure exporter",
+      "size": 5205,
+      "sha256": "2b12e88c93da7a1fb0d01c505f04f635bd7357017eaf3f6ba3d04fe9f7e93030"
+    },
+    {
+      "path": "latex_ours/scripts/build_token_mlp_supervised_table.py",
+      "category": "Paper table/figure exporter",
+      "size": 6239,
+      "sha256": "821c520e26c195f5326ab2a227001705fb0e170523b009ff8dc7508d61715ee3"
+    },
+    {
+      "path": "latex_ours/scripts/build_token_mlp_tables.py",
+      "category": "Paper table/figure exporter",
+      "size": 28631,
+      "sha256": "70ad9d32cead12c3bdfd6880ffeb4b122273f62a8ebe134a5c1199c7f3c7680f"
+    },
+    {
+      "path": "latex_ours/scripts/build_token_mlp_transfer_table.py",
+      "category": "Paper table/figure exporter",
+      "size": 6325,
+      "sha256": "aafb50f43cbd1cf57771c691d1ca156294f37fcae3ed188b64c00135960a518a"
+    },
+    {
+      "path": "latex_ours/scripts/draw_token_mlp_pipeline.py",
+      "category": "Paper table/figure exporter",
+      "size": 9707,
+      "sha256": "ff1d93692185f66446af260b85957e262bbb17b369ce61d98a909a99c1454808"
+    },
+    {
+      "path": "latex_ours/scripts/export_token_mlp_figure_assets.py",
+      "category": "Paper table/figure exporter",
+      "size": 8063,
+      "sha256": "fd626fd5f981c447b3f2db6cfea7e75b0a0ee5e35e112cc919112457adb97d33"
+    },
+    {
+      "path": "latex_ours/sec/token_mlp_architecture_appendix.tex",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 6350,
+      "sha256": "6d39550a93fe85a0b42bd584392ffc91115d25cc57dfe4616fa81d59f0211af0"
+    },
+    {
+      "path": "latex_ours/sec/token_mlp_extended_ablations.tex",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 6326,
+      "sha256": "dff78231af27dcc505ae84b97b5fef07dc26753e486dbd49aaee141c0dd77f77"
+    },
+    {
+      "path": "latex_ours/sec/token_mlp_placement_results.tex",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 1867,
+      "sha256": "afc2d5440cbe8db4073d413e31987bf1fda08d85dcae146791ef1b5ac102926c"
+    },
+    {
+      "path": "latex_ours/supplement_data/token_mlp_ablation_provenance.json",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 4991,
+      "sha256": "a0d0030e18e9dab85d85cfef06dab8719256cda1fb11408dc77e553922437268"
+    },
+    {
+      "path": "latex_ours/supplement_data/token_mlp_both_per_seed.csv",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 39772,
+      "sha256": "ccaeb3a1ddc1f1154f9225bae2be94320b32d8ae6ff7513fd4c645f4ecc0f6e7"
+    },
+    {
+      "path": "latex_ours/supplement_data/token_mlp_both_summary.csv",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 11535,
+      "sha256": "4a273550aa993e8405f36a6e354913d98675a3df52aa0807415dcdf03692b2d7"
+    },
+    {
+      "path": "latex_ours/supplement_data/token_mlp_dataset_splits.csv",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 454,
+      "sha256": "2a2824f95cfe8d459347ced2701463dfa3e9a7a1347850301d20cb488a966031"
+    },
+    {
+      "path": "latex_ours/supplement_data/token_mlp_dataset_splits_provenance.json",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 2146,
+      "sha256": "f3fd5f5ac9ab5cedb487ca8ea1c063b77c64575bbc2c3217ff4ca8be38713a85"
+    },
+    {
+      "path": "latex_ours/supplement_data/token_mlp_figure_provenance.json",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 2391,
+      "sha256": "2950b6ab63356a511c9a41ed91d4fefa87711e2cc9416d88049fd077ff98b709"
+    },
+    {
+      "path": "latex_ours/supplement_data/token_mlp_figure_render.json",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 973,
+      "sha256": "9f62d52dad59ccc278c0c2fc67b2f050d41d6338628422df0c865c3c007a265f"
+    },
+    {
+      "path": "latex_ours/supplement_data/token_mlp_gated_asl_per_seed.csv",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 74944,
+      "sha256": "75d0c0b157b81dd3086722164ad122d9304ecdca665d4bd6c803266bfc122e7e"
+    },
+    {
+      "path": "latex_ours/supplement_data/token_mlp_gated_asl_summary.csv",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 19535,
+      "sha256": "987d9bf53c70b3dc616d0c915f3fa3a48869483f142dc46ff58a194e303745cc"
+    },
+    {
+      "path": "latex_ours/supplement_data/token_mlp_large_patient.csv",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 1153,
+      "sha256": "5934c044441d61e09ccfdc469a3ae533046ee51442c085426e33b91800bb9843"
+    },
+    {
+      "path": "latex_ours/supplement_data/token_mlp_large_patient_provenance.json",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 1223,
+      "sha256": "d1b53c854c7e17e7d9263cbc9b51019dff0ed5e8bcf5855ba4c7211495f25a8f"
+    },
+    {
+      "path": "latex_ours/supplement_data/token_mlp_placement_per_seed.csv",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 16005,
+      "sha256": "08dc3ea938202d69dbdc924d9ad668ae256b0c8a116e9f1f788be2ff2c3ae97d"
+    },
+    {
+      "path": "latex_ours/supplement_data/token_mlp_placement_summary.csv",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 3909,
+      "sha256": "72f3ff5845c7c9d07e1dc5e72e58dcc35c4c224132a14d0b690b1251e204ceb5"
+    },
+    {
+      "path": "latex_ours/supplement_data/token_mlp_results.csv",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 4261,
+      "sha256": "be1bfd4aaf0362f6d21c45f8381dac934e38867388a41b9576196b01691c60dc"
+    },
+    {
+      "path": "latex_ours/supplement_data/token_mlp_results_aggregation_control.csv",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 2585,
+      "sha256": "6dd83d150554287f1be6c4a9323c8c08069e20e6d692fa64316182fa90ef991d"
+    },
+    {
+      "path": "latex_ours/supplement_data/token_mlp_results_per_seed.csv",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 47949,
+      "sha256": "cab31217b7edcf5f35956be278b83d668b24bf1591e710fb8abcc6feebf0e7ed"
+    },
+    {
+      "path": "latex_ours/supplement_data/token_mlp_results_provenance.json",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 208637,
+      "sha256": "da096a5360d4e94e712f51ec587c766ee59a1395da857650aa38daaa9566cd3b"
+    },
+    {
+      "path": "latex_ours/supplement_data/token_mlp_supervised_baselines.csv",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 3211,
+      "sha256": "03e5c49d220eeeb74a41849d57aeb7bcfc781bbadeb44977d7aa0dfa1112ed2a"
+    },
+    {
+      "path": "latex_ours/supplement_data/token_mlp_supervised_provenance.json",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 2217,
+      "sha256": "879335796b888237390f466481881f0edb6157c6dc923c16635c9e156c739e75"
+    },
+    {
+      "path": "latex_ours/supplement_data/token_mlp_transfer.csv",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 1039,
+      "sha256": "269e96c31538618b07fce3e61cfc9c389544d14d2dda171c738c17d5bf6af192"
+    },
+    {
+      "path": "latex_ours/supplement_data/token_mlp_transfer_intervals.csv",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 1999,
+      "sha256": "a256ae4d3576e7b5228f3abd142322c7f7b375587251c4f1d719451052a86f04"
+    },
+    {
+      "path": "latex_ours/supplement_data/token_mlp_transfer_per_seed.csv",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 1716,
+      "sha256": "2f2ae32b581e8dfc50016a3f68b4c6753a2ae1ff0ce41d4f674921916be217d9"
+    },
+    {
+      "path": "latex_ours/supplement_data/token_mlp_transfer_provenance.json",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 1512,
+      "sha256": "6edd61eb8331077d160cec897e63999529a622129cf75188ae319a64d0b2a342"
+    },
+    {
+      "path": "latex_ours/tables/token_mlp_aggregation_control.tex",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 1994,
+      "sha256": "65483a7ad25ee613ce7517eb9eb8939b83c338b84666deca9102404591b2c668"
+    },
+    {
+      "path": "latex_ours/tables/token_mlp_backbones.tex",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 914,
+      "sha256": "75cd0fe80b3f38f1d4639f0d67a1408a512b7a4c97203ceeb44f1006ff082b55"
+    },
+    {
+      "path": "latex_ours/tables/token_mlp_both_chestxray14.tex",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 1786,
+      "sha256": "b80ab41ec39d8b0738904a62ddcf0e07f3c4075e473fe83e0e5ce02baef9dbb1"
+    },
+    {
+      "path": "latex_ours/tables/token_mlp_both_chexpert.tex",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 1782,
+      "sha256": "71b1ef553c40f2b62415154d36fcc8eeefb07335cb0e41401c38503c4e51f6db"
+    },
+    {
+      "path": "latex_ours/tables/token_mlp_both_openi.tex",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 1775,
+      "sha256": "c40feaf28e2f08829afd9a5538cd2099e65f470d23944be8e95af3dab51542eb"
+    },
+    {
+      "path": "latex_ours/tables/token_mlp_dataset_splits.tex",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 1873,
+      "sha256": "89d8c4d1d4038f85eb3027ca83266ddb55b3fa12b1b07774a93d9d40ae45ccf5"
+    },
+    {
+      "path": "latex_ours/tables/token_mlp_dataset_summary.tex",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 772,
+      "sha256": "feab7d6576d1b84a4c8b2a338fb3f89a7e29b60dcdc8cb96ab87d6467d458591"
+    },
+    {
+      "path": "latex_ours/tables/token_mlp_gated_asl_chestxray14.tex",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 2098,
+      "sha256": "d8230802abe61a356efa4cacb978c12ebdf296381aa84959c06589cca8f31797"
+    },
+    {
+      "path": "latex_ours/tables/token_mlp_gated_asl_chexpert.tex",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 2094,
+      "sha256": "91b1b54bcb902b09a0ef68c74ccded904ab4a3d4bb4261038eb4e073576bd724"
+    },
+    {
+      "path": "latex_ours/tables/token_mlp_gated_asl_openi.tex",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 2088,
+      "sha256": "a534fd9c2248f443a34907fb736fbab3a37ec2b76b664e06fa697422bb8ad3bd"
+    },
+    {
+      "path": "latex_ours/tables/token_mlp_large_patient.tex",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 1366,
+      "sha256": "51197ad563d090d2929684738d5d0b58a9915381a3fa0a0b9ef91b3478af9846"
+    },
+    {
+      "path": "latex_ours/tables/token_mlp_pooling_placement.tex",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 1321,
+      "sha256": "18d9941e0374cd6717527e2332902efdc89a3c9aee27564a993bc4e4dafa69e8"
+    },
+    {
+      "path": "latex_ours/tables/token_mlp_results.tex",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 3354,
+      "sha256": "e531e5801ee9034376e42aed85d7837c82cf6889002889b7eb26557de8e79bc2"
+    },
+    {
+      "path": "latex_ours/tables/token_mlp_selected_epochs.tex",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 1326,
+      "sha256": "d2b645b4e5ea64ba6a3dfc6d2b65532beec71b00fd21466facc57cdcae636a33"
+    },
+    {
+      "path": "latex_ours/tables/token_mlp_supervised_baselines.tex",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 2143,
+      "sha256": "cd7e0f0b26e43161d6a0991c17e52d4c1caf01ef6a40876374b558c8ed512938"
+    },
+    {
+      "path": "latex_ours/tables/token_mlp_transfer.tex",
+      "category": "Paper text or aggregate result (no sample arrays)",
+      "size": 1441,
+      "sha256": "d63dc2c0487a8ec5054d33929675a42878a6ece91450883722e275a9fb81985b"
+    },
+    {
+      "path": "latex_ours/token_mlp_refs.bib",
+      "category": "Paper reference source",
+      "size": 9014,
+      "sha256": "7a57df89c822352b1223b4c079a672358c2671be3571b813ea77adab5de16b8d"
+    },
+    {
+      "path": "environments/RadZero/requirements-bootstrap.txt",
+      "source_path": "_downloads/radzero_env/requirements-bootstrap.txt",
+      "category": "RadZero historical environment",
+      "size": 191,
+      "sha256": "560058145c9b5b9294cd75fdd64d396f07ba4c59cd62b9e0d2365b6ec2a30d6e"
+    },
+    {
+      "path": "environments/RadZero/requirements-core.in",
+      "source_path": "_downloads/radzero_env/requirements-core.in",
+      "category": "RadZero historical environment",
+      "size": 872,
+      "sha256": "801f90242921bece770acf69f87f0466a1bc091c6b5b47632999e3e5fdeb421d"
+    },
+    {
+      "path": "environments/RadZero/requirements-freeze.txt",
+      "source_path": "_downloads/radzero_env/requirements-freeze.txt",
+      "category": "RadZero historical environment",
+      "size": 2293,
+      "sha256": "a739eaf067e1c162871b759cb94c54ca3e8a98d28c7f0e4a5a515a6fb4b01e89"
+    },
+    {
+      "path": "environments/RadZero/requirements-lock.txt",
+      "source_path": "_downloads/radzero_env/requirements-lock.txt",
+      "category": "RadZero historical environment",
+      "size": 11773,
+      "sha256": "e38e01cb9126f9d35a64d67441ba21474eabd5e18940467a513779d136fc3293"
+    }
+  ],
+  "excluded": [
+    "raw medical images",
+    "sample manifests",
+    "checkpoints",
+    "feature caches",
+    "per-image predictions",
+    "runs directories",
+    "virtual environments",
+    "real-image figure assets"
+  ]
+}

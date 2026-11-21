@@ -1,0 +1,39 @@
+radzero chexpert bias seed=44 epoch=1 val=0.834802 best=0.835357 sec=0.3
+radzero chexpert bias seed=44 epoch=2 val=0.835302 best=0.835357 sec=0.1
+radzero chexpert bias seed=44 epoch=3 val=0.837126 best=0.837126 sec=0.1
+radzero chexpert bias seed=44 epoch=4 val=0.836716 best=0.837126 sec=0.1
+radzero chexpert bias seed=44 epoch=5 val=0.836852 best=0.837126 sec=0.1
+radzero chexpert bias seed=44 epoch=6 val=0.836693 best=0.837126 sec=0.1
+radzero chexpert bias seed=44 epoch=7 val=0.836950 best=0.837126 sec=0.1
+radzero chexpert bias seed=44 epoch=8 val=0.836520 best=0.837126 sec=0.1
+COMPLETE radzero chexpert bias seed=44 test_AUROC=0.900731
+radzero chexpert direct seed=44 epoch=1 val=0.802266 best=0.835357 sec=0.1
+radzero chexpert direct seed=44 epoch=2 val=0.804586 best=0.835357 sec=0.1
+radzero chexpert direct seed=44 epoch=3 val=0.817420 best=0.835357 sec=0.1
+radzero chexpert direct seed=44 epoch=4 val=0.810225 best=0.835357 sec=0.1
+radzero chexpert direct seed=44 epoch=5 val=0.815387 best=0.835357 sec=0.1
+radzero chexpert direct seed=44 epoch=6 val=0.815990 best=0.835357 sec=0.1
+radzero chexpert direct seed=44 epoch=7 val=0.810053 best=0.835357 sec=0.1
+radzero chexpert direct seed=44 epoch=8 val=0.816403 best=0.835357 sec=0.1
+COMPLETE radzero chexpert direct seed=44 test_AUROC=0.898074
+radzero chexpert existing seed=44 epoch=1 val=0.839769 best=0.839769 sec=2.8
+radzero chexpert existing seed=44 epoch=2 val=0.847867 best=0.847867 sec=2.4
+radzero chexpert existing seed=44 epoch=3 val=0.845593 best=0.847867 sec=2.4
+radzero chexpert existing seed=44 epoch=4 val=0.838633 best=0.847867 sec=2.3
+radzero chexpert existing seed=44 epoch=5 val=0.834087 best=0.847867 sec=2.3
+radzero chexpert existing seed=44 epoch=6 val=0.841330 best=0.847867 sec=2.4
+radzero chexpert existing seed=44 epoch=7 val=0.847173 best=0.847867 sec=2.5
+radzero chexpert existing seed=44 epoch=8 val=0.853860 best=0.853860 sec=2.4
+radzero chexpert existing seed=44 epoch=9 val=0.861499 best=0.861499 sec=2.4
+radzero chexpert existing seed=44 epoch=10 val=0.865947 best=0.865947 sec=2.4
+radzero chexpert existing seed=44 epoch=11 val=0.873160 best=0.873160 sec=2.3
+radzero chexpert existing seed=44 epoch=12 val=0.878200 best=0.878200 sec=2.4
+radzero chexpert existing seed=44 epoch=13 val=0.877532 best=0.878200 sec=2.3
+radzero chexpert existing seed=44 epoch=14 val=0.878646 best=0.878646 sec=2.3
+radzero chexpert existing seed=44 epoch=15 val=0.879980 best=0.879980 sec=2.4
+radzero chexpert existing seed=44 epoch=16 val=0.879030 best=0.879980 sec=2.3
+radzero chexpert existing seed=44 epoch=17 val=0.879771 best=0.879980 sec=2.3
+radzero chexpert existing seed=44 epoch=18 val=0.878392 best=0.879980 sec=2.3
+radzero chexpert existing seed=44 epoch=19 val=0.878274 best=0.879980 sec=2.3
+radzero chexpert existing seed=44 epoch=20 val=0.873756 best=0.879980 sec=2.3
+COMPLETE radzero chexpert existing seed=44 test_AUROC=0.931189

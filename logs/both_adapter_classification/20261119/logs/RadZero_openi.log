@@ -1,0 +1,67 @@
+/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+CACHE_PARITY RadZero openi 0 7470
+CACHE_PARITY RadZero openi 6400 7470
+RadZero openi both_mlp seed42 epoch1 val=0.845886 best=0.845886 sec=27.3
+RadZero openi both_mlp seed42 epoch2 val=0.848742 best=0.848742 sec=35.9
+RadZero openi both_mlp seed42 epoch3 val=0.853192 best=0.853192 sec=158.5
+RadZero openi both_mlp seed42 epoch4 val=0.853763 best=0.853763 sec=46.8
+RadZero openi both_mlp seed42 epoch5 val=0.852848 best=0.853763 sec=29.6
+RadZero openi both_mlp seed42 epoch6 val=0.853934 best=0.853934 sec=23.8
+RadZero openi both_mlp seed42 epoch7 val=0.854304 best=0.854304 sec=25.2
+RadZero openi both_mlp seed42 epoch8 val=0.858074 best=0.858074 sec=47.4
+RadZero openi both_mlp seed42 epoch9 val=0.857922 best=0.858074 sec=47.1
+RadZero openi both_mlp seed42 epoch10 val=0.858654 best=0.858654 sec=41.7
+RadZero openi both_mlp seed42 epoch11 val=0.861620 best=0.861620 sec=41.1
+RadZero openi both_mlp seed42 epoch12 val=0.861520 best=0.861620 sec=41.2
+RadZero openi both_mlp seed42 epoch13 val=0.862318 best=0.862318 sec=40.8
+RadZero openi both_mlp seed42 epoch14 val=0.867041 best=0.867041 sec=40.5
+RadZero openi both_mlp seed42 epoch15 val=0.865941 best=0.867041 sec=35.5
+RadZero openi both_mlp seed42 epoch16 val=0.869374 best=0.869374 sec=33.4
+RadZero openi both_mlp seed42 epoch17 val=0.869831 best=0.869831 sec=32.4
+RadZero openi both_mlp seed42 epoch18 val=0.868007 best=0.869831 sec=33.7
+RadZero openi both_mlp seed42 epoch19 val=0.866116 best=0.869831 sec=33.3
+RadZero openi both_mlp seed42 epoch20 val=0.867541 best=0.869831 sec=33.6
+COMPLETE RadZero openi 42 0.8807464799118885 0.365312186749217
+RadZero openi both_mlp seed43 epoch1 val=0.845138 best=0.845138 sec=29.3
+RadZero openi both_mlp seed43 epoch2 val=0.848848 best=0.848848 sec=27.9
+RadZero openi both_mlp seed43 epoch3 val=0.846998 best=0.848848 sec=27.6
+RadZero openi both_mlp seed43 epoch4 val=0.851719 best=0.851719 sec=27.7
+RadZero openi both_mlp seed43 epoch5 val=0.850165 best=0.851719 sec=27.3
+RadZero openi both_mlp seed43 epoch6 val=0.854388 best=0.854388 sec=27.0
+RadZero openi both_mlp seed43 epoch7 val=0.856691 best=0.856691 sec=26.6
+RadZero openi both_mlp seed43 epoch8 val=0.856465 best=0.856691 sec=27.0
+RadZero openi both_mlp seed43 epoch9 val=0.860008 best=0.860008 sec=27.0
+RadZero openi both_mlp seed43 epoch10 val=0.856718 best=0.860008 sec=27.1
+RadZero openi both_mlp seed43 epoch11 val=0.860848 best=0.860848 sec=27.0
+RadZero openi both_mlp seed43 epoch12 val=0.855098 best=0.860848 sec=26.7
+RadZero openi both_mlp seed43 epoch13 val=0.857408 best=0.860848 sec=27.1
+RadZero openi both_mlp seed43 epoch14 val=0.864186 best=0.864186 sec=27.5
+RadZero openi both_mlp seed43 epoch15 val=0.863003 best=0.864186 sec=27.1
+RadZero openi both_mlp seed43 epoch16 val=0.864815 best=0.864815 sec=27.2
+RadZero openi both_mlp seed43 epoch17 val=0.869595 best=0.869595 sec=27.1
+RadZero openi both_mlp seed43 epoch18 val=0.866582 best=0.869595 sec=27.1
+RadZero openi both_mlp seed43 epoch19 val=0.867088 best=0.869595 sec=26.8
+RadZero openi both_mlp seed43 epoch20 val=0.857543 best=0.869595 sec=27.0
+COMPLETE RadZero openi 43 0.8721937959726049 0.3727370155876861
+RadZero openi both_mlp seed44 epoch1 val=0.841373 best=0.843093 sec=27.9
+RadZero openi both_mlp seed44 epoch2 val=0.842132 best=0.843093 sec=28.3
+RadZero openi both_mlp seed44 epoch3 val=0.845004 best=0.845004 sec=30.4
+RadZero openi both_mlp seed44 epoch4 val=0.845559 best=0.845559 sec=27.6
+RadZero openi both_mlp seed44 epoch5 val=0.848530 best=0.848530 sec=27.8
+RadZero openi both_mlp seed44 epoch6 val=0.850277 best=0.850277 sec=28.1
+RadZero openi both_mlp seed44 epoch7 val=0.848941 best=0.850277 sec=28.3
+RadZero openi both_mlp seed44 epoch8 val=0.844055 best=0.850277 sec=28.2
+RadZero openi both_mlp seed44 epoch9 val=0.844770 best=0.850277 sec=27.9
+RadZero openi both_mlp seed44 epoch10 val=0.850495 best=0.850495 sec=28.0
+RadZero openi both_mlp seed44 epoch11 val=0.853720 best=0.853720 sec=28.0
+RadZero openi both_mlp seed44 epoch12 val=0.851534 best=0.853720 sec=28.1
+RadZero openi both_mlp seed44 epoch13 val=0.853323 best=0.853720 sec=27.8
+RadZero openi both_mlp seed44 epoch14 val=0.857004 best=0.857004 sec=27.5
+RadZero openi both_mlp seed44 epoch15 val=0.853215 best=0.857004 sec=27.1
+RadZero openi both_mlp seed44 epoch16 val=0.858044 best=0.858044 sec=27.5
+RadZero openi both_mlp seed44 epoch17 val=0.858770 best=0.858770 sec=27.3
+RadZero openi both_mlp seed44 epoch18 val=0.853823 best=0.858770 sec=27.4
+RadZero openi both_mlp seed44 epoch19 val=0.852280 best=0.858770 sec=27.4
+RadZero openi both_mlp seed44 epoch20 val=0.855865 best=0.858770 sec=27.5
+COMPLETE RadZero openi 44 0.8770740104272426 0.3716164423688919

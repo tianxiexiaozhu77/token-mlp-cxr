@@ -1,0 +1,323 @@
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Image feature extractor: resnet50
+/storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Text feature extractor: /storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+bert encoder layers: 12
+KAD openi post_mlp seed42 epoch1 val=0.824493 best=0.824493 sec=2.1
+KAD openi post_mlp seed42 epoch2 val=0.826735 best=0.826735 sec=2.3
+KAD openi post_mlp seed42 epoch3 val=0.828284 best=0.828284 sec=1.9
+KAD openi post_mlp seed42 epoch4 val=0.828566 best=0.828566 sec=1.9
+KAD openi post_mlp seed42 epoch5 val=0.828257 best=0.828566 sec=2.1
+KAD openi post_mlp seed42 epoch6 val=0.828407 best=0.828566 sec=1.8
+KAD openi post_mlp seed42 epoch7 val=0.828783 best=0.828783 sec=1.8
+KAD openi post_mlp seed42 epoch8 val=0.831382 best=0.831382 sec=1.7
+KAD openi post_mlp seed42 epoch9 val=0.831844 best=0.831844 sec=2.3
+KAD openi post_mlp seed42 epoch10 val=0.833510 best=0.833510 sec=2.1
+KAD openi post_mlp seed42 epoch11 val=0.834198 best=0.834198 sec=1.8
+KAD openi post_mlp seed42 epoch12 val=0.835904 best=0.835904 sec=2.4
+KAD openi post_mlp seed42 epoch13 val=0.836553 best=0.836553 sec=1.8
+KAD openi post_mlp seed42 epoch14 val=0.838827 best=0.838827 sec=1.7
+KAD openi post_mlp seed42 epoch15 val=0.840355 best=0.840355 sec=2.2
+KAD openi post_mlp seed42 epoch16 val=0.840174 best=0.840355 sec=2.1
+KAD openi post_mlp seed42 epoch17 val=0.842221 best=0.842221 sec=2.0
+KAD openi post_mlp seed42 epoch18 val=0.843746 best=0.843746 sec=2.0
+KAD openi post_mlp seed42 epoch19 val=0.844101 best=0.844101 sec=1.9
+KAD openi post_mlp seed42 epoch20 val=0.844860 best=0.844860 sec=1.8
+COMPLETE KAD openi post_mlp 42 0.8445735519728301 0.33014954835308363
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000416dd8c0100001d92'
+OSError: [Errno 16] Device or resource busy: '.nfs0000000416f7340100001d93'
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000413a91f0100001d94'
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000416dd8b0100001d95'
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000415ca020100001d97'
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000416f7370100001d96'
+KAD openi post_mlp seed43 epoch1 val=0.822956 best=0.822956 sec=2.9
+KAD openi post_mlp seed43 epoch2 val=0.824812 best=0.824812 sec=2.2
+KAD openi post_mlp seed43 epoch3 val=0.824380 best=0.824812 sec=2.4
+KAD openi post_mlp seed43 epoch4 val=0.825694 best=0.825694 sec=2.3
+KAD openi post_mlp seed43 epoch5 val=0.825669 best=0.825694 sec=2.1
+KAD openi post_mlp seed43 epoch6 val=0.826782 best=0.826782 sec=2.0
+KAD openi post_mlp seed43 epoch7 val=0.828271 best=0.828271 sec=2.2
+KAD openi post_mlp seed43 epoch8 val=0.829421 best=0.829421 sec=1.9
+KAD openi post_mlp seed43 epoch9 val=0.829892 best=0.829892 sec=2.4
+KAD openi post_mlp seed43 epoch10 val=0.832399 best=0.832399 sec=1.7
+KAD openi post_mlp seed43 epoch11 val=0.832882 best=0.832882 sec=2.0
+KAD openi post_mlp seed43 epoch12 val=0.834474 best=0.834474 sec=2.3
+KAD openi post_mlp seed43 epoch13 val=0.834718 best=0.834718 sec=2.1
+KAD openi post_mlp seed43 epoch14 val=0.836966 best=0.836966 sec=2.2
+KAD openi post_mlp seed43 epoch15 val=0.838401 best=0.838401 sec=2.3
+KAD openi post_mlp seed43 epoch16 val=0.838331 best=0.838401 sec=2.3
+KAD openi post_mlp seed43 epoch17 val=0.839416 best=0.839416 sec=2.0
+KAD openi post_mlp seed43 epoch18 val=0.838555 best=0.839416 sec=2.3
+KAD openi post_mlp seed43 epoch19 val=0.839434 best=0.839434 sec=1.8
+KAD openi post_mlp seed43 epoch20 val=0.840526 best=0.840526 sec=2.0
+COMPLETE KAD openi post_mlp 43 0.8428011502395708 0.3372461663392432
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs000000041625750100001d9d'
+OSError: [Errno 16] Device or resource busy: '.nfs00000004160bd80100001d9e'
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000413a3f30100001da0'
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000003afe6720100001d9f'
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs000000041598700100001da1'
+OSError: [Errno 16] Device or resource busy: '.nfs00000004170b730100001da2'
+KAD openi post_mlp seed44 epoch1 val=0.823210 best=0.823210 sec=2.0
+KAD openi post_mlp seed44 epoch2 val=0.825374 best=0.825374 sec=1.9
+KAD openi post_mlp seed44 epoch3 val=0.825149 best=0.825374 sec=2.2
+KAD openi post_mlp seed44 epoch4 val=0.824471 best=0.825374 sec=1.8
+KAD openi post_mlp seed44 epoch5 val=0.825561 best=0.825561 sec=2.3
+KAD openi post_mlp seed44 epoch6 val=0.826467 best=0.826467 sec=2.1
+KAD openi post_mlp seed44 epoch7 val=0.827905 best=0.827905 sec=2.1
+KAD openi post_mlp seed44 epoch8 val=0.828031 best=0.828031 sec=1.9
+KAD openi post_mlp seed44 epoch9 val=0.829316 best=0.829316 sec=2.7
+KAD openi post_mlp seed44 epoch10 val=0.830347 best=0.830347 sec=2.2
+KAD openi post_mlp seed44 epoch11 val=0.831577 best=0.831577 sec=2.4
+KAD openi post_mlp seed44 epoch12 val=0.832824 best=0.832824 sec=2.3
+KAD openi post_mlp seed44 epoch13 val=0.832574 best=0.832824 sec=1.5
+KAD openi post_mlp seed44 epoch14 val=0.833998 best=0.833998 sec=2.2
+KAD openi post_mlp seed44 epoch15 val=0.834234 best=0.834234 sec=2.0
+KAD openi post_mlp seed44 epoch16 val=0.837622 best=0.837622 sec=2.2
+KAD openi post_mlp seed44 epoch17 val=0.839439 best=0.839439 sec=2.2
+KAD openi post_mlp seed44 epoch18 val=0.840619 best=0.840619 sec=1.9
+KAD openi post_mlp seed44 epoch19 val=0.838925 best=0.840619 sec=2.1
+KAD openi post_mlp seed44 epoch20 val=0.839820 best=0.840619 sec=1.8
+COMPLETE KAD openi post_mlp 44 0.8450452332270344 0.33550993623277187
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+OSError: [Errno 16] Device or resource busy: '.nfs00000003ad935a0100001daf'
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000004165ffb0100001db0'
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+Traceback (most recent call last):
+OSError: [Errno 16] Device or resource busy: '.nfs0000000417a15f0100001db1'
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000004176c050100001db2'
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+OSError: [Errno 16] Device or resource busy: '.nfs0000000415db710100001db4'
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000003dcb5570100001db3'

@@ -1,0 +1,193 @@
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Image feature extractor: resnet50
+/storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Text feature extractor: /storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+bert encoder layers: 12
+CACHE_PARITY KAD openi 0 7470
+CACHE_PARITY KAD openi 1600 7470
+CACHE_PARITY KAD openi 3200 7470
+CACHE_PARITY KAD openi 4800 7470
+CACHE_PARITY KAD openi 6400 7470
+KAD openi pre_bce seed42 epoch1 val=0.772796 best=0.815067 sec=15.8
+KAD openi pre_bce seed42 epoch2 val=0.804317 best=0.815067 sec=15.4
+KAD openi pre_bce seed42 epoch3 val=0.812062 best=0.815067 sec=15.1
+KAD openi pre_bce seed42 epoch4 val=0.818088 best=0.818088 sec=15.9
+KAD openi pre_bce seed42 epoch5 val=0.820474 best=0.820474 sec=15.2
+KAD openi pre_bce seed42 epoch6 val=0.826026 best=0.826026 sec=15.1
+KAD openi pre_bce seed42 epoch7 val=0.829337 best=0.829337 sec=15.1
+KAD openi pre_bce seed42 epoch8 val=0.824440 best=0.829337 sec=14.8
+KAD openi pre_bce seed42 epoch9 val=0.830577 best=0.830577 sec=15.8
+KAD openi pre_bce seed42 epoch10 val=0.840286 best=0.840286 sec=15.2
+KAD openi pre_bce seed42 epoch11 val=0.841826 best=0.841826 sec=14.9
+KAD openi pre_bce seed42 epoch12 val=0.844665 best=0.844665 sec=15.4
+KAD openi pre_bce seed42 epoch13 val=0.844034 best=0.844665 sec=15.4
+KAD openi pre_bce seed42 epoch14 val=0.847522 best=0.847522 sec=15.6
+KAD openi pre_bce seed42 epoch15 val=0.851057 best=0.851057 sec=15.2
+KAD openi pre_bce seed42 epoch16 val=0.853137 best=0.853137 sec=15.8
+KAD openi pre_bce seed42 epoch17 val=0.852805 best=0.853137 sec=15.0
+KAD openi pre_bce seed42 epoch18 val=0.852753 best=0.853137 sec=15.7
+KAD openi pre_bce seed42 epoch19 val=0.853894 best=0.853894 sec=15.4
+KAD openi pre_bce seed42 epoch20 val=0.859434 best=0.859434 sec=15.2
+COMPLETE KAD openi pre_bce 42 0.8433396856752019 0.3067201271649958
+KAD openi pre_bce seed43 epoch1 val=0.773519 best=0.815067 sec=14.4
+KAD openi pre_bce seed43 epoch2 val=0.804796 best=0.815067 sec=14.8
+KAD openi pre_bce seed43 epoch3 val=0.815644 best=0.815644 sec=15.3
+KAD openi pre_bce seed43 epoch4 val=0.817226 best=0.817226 sec=15.6
+KAD openi pre_bce seed43 epoch5 val=0.823813 best=0.823813 sec=15.1
+KAD openi pre_bce seed43 epoch6 val=0.825141 best=0.825141 sec=15.2
+KAD openi pre_bce seed43 epoch7 val=0.833269 best=0.833269 sec=15.5
+KAD openi pre_bce seed43 epoch8 val=0.836327 best=0.836327 sec=15.6
+KAD openi pre_bce seed43 epoch9 val=0.837815 best=0.837815 sec=15.4
+KAD openi pre_bce seed43 epoch10 val=0.840326 best=0.840326 sec=15.0
+KAD openi pre_bce seed43 epoch11 val=0.843683 best=0.843683 sec=15.2
+KAD openi pre_bce seed43 epoch12 val=0.846876 best=0.846876 sec=15.2
+KAD openi pre_bce seed43 epoch13 val=0.849759 best=0.849759 sec=15.3
+KAD openi pre_bce seed43 epoch14 val=0.851432 best=0.851432 sec=14.8
+KAD openi pre_bce seed43 epoch15 val=0.849691 best=0.851432 sec=14.6
+KAD openi pre_bce seed43 epoch16 val=0.853759 best=0.853759 sec=15.4
+KAD openi pre_bce seed43 epoch17 val=0.854153 best=0.854153 sec=15.4
+KAD openi pre_bce seed43 epoch18 val=0.857656 best=0.857656 sec=15.6
+KAD openi pre_bce seed43 epoch19 val=0.853251 best=0.857656 sec=15.7
+KAD openi pre_bce seed43 epoch20 val=0.858417 best=0.858417 sec=15.5
+COMPLETE KAD openi pre_bce 43 0.8420867562093899 0.30964061689439787
+KAD openi pre_bce seed44 epoch1 val=0.774394 best=0.815067 sec=14.5
+KAD openi pre_bce seed44 epoch2 val=0.797144 best=0.815067 sec=15.2
+KAD openi pre_bce seed44 epoch3 val=0.813986 best=0.815067 sec=15.5
+KAD openi pre_bce seed44 epoch4 val=0.813278 best=0.815067 sec=15.3
+KAD openi pre_bce seed44 epoch5 val=0.825190 best=0.825190 sec=15.8
+KAD openi pre_bce seed44 epoch6 val=0.822956 best=0.825190 sec=15.3
+KAD openi pre_bce seed44 epoch7 val=0.829845 best=0.829845 sec=15.1
+KAD openi pre_bce seed44 epoch8 val=0.836349 best=0.836349 sec=15.3
+KAD openi pre_bce seed44 epoch9 val=0.833804 best=0.836349 sec=15.1
+KAD openi pre_bce seed44 epoch10 val=0.836807 best=0.836807 sec=15.4
+KAD openi pre_bce seed44 epoch11 val=0.842212 best=0.842212 sec=15.3
+KAD openi pre_bce seed44 epoch12 val=0.842454 best=0.842454 sec=15.1
+KAD openi pre_bce seed44 epoch13 val=0.840462 best=0.842454 sec=14.9
+KAD openi pre_bce seed44 epoch14 val=0.844972 best=0.844972 sec=14.3
+KAD openi pre_bce seed44 epoch15 val=0.847179 best=0.847179 sec=14.9
+KAD openi pre_bce seed44 epoch16 val=0.851049 best=0.851049 sec=14.8
+KAD openi pre_bce seed44 epoch17 val=0.852039 best=0.852039 sec=16.9
+KAD openi pre_bce seed44 epoch18 val=0.853837 best=0.853837 sec=15.7
+KAD openi pre_bce seed44 epoch19 val=0.850205 best=0.853837 sec=15.0
+KAD openi pre_bce seed44 epoch20 val=0.852682 best=0.853837 sec=14.8
+COMPLETE KAD openi pre_bce 44 0.8426704939927667 0.2997841600386548
+KAD openi gated_bce seed42 epoch1 val=0.724996 best=0.815067 sec=16.3
+KAD openi gated_bce seed42 epoch2 val=0.759858 best=0.815067 sec=15.5
+KAD openi gated_bce seed42 epoch3 val=0.773740 best=0.815067 sec=15.7
+KAD openi gated_bce seed42 epoch4 val=0.782837 best=0.815067 sec=16.1
+KAD openi gated_bce seed42 epoch5 val=0.786821 best=0.815067 sec=15.6
+KAD openi gated_bce seed42 epoch6 val=0.793128 best=0.815067 sec=16.0
+KAD openi gated_bce seed42 epoch7 val=0.801443 best=0.815067 sec=15.7
+KAD openi gated_bce seed42 epoch8 val=0.796942 best=0.815067 sec=15.6
+COMPLETE KAD openi gated_bce 42 0.8267766716672802 0.31792215017637143
+KAD openi gated_bce seed43 epoch1 val=0.716611 best=0.815067 sec=15.6
+KAD openi gated_bce seed43 epoch2 val=0.762733 best=0.815067 sec=15.7
+KAD openi gated_bce seed43 epoch3 val=0.778569 best=0.815067 sec=15.2
+KAD openi gated_bce seed43 epoch4 val=0.782235 best=0.815067 sec=16.3
+KAD openi gated_bce seed43 epoch5 val=0.783875 best=0.815067 sec=16.3
+KAD openi gated_bce seed43 epoch6 val=0.793891 best=0.815067 sec=15.6
+KAD openi gated_bce seed43 epoch7 val=0.799130 best=0.815067 sec=15.8
+KAD openi gated_bce seed43 epoch8 val=0.808118 best=0.815067 sec=15.5
+COMPLETE KAD openi gated_bce 43 0.8267766716672802 0.31792215017637143
+KAD openi gated_bce seed44 epoch1 val=0.732778 best=0.815067 sec=16.1
+KAD openi gated_bce seed44 epoch2 val=0.751270 best=0.815067 sec=16.1
+KAD openi gated_bce seed44 epoch3 val=0.779154 best=0.815067 sec=15.5
+KAD openi gated_bce seed44 epoch4 val=0.780868 best=0.815067 sec=15.6
+KAD openi gated_bce seed44 epoch5 val=0.781955 best=0.815067 sec=15.0
+KAD openi gated_bce seed44 epoch6 val=0.788321 best=0.815067 sec=15.3
+KAD openi gated_bce seed44 epoch7 val=0.797819 best=0.815067 sec=16.1
+KAD openi gated_bce seed44 epoch8 val=0.808598 best=0.815067 sec=15.9
+COMPLETE KAD openi gated_bce 44 0.8267766716672802 0.31792215017637143
+KAD openi pre_asl seed42 epoch1 val=0.717420 best=0.815067 sec=14.5
+KAD openi pre_asl seed42 epoch2 val=0.783267 best=0.815067 sec=15.5
+KAD openi pre_asl seed42 epoch3 val=0.797186 best=0.815067 sec=15.6
+KAD openi pre_asl seed42 epoch4 val=0.807133 best=0.815067 sec=16.3
+KAD openi pre_asl seed42 epoch5 val=0.813862 best=0.815067 sec=15.1
+KAD openi pre_asl seed42 epoch6 val=0.815682 best=0.815682 sec=16.0
+KAD openi pre_asl seed42 epoch7 val=0.821830 best=0.821830 sec=15.6
+KAD openi pre_asl seed42 epoch8 val=0.823403 best=0.823403 sec=15.7
+KAD openi pre_asl seed42 epoch9 val=0.826135 best=0.826135 sec=17.0
+KAD openi pre_asl seed42 epoch10 val=0.829527 best=0.829527 sec=16.3
+KAD openi pre_asl seed42 epoch11 val=0.833029 best=0.833029 sec=16.0
+KAD openi pre_asl seed42 epoch12 val=0.831639 best=0.833029 sec=16.1
+KAD openi pre_asl seed42 epoch13 val=0.832318 best=0.833029 sec=15.9
+KAD openi pre_asl seed42 epoch14 val=0.835527 best=0.835527 sec=16.3
+KAD openi pre_asl seed42 epoch15 val=0.838491 best=0.838491 sec=16.7
+KAD openi pre_asl seed42 epoch16 val=0.839227 best=0.839227 sec=15.6
+KAD openi pre_asl seed42 epoch17 val=0.842052 best=0.842052 sec=15.7
+KAD openi pre_asl seed42 epoch18 val=0.842639 best=0.842639 sec=15.7
+KAD openi pre_asl seed42 epoch19 val=0.842400 best=0.842639 sec=16.4
+KAD openi pre_asl seed42 epoch20 val=0.843565 best=0.843565 sec=16.3
+COMPLETE KAD openi pre_asl 42 0.8416475130907617 0.28419751420973993
+KAD openi pre_asl seed43 epoch1 val=0.709996 best=0.815067 sec=15.4
+KAD openi pre_asl seed43 epoch2 val=0.777340 best=0.815067 sec=14.9
+KAD openi pre_asl seed43 epoch3 val=0.794265 best=0.815067 sec=16.4
+KAD openi pre_asl seed43 epoch4 val=0.806481 best=0.815067 sec=15.8
+KAD openi pre_asl seed43 epoch5 val=0.808653 best=0.815067 sec=15.8
+KAD openi pre_asl seed43 epoch6 val=0.817263 best=0.817263 sec=16.0
+KAD openi pre_asl seed43 epoch7 val=0.821321 best=0.821321 sec=15.7
+KAD openi pre_asl seed43 epoch8 val=0.826096 best=0.826096 sec=17.0
+KAD openi pre_asl seed43 epoch9 val=0.828660 best=0.828660 sec=15.6
+KAD openi pre_asl seed43 epoch10 val=0.829556 best=0.829556 sec=15.8
+KAD openi pre_asl seed43 epoch11 val=0.830648 best=0.830648 sec=15.8
+KAD openi pre_asl seed43 epoch12 val=0.834840 best=0.834840 sec=16.3
+KAD openi pre_asl seed43 epoch13 val=0.837896 best=0.837896 sec=16.0
+KAD openi pre_asl seed43 epoch14 val=0.841276 best=0.841276 sec=16.0
+KAD openi pre_asl seed43 epoch15 val=0.840726 best=0.841276 sec=15.8
+KAD openi pre_asl seed43 epoch16 val=0.842116 best=0.842116 sec=17.0
+KAD openi pre_asl seed43 epoch17 val=0.843455 best=0.843455 sec=16.0
+KAD openi pre_asl seed43 epoch18 val=0.844649 best=0.844649 sec=15.9
+KAD openi pre_asl seed43 epoch19 val=0.847193 best=0.847193 sec=16.6
+KAD openi pre_asl seed43 epoch20 val=0.848228 best=0.848228 sec=16.6
+COMPLETE KAD openi pre_asl 43 0.8376174849458188 0.2862102823645562
+KAD openi pre_asl seed44 epoch1 val=0.703622 best=0.815067 sec=16.2
+KAD openi pre_asl seed44 epoch2 val=0.772804 best=0.815067 sec=15.5
+KAD openi pre_asl seed44 epoch3 val=0.792502 best=0.815067 sec=16.1
+KAD openi pre_asl seed44 epoch4 val=0.795177 best=0.815067 sec=15.2
+KAD openi pre_asl seed44 epoch5 val=0.808648 best=0.815067 sec=16.1
+KAD openi pre_asl seed44 epoch6 val=0.816251 best=0.816251 sec=15.3
+KAD openi pre_asl seed44 epoch7 val=0.819024 best=0.819024 sec=16.1
+KAD openi pre_asl seed44 epoch8 val=0.823878 best=0.823878 sec=15.9
+KAD openi pre_asl seed44 epoch9 val=0.823890 best=0.823890 sec=16.3
+KAD openi pre_asl seed44 epoch10 val=0.825248 best=0.825248 sec=15.4
+KAD openi pre_asl seed44 epoch11 val=0.831892 best=0.831892 sec=15.9
+KAD openi pre_asl seed44 epoch12 val=0.833246 best=0.833246 sec=16.0
+KAD openi pre_asl seed44 epoch13 val=0.831903 best=0.833246 sec=16.5
+KAD openi pre_asl seed44 epoch14 val=0.836220 best=0.836220 sec=15.6
+KAD openi pre_asl seed44 epoch15 val=0.834028 best=0.836220 sec=15.8
+KAD openi pre_asl seed44 epoch16 val=0.837689 best=0.837689 sec=15.6
+KAD openi pre_asl seed44 epoch17 val=0.841368 best=0.841368 sec=15.7
+KAD openi pre_asl seed44 epoch18 val=0.843439 best=0.843439 sec=16.1
+KAD openi pre_asl seed44 epoch19 val=0.843235 best=0.843439 sec=16.4
+KAD openi pre_asl seed44 epoch20 val=0.843150 best=0.843439 sec=15.6
+COMPLETE KAD openi pre_asl 44 0.8400962081858423 0.2861485123460126
+KAD openi gated_asl seed42 epoch1 val=0.640257 best=0.815067 sec=16.9
+KAD openi gated_asl seed42 epoch2 val=0.705432 best=0.815067 sec=16.3
+KAD openi gated_asl seed42 epoch3 val=0.733157 best=0.815067 sec=15.8
+KAD openi gated_asl seed42 epoch4 val=0.748339 best=0.815067 sec=16.3
+KAD openi gated_asl seed42 epoch5 val=0.756162 best=0.815067 sec=16.5
+KAD openi gated_asl seed42 epoch6 val=0.765393 best=0.815067 sec=17.1
+KAD openi gated_asl seed42 epoch7 val=0.778443 best=0.815067 sec=16.1
+KAD openi gated_asl seed42 epoch8 val=0.785155 best=0.815067 sec=16.4
+COMPLETE KAD openi gated_asl 42 0.8267766716672802 0.31792215017637143
+KAD openi gated_asl seed43 epoch1 val=0.626860 best=0.815067 sec=16.9
+KAD openi gated_asl seed43 epoch2 val=0.706016 best=0.815067 sec=16.8
+KAD openi gated_asl seed43 epoch3 val=0.738125 best=0.815067 sec=17.0
+KAD openi gated_asl seed43 epoch4 val=0.747891 best=0.815067 sec=16.5
+KAD openi gated_asl seed43 epoch5 val=0.753194 best=0.815067 sec=17.0
+KAD openi gated_asl seed43 epoch6 val=0.763696 best=0.815067 sec=16.8
+KAD openi gated_asl seed43 epoch7 val=0.767953 best=0.815067 sec=16.6
+KAD openi gated_asl seed43 epoch8 val=0.779475 best=0.815067 sec=16.8
+COMPLETE KAD openi gated_asl 43 0.8267766716672802 0.31792215017637143
+KAD openi gated_asl seed44 epoch1 val=0.640583 best=0.815067 sec=16.8
+KAD openi gated_asl seed44 epoch2 val=0.698077 best=0.815067 sec=17.2
+KAD openi gated_asl seed44 epoch3 val=0.743367 best=0.815067 sec=17.3
+KAD openi gated_asl seed44 epoch4 val=0.750732 best=0.815067 sec=16.7
+KAD openi gated_asl seed44 epoch5 val=0.758705 best=0.815067 sec=16.5
+KAD openi gated_asl seed44 epoch6 val=0.760851 best=0.815067 sec=16.3
+KAD openi gated_asl seed44 epoch7 val=0.773202 best=0.815067 sec=16.9
+KAD openi gated_asl seed44 epoch8 val=0.782713 best=0.815067 sec=17.0
+COMPLETE KAD openi gated_asl 44 0.8267766716672802 0.31792215017637143

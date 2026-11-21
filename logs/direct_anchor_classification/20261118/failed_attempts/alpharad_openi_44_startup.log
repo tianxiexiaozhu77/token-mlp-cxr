@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_setup/train_direct_anchor.py", line 8, in <module>
+    runpy.run_path(str(entry), run_name="__main__")
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/runpy.py", line 289, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/runpy.py", line 96, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/storage/3090group2/zjx/code/medical/experiments/direct_anchor_classification/train.py", line 263, in <module>
+    main()
+  File "/storage/3090group2/zjx/code/medical/experiments/direct_anchor_classification/train.py", line 48, in main
+    lock, gpu = reserve_gpu(args.gpu)
+  File "/storage/3090group2/zjx/code/medical/RadZero/scripts/eval_public.py", line 96, in reserve_gpu
+    fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable

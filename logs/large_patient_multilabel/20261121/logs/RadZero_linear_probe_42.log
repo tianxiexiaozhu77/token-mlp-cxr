@@ -1,0 +1,17 @@
+RadZero linear_probe 42 epoch 1 val 0.699102 best 1
+RadZero linear_probe 42 epoch 2 val 0.73955 best 2
+RadZero linear_probe 42 epoch 3 val 0.752479 best 3
+RadZero linear_probe 42 epoch 4 val 0.759083 best 4
+RadZero linear_probe 42 epoch 5 val 0.762533 best 5
+RadZero linear_probe 42 epoch 6 val 0.765384 best 6
+RadZero linear_probe 42 epoch 7 val 0.76582 best 7
+RadZero linear_probe 42 epoch 8 val 0.76416 best 7
+RadZero linear_probe 42 epoch 9 val 0.767505 best 9
+RadZero linear_probe 42 epoch 10 val 0.767541 best 10
+RadZero linear_probe 42 epoch 11 val 0.768424 best 11
+RadZero linear_probe 42 epoch 12 val 0.767366 best 11
+RadZero linear_probe 42 epoch 13 val 0.766611 best 11
+RadZero linear_probe 42 epoch 14 val 0.768073 best 11
+RadZero linear_probe 42 epoch 15 val 0.765644 best 11
+RadZero linear_probe 42 epoch 16 val 0.765905 best 11
+FIT COMPLETE RadZero linear_probe 42 TEST remains locked

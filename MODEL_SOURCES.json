@@ -1,0 +1,95 @@
+{
+  "source": "Local Git metadata and saved model manifests; no network lookup",
+  "models": [
+    {
+      "model": "AlphaRAD",
+      "checkout_path": "AlphaRAD",
+      "upstream_source_included": false,
+      "url": "https://github.com/jz5426/ECCV-2026-AlphaRAD.git",
+      "revision": "59a28b0211081a99936da37902b3e5ee081056f5",
+      "local_patch": "upstream_patches/AlphaRAD.patch",
+      "local_patch_sha256": "a4c101463c004f5417e183a170da01b93ead765cd9a18de7bf7ca8a3ac61177a"
+    },
+    {
+      "model": "RadZero",
+      "checkout_path": "RadZero",
+      "upstream_source_included": false,
+      "url": "https://github.com/deepnoid-ai/RadZero.git",
+      "revision": "656ae5f1af3f106e96c95542ce3ee5c0ee8777fc"
+    },
+    {
+      "model": "CARZero",
+      "checkout_path": "baselines/CARZero",
+      "upstream_source_included": false,
+      "url": "https://github.com/laihaoran/CARZero.git",
+      "revision": "fa4e09cdfe7801e36e83d96815e3fcf66ffdd13d",
+      "checkpoint_url": "https://drive.google.com/file/d/1kYF-k5otW5DHwz1En5d_ScV3zu2E27Ch/view"
+    },
+    {
+      "model": "KAD",
+      "checkout_path": "baselines/KAD",
+      "upstream_source_included": false,
+      "url": "https://github.com/xiaoman-zhang/KAD.git",
+      "revision": "591d999e325a783868599b3e53067acd2ecbddc0",
+      "checkpoints": [
+        {
+          "path": "baselines/KAD/local_assets/KAD_224_best_valid.pt",
+          "url": "https://drive.google.com/file/d/1EOuWd6v4Us3lAYEwGcSPtH29616pELED/view",
+          "sha256": "eae032570a2b041b6da629ad2e2bfc36283e4995d56d64779dc3d1a6a70021ea",
+          "status": "downloaded",
+          "size_bytes": 1823932739
+        }
+      ]
+    },
+    {
+      "model": "BiomedCLIP",
+      "checkout_path": "baselines/BiomedCLIP/official",
+      "upstream_source_included": false,
+      "url": "https://github.com/mlfoundations/open_clip",
+      "revision": "f08f25f3f226bdb538de2b4ed48a9213ba6b179e",
+      "source_archive_sha256": "5a491d693463c6b4e01d2aa300cd747b7f44a2c29e65eece2ebd98e1d6afed6b",
+      "checkpoint_url": "https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224",
+      "checkpoint_revision": "9f341de24bfb00180f1b847274256e9b65a3a32e",
+      "checkpoints": [
+        {
+          "path": "baselines/BiomedCLIP/checkpoints/open_clip_pytorch_model.bin",
+          "size": 783705670,
+          "sha256": "52cc993c5c5ff962bd0c60931874bc001e7e9b41666a385530f4a036294576be",
+          "matches_official_sha": true
+        }
+      ]
+    },
+    {
+      "model": "BioViL-T",
+      "checkout_path": "baselines/BioViL-T/official",
+      "upstream_source_included": false,
+      "url": "https://github.com/microsoft/hi-ml",
+      "revision": "b67c1d27c6b17d8e8ff01f8c507f3cabdb307388",
+      "source_archive_sha256": "8169245b02e0aa2af0495f7a537a92afc856d53c08737a3d9e1579df41caca26",
+      "checkpoint_url": "https://huggingface.co/microsoft/BiomedVLP-BioViL-T",
+      "checkpoint_revision": "692f09e9be1bfe5fdd5f3efdd0e1eca7d2c10b23",
+      "checkpoints": [
+        {
+          "path": "baselines/BioViL-T/checkpoints/biovil_t_image_model_proj_size_128.pt",
+          "size": 109745561,
+          "sha256": "b2399d73dc2a68b9f3a1950e864ae0ecd24093fb07aa459d7e65807ebdc0fb77",
+          "matches_official_sha": true
+        },
+        {
+          "path": "baselines/BioViL-T/checkpoints/pytorch_model.bin",
+          "size": 440966107,
+          "sha256": "6d86a8d760eaa09c9a55d57cc6f6bb01b0cbccb8b827fc775a79f37a8fbda76c",
+          "matches_official_sha": true
+        }
+      ]
+    },
+    {
+      "model": "MaCo",
+      "checkout_path": "baselines/MaCo",
+      "upstream_source_included": false,
+      "url": "https://github.com/SZUHvern/MaCo.git",
+      "revision": "bda781f3064273218d02b8d5a9103a0ab2bf98da",
+      "checkpoint_url": "https://drive.google.com/file/d/1B87JuLJnjh_CoQpjT7RWGTp6alfXV8_0/view"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/lightning_fabric/__init__.py:29: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__("pkg_resources").declare_namespace(__name__)
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+CACHE_PARITY CARZero chexpert 0 668
+CARZero chexpert pre_bce seed42 epoch1 val=0.927404 best=0.927404 sec=2.5
+CARZero chexpert pre_bce seed42 epoch2 val=0.925795 best=0.927404 sec=2.0
+CARZero chexpert pre_bce seed42 epoch3 val=0.926000 best=0.927404 sec=1.9
+CARZero chexpert pre_bce seed42 epoch4 val=0.920404 best=0.927404 sec=2.0
+CARZero chexpert pre_bce seed42 epoch5 val=0.912880 best=0.927404 sec=2.0
+CARZero chexpert pre_bce seed42 epoch6 val=0.908292 best=0.927404 sec=2.0
+CARZero chexpert pre_bce seed42 epoch7 val=0.902887 best=0.927404 sec=2.0
+CARZero chexpert pre_bce seed42 epoch8 val=0.896756 best=0.927404 sec=2.0
+COMPLETE CARZero chexpert pre_bce 42 0.9018623356239455 0.678104904817744
+CARZero chexpert pre_bce seed43 epoch1 val=0.927455 best=0.927455 sec=2.3
+CARZero chexpert pre_bce seed43 epoch2 val=0.926926 best=0.927455 sec=2.0
+CARZero chexpert pre_bce seed43 epoch3 val=0.924190 best=0.927455 sec=2.0
+CARZero chexpert pre_bce seed43 epoch4 val=0.923426 best=0.927455 sec=2.0
+CARZero chexpert pre_bce seed43 epoch5 val=0.918604 best=0.927455 sec=1.9
+CARZero chexpert pre_bce seed43 epoch6 val=0.909596 best=0.927455 sec=2.0
+CARZero chexpert pre_bce seed43 epoch7 val=0.907410 best=0.927455 sec=2.0
+CARZero chexpert pre_bce seed43 epoch8 val=0.902205 best=0.927455 sec=2.0
+COMPLETE CARZero chexpert pre_bce 43 0.9019627202754138 0.678593807942637
+CARZero chexpert pre_bce seed44 epoch1 val=0.927794 best=0.927794 sec=2.0
+CARZero chexpert pre_bce seed44 epoch2 val=0.925978 best=0.927794 sec=2.4
+CARZero chexpert pre_bce seed44 epoch3 val=0.926278 best=0.927794 sec=1.8
+CARZero chexpert pre_bce seed44 epoch4 val=0.923012 best=0.927794 sec=2.0
+CARZero chexpert pre_bce seed44 epoch5 val=0.916047 best=0.927794 sec=2.0
+CARZero chexpert pre_bce seed44 epoch6 val=0.908937 best=0.927794 sec=2.0
+CARZero chexpert pre_bce seed44 epoch7 val=0.904122 best=0.927794 sec=2.0
+CARZero chexpert pre_bce seed44 epoch8 val=0.897554 best=0.927794 sec=2.0
+COMPLETE CARZero chexpert pre_bce 44 0.9021878250593423 0.6783968095497058
+CARZero chexpert gated_bce seed42 epoch1 val=0.926989 best=0.927008 sec=2.2
+CARZero chexpert gated_bce seed42 epoch2 val=0.927350 best=0.927350 sec=1.9
+CARZero chexpert gated_bce seed42 epoch3 val=0.926914 best=0.927350 sec=1.9
+CARZero chexpert gated_bce seed42 epoch4 val=0.924213 best=0.927350 sec=2.1
+CARZero chexpert gated_bce seed42 epoch5 val=0.918025 best=0.927350 sec=2.0
+CARZero chexpert gated_bce seed42 epoch6 val=0.917374 best=0.927350 sec=2.0
+CARZero chexpert gated_bce seed42 epoch7 val=0.922317 best=0.927350 sec=2.0
+CARZero chexpert gated_bce seed42 epoch8 val=0.923158 best=0.927350 sec=2.1
+COMPLETE CARZero chexpert gated_bce 42 0.9047213039163505 0.6867146595460288
+CARZero chexpert gated_bce seed43 epoch1 val=0.926989 best=0.927008 sec=2.4
+CARZero chexpert gated_bce seed43 epoch2 val=0.927187 best=0.927187 sec=1.8
+CARZero chexpert gated_bce seed43 epoch3 val=0.925196 best=0.927187 sec=1.6
+CARZero chexpert gated_bce seed43 epoch4 val=0.926488 best=0.927187 sec=1.8
+CARZero chexpert gated_bce seed43 epoch5 val=0.921042 best=0.927187 sec=1.7
+CARZero chexpert gated_bce seed43 epoch6 val=0.918473 best=0.927187 sec=1.8
+CARZero chexpert gated_bce seed43 epoch7 val=0.921321 best=0.927187 sec=2.0
+CARZero chexpert gated_bce seed43 epoch8 val=0.923177 best=0.927187 sec=2.1
+COMPLETE CARZero chexpert gated_bce 43 0.9044648882187584 0.6852927503620229
+CARZero chexpert gated_bce seed44 epoch1 val=0.926914 best=0.927008 sec=2.3
+CARZero chexpert gated_bce seed44 epoch2 val=0.927558 best=0.927558 sec=2.0
+CARZero chexpert gated_bce seed44 epoch3 val=0.926537 best=0.927558 sec=2.1
+CARZero chexpert gated_bce seed44 epoch4 val=0.925996 best=0.927558 sec=1.7
+CARZero chexpert gated_bce seed44 epoch5 val=0.921454 best=0.927558 sec=2.1
+CARZero chexpert gated_bce seed44 epoch6 val=0.918403 best=0.927558 sec=2.1
+CARZero chexpert gated_bce seed44 epoch7 val=0.921625 best=0.927558 sec=1.3
+CARZero chexpert gated_bce seed44 epoch8 val=0.923741 best=0.927558 sec=2.0
+COMPLETE CARZero chexpert gated_bce 44 0.904720500974371 0.6867136412990429
+CARZero chexpert pre_asl seed42 epoch1 val=0.927933 best=0.927933 sec=2.4
+CARZero chexpert pre_asl seed42 epoch2 val=0.930713 best=0.930713 sec=2.1
+CARZero chexpert pre_asl seed42 epoch3 val=0.930602 best=0.930713 sec=2.0
+CARZero chexpert pre_asl seed42 epoch4 val=0.930436 best=0.930713 sec=2.0
+CARZero chexpert pre_asl seed42 epoch5 val=0.926607 best=0.930713 sec=1.8
+CARZero chexpert pre_asl seed42 epoch6 val=0.923606 best=0.930713 sec=2.0
+CARZero chexpert pre_asl seed42 epoch7 val=0.919921 best=0.930713 sec=2.0
+CARZero chexpert pre_asl seed42 epoch8 val=0.918901 best=0.930713 sec=2.0
+COMPLETE CARZero chexpert pre_asl 42 0.8986667638912219 0.6777097235132737
+CARZero chexpert pre_asl seed43 epoch1 val=0.927018 best=0.927018 sec=2.3
+CARZero chexpert pre_asl seed43 epoch2 val=0.930081 best=0.930081 sec=2.1
+CARZero chexpert pre_asl seed43 epoch3 val=0.932821 best=0.932821 sec=2.1
+CARZero chexpert pre_asl seed43 epoch4 val=0.932603 best=0.932821 sec=1.9
+CARZero chexpert pre_asl seed43 epoch5 val=0.928225 best=0.932821 sec=2.0
+CARZero chexpert pre_asl seed43 epoch6 val=0.925510 best=0.932821 sec=1.8
+CARZero chexpert pre_asl seed43 epoch7 val=0.919801 best=0.932821 sec=2.0
+CARZero chexpert pre_asl seed43 epoch8 val=0.917902 best=0.932821 sec=2.0
+COMPLETE CARZero chexpert pre_asl 43 0.8964977002515702 0.6812958110502646
+CARZero chexpert pre_asl seed44 epoch1 val=0.927215 best=0.927215 sec=2.3
+CARZero chexpert pre_asl seed44 epoch2 val=0.929921 best=0.929921 sec=2.1
+CARZero chexpert pre_asl seed44 epoch3 val=0.931739 best=0.931739 sec=2.0
+CARZero chexpert pre_asl seed44 epoch4 val=0.931730 best=0.931739 sec=1.9
+CARZero chexpert pre_asl seed44 epoch5 val=0.927868 best=0.931739 sec=2.1
+CARZero chexpert pre_asl seed44 epoch6 val=0.926039 best=0.931739 sec=2.0
+CARZero chexpert pre_asl seed44 epoch7 val=0.920278 best=0.931739 sec=2.1
+CARZero chexpert pre_asl seed44 epoch8 val=0.918101 best=0.931739 sec=1.8
+COMPLETE CARZero chexpert pre_asl 44 0.8962796575335275 0.6802477376311296
+CARZero chexpert gated_asl seed42 epoch1 val=0.926914 best=0.927008 sec=3.1
+CARZero chexpert gated_asl seed42 epoch2 val=0.927043 best=0.927043 sec=2.2
+CARZero chexpert gated_asl seed42 epoch3 val=0.929377 best=0.929377 sec=2.1
+CARZero chexpert gated_asl seed42 epoch4 val=0.925455 best=0.929377 sec=2.2
+CARZero chexpert gated_asl seed42 epoch5 val=0.917931 best=0.929377 sec=2.1
+CARZero chexpert gated_asl seed42 epoch6 val=0.917127 best=0.929377 sec=1.9
+CARZero chexpert gated_asl seed42 epoch7 val=0.920514 best=0.929377 sec=2.2
+CARZero chexpert gated_asl seed42 epoch8 val=0.917816 best=0.929377 sec=2.1
+COMPLETE CARZero chexpert gated_asl 42 0.9031528539578075 0.6798560703709181
+CARZero chexpert gated_asl seed43 epoch1 val=0.926914 best=0.927008 sec=2.3
+CARZero chexpert gated_asl seed43 epoch2 val=0.927226 best=0.927226 sec=2.1
+CARZero chexpert gated_asl seed43 epoch3 val=0.930794 best=0.930794 sec=2.1
+CARZero chexpert gated_asl seed43 epoch4 val=0.928728 best=0.930794 sec=2.1
+CARZero chexpert gated_asl seed43 epoch5 val=0.921886 best=0.930794 sec=2.1
+CARZero chexpert gated_asl seed43 epoch6 val=0.918031 best=0.930794 sec=1.6
+CARZero chexpert gated_asl seed43 epoch7 val=0.919699 best=0.930794 sec=2.0
+CARZero chexpert gated_asl seed43 epoch8 val=0.918842 best=0.930794 sec=2.0
+COMPLETE CARZero chexpert gated_asl 43 0.9035635224567113 0.6799332058977244
+CARZero chexpert gated_asl seed44 epoch1 val=0.926914 best=0.927008 sec=2.3
+CARZero chexpert gated_asl seed44 epoch2 val=0.927226 best=0.927226 sec=2.1
+CARZero chexpert gated_asl seed44 epoch3 val=0.930031 best=0.930031 sec=1.7
+CARZero chexpert gated_asl seed44 epoch4 val=0.928706 best=0.930031 sec=2.1
+CARZero chexpert gated_asl seed44 epoch5 val=0.920870 best=0.930031 sec=1.8
+CARZero chexpert gated_asl seed44 epoch6 val=0.917591 best=0.930031 sec=2.2
+CARZero chexpert gated_asl seed44 epoch7 val=0.918624 best=0.930031 sec=2.2
+CARZero chexpert gated_asl seed44 epoch8 val=0.921158 best=0.930031 sec=2.0
+COMPLETE CARZero chexpert gated_asl 44 0.9034240074642552 0.6800455794438124

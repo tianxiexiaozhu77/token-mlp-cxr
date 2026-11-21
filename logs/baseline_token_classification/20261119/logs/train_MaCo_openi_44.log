@@ -1,0 +1,47 @@
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo openi seed44 epoch1 val=0.818491 best=0.818491 sec=3.6
+MaCo openi seed44 epoch2 val=0.819754 best=0.819754 sec=3.0
+MaCo openi seed44 epoch3 val=0.821321 best=0.821321 sec=2.9
+MaCo openi seed44 epoch4 val=0.817867 best=0.821321 sec=2.9
+MaCo openi seed44 epoch5 val=0.820998 best=0.821321 sec=3.0
+MaCo openi seed44 epoch6 val=0.824794 best=0.824794 sec=2.9
+MaCo openi seed44 epoch7 val=0.827496 best=0.827496 sec=2.9
+MaCo openi seed44 epoch8 val=0.830002 best=0.830002 sec=3.0
+MaCo openi seed44 epoch9 val=0.832999 best=0.832999 sec=2.9
+MaCo openi seed44 epoch10 val=0.835167 best=0.835167 sec=2.8
+MaCo openi seed44 epoch11 val=0.840049 best=0.840049 sec=3.0
+MaCo openi seed44 epoch12 val=0.840501 best=0.840501 sec=3.2
+MaCo openi seed44 epoch13 val=0.841647 best=0.841647 sec=3.0
+MaCo openi seed44 epoch14 val=0.841168 best=0.841647 sec=3.0
+MaCo openi seed44 epoch15 val=0.843757 best=0.843757 sec=2.8
+MaCo openi seed44 epoch16 val=0.848321 best=0.848321 sec=3.0
+MaCo openi seed44 epoch17 val=0.851953 best=0.851953 sec=3.7
+MaCo openi seed44 epoch18 val=0.848307 best=0.851953 sec=3.5
+MaCo openi seed44 epoch19 val=0.852184 best=0.852184 sec=3.3
+MaCo openi seed44 epoch20 val=0.851821 best=0.852184 sec=3.2
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+COMPLETE MaCo openi 44 0.8289843332239701

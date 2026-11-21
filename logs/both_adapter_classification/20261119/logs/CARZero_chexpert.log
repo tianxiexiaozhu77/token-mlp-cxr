@@ -1,0 +1,36 @@
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/lightning_fabric/__init__.py:29: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__("pkg_resources").declare_namespace(__name__)
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+CACHE_PARITY CARZero chexpert 0 668
+CARZero chexpert both_mlp seed42 epoch1 val=0.927675 best=0.927675 sec=2.8
+CARZero chexpert both_mlp seed42 epoch2 val=0.926326 best=0.927675 sec=2.9
+CARZero chexpert both_mlp seed42 epoch3 val=0.921190 best=0.927675 sec=1.6
+CARZero chexpert both_mlp seed42 epoch4 val=0.911860 best=0.927675 sec=1.6
+CARZero chexpert both_mlp seed42 epoch5 val=0.908207 best=0.927675 sec=2.1
+CARZero chexpert both_mlp seed42 epoch6 val=0.902627 best=0.927675 sec=1.9
+CARZero chexpert both_mlp seed42 epoch7 val=0.902660 best=0.927675 sec=2.0
+CARZero chexpert both_mlp seed42 epoch8 val=0.903757 best=0.927675 sec=2.2
+COMPLETE CARZero chexpert 42 0.9018471536815191 0.677883864675128
+CARZero chexpert both_mlp seed43 epoch1 val=0.927822 best=0.927822 sec=2.0
+CARZero chexpert both_mlp seed43 epoch2 val=0.923698 best=0.927822 sec=2.1
+CARZero chexpert both_mlp seed43 epoch3 val=0.920880 best=0.927822 sec=2.0
+CARZero chexpert both_mlp seed43 epoch4 val=0.917064 best=0.927822 sec=1.7
+CARZero chexpert both_mlp seed43 epoch5 val=0.910359 best=0.927822 sec=1.9
+CARZero chexpert both_mlp seed43 epoch6 val=0.907930 best=0.927822 sec=2.1
+CARZero chexpert both_mlp seed43 epoch7 val=0.907700 best=0.927822 sec=1.6
+CARZero chexpert both_mlp seed43 epoch8 val=0.905668 best=0.927822 sec=1.8
+COMPLETE CARZero chexpert 43 0.9053342271608525 0.6853647634181684
+CARZero chexpert both_mlp seed44 epoch1 val=0.927729 best=0.927729 sec=2.3
+CARZero chexpert both_mlp seed44 epoch2 val=0.927468 best=0.927729 sec=2.1
+CARZero chexpert both_mlp seed44 epoch3 val=0.923186 best=0.927729 sec=2.0
+CARZero chexpert both_mlp seed44 epoch4 val=0.914268 best=0.927729 sec=2.1
+CARZero chexpert both_mlp seed44 epoch5 val=0.911385 best=0.927729 sec=2.3
+CARZero chexpert both_mlp seed44 epoch6 val=0.904595 best=0.927729 sec=2.1
+CARZero chexpert both_mlp seed44 epoch7 val=0.905336 best=0.927729 sec=2.3
+CARZero chexpert both_mlp seed44 epoch8 val=0.904344 best=0.927729 sec=1.6
+COMPLETE CARZero chexpert 44 0.9034358910055506 0.686750778239523

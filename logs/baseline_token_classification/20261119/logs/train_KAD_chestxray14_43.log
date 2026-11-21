@@ -1,0 +1,23 @@
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Image feature extractor: resnet50
+/storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Text feature extractor: /storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+bert encoder layers: 12
+KAD chestxray14 seed43 epoch1 val=0.809955 best=0.812487 sec=45.5
+KAD chestxray14 seed43 epoch2 val=0.818310 best=0.818310 sec=46.3
+KAD chestxray14 seed43 epoch3 val=0.822026 best=0.822026 sec=46.1
+KAD chestxray14 seed43 epoch4 val=0.823701 best=0.823701 sec=46.8
+KAD chestxray14 seed43 epoch5 val=0.824731 best=0.824731 sec=45.0
+KAD chestxray14 seed43 epoch6 val=0.825349 best=0.825349 sec=46.6
+KAD chestxray14 seed43 epoch7 val=0.825461 best=0.825461 sec=49.0
+KAD chestxray14 seed43 epoch8 val=0.827870 best=0.827870 sec=48.3
+KAD chestxray14 seed43 epoch9 val=0.828738 best=0.828738 sec=47.0
+KAD chestxray14 seed43 epoch10 val=0.828628 best=0.828738 sec=46.4
+KAD chestxray14 seed43 epoch11 val=0.826849 best=0.828738 sec=46.8
+KAD chestxray14 seed43 epoch12 val=0.827342 best=0.828738 sec=46.7
+KAD chestxray14 seed43 epoch13 val=0.826641 best=0.828738 sec=46.0
+KAD chestxray14 seed43 epoch14 val=0.827220 best=0.828738 sec=47.1
+COMPLETE KAD chestxray14 43 0.8301697417728598

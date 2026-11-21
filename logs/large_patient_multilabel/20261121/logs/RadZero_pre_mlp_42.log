@@ -1,0 +1,11 @@
+RadZero pre_mlp 42 epoch 1 val 0.836193 best 1
+RadZero pre_mlp 42 epoch 2 val 0.842027 best 2
+RadZero pre_mlp 42 epoch 3 val 0.844004 best 3
+RadZero pre_mlp 42 epoch 4 val 0.844494 best 4
+RadZero pre_mlp 42 epoch 5 val 0.846152 best 5
+RadZero pre_mlp 42 epoch 6 val 0.845668 best 5
+RadZero pre_mlp 42 epoch 7 val 0.84525 best 5
+RadZero pre_mlp 42 epoch 8 val 0.844426 best 5
+RadZero pre_mlp 42 epoch 9 val 0.845204 best 5
+RadZero pre_mlp 42 epoch 10 val 0.84443 best 5
+FIT COMPLETE RadZero pre_mlp 42 TEST remains locked

@@ -1,0 +1,12 @@
+chestxray14 AlphaRAD pre_mlp seconds 6
+chestxray14 AlphaRAD post_mlp seconds 12
+chestxray14 AlphaRAD linear_probe seconds 17
+chestxray14 AlphaRAD clip_global seconds 22
+chestxray14 KAD pre_mlp seconds 28
+chestxray14 KAD post_mlp seconds 33
+chestxray14 KAD linear_probe seconds 39
+chestxray14 KAD clip_global seconds 46
+chestxray14 MaCo pre_mlp seconds 51
+chestxray14 MaCo post_mlp seconds 57
+chestxray14 MaCo linear_probe seconds 62
+chestxray14 MaCo clip_global seconds 68

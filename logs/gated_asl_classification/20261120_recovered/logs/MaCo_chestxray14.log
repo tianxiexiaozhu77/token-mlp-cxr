@@ -1,0 +1,539 @@
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+CACHE_PARITY MaCo chestxray14 0 22433
+CACHE_PARITY MaCo chestxray14 6400 22433
+CACHE_PARITY MaCo chestxray14 12800 22433
+CACHE_PARITY MaCo chestxray14 19200 22433
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo chestxray14 pre_bce seed42 epoch1 val=0.784705 best=0.784705 sec=9.5
+MaCo chestxray14 pre_bce seed42 epoch2 val=0.802444 best=0.802444 sec=8.6
+MaCo chestxray14 pre_bce seed42 epoch3 val=0.811305 best=0.811305 sec=8.9
+MaCo chestxray14 pre_bce seed42 epoch4 val=0.817604 best=0.817604 sec=8.9
+MaCo chestxray14 pre_bce seed42 epoch5 val=0.823982 best=0.823982 sec=8.9
+MaCo chestxray14 pre_bce seed42 epoch6 val=0.822841 best=0.823982 sec=8.4
+MaCo chestxray14 pre_bce seed42 epoch7 val=0.830335 best=0.830335 sec=8.6
+MaCo chestxray14 pre_bce seed42 epoch8 val=0.830819 best=0.830819 sec=8.3
+MaCo chestxray14 pre_bce seed42 epoch9 val=0.831016 best=0.831016 sec=8.3
+MaCo chestxray14 pre_bce seed42 epoch10 val=0.833359 best=0.833359 sec=8.9
+MaCo chestxray14 pre_bce seed42 epoch11 val=0.833280 best=0.833359 sec=9.5
+MaCo chestxray14 pre_bce seed42 epoch12 val=0.830883 best=0.833359 sec=8.4
+MaCo chestxray14 pre_bce seed42 epoch13 val=0.833158 best=0.833359 sec=8.6
+MaCo chestxray14 pre_bce seed42 epoch14 val=0.831840 best=0.833359 sec=8.4
+MaCo chestxray14 pre_bce seed42 epoch15 val=0.831271 best=0.833359 sec=8.6
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+COMPLETE MaCo chestxray14 pre_bce 42 0.8276957889283807 0.2602849919361431
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo chestxray14 pre_bce seed43 epoch1 val=0.792358 best=0.792358 sec=9.2
+MaCo chestxray14 pre_bce seed43 epoch2 val=0.802936 best=0.802936 sec=9.1
+MaCo chestxray14 pre_bce seed43 epoch3 val=0.816008 best=0.816008 sec=9.3
+MaCo chestxray14 pre_bce seed43 epoch4 val=0.821494 best=0.821494 sec=8.7
+MaCo chestxray14 pre_bce seed43 epoch5 val=0.824345 best=0.824345 sec=9.1
+MaCo chestxray14 pre_bce seed43 epoch6 val=0.824799 best=0.824799 sec=8.1
+MaCo chestxray14 pre_bce seed43 epoch7 val=0.827864 best=0.827864 sec=8.8
+MaCo chestxray14 pre_bce seed43 epoch8 val=0.831643 best=0.831643 sec=9.0
+MaCo chestxray14 pre_bce seed43 epoch9 val=0.833577 best=0.833577 sec=9.3
+MaCo chestxray14 pre_bce seed43 epoch10 val=0.833063 best=0.833577 sec=8.8
+MaCo chestxray14 pre_bce seed43 epoch11 val=0.830543 best=0.833577 sec=8.9
+MaCo chestxray14 pre_bce seed43 epoch12 val=0.833926 best=0.833926 sec=8.6
+MaCo chestxray14 pre_bce seed43 epoch13 val=0.833255 best=0.833926 sec=8.6
+MaCo chestxray14 pre_bce seed43 epoch14 val=0.834241 best=0.834241 sec=8.7
+MaCo chestxray14 pre_bce seed43 epoch15 val=0.833916 best=0.834241 sec=9.0
+MaCo chestxray14 pre_bce seed43 epoch16 val=0.832333 best=0.834241 sec=9.0
+MaCo chestxray14 pre_bce seed43 epoch17 val=0.832915 best=0.834241 sec=8.7
+MaCo chestxray14 pre_bce seed43 epoch18 val=0.835163 best=0.835163 sec=8.9
+MaCo chestxray14 pre_bce seed43 epoch19 val=0.831394 best=0.835163 sec=9.1
+MaCo chestxray14 pre_bce seed43 epoch20 val=0.834035 best=0.835163 sec=7.8
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+COMPLETE MaCo chestxray14 pre_bce 43 0.8268040699883423 0.2582799448801384
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo chestxray14 pre_bce seed44 epoch1 val=0.787216 best=0.787216 sec=8.5
+MaCo chestxray14 pre_bce seed44 epoch2 val=0.805362 best=0.805362 sec=8.3
+MaCo chestxray14 pre_bce seed44 epoch3 val=0.812110 best=0.812110 sec=8.7
+MaCo chestxray14 pre_bce seed44 epoch4 val=0.816518 best=0.816518 sec=7.7
+MaCo chestxray14 pre_bce seed44 epoch5 val=0.822290 best=0.822290 sec=8.6
+MaCo chestxray14 pre_bce seed44 epoch6 val=0.824147 best=0.824147 sec=8.6
+MaCo chestxray14 pre_bce seed44 epoch7 val=0.827706 best=0.827706 sec=8.1
+MaCo chestxray14 pre_bce seed44 epoch8 val=0.827271 best=0.827706 sec=8.7
+MaCo chestxray14 pre_bce seed44 epoch9 val=0.830868 best=0.830868 sec=8.1
+MaCo chestxray14 pre_bce seed44 epoch10 val=0.831082 best=0.831082 sec=8.4
+MaCo chestxray14 pre_bce seed44 epoch11 val=0.833602 best=0.833602 sec=7.9
+MaCo chestxray14 pre_bce seed44 epoch12 val=0.832977 best=0.833602 sec=7.8
+MaCo chestxray14 pre_bce seed44 epoch13 val=0.833270 best=0.833602 sec=7.6
+MaCo chestxray14 pre_bce seed44 epoch14 val=0.834432 best=0.834432 sec=7.5
+MaCo chestxray14 pre_bce seed44 epoch15 val=0.832282 best=0.834432 sec=7.4
+MaCo chestxray14 pre_bce seed44 epoch16 val=0.831073 best=0.834432 sec=7.8
+MaCo chestxray14 pre_bce seed44 epoch17 val=0.831556 best=0.834432 sec=7.5
+MaCo chestxray14 pre_bce seed44 epoch18 val=0.832931 best=0.834432 sec=7.4
+MaCo chestxray14 pre_bce seed44 epoch19 val=0.834153 best=0.834432 sec=7.5
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+COMPLETE MaCo chestxray14 pre_bce 44 0.8294045762573682 0.2686275112551637
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo chestxray14 gated_bce seed42 epoch1 val=0.782774 best=0.782774 sec=7.7
+MaCo chestxray14 gated_bce seed42 epoch2 val=0.800483 best=0.800483 sec=7.7
+MaCo chestxray14 gated_bce seed42 epoch3 val=0.810182 best=0.810182 sec=8.2
+MaCo chestxray14 gated_bce seed42 epoch4 val=0.815988 best=0.815988 sec=7.9
+MaCo chestxray14 gated_bce seed42 epoch5 val=0.822839 best=0.822839 sec=7.9
+MaCo chestxray14 gated_bce seed42 epoch6 val=0.821717 best=0.822839 sec=7.8
+MaCo chestxray14 gated_bce seed42 epoch7 val=0.829662 best=0.829662 sec=7.8
+MaCo chestxray14 gated_bce seed42 epoch8 val=0.829929 best=0.829929 sec=7.5
+MaCo chestxray14 gated_bce seed42 epoch9 val=0.829888 best=0.829929 sec=7.3
+MaCo chestxray14 gated_bce seed42 epoch10 val=0.833050 best=0.833050 sec=7.4
+MaCo chestxray14 gated_bce seed42 epoch11 val=0.833449 best=0.833449 sec=7.3
+MaCo chestxray14 gated_bce seed42 epoch12 val=0.831006 best=0.833449 sec=7.3
+MaCo chestxray14 gated_bce seed42 epoch13 val=0.833273 best=0.833449 sec=7.4
+MaCo chestxray14 gated_bce seed42 epoch14 val=0.832204 best=0.833449 sec=7.5
+MaCo chestxray14 gated_bce seed42 epoch15 val=0.830886 best=0.833449 sec=7.7
+MaCo chestxray14 gated_bce seed42 epoch16 val=0.833975 best=0.833975 sec=7.8
+MaCo chestxray14 gated_bce seed42 epoch17 val=0.833451 best=0.833975 sec=7.7
+MaCo chestxray14 gated_bce seed42 epoch18 val=0.832642 best=0.833975 sec=7.7
+MaCo chestxray14 gated_bce seed42 epoch19 val=0.835273 best=0.835273 sec=7.6
+MaCo chestxray14 gated_bce seed42 epoch20 val=0.833943 best=0.835273 sec=7.5
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+COMPLETE MaCo chestxray14 gated_bce 42 0.8269648462638423 0.270434762477574
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo chestxray14 gated_bce seed43 epoch1 val=0.789233 best=0.789233 sec=7.9
+MaCo chestxray14 gated_bce seed43 epoch2 val=0.800444 best=0.800444 sec=7.6
+MaCo chestxray14 gated_bce seed43 epoch3 val=0.814609 best=0.814609 sec=7.6
+MaCo chestxray14 gated_bce seed43 epoch4 val=0.820300 best=0.820300 sec=7.6
+MaCo chestxray14 gated_bce seed43 epoch5 val=0.823359 best=0.823359 sec=7.6
+MaCo chestxray14 gated_bce seed43 epoch6 val=0.823723 best=0.823723 sec=7.7
+MaCo chestxray14 gated_bce seed43 epoch7 val=0.826734 best=0.826734 sec=7.7
+MaCo chestxray14 gated_bce seed43 epoch8 val=0.830742 best=0.830742 sec=9.0
+MaCo chestxray14 gated_bce seed43 epoch9 val=0.832988 best=0.832988 sec=7.9
+MaCo chestxray14 gated_bce seed43 epoch10 val=0.832184 best=0.832988 sec=8.2
+MaCo chestxray14 gated_bce seed43 epoch11 val=0.830206 best=0.832988 sec=7.7
+MaCo chestxray14 gated_bce seed43 epoch12 val=0.833235 best=0.833235 sec=7.7
+MaCo chestxray14 gated_bce seed43 epoch13 val=0.832710 best=0.833235 sec=7.7
+MaCo chestxray14 gated_bce seed43 epoch14 val=0.833428 best=0.833428 sec=7.8
+MaCo chestxray14 gated_bce seed43 epoch15 val=0.833476 best=0.833476 sec=7.7
+MaCo chestxray14 gated_bce seed43 epoch16 val=0.831216 best=0.833476 sec=7.7
+MaCo chestxray14 gated_bce seed43 epoch17 val=0.832346 best=0.833476 sec=7.8
+MaCo chestxray14 gated_bce seed43 epoch18 val=0.834732 best=0.834732 sec=8.0
+MaCo chestxray14 gated_bce seed43 epoch19 val=0.831179 best=0.834732 sec=8.3
+MaCo chestxray14 gated_bce seed43 epoch20 val=0.833338 best=0.834732 sec=7.7
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+COMPLETE MaCo chestxray14 gated_bce 43 0.8280196665231573 0.2567528134390053
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo chestxray14 gated_bce seed44 epoch1 val=0.784207 best=0.784207 sec=7.7
+MaCo chestxray14 gated_bce seed44 epoch2 val=0.802609 best=0.802609 sec=8.0
+MaCo chestxray14 gated_bce seed44 epoch3 val=0.810898 best=0.810898 sec=7.8
+MaCo chestxray14 gated_bce seed44 epoch4 val=0.816969 best=0.816969 sec=7.8
+MaCo chestxray14 gated_bce seed44 epoch5 val=0.823133 best=0.823133 sec=8.1
+MaCo chestxray14 gated_bce seed44 epoch6 val=0.825714 best=0.825714 sec=7.8
+MaCo chestxray14 gated_bce seed44 epoch7 val=0.829109 best=0.829109 sec=7.8
+MaCo chestxray14 gated_bce seed44 epoch8 val=0.829458 best=0.829458 sec=7.7
+MaCo chestxray14 gated_bce seed44 epoch9 val=0.832284 best=0.832284 sec=7.7
+MaCo chestxray14 gated_bce seed44 epoch10 val=0.832588 best=0.832588 sec=7.8
+MaCo chestxray14 gated_bce seed44 epoch11 val=0.834520 best=0.834520 sec=7.9
+MaCo chestxray14 gated_bce seed44 epoch12 val=0.834664 best=0.834664 sec=7.6
+MaCo chestxray14 gated_bce seed44 epoch13 val=0.834515 best=0.834664 sec=7.7
+MaCo chestxray14 gated_bce seed44 epoch14 val=0.835444 best=0.835444 sec=7.7
+MaCo chestxray14 gated_bce seed44 epoch15 val=0.834257 best=0.835444 sec=7.7
+MaCo chestxray14 gated_bce seed44 epoch16 val=0.832532 best=0.835444 sec=7.8
+MaCo chestxray14 gated_bce seed44 epoch17 val=0.832792 best=0.835444 sec=7.8
+MaCo chestxray14 gated_bce seed44 epoch18 val=0.833919 best=0.835444 sec=7.8
+MaCo chestxray14 gated_bce seed44 epoch19 val=0.835153 best=0.835444 sec=7.9
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+COMPLETE MaCo chestxray14 gated_bce 44 0.8305401527897611 0.2540127588879493
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo chestxray14 pre_asl seed42 epoch1 val=0.746644 best=0.778556 sec=8.9
+MaCo chestxray14 pre_asl seed42 epoch2 val=0.759684 best=0.778556 sec=8.5
+MaCo chestxray14 pre_asl seed42 epoch3 val=0.763328 best=0.778556 sec=8.2
+MaCo chestxray14 pre_asl seed42 epoch4 val=0.769742 best=0.778556 sec=8.2
+MaCo chestxray14 pre_asl seed42 epoch5 val=0.781248 best=0.781248 sec=8.0
+MaCo chestxray14 pre_asl seed42 epoch6 val=0.784932 best=0.784932 sec=8.0
+MaCo chestxray14 pre_asl seed42 epoch7 val=0.793688 best=0.793688 sec=7.9
+MaCo chestxray14 pre_asl seed42 epoch8 val=0.802383 best=0.802383 sec=7.8
+MaCo chestxray14 pre_asl seed42 epoch9 val=0.802784 best=0.802784 sec=8.0
+MaCo chestxray14 pre_asl seed42 epoch10 val=0.808134 best=0.808134 sec=8.4
+MaCo chestxray14 pre_asl seed42 epoch11 val=0.806916 best=0.808134 sec=8.3
+MaCo chestxray14 pre_asl seed42 epoch12 val=0.803833 best=0.808134 sec=8.1
+MaCo chestxray14 pre_asl seed42 epoch13 val=0.810666 best=0.810666 sec=8.1
+MaCo chestxray14 pre_asl seed42 epoch14 val=0.807217 best=0.810666 sec=7.8
+MaCo chestxray14 pre_asl seed42 epoch15 val=0.804574 best=0.810666 sec=7.7
+MaCo chestxray14 pre_asl seed42 epoch16 val=0.813688 best=0.813688 sec=7.7
+MaCo chestxray14 pre_asl seed42 epoch17 val=0.813341 best=0.813688 sec=8.3
+MaCo chestxray14 pre_asl seed42 epoch18 val=0.811927 best=0.813688 sec=7.9
+MaCo chestxray14 pre_asl seed42 epoch19 val=0.816259 best=0.816259 sec=7.8
+MaCo chestxray14 pre_asl seed42 epoch20 val=0.816644 best=0.816644 sec=7.8
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+COMPLETE MaCo chestxray14 pre_asl 42 0.8009076314681075 0.23312067892298233
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo chestxray14 pre_asl seed43 epoch1 val=0.764804 best=0.778556 sec=8.6
+MaCo chestxray14 pre_asl seed43 epoch2 val=0.751102 best=0.778556 sec=7.9
+MaCo chestxray14 pre_asl seed43 epoch3 val=0.764404 best=0.778556 sec=8.0
+MaCo chestxray14 pre_asl seed43 epoch4 val=0.779540 best=0.779540 sec=8.2
+MaCo chestxray14 pre_asl seed43 epoch5 val=0.787558 best=0.787558 sec=8.0
+MaCo chestxray14 pre_asl seed43 epoch6 val=0.796147 best=0.796147 sec=7.8
+MaCo chestxray14 pre_asl seed43 epoch7 val=0.794478 best=0.796147 sec=7.7
+MaCo chestxray14 pre_asl seed43 epoch8 val=0.804325 best=0.804325 sec=7.8
+MaCo chestxray14 pre_asl seed43 epoch9 val=0.802222 best=0.804325 sec=7.9
+MaCo chestxray14 pre_asl seed43 epoch10 val=0.803420 best=0.804325 sec=7.8
+MaCo chestxray14 pre_asl seed43 epoch11 val=0.803710 best=0.804325 sec=7.7
+MaCo chestxray14 pre_asl seed43 epoch12 val=0.811574 best=0.811574 sec=8.3
+MaCo chestxray14 pre_asl seed43 epoch13 val=0.809336 best=0.811574 sec=7.8
+MaCo chestxray14 pre_asl seed43 epoch14 val=0.808781 best=0.811574 sec=7.8
+MaCo chestxray14 pre_asl seed43 epoch15 val=0.814600 best=0.814600 sec=7.7
+MaCo chestxray14 pre_asl seed43 epoch16 val=0.812265 best=0.814600 sec=7.5
+MaCo chestxray14 pre_asl seed43 epoch17 val=0.814862 best=0.814862 sec=7.8
+MaCo chestxray14 pre_asl seed43 epoch18 val=0.821362 best=0.821362 sec=7.5
+MaCo chestxray14 pre_asl seed43 epoch19 val=0.814440 best=0.821362 sec=7.5
+MaCo chestxray14 pre_asl seed43 epoch20 val=0.818585 best=0.821362 sec=7.6
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+COMPLETE MaCo chestxray14 pre_asl 43 0.8033049818934401 0.2400952343148508
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo chestxray14 pre_asl seed44 epoch1 val=0.749907 best=0.778556 sec=7.8
+MaCo chestxray14 pre_asl seed44 epoch2 val=0.760400 best=0.778556 sec=8.2
+MaCo chestxray14 pre_asl seed44 epoch3 val=0.763630 best=0.778556 sec=8.3
+MaCo chestxray14 pre_asl seed44 epoch4 val=0.773516 best=0.778556 sec=7.6
+MaCo chestxray14 pre_asl seed44 epoch5 val=0.780212 best=0.780212 sec=7.7
+MaCo chestxray14 pre_asl seed44 epoch6 val=0.791037 best=0.791037 sec=7.6
+MaCo chestxray14 pre_asl seed44 epoch7 val=0.790850 best=0.791037 sec=7.6
+MaCo chestxray14 pre_asl seed44 epoch8 val=0.792419 best=0.792419 sec=7.7
+MaCo chestxray14 pre_asl seed44 epoch9 val=0.798874 best=0.798874 sec=7.5
+MaCo chestxray14 pre_asl seed44 epoch10 val=0.797947 best=0.798874 sec=7.4
+MaCo chestxray14 pre_asl seed44 epoch11 val=0.799708 best=0.799708 sec=7.5
+MaCo chestxray14 pre_asl seed44 epoch12 val=0.805743 best=0.805743 sec=7.5
+MaCo chestxray14 pre_asl seed44 epoch13 val=0.805340 best=0.805743 sec=7.4
+MaCo chestxray14 pre_asl seed44 epoch14 val=0.807816 best=0.807816 sec=7.6
+MaCo chestxray14 pre_asl seed44 epoch15 val=0.810751 best=0.810751 sec=7.5
+MaCo chestxray14 pre_asl seed44 epoch16 val=0.808837 best=0.810751 sec=8.0
+MaCo chestxray14 pre_asl seed44 epoch17 val=0.810232 best=0.810751 sec=7.4
+MaCo chestxray14 pre_asl seed44 epoch18 val=0.815296 best=0.815296 sec=7.4
+MaCo chestxray14 pre_asl seed44 epoch19 val=0.816333 best=0.816333 sec=7.5
+MaCo chestxray14 pre_asl seed44 epoch20 val=0.814711 best=0.816333 sec=7.4
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+COMPLETE MaCo chestxray14 pre_asl 44 0.7941901882859469 0.22750799510294692
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo chestxray14 gated_asl seed42 epoch1 val=0.738642 best=0.778556 sec=7.8
+MaCo chestxray14 gated_asl seed42 epoch2 val=0.750589 best=0.778556 sec=7.9
+MaCo chestxray14 gated_asl seed42 epoch3 val=0.749360 best=0.778556 sec=8.3
+MaCo chestxray14 gated_asl seed42 epoch4 val=0.759429 best=0.778556 sec=8.3
+MaCo chestxray14 gated_asl seed42 epoch5 val=0.772572 best=0.778556 sec=8.4
+MaCo chestxray14 gated_asl seed42 epoch6 val=0.777594 best=0.778556 sec=8.8
+MaCo chestxray14 gated_asl seed42 epoch7 val=0.789212 best=0.789212 sec=8.8
+MaCo chestxray14 gated_asl seed42 epoch8 val=0.797310 best=0.797310 sec=9.4
+MaCo chestxray14 gated_asl seed42 epoch9 val=0.799376 best=0.799376 sec=9.2
+MaCo chestxray14 gated_asl seed42 epoch10 val=0.806216 best=0.806216 sec=9.1
+MaCo chestxray14 gated_asl seed42 epoch11 val=0.803438 best=0.806216 sec=9.4
+MaCo chestxray14 gated_asl seed42 epoch12 val=0.800314 best=0.806216 sec=9.2
+MaCo chestxray14 gated_asl seed42 epoch13 val=0.805270 best=0.806216 sec=9.1
+MaCo chestxray14 gated_asl seed42 epoch14 val=0.807021 best=0.807021 sec=9.2
+MaCo chestxray14 gated_asl seed42 epoch15 val=0.800223 best=0.807021 sec=8.7
+MaCo chestxray14 gated_asl seed42 epoch16 val=0.811786 best=0.811786 sec=9.2
+MaCo chestxray14 gated_asl seed42 epoch17 val=0.810869 best=0.811786 sec=9.1
+MaCo chestxray14 gated_asl seed42 epoch18 val=0.807164 best=0.811786 sec=9.6
+MaCo chestxray14 gated_asl seed42 epoch19 val=0.818262 best=0.818262 sec=9.1
+MaCo chestxray14 gated_asl seed42 epoch20 val=0.813276 best=0.818262 sec=8.9
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+COMPLETE MaCo chestxray14 gated_asl 42 0.8000887813027706 0.2227802835776816
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo chestxray14 gated_asl seed43 epoch1 val=0.752040 best=0.778556 sec=9.0
+MaCo chestxray14 gated_asl seed43 epoch2 val=0.741610 best=0.778556 sec=8.4
+MaCo chestxray14 gated_asl seed43 epoch3 val=0.749359 best=0.778556 sec=8.2
+MaCo chestxray14 gated_asl seed43 epoch4 val=0.765599 best=0.778556 sec=8.4
+MaCo chestxray14 gated_asl seed43 epoch5 val=0.775795 best=0.778556 sec=7.9
+MaCo chestxray14 gated_asl seed43 epoch6 val=0.788360 best=0.788360 sec=8.3
+MaCo chestxray14 gated_asl seed43 epoch7 val=0.785419 best=0.788360 sec=8.3
+MaCo chestxray14 gated_asl seed43 epoch8 val=0.795243 best=0.795243 sec=8.2
+MaCo chestxray14 gated_asl seed43 epoch9 val=0.795099 best=0.795243 sec=8.2
+MaCo chestxray14 gated_asl seed43 epoch10 val=0.794865 best=0.795243 sec=8.2
+MaCo chestxray14 gated_asl seed43 epoch11 val=0.798399 best=0.798399 sec=7.9
+MaCo chestxray14 gated_asl seed43 epoch12 val=0.807946 best=0.807946 sec=8.2
+MaCo chestxray14 gated_asl seed43 epoch13 val=0.805862 best=0.807946 sec=8.3
+MaCo chestxray14 gated_asl seed43 epoch14 val=0.805181 best=0.807946 sec=8.1
+MaCo chestxray14 gated_asl seed43 epoch15 val=0.811984 best=0.811984 sec=8.2
+MaCo chestxray14 gated_asl seed43 epoch16 val=0.811206 best=0.811984 sec=8.0
+MaCo chestxray14 gated_asl seed43 epoch17 val=0.812027 best=0.812027 sec=8.2
+MaCo chestxray14 gated_asl seed43 epoch18 val=0.821661 best=0.821661 sec=8.2
+MaCo chestxray14 gated_asl seed43 epoch19 val=0.815115 best=0.821661 sec=8.2
+MaCo chestxray14 gated_asl seed43 epoch20 val=0.819470 best=0.821661 sec=8.1
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+COMPLETE MaCo chestxray14 gated_asl 43 0.803087102958472 0.23338127820096302
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo chestxray14 gated_asl seed44 epoch1 val=0.736406 best=0.778556 sec=8.7
+MaCo chestxray14 gated_asl seed44 epoch2 val=0.754007 best=0.778556 sec=8.5
+MaCo chestxray14 gated_asl seed44 epoch3 val=0.750255 best=0.778556 sec=8.2
+MaCo chestxray14 gated_asl seed44 epoch4 val=0.761184 best=0.778556 sec=8.2
+MaCo chestxray14 gated_asl seed44 epoch5 val=0.772089 best=0.778556 sec=8.6
+MaCo chestxray14 gated_asl seed44 epoch6 val=0.787529 best=0.787529 sec=8.2
+MaCo chestxray14 gated_asl seed44 epoch7 val=0.789355 best=0.789355 sec=7.8
+MaCo chestxray14 gated_asl seed44 epoch8 val=0.788430 best=0.789355 sec=8.1
+MaCo chestxray14 gated_asl seed44 epoch9 val=0.796855 best=0.796855 sec=8.1
+MaCo chestxray14 gated_asl seed44 epoch10 val=0.794347 best=0.796855 sec=8.0
+MaCo chestxray14 gated_asl seed44 epoch11 val=0.796498 best=0.796855 sec=8.0
+MaCo chestxray14 gated_asl seed44 epoch12 val=0.803328 best=0.803328 sec=8.0
+MaCo chestxray14 gated_asl seed44 epoch13 val=0.804087 best=0.804087 sec=8.5
+MaCo chestxray14 gated_asl seed44 epoch14 val=0.805882 best=0.805882 sec=8.7
+MaCo chestxray14 gated_asl seed44 epoch15 val=0.809165 best=0.809165 sec=8.1
+MaCo chestxray14 gated_asl seed44 epoch16 val=0.807643 best=0.809165 sec=8.1
+MaCo chestxray14 gated_asl seed44 epoch17 val=0.809263 best=0.809263 sec=8.0
+MaCo chestxray14 gated_asl seed44 epoch18 val=0.813506 best=0.813506 sec=8.0
+MaCo chestxray14 gated_asl seed44 epoch19 val=0.815519 best=0.815519 sec=8.2
+MaCo chestxray14 gated_asl seed44 epoch20 val=0.813590 best=0.815519 sec=8.2
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+COMPLETE MaCo chestxray14 gated_asl 44 0.791586607515797 0.23251870749163647

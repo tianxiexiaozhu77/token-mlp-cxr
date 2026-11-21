@@ -1,0 +1,57 @@
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Image feature extractor: resnet50
+/storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Text feature extractor: /storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+bert encoder layers: 12
+KAD chestxray14 clip_global 43 1 val 0.797562 best 0
+KAD chestxray14 clip_global 43 2 val 0.808551 best 2
+KAD chestxray14 clip_global 43 3 val 0.814648 best 3
+KAD chestxray14 clip_global 43 4 val 0.816194 best 4
+KAD chestxray14 clip_global 43 5 val 0.819944 best 5
+KAD chestxray14 clip_global 43 6 val 0.819533 best 5
+KAD chestxray14 clip_global 43 7 val 0.820606 best 7
+KAD chestxray14 clip_global 43 8 val 0.821398 best 8
+KAD chestxray14 clip_global 43 9 val 0.823267 best 9
+KAD chestxray14 clip_global 43 10 val 0.822747 best 9
+KAD chestxray14 clip_global 43 11 val 0.823149 best 9
+KAD chestxray14 clip_global 43 12 val 0.823739 best 12
+KAD chestxray14 clip_global 43 13 val 0.82247 best 12
+KAD chestxray14 clip_global 43 14 val 0.823701 best 12
+KAD chestxray14 clip_global 43 15 val 0.822786 best 12
+KAD chestxray14 clip_global 43 16 val 0.823335 best 12
+KAD chestxray14 clip_global 43 17 val 0.824372 best 17
+KAD chestxray14 clip_global 43 18 val 0.82452 best 18
+KAD chestxray14 clip_global 43 19 val 0.822404 best 18
+KAD chestxray14 clip_global 43 20 val 0.824559 best 20
+COMPLETE KAD chestxray14 clip_global 43
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+OSError: [Errno 16] Device or resource busy: '.nfs0000000417fb1c0100001e69'
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000417b6e70100001e6a'

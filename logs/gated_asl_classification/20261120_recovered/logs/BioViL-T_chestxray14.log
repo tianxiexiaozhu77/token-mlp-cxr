@@ -1,0 +1,222 @@
+/storage/3090group2/zjx/code/medical/baselines/BioViL-T/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BioViL-T/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/storage/3090group2/zjx/code/medical/baselines/BioViL-T/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Some weights of the model checkpoint at /storage/3090group2/zjx/code/medical/baselines/BioViL-T/checkpoints were not used when initializing CXRBertModel: ['bert.pooler.dense.bias', 'bert.pooler.dense.weight']
+- This IS expected if you are initializing CXRBertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing CXRBertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+The tokenizer class you load from this checkpoint is not the same type as the class this function is called from. It may result in unexpected tokenization. 
+The tokenizer class you load from this checkpoint is 'BertTokenizer'. 
+The class this function is called from is 'CXRBertTokenizer'.
+CACHE_PARITY BioViL-T chestxray14 0 22433
+CACHE_PARITY BioViL-T chestxray14 6400 22433
+CACHE_PARITY BioViL-T chestxray14 12800 22433
+CACHE_PARITY BioViL-T chestxray14 19200 22433
+BioViL-T chestxray14 pre_bce seed42 epoch1 val=0.747898 best=0.747898 sec=4.7
+BioViL-T chestxray14 pre_bce seed42 epoch2 val=0.758562 best=0.758562 sec=4.0
+BioViL-T chestxray14 pre_bce seed42 epoch3 val=0.761789 best=0.761789 sec=4.1
+BioViL-T chestxray14 pre_bce seed42 epoch4 val=0.764167 best=0.764167 sec=4.1
+BioViL-T chestxray14 pre_bce seed42 epoch5 val=0.763814 best=0.764167 sec=4.2
+BioViL-T chestxray14 pre_bce seed42 epoch6 val=0.762667 best=0.764167 sec=4.5
+BioViL-T chestxray14 pre_bce seed42 epoch7 val=0.761636 best=0.764167 sec=4.1
+BioViL-T chestxray14 pre_bce seed42 epoch8 val=0.762892 best=0.764167 sec=4.0
+BioViL-T chestxray14 pre_bce seed42 epoch9 val=0.763664 best=0.764167 sec=4.2
+COMPLETE BioViL-T chestxray14 pre_bce 42 0.763223647003171 0.13983429903279335
+BioViL-T chestxray14 pre_bce seed43 epoch1 val=0.747611 best=0.747611 sec=4.4
+BioViL-T chestxray14 pre_bce seed43 epoch2 val=0.761056 best=0.761056 sec=4.0
+BioViL-T chestxray14 pre_bce seed43 epoch3 val=0.763735 best=0.763735 sec=4.0
+BioViL-T chestxray14 pre_bce seed43 epoch4 val=0.764095 best=0.764095 sec=4.0
+BioViL-T chestxray14 pre_bce seed43 epoch5 val=0.763641 best=0.764095 sec=4.2
+BioViL-T chestxray14 pre_bce seed43 epoch6 val=0.762123 best=0.764095 sec=3.9
+BioViL-T chestxray14 pre_bce seed43 epoch7 val=0.762247 best=0.764095 sec=3.8
+BioViL-T chestxray14 pre_bce seed43 epoch8 val=0.762396 best=0.764095 sec=4.1
+BioViL-T chestxray14 pre_bce seed43 epoch9 val=0.762600 best=0.764095 sec=4.4
+COMPLETE BioViL-T chestxray14 pre_bce 43 0.7615813312801054 0.14069172782516212
+BioViL-T chestxray14 pre_bce seed44 epoch1 val=0.745269 best=0.745269 sec=4.1
+BioViL-T chestxray14 pre_bce seed44 epoch2 val=0.756110 best=0.756110 sec=4.1
+BioViL-T chestxray14 pre_bce seed44 epoch3 val=0.763165 best=0.763165 sec=4.5
+BioViL-T chestxray14 pre_bce seed44 epoch4 val=0.764699 best=0.764699 sec=4.3
+BioViL-T chestxray14 pre_bce seed44 epoch5 val=0.763457 best=0.764699 sec=3.6
+BioViL-T chestxray14 pre_bce seed44 epoch6 val=0.762114 best=0.764699 sec=4.2
+BioViL-T chestxray14 pre_bce seed44 epoch7 val=0.762075 best=0.764699 sec=4.0
+BioViL-T chestxray14 pre_bce seed44 epoch8 val=0.763439 best=0.764699 sec=4.0
+BioViL-T chestxray14 pre_bce seed44 epoch9 val=0.764075 best=0.764699 sec=4.5
+COMPLETE BioViL-T chestxray14 pre_bce 44 0.76427222435925 0.14360473402158885
+BioViL-T chestxray14 gated_bce seed42 epoch1 val=0.735582 best=0.735582 sec=4.9
+BioViL-T chestxray14 gated_bce seed42 epoch2 val=0.737331 best=0.737331 sec=4.8
+BioViL-T chestxray14 gated_bce seed42 epoch3 val=0.742181 best=0.742181 sec=4.3
+BioViL-T chestxray14 gated_bce seed42 epoch4 val=0.746787 best=0.746787 sec=4.8
+BioViL-T chestxray14 gated_bce seed42 epoch5 val=0.750126 best=0.750126 sec=4.8
+BioViL-T chestxray14 gated_bce seed42 epoch6 val=0.752570 best=0.752570 sec=5.0
+BioViL-T chestxray14 gated_bce seed42 epoch7 val=0.754179 best=0.754179 sec=4.7
+BioViL-T chestxray14 gated_bce seed42 epoch8 val=0.756348 best=0.756348 sec=4.7
+BioViL-T chestxray14 gated_bce seed42 epoch9 val=0.756643 best=0.756643 sec=4.9
+BioViL-T chestxray14 gated_bce seed42 epoch10 val=0.756888 best=0.756888 sec=4.6
+BioViL-T chestxray14 gated_bce seed42 epoch11 val=0.757870 best=0.757870 sec=4.9
+BioViL-T chestxray14 gated_bce seed42 epoch12 val=0.758791 best=0.758791 sec=4.6
+BioViL-T chestxray14 gated_bce seed42 epoch13 val=0.757285 best=0.758791 sec=4.4
+BioViL-T chestxray14 gated_bce seed42 epoch14 val=0.758377 best=0.758791 sec=4.6
+BioViL-T chestxray14 gated_bce seed42 epoch15 val=0.757493 best=0.758791 sec=4.8
+BioViL-T chestxray14 gated_bce seed42 epoch16 val=0.758649 best=0.758791 sec=5.0
+BioViL-T chestxray14 gated_bce seed42 epoch17 val=0.759697 best=0.759697 sec=4.8
+BioViL-T chestxray14 gated_bce seed42 epoch18 val=0.759139 best=0.759697 sec=5.1
+BioViL-T chestxray14 gated_bce seed42 epoch19 val=0.760118 best=0.760118 sec=5.0
+BioViL-T chestxray14 gated_bce seed42 epoch20 val=0.760124 best=0.760124 sec=4.4
+COMPLETE BioViL-T chestxray14 gated_bce 42 0.7622605368916279 0.14030819205436035
+BioViL-T chestxray14 gated_bce seed43 epoch1 val=0.732948 best=0.732948 sec=4.8
+BioViL-T chestxray14 gated_bce seed43 epoch2 val=0.738691 best=0.738691 sec=4.8
+BioViL-T chestxray14 gated_bce seed43 epoch3 val=0.741900 best=0.741900 sec=4.7
+BioViL-T chestxray14 gated_bce seed43 epoch4 val=0.744449 best=0.744449 sec=4.2
+BioViL-T chestxray14 gated_bce seed43 epoch5 val=0.747071 best=0.747071 sec=4.8
+BioViL-T chestxray14 gated_bce seed43 epoch6 val=0.749730 best=0.749730 sec=4.5
+BioViL-T chestxray14 gated_bce seed43 epoch7 val=0.752822 best=0.752822 sec=5.0
+BioViL-T chestxray14 gated_bce seed43 epoch8 val=0.753360 best=0.753360 sec=4.6
+BioViL-T chestxray14 gated_bce seed43 epoch9 val=0.754351 best=0.754351 sec=4.8
+BioViL-T chestxray14 gated_bce seed43 epoch10 val=0.757236 best=0.757236 sec=5.2
+BioViL-T chestxray14 gated_bce seed43 epoch11 val=0.756851 best=0.757236 sec=5.9
+BioViL-T chestxray14 gated_bce seed43 epoch12 val=0.754505 best=0.757236 sec=5.3
+BioViL-T chestxray14 gated_bce seed43 epoch13 val=0.757498 best=0.757498 sec=5.0
+BioViL-T chestxray14 gated_bce seed43 epoch14 val=0.757215 best=0.757498 sec=5.3
+BioViL-T chestxray14 gated_bce seed43 epoch15 val=0.756683 best=0.757498 sec=5.1
+BioViL-T chestxray14 gated_bce seed43 epoch16 val=0.758457 best=0.758457 sec=4.7
+BioViL-T chestxray14 gated_bce seed43 epoch17 val=0.759532 best=0.759532 sec=5.1
+BioViL-T chestxray14 gated_bce seed43 epoch18 val=0.759343 best=0.759532 sec=4.9
+BioViL-T chestxray14 gated_bce seed43 epoch19 val=0.759272 best=0.759532 sec=5.1
+BioViL-T chestxray14 gated_bce seed43 epoch20 val=0.760459 best=0.760459 sec=4.8
+COMPLETE BioViL-T chestxray14 gated_bce 43 0.7629836011380328 0.1399439056875051
+BioViL-T chestxray14 gated_bce seed44 epoch1 val=0.734277 best=0.734277 sec=5.1
+BioViL-T chestxray14 gated_bce seed44 epoch2 val=0.735907 best=0.735907 sec=4.7
+BioViL-T chestxray14 gated_bce seed44 epoch3 val=0.740876 best=0.740876 sec=4.9
+BioViL-T chestxray14 gated_bce seed44 epoch4 val=0.743756 best=0.743756 sec=5.0
+BioViL-T chestxray14 gated_bce seed44 epoch5 val=0.745665 best=0.745665 sec=4.6
+BioViL-T chestxray14 gated_bce seed44 epoch6 val=0.749682 best=0.749682 sec=4.9
+BioViL-T chestxray14 gated_bce seed44 epoch7 val=0.751910 best=0.751910 sec=4.9
+BioViL-T chestxray14 gated_bce seed44 epoch8 val=0.753966 best=0.753966 sec=5.1
+BioViL-T chestxray14 gated_bce seed44 epoch9 val=0.755113 best=0.755113 sec=4.9
+BioViL-T chestxray14 gated_bce seed44 epoch10 val=0.755493 best=0.755493 sec=4.3
+BioViL-T chestxray14 gated_bce seed44 epoch11 val=0.754803 best=0.755493 sec=4.1
+BioViL-T chestxray14 gated_bce seed44 epoch12 val=0.756284 best=0.756284 sec=5.0
+BioViL-T chestxray14 gated_bce seed44 epoch13 val=0.757009 best=0.757009 sec=5.1
+BioViL-T chestxray14 gated_bce seed44 epoch14 val=0.756822 best=0.757009 sec=4.8
+BioViL-T chestxray14 gated_bce seed44 epoch15 val=0.758414 best=0.758414 sec=4.7
+BioViL-T chestxray14 gated_bce seed44 epoch16 val=0.757593 best=0.758414 sec=5.3
+BioViL-T chestxray14 gated_bce seed44 epoch17 val=0.757962 best=0.758414 sec=4.7
+BioViL-T chestxray14 gated_bce seed44 epoch18 val=0.758759 best=0.758759 sec=4.9
+BioViL-T chestxray14 gated_bce seed44 epoch19 val=0.758724 best=0.758759 sec=4.3
+BioViL-T chestxray14 gated_bce seed44 epoch20 val=0.758412 best=0.758759 sec=4.7
+COMPLETE BioViL-T chestxray14 gated_bce 44 0.7609254455868548 0.13912043107368763
+BioViL-T chestxray14 pre_asl seed42 epoch1 val=0.741174 best=0.741174 sec=4.9
+BioViL-T chestxray14 pre_asl seed42 epoch2 val=0.746117 best=0.746117 sec=5.0
+BioViL-T chestxray14 pre_asl seed42 epoch3 val=0.750250 best=0.750250 sec=5.2
+BioViL-T chestxray14 pre_asl seed42 epoch4 val=0.759375 best=0.759375 sec=5.3
+BioViL-T chestxray14 pre_asl seed42 epoch5 val=0.766853 best=0.766853 sec=5.3
+BioViL-T chestxray14 pre_asl seed42 epoch6 val=0.770396 best=0.770396 sec=5.0
+BioViL-T chestxray14 pre_asl seed42 epoch7 val=0.772705 best=0.772705 sec=5.0
+BioViL-T chestxray14 pre_asl seed42 epoch8 val=0.774110 best=0.774110 sec=5.5
+BioViL-T chestxray14 pre_asl seed42 epoch9 val=0.773431 best=0.774110 sec=5.1
+BioViL-T chestxray14 pre_asl seed42 epoch10 val=0.774917 best=0.774917 sec=5.1
+BioViL-T chestxray14 pre_asl seed42 epoch11 val=0.773841 best=0.774917 sec=4.5
+BioViL-T chestxray14 pre_asl seed42 epoch12 val=0.775889 best=0.775889 sec=5.0
+BioViL-T chestxray14 pre_asl seed42 epoch13 val=0.775744 best=0.775889 sec=5.0
+BioViL-T chestxray14 pre_asl seed42 epoch14 val=0.775722 best=0.775889 sec=4.8
+BioViL-T chestxray14 pre_asl seed42 epoch15 val=0.776127 best=0.776127 sec=5.4
+BioViL-T chestxray14 pre_asl seed42 epoch16 val=0.775781 best=0.776127 sec=5.2
+BioViL-T chestxray14 pre_asl seed42 epoch17 val=0.775060 best=0.776127 sec=5.0
+BioViL-T chestxray14 pre_asl seed42 epoch18 val=0.776239 best=0.776239 sec=5.7
+BioViL-T chestxray14 pre_asl seed42 epoch19 val=0.777698 best=0.777698 sec=5.1
+BioViL-T chestxray14 pre_asl seed42 epoch20 val=0.777708 best=0.777708 sec=5.9
+COMPLETE BioViL-T chestxray14 pre_asl 42 0.7882020514874669 0.19802408751312303
+BioViL-T chestxray14 pre_asl seed43 epoch1 val=0.743359 best=0.743359 sec=4.9
+BioViL-T chestxray14 pre_asl seed43 epoch2 val=0.746964 best=0.746964 sec=4.9
+BioViL-T chestxray14 pre_asl seed43 epoch3 val=0.754062 best=0.754062 sec=4.8
+BioViL-T chestxray14 pre_asl seed43 epoch4 val=0.763913 best=0.763913 sec=5.2
+BioViL-T chestxray14 pre_asl seed43 epoch5 val=0.770687 best=0.770687 sec=5.1
+BioViL-T chestxray14 pre_asl seed43 epoch6 val=0.773441 best=0.773441 sec=4.9
+BioViL-T chestxray14 pre_asl seed43 epoch7 val=0.775286 best=0.775286 sec=4.8
+BioViL-T chestxray14 pre_asl seed43 epoch8 val=0.776194 best=0.776194 sec=5.2
+BioViL-T chestxray14 pre_asl seed43 epoch9 val=0.774556 best=0.776194 sec=5.4
+BioViL-T chestxray14 pre_asl seed43 epoch10 val=0.773446 best=0.776194 sec=5.2
+BioViL-T chestxray14 pre_asl seed43 epoch11 val=0.774904 best=0.776194 sec=5.2
+BioViL-T chestxray14 pre_asl seed43 epoch12 val=0.774129 best=0.776194 sec=5.3
+BioViL-T chestxray14 pre_asl seed43 epoch13 val=0.773829 best=0.776194 sec=5.2
+COMPLETE BioViL-T chestxray14 pre_asl 43 0.7837087162885804 0.178557616388394
+BioViL-T chestxray14 pre_asl seed44 epoch1 val=0.743614 best=0.743614 sec=5.3
+BioViL-T chestxray14 pre_asl seed44 epoch2 val=0.746841 best=0.746841 sec=4.9
+BioViL-T chestxray14 pre_asl seed44 epoch3 val=0.753839 best=0.753839 sec=5.0
+BioViL-T chestxray14 pre_asl seed44 epoch4 val=0.764656 best=0.764656 sec=5.1
+BioViL-T chestxray14 pre_asl seed44 epoch5 val=0.771813 best=0.771813 sec=5.5
+BioViL-T chestxray14 pre_asl seed44 epoch6 val=0.773185 best=0.773185 sec=5.1
+BioViL-T chestxray14 pre_asl seed44 epoch7 val=0.773593 best=0.773593 sec=5.1
+BioViL-T chestxray14 pre_asl seed44 epoch8 val=0.775468 best=0.775468 sec=5.2
+BioViL-T chestxray14 pre_asl seed44 epoch9 val=0.775912 best=0.775912 sec=5.0
+BioViL-T chestxray14 pre_asl seed44 epoch10 val=0.772935 best=0.775912 sec=5.0
+BioViL-T chestxray14 pre_asl seed44 epoch11 val=0.772243 best=0.775912 sec=5.5
+BioViL-T chestxray14 pre_asl seed44 epoch12 val=0.774489 best=0.775912 sec=5.3
+BioViL-T chestxray14 pre_asl seed44 epoch13 val=0.774206 best=0.775912 sec=5.3
+BioViL-T chestxray14 pre_asl seed44 epoch14 val=0.774541 best=0.775912 sec=5.1
+COMPLETE BioViL-T chestxray14 pre_asl 44 0.7836221898438618 0.18189049753869727
+BioViL-T chestxray14 gated_asl seed42 epoch1 val=0.730904 best=0.730904 sec=5.6
+BioViL-T chestxray14 gated_asl seed42 epoch2 val=0.731740 best=0.731740 sec=5.8
+BioViL-T chestxray14 gated_asl seed42 epoch3 val=0.732640 best=0.732640 sec=5.5
+BioViL-T chestxray14 gated_asl seed42 epoch4 val=0.731733 best=0.732640 sec=5.4
+BioViL-T chestxray14 gated_asl seed42 epoch5 val=0.732088 best=0.732640 sec=5.3
+BioViL-T chestxray14 gated_asl seed42 epoch6 val=0.733127 best=0.733127 sec=5.8
+BioViL-T chestxray14 gated_asl seed42 epoch7 val=0.734234 best=0.734234 sec=5.4
+BioViL-T chestxray14 gated_asl seed42 epoch8 val=0.737304 best=0.737304 sec=5.9
+BioViL-T chestxray14 gated_asl seed42 epoch9 val=0.740979 best=0.740979 sec=5.9
+BioViL-T chestxray14 gated_asl seed42 epoch10 val=0.743284 best=0.743284 sec=5.5
+BioViL-T chestxray14 gated_asl seed42 epoch11 val=0.746414 best=0.746414 sec=5.6
+BioViL-T chestxray14 gated_asl seed42 epoch12 val=0.749345 best=0.749345 sec=5.7
+BioViL-T chestxray14 gated_asl seed42 epoch13 val=0.751708 best=0.751708 sec=5.5
+BioViL-T chestxray14 gated_asl seed42 epoch14 val=0.753719 best=0.753719 sec=5.7
+BioViL-T chestxray14 gated_asl seed42 epoch15 val=0.754857 best=0.754857 sec=5.3
+BioViL-T chestxray14 gated_asl seed42 epoch16 val=0.757163 best=0.757163 sec=5.2
+BioViL-T chestxray14 gated_asl seed42 epoch17 val=0.757705 best=0.757705 sec=5.7
+BioViL-T chestxray14 gated_asl seed42 epoch18 val=0.758895 best=0.758895 sec=5.8
+BioViL-T chestxray14 gated_asl seed42 epoch19 val=0.759945 best=0.759945 sec=5.8
+BioViL-T chestxray14 gated_asl seed42 epoch20 val=0.760583 best=0.760583 sec=5.9
+COMPLETE BioViL-T chestxray14 gated_asl 42 0.7637362500152208 0.17176054807052557
+BioViL-T chestxray14 gated_asl seed43 epoch1 val=0.730694 best=0.730694 sec=5.6
+BioViL-T chestxray14 gated_asl seed43 epoch2 val=0.731161 best=0.731161 sec=5.6
+BioViL-T chestxray14 gated_asl seed43 epoch3 val=0.732866 best=0.732866 sec=5.6
+BioViL-T chestxray14 gated_asl seed43 epoch4 val=0.731884 best=0.732866 sec=5.7
+BioViL-T chestxray14 gated_asl seed43 epoch5 val=0.733442 best=0.733442 sec=5.8
+BioViL-T chestxray14 gated_asl seed43 epoch6 val=0.735110 best=0.735110 sec=5.8
+BioViL-T chestxray14 gated_asl seed43 epoch7 val=0.738790 best=0.738790 sec=5.5
+BioViL-T chestxray14 gated_asl seed43 epoch8 val=0.742495 best=0.742495 sec=5.3
+BioViL-T chestxray14 gated_asl seed43 epoch9 val=0.744861 best=0.744861 sec=5.3
+BioViL-T chestxray14 gated_asl seed43 epoch10 val=0.746933 best=0.746933 sec=4.7
+BioViL-T chestxray14 gated_asl seed43 epoch11 val=0.749632 best=0.749632 sec=5.4
+BioViL-T chestxray14 gated_asl seed43 epoch12 val=0.751876 best=0.751876 sec=5.8
+BioViL-T chestxray14 gated_asl seed43 epoch13 val=0.752573 best=0.752573 sec=5.5
+BioViL-T chestxray14 gated_asl seed43 epoch14 val=0.754504 best=0.754504 sec=5.5
+BioViL-T chestxray14 gated_asl seed43 epoch15 val=0.755968 best=0.755968 sec=5.9
+BioViL-T chestxray14 gated_asl seed43 epoch16 val=0.757845 best=0.757845 sec=5.6
+BioViL-T chestxray14 gated_asl seed43 epoch17 val=0.759086 best=0.759086 sec=5.6
+BioViL-T chestxray14 gated_asl seed43 epoch18 val=0.760901 best=0.760901 sec=5.3
+BioViL-T chestxray14 gated_asl seed43 epoch19 val=0.760933 best=0.760933 sec=5.4
+BioViL-T chestxray14 gated_asl seed43 epoch20 val=0.763574 best=0.763574 sec=5.5
+COMPLETE BioViL-T chestxray14 gated_asl 43 0.7678789189666098 0.1699621814783148
+BioViL-T chestxray14 gated_asl seed44 epoch1 val=0.730701 best=0.730701 sec=5.2
+BioViL-T chestxray14 gated_asl seed44 epoch2 val=0.731930 best=0.731930 sec=5.1
+BioViL-T chestxray14 gated_asl seed44 epoch3 val=0.733630 best=0.733630 sec=5.7
+BioViL-T chestxray14 gated_asl seed44 epoch4 val=0.733650 best=0.733650 sec=5.6
+BioViL-T chestxray14 gated_asl seed44 epoch5 val=0.735815 best=0.735815 sec=5.7
+BioViL-T chestxray14 gated_asl seed44 epoch6 val=0.736623 best=0.736623 sec=5.3
+BioViL-T chestxray14 gated_asl seed44 epoch7 val=0.738617 best=0.738617 sec=5.6
+BioViL-T chestxray14 gated_asl seed44 epoch8 val=0.742585 best=0.742585 sec=6.0
+BioViL-T chestxray14 gated_asl seed44 epoch9 val=0.745693 best=0.745693 sec=5.5
+BioViL-T chestxray14 gated_asl seed44 epoch10 val=0.747640 best=0.747640 sec=5.4
+BioViL-T chestxray14 gated_asl seed44 epoch11 val=0.749810 best=0.749810 sec=5.8
+BioViL-T chestxray14 gated_asl seed44 epoch12 val=0.752810 best=0.752810 sec=5.6
+BioViL-T chestxray14 gated_asl seed44 epoch13 val=0.755173 best=0.755173 sec=5.6
+BioViL-T chestxray14 gated_asl seed44 epoch14 val=0.756832 best=0.756832 sec=5.4
+BioViL-T chestxray14 gated_asl seed44 epoch15 val=0.758749 best=0.758749 sec=5.4
+BioViL-T chestxray14 gated_asl seed44 epoch16 val=0.759296 best=0.759296 sec=5.4
+BioViL-T chestxray14 gated_asl seed44 epoch17 val=0.760584 best=0.760584 sec=5.4
+BioViL-T chestxray14 gated_asl seed44 epoch18 val=0.760598 best=0.760598 sec=5.6
+BioViL-T chestxray14 gated_asl seed44 epoch19 val=0.761786 best=0.761786 sec=5.6
+BioViL-T chestxray14 gated_asl seed44 epoch20 val=0.762198 best=0.762198 sec=5.8
+COMPLETE BioViL-T chestxray14 gated_asl 44 0.7643655775686758 0.17597162546360864

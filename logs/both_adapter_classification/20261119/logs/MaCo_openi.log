@@ -1,0 +1,139 @@
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+CACHE_PARITY MaCo openi 0 7470
+CACHE_PARITY MaCo openi 6400 7470
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo openi both_mlp seed42 epoch1 val=0.819126 best=0.819126 sec=3.5
+MaCo openi both_mlp seed42 epoch2 val=0.823533 best=0.823533 sec=3.0
+MaCo openi both_mlp seed42 epoch3 val=0.830964 best=0.830964 sec=3.0
+MaCo openi both_mlp seed42 epoch4 val=0.833603 best=0.833603 sec=3.0
+MaCo openi both_mlp seed42 epoch5 val=0.836599 best=0.836599 sec=3.0
+MaCo openi both_mlp seed42 epoch6 val=0.836335 best=0.836599 sec=3.0
+MaCo openi both_mlp seed42 epoch7 val=0.841478 best=0.841478 sec=3.1
+MaCo openi both_mlp seed42 epoch8 val=0.844322 best=0.844322 sec=3.1
+MaCo openi both_mlp seed42 epoch9 val=0.846683 best=0.846683 sec=3.1
+MaCo openi both_mlp seed42 epoch10 val=0.848000 best=0.848000 sec=3.1
+MaCo openi both_mlp seed42 epoch11 val=0.848298 best=0.848298 sec=3.0
+MaCo openi both_mlp seed42 epoch12 val=0.855358 best=0.855358 sec=3.1
+MaCo openi both_mlp seed42 epoch13 val=0.846043 best=0.855358 sec=3.0
+MaCo openi both_mlp seed42 epoch14 val=0.853846 best=0.855358 sec=3.0
+MaCo openi both_mlp seed42 epoch15 val=0.857435 best=0.857435 sec=3.0
+MaCo openi both_mlp seed42 epoch16 val=0.855953 best=0.857435 sec=2.9
+MaCo openi both_mlp seed42 epoch17 val=0.856251 best=0.857435 sec=2.9
+MaCo openi both_mlp seed42 epoch18 val=0.856901 best=0.857435 sec=3.0
+MaCo openi both_mlp seed42 epoch19 val=0.860246 best=0.860246 sec=2.8
+MaCo openi both_mlp seed42 epoch20 val=0.856687 best=0.860246 sec=3.0
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+COMPLETE MaCo openi 42 0.8321488421020412 0.29569603153326285
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo openi both_mlp seed43 epoch1 val=0.817995 best=0.818376 sec=3.1
+MaCo openi both_mlp seed43 epoch2 val=0.822939 best=0.822939 sec=3.1
+MaCo openi both_mlp seed43 epoch3 val=0.827023 best=0.827023 sec=3.0
+MaCo openi both_mlp seed43 epoch4 val=0.829182 best=0.829182 sec=2.9
+MaCo openi both_mlp seed43 epoch5 val=0.834243 best=0.834243 sec=3.0
+MaCo openi both_mlp seed43 epoch6 val=0.838686 best=0.838686 sec=3.0
+MaCo openi both_mlp seed43 epoch7 val=0.838315 best=0.838686 sec=3.0
+MaCo openi both_mlp seed43 epoch8 val=0.844672 best=0.844672 sec=3.2
+MaCo openi both_mlp seed43 epoch9 val=0.847775 best=0.847775 sec=3.0
+MaCo openi both_mlp seed43 epoch10 val=0.848913 best=0.848913 sec=2.9
+MaCo openi both_mlp seed43 epoch11 val=0.851385 best=0.851385 sec=2.9
+MaCo openi both_mlp seed43 epoch12 val=0.851254 best=0.851385 sec=2.8
+MaCo openi both_mlp seed43 epoch13 val=0.855106 best=0.855106 sec=3.0
+MaCo openi both_mlp seed43 epoch14 val=0.854582 best=0.855106 sec=3.0
+MaCo openi both_mlp seed43 epoch15 val=0.858674 best=0.858674 sec=3.0
+MaCo openi both_mlp seed43 epoch16 val=0.855676 best=0.858674 sec=2.9
+MaCo openi both_mlp seed43 epoch17 val=0.857889 best=0.858674 sec=2.9
+MaCo openi both_mlp seed43 epoch18 val=0.856483 best=0.858674 sec=2.9
+MaCo openi both_mlp seed43 epoch19 val=0.855560 best=0.858674 sec=3.3
+MaCo openi both_mlp seed43 epoch20 val=0.856825 best=0.858674 sec=2.8
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+COMPLETE MaCo openi 43 0.8336961418477228 0.29603082252806046
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo openi both_mlp seed44 epoch1 val=0.817990 best=0.818376 sec=3.1
+MaCo openi both_mlp seed44 epoch2 val=0.823576 best=0.823576 sec=3.2
+MaCo openi both_mlp seed44 epoch3 val=0.825702 best=0.825702 sec=3.2
+MaCo openi both_mlp seed44 epoch4 val=0.823094 best=0.825702 sec=3.2
+MaCo openi both_mlp seed44 epoch5 val=0.828306 best=0.828306 sec=3.1
+MaCo openi both_mlp seed44 epoch6 val=0.837032 best=0.837032 sec=3.1
+MaCo openi both_mlp seed44 epoch7 val=0.837289 best=0.837289 sec=3.0
+MaCo openi both_mlp seed44 epoch8 val=0.842509 best=0.842509 sec=3.1
+MaCo openi both_mlp seed44 epoch9 val=0.846439 best=0.846439 sec=2.9
+MaCo openi both_mlp seed44 epoch10 val=0.847242 best=0.847242 sec=3.1
+MaCo openi both_mlp seed44 epoch11 val=0.851050 best=0.851050 sec=3.1
+MaCo openi both_mlp seed44 epoch12 val=0.851563 best=0.851563 sec=2.9
+MaCo openi both_mlp seed44 epoch13 val=0.850595 best=0.851563 sec=3.0
+MaCo openi both_mlp seed44 epoch14 val=0.848555 best=0.851563 sec=2.8
+MaCo openi both_mlp seed44 epoch15 val=0.853874 best=0.853874 sec=2.9
+MaCo openi both_mlp seed44 epoch16 val=0.855690 best=0.855690 sec=3.0
+MaCo openi both_mlp seed44 epoch17 val=0.859162 best=0.859162 sec=3.0
+MaCo openi both_mlp seed44 epoch18 val=0.855831 best=0.859162 sec=3.1
+MaCo openi both_mlp seed44 epoch19 val=0.858368 best=0.859162 sec=2.9
+MaCo openi both_mlp seed44 epoch20 val=0.854626 best=0.859162 sec=3.2
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+COMPLETE MaCo openi 44 0.8324751419217323 0.30033376851806454

@@ -1,0 +1,153 @@
+/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+CACHE_PARITY RadZero openi 0 7470
+CACHE_PARITY RadZero openi 6400 7470
+RadZero openi pre_bce seed42 epoch1 val=0.846300 best=0.846300 sec=27.1
+RadZero openi pre_bce seed42 epoch2 val=0.850143 best=0.850143 sec=27.9
+RadZero openi pre_bce seed42 epoch3 val=0.852858 best=0.852858 sec=29.2
+RadZero openi pre_bce seed42 epoch4 val=0.852676 best=0.852858 sec=34.6
+RadZero openi pre_bce seed42 epoch5 val=0.851899 best=0.852858 sec=33.4
+RadZero openi pre_bce seed42 epoch6 val=0.851655 best=0.852858 sec=38.8
+RadZero openi pre_bce seed42 epoch7 val=0.851804 best=0.852858 sec=35.5
+RadZero openi pre_bce seed42 epoch8 val=0.855364 best=0.855364 sec=35.6
+RadZero openi pre_bce seed42 epoch9 val=0.856576 best=0.856576 sec=35.4
+RadZero openi pre_bce seed42 epoch10 val=0.856146 best=0.856576 sec=35.9
+RadZero openi pre_bce seed42 epoch11 val=0.857106 best=0.857106 sec=35.9
+RadZero openi pre_bce seed42 epoch12 val=0.858974 best=0.858974 sec=36.0
+RadZero openi pre_bce seed42 epoch13 val=0.858572 best=0.858974 sec=36.7
+RadZero openi pre_bce seed42 epoch14 val=0.862185 best=0.862185 sec=37.8
+RadZero openi pre_bce seed42 epoch15 val=0.861507 best=0.862185 sec=37.1
+RadZero openi pre_bce seed42 epoch16 val=0.863230 best=0.863230 sec=36.9
+RadZero openi pre_bce seed42 epoch17 val=0.865528 best=0.865528 sec=36.4
+RadZero openi pre_bce seed42 epoch18 val=0.864054 best=0.865528 sec=35.8
+RadZero openi pre_bce seed42 epoch19 val=0.864109 best=0.865528 sec=36.3
+RadZero openi pre_bce seed42 epoch20 val=0.866014 best=0.866014 sec=36.2
+COMPLETE RadZero openi pre_bce 42 0.881824846406666 0.3695260720743893
+RadZero openi pre_bce seed43 epoch1 val=0.839700 best=0.843093 sec=35.8
+RadZero openi pre_bce seed43 epoch2 val=0.845531 best=0.845531 sec=36.2
+RadZero openi pre_bce seed43 epoch3 val=0.846638 best=0.846638 sec=34.1
+RadZero openi pre_bce seed43 epoch4 val=0.851766 best=0.851766 sec=33.6
+RadZero openi pre_bce seed43 epoch5 val=0.852056 best=0.852056 sec=33.5
+RadZero openi pre_bce seed43 epoch6 val=0.855381 best=0.855381 sec=33.3
+RadZero openi pre_bce seed43 epoch7 val=0.856112 best=0.856112 sec=33.4
+RadZero openi pre_bce seed43 epoch8 val=0.855788 best=0.856112 sec=33.6
+RadZero openi pre_bce seed43 epoch9 val=0.857114 best=0.857114 sec=33.4
+RadZero openi pre_bce seed43 epoch10 val=0.853924 best=0.857114 sec=33.7
+RadZero openi pre_bce seed43 epoch11 val=0.857779 best=0.857779 sec=33.3
+RadZero openi pre_bce seed43 epoch12 val=0.855278 best=0.857779 sec=34.7
+RadZero openi pre_bce seed43 epoch13 val=0.854195 best=0.857779 sec=34.5
+RadZero openi pre_bce seed43 epoch14 val=0.860101 best=0.860101 sec=33.6
+RadZero openi pre_bce seed43 epoch15 val=0.857226 best=0.860101 sec=34.0
+RadZero openi pre_bce seed43 epoch16 val=0.857782 best=0.860101 sec=34.9
+RadZero openi pre_bce seed43 epoch17 val=0.863077 best=0.863077 sec=34.0
+RadZero openi pre_bce seed43 epoch18 val=0.860788 best=0.863077 sec=33.8
+RadZero openi pre_bce seed43 epoch19 val=0.861197 best=0.863077 sec=34.4
+RadZero openi pre_bce seed43 epoch20 val=0.855067 best=0.863077 sec=35.0
+COMPLETE RadZero openi pre_bce 43 0.8760207075076227 0.37609159175085166
+RadZero openi pre_bce seed44 epoch1 val=0.834650 best=0.843093 sec=29.3
+RadZero openi pre_bce seed44 epoch2 val=0.838238 best=0.843093 sec=28.7
+RadZero openi pre_bce seed44 epoch3 val=0.842422 best=0.843093 sec=31.4
+RadZero openi pre_bce seed44 epoch4 val=0.844926 best=0.844926 sec=33.8
+RadZero openi pre_bce seed44 epoch5 val=0.845326 best=0.845326 sec=34.0
+RadZero openi pre_bce seed44 epoch6 val=0.847304 best=0.847304 sec=33.3
+RadZero openi pre_bce seed44 epoch7 val=0.849280 best=0.849280 sec=33.7
+RadZero openi pre_bce seed44 epoch8 val=0.848095 best=0.849280 sec=32.9
+RadZero openi pre_bce seed44 epoch9 val=0.848110 best=0.849280 sec=30.6
+RadZero openi pre_bce seed44 epoch10 val=0.853104 best=0.853104 sec=32.3
+RadZero openi pre_bce seed44 epoch11 val=0.851264 best=0.853104 sec=33.1
+RadZero openi pre_bce seed44 epoch12 val=0.850534 best=0.853104 sec=33.6
+RadZero openi pre_bce seed44 epoch13 val=0.855033 best=0.855033 sec=33.5
+RadZero openi pre_bce seed44 epoch14 val=0.854461 best=0.855033 sec=34.4
+RadZero openi pre_bce seed44 epoch15 val=0.852330 best=0.855033 sec=33.2
+RadZero openi pre_bce seed44 epoch16 val=0.854112 best=0.855033 sec=33.2
+RadZero openi pre_bce seed44 epoch17 val=0.856856 best=0.856856 sec=33.4
+RadZero openi pre_bce seed44 epoch18 val=0.850497 best=0.856856 sec=33.6
+RadZero openi pre_bce seed44 epoch19 val=0.851819 best=0.856856 sec=33.7
+RadZero openi pre_bce seed44 epoch20 val=0.853542 best=0.856856 sec=34.1
+COMPLETE RadZero openi pre_bce 44 0.880311017190385 0.3777139518753144
+RadZero openi gated_bce seed42 epoch1 val=0.841996 best=0.843093 sec=35.3
+RadZero openi gated_bce seed42 epoch2 val=0.843922 best=0.843922 sec=34.7
+RadZero openi gated_bce seed42 epoch3 val=0.845799 best=0.845799 sec=33.9
+RadZero openi gated_bce seed42 epoch4 val=0.847890 best=0.847890 sec=34.8
+RadZero openi gated_bce seed42 epoch5 val=0.844610 best=0.847890 sec=34.8
+RadZero openi gated_bce seed42 epoch6 val=0.842975 best=0.847890 sec=35.3
+RadZero openi gated_bce seed42 epoch7 val=0.840084 best=0.847890 sec=31.5
+RadZero openi gated_bce seed42 epoch8 val=0.838400 best=0.847890 sec=30.5
+RadZero openi gated_bce seed42 epoch9 val=0.838973 best=0.847890 sec=29.8
+COMPLETE RadZero openi gated_bce 42 0.8603660922765205 0.39569855794582637
+RadZero openi gated_bce seed43 epoch1 val=0.833257 best=0.843093 sec=30.3
+RadZero openi gated_bce seed43 epoch2 val=0.836796 best=0.843093 sec=30.2
+RadZero openi gated_bce seed43 epoch3 val=0.838696 best=0.843093 sec=30.0
+RadZero openi gated_bce seed43 epoch4 val=0.843328 best=0.843328 sec=30.7
+RadZero openi gated_bce seed43 epoch5 val=0.841126 best=0.843328 sec=30.8
+RadZero openi gated_bce seed43 epoch6 val=0.843923 best=0.843923 sec=29.8
+RadZero openi gated_bce seed43 epoch7 val=0.843103 best=0.843923 sec=33.9
+RadZero openi gated_bce seed43 epoch8 val=0.841359 best=0.843923 sec=33.4
+RadZero openi gated_bce seed43 epoch9 val=0.839462 best=0.843923 sec=29.4
+RadZero openi gated_bce seed43 epoch10 val=0.834218 best=0.843923 sec=29.8
+RadZero openi gated_bce seed43 epoch11 val=0.838210 best=0.843923 sec=34.3
+COMPLETE RadZero openi gated_bce 43 0.8593976279860932 0.3731486740818254
+RadZero openi gated_bce seed44 epoch1 val=0.834048 best=0.843093 sec=35.1
+RadZero openi gated_bce seed44 epoch2 val=0.836178 best=0.843093 sec=34.2
+RadZero openi gated_bce seed44 epoch3 val=0.838877 best=0.843093 sec=22.7
+RadZero openi gated_bce seed44 epoch4 val=0.843393 best=0.843393 sec=24.4
+RadZero openi gated_bce seed44 epoch5 val=0.840214 best=0.843393 sec=29.5
+RadZero openi gated_bce seed44 epoch6 val=0.841317 best=0.843393 sec=24.6
+RadZero openi gated_bce seed44 epoch7 val=0.837711 best=0.843393 sec=24.9
+RadZero openi gated_bce seed44 epoch8 val=0.831198 best=0.843393 sec=23.3
+RadZero openi gated_bce seed44 epoch9 val=0.830804 best=0.843393 sec=22.9
+COMPLETE RadZero openi gated_bce 44 0.8592765186466272 0.38281431220518075
+RadZero openi pre_asl seed42 epoch1 val=0.807740 best=0.843093 sec=23.3
+RadZero openi pre_asl seed42 epoch2 val=0.792791 best=0.843093 sec=23.0
+RadZero openi pre_asl seed42 epoch3 val=0.801513 best=0.843093 sec=23.1
+RadZero openi pre_asl seed42 epoch4 val=0.809107 best=0.843093 sec=23.2
+RadZero openi pre_asl seed42 epoch5 val=0.816966 best=0.843093 sec=22.7
+RadZero openi pre_asl seed42 epoch6 val=0.820404 best=0.843093 sec=22.7
+RadZero openi pre_asl seed42 epoch7 val=0.827704 best=0.843093 sec=22.5
+RadZero openi pre_asl seed42 epoch8 val=0.834691 best=0.843093 sec=25.4
+COMPLETE RadZero openi pre_asl 42 0.8505524467383103 0.42112579512178705
+RadZero openi pre_asl seed43 epoch1 val=0.806114 best=0.843093 sec=24.0
+RadZero openi pre_asl seed43 epoch2 val=0.789552 best=0.843093 sec=23.2
+RadZero openi pre_asl seed43 epoch3 val=0.792201 best=0.843093 sec=23.1
+RadZero openi pre_asl seed43 epoch4 val=0.803935 best=0.843093 sec=22.5
+RadZero openi pre_asl seed43 epoch5 val=0.809443 best=0.843093 sec=22.6
+RadZero openi pre_asl seed43 epoch6 val=0.817304 best=0.843093 sec=22.6
+RadZero openi pre_asl seed43 epoch7 val=0.821958 best=0.843093 sec=22.7
+RadZero openi pre_asl seed43 epoch8 val=0.825556 best=0.843093 sec=22.6
+COMPLETE RadZero openi pre_asl 43 0.8505524467383103 0.42112579512178705
+RadZero openi pre_asl seed44 epoch1 val=0.791947 best=0.843093 sec=23.9
+RadZero openi pre_asl seed44 epoch2 val=0.777006 best=0.843093 sec=23.5
+RadZero openi pre_asl seed44 epoch3 val=0.791373 best=0.843093 sec=23.5
+RadZero openi pre_asl seed44 epoch4 val=0.802040 best=0.843093 sec=23.6
+RadZero openi pre_asl seed44 epoch5 val=0.811167 best=0.843093 sec=23.6
+RadZero openi pre_asl seed44 epoch6 val=0.819754 best=0.843093 sec=23.7
+RadZero openi pre_asl seed44 epoch7 val=0.823532 best=0.843093 sec=23.5
+RadZero openi pre_asl seed44 epoch8 val=0.824318 best=0.843093 sec=23.5
+COMPLETE RadZero openi pre_asl 44 0.8505524467383103 0.42112579512178705
+RadZero openi gated_asl seed42 epoch1 val=0.798766 best=0.843093 sec=23.4
+RadZero openi gated_asl seed42 epoch2 val=0.777543 best=0.843093 sec=23.7
+RadZero openi gated_asl seed42 epoch3 val=0.771228 best=0.843093 sec=22.8
+RadZero openi gated_asl seed42 epoch4 val=0.774149 best=0.843093 sec=22.8
+RadZero openi gated_asl seed42 epoch5 val=0.781217 best=0.843093 sec=22.8
+RadZero openi gated_asl seed42 epoch6 val=0.785337 best=0.843093 sec=22.7
+RadZero openi gated_asl seed42 epoch7 val=0.791458 best=0.843093 sec=22.6
+RadZero openi gated_asl seed42 epoch8 val=0.795249 best=0.843093 sec=23.8
+COMPLETE RadZero openi gated_asl 42 0.8505524467383103 0.42112579512178705
+RadZero openi gated_asl seed43 epoch1 val=0.796195 best=0.843093 sec=23.7
+RadZero openi gated_asl seed43 epoch2 val=0.777581 best=0.843093 sec=23.1
+RadZero openi gated_asl seed43 epoch3 val=0.770025 best=0.843093 sec=23.1
+RadZero openi gated_asl seed43 epoch4 val=0.774688 best=0.843093 sec=23.3
+RadZero openi gated_asl seed43 epoch5 val=0.780370 best=0.843093 sec=23.1
+RadZero openi gated_asl seed43 epoch6 val=0.787103 best=0.843093 sec=23.0
+RadZero openi gated_asl seed43 epoch7 val=0.791396 best=0.843093 sec=23.0
+RadZero openi gated_asl seed43 epoch8 val=0.794891 best=0.843093 sec=22.9
+COMPLETE RadZero openi gated_asl 43 0.8505524467383103 0.42112579512178705
+RadZero openi gated_asl seed44 epoch1 val=0.794403 best=0.843093 sec=24.9
+RadZero openi gated_asl seed44 epoch2 val=0.763473 best=0.843093 sec=23.6
+RadZero openi gated_asl seed44 epoch3 val=0.764639 best=0.843093 sec=23.3
+RadZero openi gated_asl seed44 epoch4 val=0.772898 best=0.843093 sec=22.8
+RadZero openi gated_asl seed44 epoch5 val=0.782642 best=0.843093 sec=22.9
+RadZero openi gated_asl seed44 epoch6 val=0.793598 best=0.843093 sec=23.0
+RadZero openi gated_asl seed44 epoch7 val=0.800763 best=0.843093 sec=23.6
+RadZero openi gated_asl seed44 epoch8 val=0.806420 best=0.843093 sec=23.7
+COMPLETE RadZero openi gated_asl 44 0.8505524467383103 0.42112579512178705

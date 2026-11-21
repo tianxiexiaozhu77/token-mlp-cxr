@@ -1,0 +1,23 @@
+{
+  "status": "verified",
+  "rows": 5,
+  "input_sha256": {
+    "latex_ours/supplement_data/token_mlp_results_provenance.json": "da096a5360d4e94e712f51ec587c766ee59a1395da857650aa38daaa9566cd3b",
+    "RadZero/runs/openi_adapter_20261020_152558/inputs/dataset.json": "d42fc6b00711cc685cf13edcf2e235bd0950748159b7632841265512ad335125",
+    "RadZero/runs/openi_adapter_20261020_152558/inputs/samples.json": "4b8836d20412157bfec61e5d1bebbc2b51910ffbdba8634fa50b5a9a3f548502",
+    "data/direct_anchor_classification_20261118/chexpert/dataset.json": "2423ba0dffdebb1dd43537fcc8bcf7a3034f714a06ad3f2c8e7e1d3e290c1fe1",
+    "data/direct_anchor_classification_20261118/chexpert/samples.json": "e9adc3a1794e1e3cc02a23f4e5388726630c03b35bef48454c666f7e4f1c6124",
+    "data/direct_anchor_classification_20261118/chestxray14/dataset.json": "bc2ce335ef3002e4f6b291e95f369d29da3b060ef3fb1943472cf6d6d15114a5",
+    "data/direct_anchor_classification_20261118/chestxray14/samples.json": "b189f8ca74062c950732e25a907dd131cd41e69fa504480b107cab506fecd30d",
+    "experiments/large_patient_multilabel/runs/20261121/PROTOCOL.json": "f73f691594fa9d573910c79d8ffd0a0632f02fffe9c587e5b3c241bc17715d2a",
+    "data/large_patient_multilabel_20261121/chestxray14/dataset.json": "7bceee45a272fafce75a1c8f53d144f4037e4cbc017a55464ae1b3272cd33df1",
+    "data/large_patient_multilabel_20261121/chestxray14/samples.json": "392322e1becac5d0c38e041968c08c0d4099f8dce30224021e137b3a0ce41195",
+    "experiments/nih_chexpert_transfer/runs/20261121/PROTOCOL.json": "5aaabd6829bb500c09e73395d15b926de908431a5afdcaff322037fd8b9bd893",
+    "experiments/nih_chexpert_transfer/runs/20261121/samples.json": "e7ed105287f497936c6948b127aae5decf1bdc839e5c144c1195b8027309da46"
+  },
+  "counting": "Image counts plus unique report UIDs for OpenI or patient IDs for the other datasets.",
+  "source_and_target_cohort_reuse_verified": true,
+  "table_sha256": "89d8c4d1d4038f85eb3027ca83266ddb55b3fa12b1b07774a93d9d40ae45ccf5",
+  "csv_sha256": "2a2824f95cfe8d459347ced2701463dfa3e9a7a1347850301d20cb488a966031",
+  "exporter_sha256": "44dbf3f6611687d4003a3b707e942bbb7638ad9570a4e5ec22e0f398e47524ab"
+}

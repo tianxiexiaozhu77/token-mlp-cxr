@@ -1,0 +1,16 @@
+RadZero clip_global 43 epoch 1 val 0.708559 best 1
+RadZero clip_global 43 epoch 2 val 0.744962 best 2
+RadZero clip_global 43 epoch 3 val 0.759708 best 3
+RadZero clip_global 43 epoch 4 val 0.769238 best 4
+RadZero clip_global 43 epoch 5 val 0.77259 best 5
+RadZero clip_global 43 epoch 6 val 0.778219 best 6
+RadZero clip_global 43 epoch 7 val 0.78002 best 7
+RadZero clip_global 43 epoch 8 val 0.780105 best 8
+RadZero clip_global 43 epoch 9 val 0.779065 best 8
+RadZero clip_global 43 epoch 10 val 0.780774 best 10
+RadZero clip_global 43 epoch 11 val 0.780143 best 10
+RadZero clip_global 43 epoch 12 val 0.779762 best 10
+RadZero clip_global 43 epoch 13 val 0.778782 best 10
+RadZero clip_global 43 epoch 14 val 0.778527 best 10
+RadZero clip_global 43 epoch 15 val 0.777034 best 10
+FIT COMPLETE RadZero clip_global 43 TEST remains locked

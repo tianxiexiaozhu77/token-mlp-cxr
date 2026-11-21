@@ -1,0 +1,51 @@
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Image feature extractor: resnet50
+/storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Text feature extractor: /storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+bert encoder layers: 12
+KAD 128 / 5300 seconds 8
+KAD 256 / 5300 seconds 9
+KAD 384 / 5300 seconds 10
+KAD 512 / 5300 seconds 12
+KAD 640 / 5300 seconds 13
+KAD 768 / 5300 seconds 14
+KAD 896 / 5300 seconds 15
+KAD 1024 / 5300 seconds 17
+KAD 1152 / 5300 seconds 18
+KAD 1280 / 5300 seconds 19
+KAD 1408 / 5300 seconds 20
+KAD 1536 / 5300 seconds 22
+KAD 1664 / 5300 seconds 23
+KAD 1792 / 5300 seconds 24
+KAD 1920 / 5300 seconds 25
+KAD 2048 / 5300 seconds 27
+KAD 2176 / 5300 seconds 28
+KAD 2304 / 5300 seconds 29
+KAD 2432 / 5300 seconds 30
+KAD 2560 / 5300 seconds 32
+KAD 2688 / 5300 seconds 33
+KAD 2816 / 5300 seconds 34
+KAD 2944 / 5300 seconds 35
+KAD 3072 / 5300 seconds 37
+KAD 3200 / 5300 seconds 38
+KAD 3328 / 5300 seconds 39
+KAD 3456 / 5300 seconds 42
+KAD 3584 / 5300 seconds 43
+KAD 3712 / 5300 seconds 45
+KAD 3840 / 5300 seconds 46
+KAD 3968 / 5300 seconds 47
+KAD 4096 / 5300 seconds 48
+KAD 4224 / 5300 seconds 50
+KAD 4352 / 5300 seconds 51
+KAD 4480 / 5300 seconds 52
+KAD 4608 / 5300 seconds 53
+KAD 4736 / 5300 seconds 55
+KAD 4864 / 5300 seconds 56
+KAD 4992 / 5300 seconds 57
+KAD 5120 / 5300 seconds 58
+KAD 5248 / 5300 seconds 60
+KAD 5300 / 5300 seconds 60
+COMPLETE KAD RSNA transfer

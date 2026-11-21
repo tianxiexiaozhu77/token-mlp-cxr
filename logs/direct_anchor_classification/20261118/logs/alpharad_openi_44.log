@@ -1,0 +1,24 @@
+/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+/storage/3090group2/zjx/code/medical/experiments/direct_anchor_classification/train.py:229: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  losses += float(loss) * len(index); seen_train += len(index)
+alpharad OpenI bias seed=44 epoch=1 val=0.881122 best=0.881122 sec=0.8
+alpharad OpenI bias seed=44 epoch=2 val=0.881032 best=0.881122 sec=0.7
+alpharad OpenI bias seed=44 epoch=3 val=0.880971 best=0.881122 sec=0.6
+alpharad OpenI bias seed=44 epoch=4 val=0.880900 best=0.881122 sec=0.5
+alpharad OpenI bias seed=44 epoch=5 val=0.880859 best=0.881122 sec=0.5
+alpharad OpenI bias seed=44 epoch=6 val=0.880933 best=0.881122 sec=0.7
+alpharad OpenI bias seed=44 epoch=7 val=0.880915 best=0.881122 sec=0.7
+alpharad OpenI bias seed=44 epoch=8 val=0.880983 best=0.881122 sec=0.7
+COMPLETE alpharad OpenI bias seed=44 test_AUROC=0.851719
+alpharad OpenI direct seed=44 epoch=1 val=0.885362 best=0.885362 sec=0.6
+alpharad OpenI direct seed=44 epoch=2 val=0.886192 best=0.886192 sec=0.6
+alpharad OpenI direct seed=44 epoch=3 val=0.888525 best=0.888525 sec=0.8
+alpharad OpenI direct seed=44 epoch=4 val=0.888907 best=0.888907 sec=0.9
+alpharad OpenI direct seed=44 epoch=5 val=0.888042 best=0.888907 sec=0.9
+alpharad OpenI direct seed=44 epoch=6 val=0.888324 best=0.888907 sec=0.9
+alpharad OpenI direct seed=44 epoch=7 val=0.888647 best=0.888907 sec=0.9
+alpharad OpenI direct seed=44 epoch=8 val=0.888041 best=0.888907 sec=0.9
+alpharad OpenI direct seed=44 epoch=9 val=0.887517 best=0.888907 sec=0.7
+COMPLETE alpharad OpenI direct seed=44 test_AUROC=0.872631

@@ -1,0 +1,3 @@
+native logit parity: max_abs_error=4.76837e-07
+radzero shard=0 3/6 elapsed=18.0s
+native logit parity: max_abs_error=4.76837e-07

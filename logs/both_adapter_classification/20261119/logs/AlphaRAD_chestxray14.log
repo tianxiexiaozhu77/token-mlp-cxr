@@ -1,0 +1,69 @@
+/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+CACHE_PARITY AlphaRAD chestxray14 0 22433
+CACHE_PARITY AlphaRAD chestxray14 6400 22433
+CACHE_PARITY AlphaRAD chestxray14 12800 22433
+CACHE_PARITY AlphaRAD chestxray14 19200 22433
+AlphaRAD chestxray14 both_mlp seed42 epoch1 val=0.835370 best=0.835370 sec=74.1
+AlphaRAD chestxray14 both_mlp seed42 epoch2 val=0.842581 best=0.842581 sec=72.3
+AlphaRAD chestxray14 both_mlp seed42 epoch3 val=0.846035 best=0.846035 sec=69.9
+AlphaRAD chestxray14 both_mlp seed42 epoch4 val=0.849464 best=0.849464 sec=71.3
+AlphaRAD chestxray14 both_mlp seed42 epoch5 val=0.852132 best=0.852132 sec=73.1
+AlphaRAD chestxray14 both_mlp seed42 epoch6 val=0.853723 best=0.853723 sec=69.2
+AlphaRAD chestxray14 both_mlp seed42 epoch7 val=0.854908 best=0.854908 sec=67.9
+AlphaRAD chestxray14 both_mlp seed42 epoch8 val=0.856804 best=0.856804 sec=69.2
+AlphaRAD chestxray14 both_mlp seed42 epoch9 val=0.856635 best=0.856804 sec=67.7
+AlphaRAD chestxray14 both_mlp seed42 epoch10 val=0.857358 best=0.857358 sec=69.2
+AlphaRAD chestxray14 both_mlp seed42 epoch11 val=0.857399 best=0.857399 sec=70.7
+AlphaRAD chestxray14 both_mlp seed42 epoch12 val=0.859873 best=0.859873 sec=69.9
+AlphaRAD chestxray14 both_mlp seed42 epoch13 val=0.858846 best=0.859873 sec=78.8
+AlphaRAD chestxray14 both_mlp seed42 epoch14 val=0.860076 best=0.860076 sec=69.8
+AlphaRAD chestxray14 both_mlp seed42 epoch15 val=0.860623 best=0.860623 sec=70.8
+AlphaRAD chestxray14 both_mlp seed42 epoch16 val=0.858252 best=0.860623 sec=71.7
+AlphaRAD chestxray14 both_mlp seed42 epoch17 val=0.859022 best=0.860623 sec=69.8
+AlphaRAD chestxray14 both_mlp seed42 epoch18 val=0.858825 best=0.860623 sec=66.6
+AlphaRAD chestxray14 both_mlp seed42 epoch19 val=0.858395 best=0.860623 sec=66.0
+AlphaRAD chestxray14 both_mlp seed42 epoch20 val=0.859228 best=0.860623 sec=66.3
+COMPLETE AlphaRAD chestxray14 42 0.8666127512252997 0.31783510012618515
+AlphaRAD chestxray14 both_mlp seed43 epoch1 val=0.832700 best=0.832700 sec=81.7
+AlphaRAD chestxray14 both_mlp seed43 epoch2 val=0.841093 best=0.841093 sec=77.0
+AlphaRAD chestxray14 both_mlp seed43 epoch3 val=0.845521 best=0.845521 sec=80.0
+AlphaRAD chestxray14 both_mlp seed43 epoch4 val=0.848821 best=0.848821 sec=83.7
+AlphaRAD chestxray14 both_mlp seed43 epoch5 val=0.851167 best=0.851167 sec=89.3
+AlphaRAD chestxray14 both_mlp seed43 epoch6 val=0.852359 best=0.852359 sec=88.9
+AlphaRAD chestxray14 both_mlp seed43 epoch7 val=0.854501 best=0.854501 sec=88.8
+AlphaRAD chestxray14 both_mlp seed43 epoch8 val=0.855209 best=0.855209 sec=88.6
+AlphaRAD chestxray14 both_mlp seed43 epoch9 val=0.857342 best=0.857342 sec=88.9
+AlphaRAD chestxray14 both_mlp seed43 epoch10 val=0.855974 best=0.857342 sec=77.2
+AlphaRAD chestxray14 both_mlp seed43 epoch11 val=0.857863 best=0.857863 sec=70.4
+AlphaRAD chestxray14 both_mlp seed43 epoch12 val=0.856127 best=0.857863 sec=71.6
+AlphaRAD chestxray14 both_mlp seed43 epoch13 val=0.859046 best=0.859046 sec=70.1
+AlphaRAD chestxray14 both_mlp seed43 epoch14 val=0.859472 best=0.859472 sec=69.8
+AlphaRAD chestxray14 both_mlp seed43 epoch15 val=0.857309 best=0.859472 sec=68.6
+AlphaRAD chestxray14 both_mlp seed43 epoch16 val=0.859065 best=0.859472 sec=71.4
+AlphaRAD chestxray14 both_mlp seed43 epoch17 val=0.859371 best=0.859472 sec=72.3
+AlphaRAD chestxray14 both_mlp seed43 epoch18 val=0.859959 best=0.859959 sec=69.5
+AlphaRAD chestxray14 both_mlp seed43 epoch19 val=0.860483 best=0.860483 sec=67.7
+AlphaRAD chestxray14 both_mlp seed43 epoch20 val=0.860089 best=0.860483 sec=67.3
+COMPLETE AlphaRAD chestxray14 43 0.8642987407483443 0.3165037827906222
+AlphaRAD chestxray14 both_mlp seed44 epoch1 val=0.834313 best=0.834313 sec=66.7
+AlphaRAD chestxray14 both_mlp seed44 epoch2 val=0.843355 best=0.843355 sec=65.2
+AlphaRAD chestxray14 both_mlp seed44 epoch3 val=0.848162 best=0.848162 sec=64.8
+AlphaRAD chestxray14 both_mlp seed44 epoch4 val=0.849875 best=0.849875 sec=65.0
+AlphaRAD chestxray14 both_mlp seed44 epoch5 val=0.853628 best=0.853628 sec=71.2
+AlphaRAD chestxray14 both_mlp seed44 epoch6 val=0.853438 best=0.853628 sec=63.9
+AlphaRAD chestxray14 both_mlp seed44 epoch7 val=0.854781 best=0.854781 sec=64.7
+AlphaRAD chestxray14 both_mlp seed44 epoch8 val=0.855828 best=0.855828 sec=65.5
+AlphaRAD chestxray14 both_mlp seed44 epoch9 val=0.856559 best=0.856559 sec=70.5
+AlphaRAD chestxray14 both_mlp seed44 epoch10 val=0.857468 best=0.857468 sec=68.1
+AlphaRAD chestxray14 both_mlp seed44 epoch11 val=0.858675 best=0.858675 sec=65.6
+AlphaRAD chestxray14 both_mlp seed44 epoch12 val=0.859217 best=0.859217 sec=65.9
+AlphaRAD chestxray14 both_mlp seed44 epoch13 val=0.858135 best=0.859217 sec=65.9
+AlphaRAD chestxray14 both_mlp seed44 epoch14 val=0.859676 best=0.859676 sec=74.0
+AlphaRAD chestxray14 both_mlp seed44 epoch15 val=0.859439 best=0.859676 sec=65.6
+AlphaRAD chestxray14 both_mlp seed44 epoch16 val=0.859960 best=0.859960 sec=65.2
+AlphaRAD chestxray14 both_mlp seed44 epoch17 val=0.858651 best=0.859960 sec=65.5
+AlphaRAD chestxray14 both_mlp seed44 epoch18 val=0.859660 best=0.859960 sec=65.4
+AlphaRAD chestxray14 both_mlp seed44 epoch19 val=0.859573 best=0.859960 sec=66.4
+AlphaRAD chestxray14 both_mlp seed44 epoch20 val=0.858640 best=0.859960 sec=65.5
+COMPLETE AlphaRAD chestxray14 44 0.8662261701184797 0.3104818937044258

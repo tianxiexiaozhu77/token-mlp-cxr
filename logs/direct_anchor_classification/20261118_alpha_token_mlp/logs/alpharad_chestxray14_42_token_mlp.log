@@ -1,0 +1,26 @@
+/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+/storage/3090group2/zjx/code/medical/experiments/direct_anchor_classification/train.py:244: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  losses += float(loss) * len(index); seen_train += len(index)
+alpharad chestxray14 token_mlp seed=42 epoch=1 val=0.831173 best=0.831173 sec=89.0
+alpharad chestxray14 token_mlp seed=42 epoch=2 val=0.839577 best=0.839577 sec=75.1
+alpharad chestxray14 token_mlp seed=42 epoch=3 val=0.843235 best=0.843235 sec=71.7
+alpharad chestxray14 token_mlp seed=42 epoch=4 val=0.846903 best=0.846903 sec=69.7
+alpharad chestxray14 token_mlp seed=42 epoch=5 val=0.849081 best=0.849081 sec=68.5
+alpharad chestxray14 token_mlp seed=42 epoch=6 val=0.850249 best=0.850249 sec=68.8
+alpharad chestxray14 token_mlp seed=42 epoch=7 val=0.851762 best=0.851762 sec=69.3
+alpharad chestxray14 token_mlp seed=42 epoch=8 val=0.853305 best=0.853305 sec=77.2
+alpharad chestxray14 token_mlp seed=42 epoch=9 val=0.853340 best=0.853340 sec=72.3
+alpharad chestxray14 token_mlp seed=42 epoch=10 val=0.854337 best=0.854337 sec=68.4
+alpharad chestxray14 token_mlp seed=42 epoch=11 val=0.853709 best=0.854337 sec=68.2
+alpharad chestxray14 token_mlp seed=42 epoch=12 val=0.856125 best=0.856125 sec=69.2
+alpharad chestxray14 token_mlp seed=42 epoch=13 val=0.855687 best=0.856125 sec=68.1
+alpharad chestxray14 token_mlp seed=42 epoch=14 val=0.856107 best=0.856125 sec=68.2
+alpharad chestxray14 token_mlp seed=42 epoch=15 val=0.857279 best=0.857279 sec=68.1
+alpharad chestxray14 token_mlp seed=42 epoch=16 val=0.855720 best=0.857279 sec=67.9
+alpharad chestxray14 token_mlp seed=42 epoch=17 val=0.857098 best=0.857279 sec=87.4
+alpharad chestxray14 token_mlp seed=42 epoch=18 val=0.856591 best=0.857279 sec=78.4
+alpharad chestxray14 token_mlp seed=42 epoch=19 val=0.856072 best=0.857279 sec=68.5
+alpharad chestxray14 token_mlp seed=42 epoch=20 val=0.857494 best=0.857494 sec=68.5
+COMPLETE alpharad chestxray14 token_mlp seed=42 test_AUROC=0.864220

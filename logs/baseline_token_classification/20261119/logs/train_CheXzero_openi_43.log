@@ -1,0 +1,11 @@
+/storage/3090group2/zjx/code/medical/baselines/CheXzero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+CheXzero openi seed43 epoch1 val=0.735313 best=0.736226 sec=4.7
+CheXzero openi seed43 epoch2 val=0.731522 best=0.736226 sec=4.2
+CheXzero openi seed43 epoch3 val=0.728651 best=0.736226 sec=4.1
+CheXzero openi seed43 epoch4 val=0.722652 best=0.736226 sec=4.2
+CheXzero openi seed43 epoch5 val=0.723875 best=0.736226 sec=4.0
+CheXzero openi seed43 epoch6 val=0.706743 best=0.736226 sec=4.2
+CheXzero openi seed43 epoch7 val=0.701968 best=0.736226 sec=4.1
+CheXzero openi seed43 epoch8 val=0.695084 best=0.736226 sec=4.2
+COMPLETE CheXzero openi 43 0.7307346980129494

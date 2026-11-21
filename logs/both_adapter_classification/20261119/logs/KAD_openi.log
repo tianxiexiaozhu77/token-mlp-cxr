@@ -1,0 +1,75 @@
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Image feature extractor: resnet50
+/storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Text feature extractor: /storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+bert encoder layers: 12
+CACHE_PARITY KAD openi 0 7470
+CACHE_PARITY KAD openi 1600 7470
+CACHE_PARITY KAD openi 3200 7470
+CACHE_PARITY KAD openi 4800 7470
+CACHE_PARITY KAD openi 6400 7470
+KAD openi both_mlp seed42 epoch1 val=0.827461 best=0.827461 sec=17.3
+KAD openi both_mlp seed42 epoch2 val=0.830767 best=0.830767 sec=15.9
+KAD openi both_mlp seed42 epoch3 val=0.836707 best=0.836707 sec=15.0
+KAD openi both_mlp seed42 epoch4 val=0.844492 best=0.844492 sec=16.5
+KAD openi both_mlp seed42 epoch5 val=0.842860 best=0.844492 sec=15.9
+KAD openi both_mlp seed42 epoch6 val=0.848259 best=0.848259 sec=16.0
+KAD openi both_mlp seed42 epoch7 val=0.854206 best=0.854206 sec=15.3
+KAD openi both_mlp seed42 epoch8 val=0.853923 best=0.854206 sec=15.7
+KAD openi both_mlp seed42 epoch9 val=0.859468 best=0.859468 sec=16.6
+KAD openi both_mlp seed42 epoch10 val=0.862423 best=0.862423 sec=15.9
+KAD openi both_mlp seed42 epoch11 val=0.861954 best=0.862423 sec=15.4
+KAD openi both_mlp seed42 epoch12 val=0.863683 best=0.863683 sec=15.9
+KAD openi both_mlp seed42 epoch13 val=0.863751 best=0.863751 sec=15.4
+KAD openi both_mlp seed42 epoch14 val=0.867452 best=0.867452 sec=15.8
+KAD openi both_mlp seed42 epoch15 val=0.867106 best=0.867452 sec=16.1
+KAD openi both_mlp seed42 epoch16 val=0.866333 best=0.867452 sec=15.7
+KAD openi both_mlp seed42 epoch17 val=0.866791 best=0.867452 sec=15.4
+KAD openi both_mlp seed42 epoch18 val=0.869316 best=0.869316 sec=16.3
+KAD openi both_mlp seed42 epoch19 val=0.869755 best=0.869755 sec=15.9
+KAD openi both_mlp seed42 epoch20 val=0.869755 best=0.869755 sec=15.8
+COMPLETE KAD openi 42 0.8392299496844601 0.3198104895138377
+KAD openi both_mlp seed43 epoch1 val=0.829528 best=0.829528 sec=16.0
+KAD openi both_mlp seed43 epoch2 val=0.832700 best=0.832700 sec=15.7
+KAD openi both_mlp seed43 epoch3 val=0.837723 best=0.837723 sec=15.4
+KAD openi both_mlp seed43 epoch4 val=0.841536 best=0.841536 sec=14.1
+KAD openi both_mlp seed43 epoch5 val=0.844216 best=0.844216 sec=15.9
+KAD openi both_mlp seed43 epoch6 val=0.846340 best=0.846340 sec=14.4
+KAD openi both_mlp seed43 epoch7 val=0.853819 best=0.853819 sec=15.6
+KAD openi both_mlp seed43 epoch8 val=0.857218 best=0.857218 sec=14.6
+KAD openi both_mlp seed43 epoch9 val=0.855697 best=0.857218 sec=15.4
+KAD openi both_mlp seed43 epoch10 val=0.859521 best=0.859521 sec=15.0
+KAD openi both_mlp seed43 epoch11 val=0.858904 best=0.859521 sec=15.4
+KAD openi both_mlp seed43 epoch12 val=0.862013 best=0.862013 sec=16.0
+KAD openi both_mlp seed43 epoch13 val=0.860597 best=0.862013 sec=16.1
+KAD openi both_mlp seed43 epoch14 val=0.863489 best=0.863489 sec=15.0
+KAD openi both_mlp seed43 epoch15 val=0.862330 best=0.863489 sec=15.9
+KAD openi both_mlp seed43 epoch16 val=0.868060 best=0.868060 sec=16.1
+KAD openi both_mlp seed43 epoch17 val=0.865572 best=0.868060 sec=15.2
+KAD openi both_mlp seed43 epoch18 val=0.866306 best=0.868060 sec=16.1
+KAD openi both_mlp seed43 epoch19 val=0.864480 best=0.868060 sec=15.9
+KAD openi both_mlp seed43 epoch20 val=0.868946 best=0.868946 sec=16.9
+COMPLETE KAD openi 43 0.841846834014001 0.30542564148738555
+KAD openi both_mlp seed44 epoch1 val=0.827353 best=0.827353 sec=17.9
+KAD openi both_mlp seed44 epoch2 val=0.834051 best=0.834051 sec=17.2
+KAD openi both_mlp seed44 epoch3 val=0.837230 best=0.837230 sec=19.2
+KAD openi both_mlp seed44 epoch4 val=0.839273 best=0.839273 sec=18.8
+KAD openi both_mlp seed44 epoch5 val=0.848593 best=0.848593 sec=17.3
+KAD openi both_mlp seed44 epoch6 val=0.844801 best=0.848593 sec=16.0
+KAD openi both_mlp seed44 epoch7 val=0.853109 best=0.853109 sec=16.7
+KAD openi both_mlp seed44 epoch8 val=0.853738 best=0.853738 sec=19.6
+KAD openi both_mlp seed44 epoch9 val=0.857469 best=0.857469 sec=16.2
+KAD openi both_mlp seed44 epoch10 val=0.858177 best=0.858177 sec=18.4
+KAD openi both_mlp seed44 epoch11 val=0.856332 best=0.858177 sec=18.1
+KAD openi both_mlp seed44 epoch12 val=0.864191 best=0.864191 sec=16.3
+KAD openi both_mlp seed44 epoch13 val=0.864390 best=0.864390 sec=16.9
+KAD openi both_mlp seed44 epoch14 val=0.868510 best=0.868510 sec=17.4
+KAD openi both_mlp seed44 epoch15 val=0.866700 best=0.868510 sec=17.4
+KAD openi both_mlp seed44 epoch16 val=0.867378 best=0.868510 sec=16.9
+KAD openi both_mlp seed44 epoch17 val=0.865690 best=0.868510 sec=16.2
+KAD openi both_mlp seed44 epoch18 val=0.868005 best=0.868510 sec=19.7
+KAD openi both_mlp seed44 epoch19 val=0.865789 best=0.868510 sec=17.1
+COMPLETE KAD openi 44 0.843471888029263 0.31249690124017837

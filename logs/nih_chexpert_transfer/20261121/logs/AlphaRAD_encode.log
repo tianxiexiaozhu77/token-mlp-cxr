@@ -1,0 +1,12 @@
+/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+xFormers is not available (Attention)
+Device: cuda
+native logit parity: max_abs_error=0
+alpharad shard=0 12/671 elapsed=22.8s
+alpharad shard=0 132/671 elapsed=27.6s
+alpharad shard=0 252/671 elapsed=34.3s
+alpharad shard=0 372/671 elapsed=41.1s
+alpharad shard=0 492/671 elapsed=48.6s
+alpharad shard=0 612/671 elapsed=68.3s
+native logit parity: max_abs_error=0

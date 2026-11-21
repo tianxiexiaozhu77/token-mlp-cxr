@@ -1,0 +1,29 @@
+/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+AlphaRAD chexpert post_mlp seed42 epoch1 val=0.921026 best=0.923703 sec=0.6
+AlphaRAD chexpert post_mlp seed42 epoch2 val=0.920181 best=0.923703 sec=0.1
+AlphaRAD chexpert post_mlp seed42 epoch3 val=0.919128 best=0.923703 sec=0.2
+AlphaRAD chexpert post_mlp seed42 epoch4 val=0.918958 best=0.923703 sec=0.2
+AlphaRAD chexpert post_mlp seed42 epoch5 val=0.919391 best=0.923703 sec=0.2
+AlphaRAD chexpert post_mlp seed42 epoch6 val=0.919252 best=0.923703 sec=0.2
+AlphaRAD chexpert post_mlp seed42 epoch7 val=0.919563 best=0.923703 sec=0.2
+AlphaRAD chexpert post_mlp seed42 epoch8 val=0.919234 best=0.923703 sec=0.2
+COMPLETE AlphaRAD chexpert post_mlp 42 0.9227768913682226 0.671984874420715
+AlphaRAD chexpert post_mlp seed43 epoch1 val=0.921083 best=0.923703 sec=0.3
+AlphaRAD chexpert post_mlp seed43 epoch2 val=0.920899 best=0.923703 sec=0.2
+AlphaRAD chexpert post_mlp seed43 epoch3 val=0.922138 best=0.923703 sec=0.2
+AlphaRAD chexpert post_mlp seed43 epoch4 val=0.921800 best=0.923703 sec=0.2
+AlphaRAD chexpert post_mlp seed43 epoch5 val=0.921639 best=0.923703 sec=0.2
+AlphaRAD chexpert post_mlp seed43 epoch6 val=0.920298 best=0.923703 sec=0.2
+AlphaRAD chexpert post_mlp seed43 epoch7 val=0.920011 best=0.923703 sec=0.2
+AlphaRAD chexpert post_mlp seed43 epoch8 val=0.920192 best=0.923703 sec=0.2
+COMPLETE AlphaRAD chexpert post_mlp 43 0.9227768913682226 0.671984874420715
+AlphaRAD chexpert post_mlp seed44 epoch1 val=0.921141 best=0.923703 sec=0.3
+AlphaRAD chexpert post_mlp seed44 epoch2 val=0.919306 best=0.923703 sec=0.2
+AlphaRAD chexpert post_mlp seed44 epoch3 val=0.919693 best=0.923703 sec=0.2
+AlphaRAD chexpert post_mlp seed44 epoch4 val=0.920875 best=0.923703 sec=0.2
+AlphaRAD chexpert post_mlp seed44 epoch5 val=0.920530 best=0.923703 sec=0.2
+AlphaRAD chexpert post_mlp seed44 epoch6 val=0.921109 best=0.923703 sec=0.2
+AlphaRAD chexpert post_mlp seed44 epoch7 val=0.920842 best=0.923703 sec=0.2
+AlphaRAD chexpert post_mlp seed44 epoch8 val=0.919840 best=0.923703 sec=0.2
+COMPLETE AlphaRAD chexpert post_mlp 44 0.9227768913682226 0.671984874420715

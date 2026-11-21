@@ -1,0 +1,328 @@
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo openi linear_probe 42 1 val 0.77257 best 1
+MaCo openi linear_probe 42 2 val 0.792476 best 2
+MaCo openi linear_probe 42 3 val 0.823627 best 3
+MaCo openi linear_probe 42 4 val 0.822959 best 3
+MaCo openi linear_probe 42 5 val 0.837513 best 5
+MaCo openi linear_probe 42 6 val 0.831485 best 5
+MaCo openi linear_probe 42 7 val 0.842552 best 7
+MaCo openi linear_probe 42 8 val 0.843475 best 8
+MaCo openi linear_probe 42 9 val 0.837349 best 8
+MaCo openi linear_probe 42 10 val 0.837873 best 8
+MaCo openi linear_probe 42 11 val 0.835444 best 8
+MaCo openi linear_probe 42 12 val 0.840685 best 8
+MaCo openi linear_probe 42 13 val 0.829412 best 8
+COMPLETE MaCo openi linear_probe 42
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000414e7690100001e39'
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000417da610100001e3a'
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo openi linear_probe 43 1 val 0.76599 best 1
+MaCo openi linear_probe 43 2 val 0.788544 best 2
+MaCo openi linear_probe 43 3 val 0.807281 best 3
+MaCo openi linear_probe 43 4 val 0.819397 best 4
+MaCo openi linear_probe 43 5 val 0.826547 best 5
+MaCo openi linear_probe 43 6 val 0.808753 best 5
+MaCo openi linear_probe 43 7 val 0.819684 best 5
+MaCo openi linear_probe 43 8 val 0.830337 best 8
+MaCo openi linear_probe 43 9 val 0.834976 best 9
+MaCo openi linear_probe 43 10 val 0.833536 best 9
+MaCo openi linear_probe 43 11 val 0.836568 best 11
+MaCo openi linear_probe 43 12 val 0.840232 best 12
+MaCo openi linear_probe 43 13 val 0.839915 best 12
+MaCo openi linear_probe 43 14 val 0.828447 best 12
+MaCo openi linear_probe 43 15 val 0.840557 best 15
+MaCo openi linear_probe 43 16 val 0.824909 best 15
+MaCo openi linear_probe 43 17 val 0.843165 best 17
+MaCo openi linear_probe 43 18 val 0.83852 best 17
+MaCo openi linear_probe 43 19 val 0.83885 best 17
+MaCo openi linear_probe 43 20 val 0.835763 best 17
+COMPLETE MaCo openi linear_probe 43
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000416efd70100001e3d'
+OSError: [Errno 16] Device or resource busy: '.nfs00000004165fe10100001e3e'
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo openi linear_probe 44 1 val 0.825574 best 1
+MaCo openi linear_probe 44 2 val 0.849379 best 2
+MaCo openi linear_probe 44 3 val 0.853066 best 3
+MaCo openi linear_probe 44 4 val 0.853469 best 4
+MaCo openi linear_probe 44 5 val 0.855111 best 5
+MaCo openi linear_probe 44 6 val 0.858294 best 6
+MaCo openi linear_probe 44 7 val 0.855507 best 6
+MaCo openi linear_probe 44 8 val 0.856428 best 6
+MaCo openi linear_probe 44 9 val 0.856236 best 6
+MaCo openi linear_probe 44 10 val 0.855214 best 6
+MaCo openi linear_probe 44 11 val 0.854606 best 6
+COMPLETE MaCo openi linear_probe 44
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+OSError: [Errno 16] Device or resource busy: '.nfs000000041608cf0100001e41'
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000415d5950100001e42'
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo openi clip_global 42 1 val 0.822003 best 1
+MaCo openi clip_global 42 2 val 0.825726 best 2
+MaCo openi clip_global 42 3 val 0.833567 best 3
+MaCo openi clip_global 42 4 val 0.836193 best 4
+MaCo openi clip_global 42 5 val 0.837677 best 5
+MaCo openi clip_global 42 6 val 0.837599 best 5
+MaCo openi clip_global 42 7 val 0.840226 best 7
+MaCo openi clip_global 42 8 val 0.842484 best 8
+MaCo openi clip_global 42 9 val 0.84337 best 9
+MaCo openi clip_global 42 10 val 0.845142 best 10
+MaCo openi clip_global 42 11 val 0.84645 best 11
+MaCo openi clip_global 42 12 val 0.850417 best 12
+MaCo openi clip_global 42 13 val 0.846972 best 12
+MaCo openi clip_global 42 14 val 0.850777 best 14
+MaCo openi clip_global 42 15 val 0.852552 best 15
+MaCo openi clip_global 42 16 val 0.853644 best 16
+MaCo openi clip_global 42 17 val 0.853857 best 17
+MaCo openi clip_global 42 18 val 0.855757 best 18
+MaCo openi clip_global 42 19 val 0.855704 best 18
+MaCo openi clip_global 42 20 val 0.85435 best 18
+COMPLETE MaCo openi clip_global 42
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000417b6910100001e46'
+OSError: [Errno 16] Device or resource busy: '.nfs000000041720da0100001e45'
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo openi clip_global 43 1 val 0.82227 best 1
+MaCo openi clip_global 43 2 val 0.825514 best 2
+MaCo openi clip_global 43 3 val 0.831602 best 3
+MaCo openi clip_global 43 4 val 0.835942 best 4
+MaCo openi clip_global 43 5 val 0.836885 best 5
+MaCo openi clip_global 43 6 val 0.839496 best 6
+MaCo openi clip_global 43 7 val 0.83874 best 6
+MaCo openi clip_global 43 8 val 0.842916 best 8
+MaCo openi clip_global 43 9 val 0.844129 best 9
+MaCo openi clip_global 43 10 val 0.843256 best 9
+MaCo openi clip_global 43 11 val 0.846673 best 11
+MaCo openi clip_global 43 12 val 0.847173 best 12
+MaCo openi clip_global 43 13 val 0.850031 best 13
+MaCo openi clip_global 43 14 val 0.850313 best 14
+MaCo openi clip_global 43 15 val 0.853516 best 15
+MaCo openi clip_global 43 16 val 0.851098 best 15
+MaCo openi clip_global 43 17 val 0.853934 best 17
+MaCo openi clip_global 43 18 val 0.853572 best 17
+MaCo openi clip_global 43 19 val 0.853799 best 17
+MaCo openi clip_global 43 20 val 0.853565 best 17
+COMPLETE MaCo openi clip_global 43
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs000000041781250100001e49'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs000000041844570100001e4a'
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo openi clip_global 44 1 val 0.821514 best 1
+MaCo openi clip_global 44 2 val 0.825629 best 2
+MaCo openi clip_global 44 3 val 0.830012 best 3
+MaCo openi clip_global 44 4 val 0.83018 best 4
+MaCo openi clip_global 44 5 val 0.8333 best 5
+MaCo openi clip_global 44 6 val 0.837409 best 6
+MaCo openi clip_global 44 7 val 0.840383 best 7
+MaCo openi clip_global 44 8 val 0.841568 best 8
+MaCo openi clip_global 44 9 val 0.843405 best 9
+MaCo openi clip_global 44 10 val 0.843787 best 10
+MaCo openi clip_global 44 11 val 0.84629 best 11
+MaCo openi clip_global 44 12 val 0.847177 best 12
+MaCo openi clip_global 44 13 val 0.847218 best 13
+MaCo openi clip_global 44 14 val 0.84629 best 13
+MaCo openi clip_global 44 15 val 0.848393 best 15
+MaCo openi clip_global 44 16 val 0.85084 best 16
+MaCo openi clip_global 44 17 val 0.853105 best 17
+MaCo openi clip_global 44 18 val 0.84989 best 17
+MaCo openi clip_global 44 19 val 0.854526 best 19
+MaCo openi clip_global 44 20 val 0.851863 best 19
+COMPLETE MaCo openi clip_global 44
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+OSError: [Errno 16] Device or resource busy: '.nfs000000041759c20100001e4b'
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000417b6970100001e4c'

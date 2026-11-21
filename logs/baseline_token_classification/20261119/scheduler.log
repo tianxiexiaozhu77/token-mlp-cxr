@@ -1,0 +1,184 @@
+LAUNCH cache_CARZero GPU 5
+LAUNCH cache_MedKLIP GPU 6
+LAUNCH cache_MAVL GPU 7
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/experiments/baseline_token_classification/run.py", line 117, in <module>
+    if __name__=="__main__":main()
+                            ^^^^^^
+  File "/storage/3090group2/zjx/code/medical/experiments/baseline_token_classification/run.py", line 36, in main
+    fcntl.flock(scheduler_lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/experiments/baseline_token_classification/run.py", line 117, in <module>
+    if __name__=="__main__":main()
+                            ^^^^^^
+  File "/storage/3090group2/zjx/code/medical/experiments/baseline_token_classification/run.py", line 36, in main
+    fcntl.flock(scheduler_lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+complete cache_MedKLIP
+LAUNCH train_CARZero_chexpert_42 GPU 6
+complete cache_MAVL
+LAUNCH train_KAD_chexpert_42 GPU 7
+complete train_CARZero_chexpert_42
+LAUNCH train_MedKLIP_chexpert_42 GPU 6
+complete cache_CARZero
+LAUNCH train_MAVL_chexpert_42 GPU 5
+complete cache_KAD
+LAUNCH cache_BiomedCLIP GPU 4
+complete train_MedKLIP_chexpert_42
+LAUNCH cache_BioViL-T GPU 6
+complete train_KAD_chexpert_42
+LAUNCH cache_CheXzero GPU 7
+complete train_MAVL_chexpert_42
+LAUNCH cache_MaCo GPU 5
+complete cache_MaCo
+LAUNCH train_BiomedCLIP_chexpert_42 GPU 5
+complete cache_BioViL-T
+LAUNCH train_BioViL-T_chexpert_42 GPU 6
+complete cache_BiomedCLIP
+complete train_BiomedCLIP_chexpert_42
+LAUNCH train_CheXzero_chexpert_42 GPU 4
+LAUNCH train_MaCo_chexpert_42 GPU 5
+complete train_BioViL-T_chexpert_42
+LAUNCH train_CARZero_chexpert_43 GPU 6
+complete train_MaCo_chexpert_42
+LAUNCH train_KAD_chexpert_43 GPU 5
+complete train_CheXzero_chexpert_42
+LAUNCH train_MedKLIP_chexpert_43 GPU 4
+complete train_CARZero_chexpert_43
+complete train_MedKLIP_chexpert_43
+LAUNCH train_MAVL_chexpert_43 GPU 4
+LAUNCH train_BiomedCLIP_chexpert_43 GPU 6
+complete train_KAD_chexpert_43
+LAUNCH train_BioViL-T_chexpert_43 GPU 5
+complete train_MAVL_chexpert_43
+complete train_BiomedCLIP_chexpert_43
+LAUNCH train_CheXzero_chexpert_43 GPU 4
+LAUNCH train_MaCo_chexpert_43 GPU 6
+complete train_BioViL-T_chexpert_43
+LAUNCH train_CARZero_chexpert_44 GPU 5
+complete train_CheXzero_chexpert_43
+complete train_MaCo_chexpert_43
+LAUNCH train_KAD_chexpert_44 GPU 4
+LAUNCH train_MedKLIP_chexpert_44 GPU 6
+complete train_CARZero_chexpert_44
+LAUNCH train_MAVL_chexpert_44 GPU 5
+complete train_MedKLIP_chexpert_44
+LAUNCH train_BiomedCLIP_chexpert_44 GPU 6
+complete train_KAD_chexpert_44
+LAUNCH train_BioViL-T_chexpert_44 GPU 4
+complete train_MAVL_chexpert_44
+LAUNCH train_CheXzero_chexpert_44 GPU 5
+complete train_BiomedCLIP_chexpert_44
+LAUNCH train_MaCo_chexpert_44 GPU 6
+complete train_BioViL-T_chexpert_44
+LAUNCH train_CARZero_openi_42 GPU 4
+complete train_CheXzero_chexpert_44
+complete train_MaCo_chexpert_44
+LAUNCH train_KAD_openi_42 GPU 5
+LAUNCH train_MedKLIP_openi_common16_42 GPU 6
+complete train_MedKLIP_openi_common16_42
+LAUNCH train_MAVL_openi_common16_42 GPU 6
+complete train_MAVL_openi_common16_42
+LAUNCH train_BiomedCLIP_openi_42 GPU 6
+complete train_CARZero_openi_42
+LAUNCH train_BioViL-T_openi_42 GPU 4
+complete cache_CheXzero
+complete train_BiomedCLIP_openi_42
+LAUNCH train_CheXzero_openi_42 GPU 6
+LAUNCH train_MaCo_openi_42 GPU 7
+complete train_KAD_openi_42
+LAUNCH train_CARZero_openi_43 GPU 5
+complete train_BioViL-T_openi_42
+LAUNCH train_KAD_openi_43 GPU 4
+complete train_CheXzero_openi_42
+LAUNCH train_MedKLIP_openi_common16_43 GPU 6
+complete train_MaCo_openi_42
+LAUNCH train_MAVL_openi_common16_43 GPU 7
+complete train_MedKLIP_openi_common16_43
+LAUNCH train_BiomedCLIP_openi_43 GPU 6
+complete train_BiomedCLIP_openi_43
+LAUNCH train_BioViL-T_openi_43 GPU 6
+complete train_MAVL_openi_common16_43
+LAUNCH train_CheXzero_openi_43 GPU 7
+complete train_BioViL-T_openi_43
+LAUNCH train_MaCo_openi_43 GPU 6
+complete train_CARZero_openi_43
+LAUNCH train_CARZero_openi_44 GPU 5
+complete train_CheXzero_openi_43
+LAUNCH train_KAD_openi_44 GPU 7
+complete train_KAD_openi_43
+LAUNCH train_MedKLIP_openi_common16_44 GPU 4
+complete train_MaCo_openi_43
+LAUNCH train_MAVL_openi_common16_44 GPU 6
+complete train_MedKLIP_openi_common16_44
+LAUNCH train_BiomedCLIP_openi_44 GPU 4
+complete train_BiomedCLIP_openi_44
+LAUNCH train_BioViL-T_openi_44 GPU 4
+complete train_MAVL_openi_common16_44
+LAUNCH train_CheXzero_openi_44 GPU 6
+complete train_BioViL-T_openi_44
+LAUNCH train_MaCo_openi_44 GPU 4
+complete train_CARZero_openi_44
+LAUNCH train_CARZero_chestxray14_42 GPU 5
+complete train_CheXzero_openi_44
+LAUNCH train_KAD_chestxray14_42 GPU 6
+complete train_MaCo_openi_44
+LAUNCH train_MedKLIP_chestxray14_42 GPU 4
+complete train_KAD_openi_44
+LAUNCH train_MAVL_chestxray14_42 GPU 7
+complete train_MedKLIP_chestxray14_42
+LAUNCH train_BiomedCLIP_chestxray14_42 GPU 4
+complete train_BiomedCLIP_chestxray14_42
+LAUNCH train_BioViL-T_chestxray14_42 GPU 4
+complete train_BioViL-T_chestxray14_42
+LAUNCH train_CheXzero_chestxray14_42 GPU 4
+complete train_CheXzero_chestxray14_42
+LAUNCH train_MaCo_chestxray14_42 GPU 4
+complete train_KAD_chestxray14_42
+LAUNCH train_CARZero_chestxray14_43 GPU 6
+complete train_MaCo_chestxray14_42
+LAUNCH train_KAD_chestxray14_43 GPU 4
+complete train_MAVL_chestxray14_42
+LAUNCH train_MedKLIP_chestxray14_43 GPU 7
+complete train_CARZero_chestxray14_42
+LAUNCH train_MAVL_chestxray14_43 GPU 5
+complete train_MedKLIP_chestxray14_43
+LAUNCH train_BiomedCLIP_chestxray14_43 GPU 7
+complete train_BiomedCLIP_chestxray14_43
+LAUNCH train_BioViL-T_chestxray14_43 GPU 7
+complete train_KAD_chestxray14_43
+LAUNCH train_CheXzero_chestxray14_43 GPU 4
+complete train_BioViL-T_chestxray14_43
+LAUNCH train_MaCo_chestxray14_43 GPU 7
+complete train_CheXzero_chestxray14_43
+LAUNCH train_CARZero_chestxray14_44 GPU 4
+complete train_MaCo_chestxray14_43
+LAUNCH train_KAD_chestxray14_44 GPU 7
+complete train_CARZero_chestxray14_43
+LAUNCH train_MedKLIP_chestxray14_44 GPU 6
+complete train_MedKLIP_chestxray14_44
+LAUNCH train_MAVL_chestxray14_44 GPU 6
+complete train_MAVL_chestxray14_43
+LAUNCH train_BiomedCLIP_chestxray14_44 GPU 5
+complete train_BiomedCLIP_chestxray14_44
+LAUNCH train_BioViL-T_chestxray14_44 GPU 5
+complete train_BioViL-T_chestxray14_44
+LAUNCH train_CheXzero_chestxray14_44 GPU 5
+complete train_CheXzero_chestxray14_44
+LAUNCH train_MaCo_chestxray14_44 GPU 5
+complete train_KAD_chestxray14_44
+complete train_MaCo_chestxray14_44
+complete train_CARZero_chestxray14_44
+complete train_MAVL_chestxray14_44
+{
+  "status": "complete",
+  "evaluations": 108,
+  "expected_evaluations": 108,
+  "completed_method_counts": {
+    "baseline": 24,
+    "token_mlp": 72,
+    "aggregation_only": 12
+  },
+  "summary": "/storage/3090group2/zjx/code/medical/experiments/baseline_token_classification/runs/20261119/summary.json"
+}

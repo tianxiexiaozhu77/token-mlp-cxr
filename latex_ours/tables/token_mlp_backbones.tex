@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}lrrl@{}}
+\toprule
+Backbone & $d$ & Parameters & Aggregation/fusion \\
+\midrule
+AlphaRAD & 768 & 99,136 & Native FLaS \\
+RadZero & 768 & 99,136 & Native VL-CABS \\
+CARZero & 768 & 99,136 & Native DQN \\
+KAD & 768 & 99,136 & Native TQN \\
+BiomedCLIP & 512 & 66,112 & Added cosine pooling \\
+BioViL-T & 128 & 16,576 & Added cosine pooling \\
+MaCo & 768 & 99,136 & Added cosine pooling \\
+\bottomrule
+\end{tabular}
+\caption{Adapter dimensions and downstream computation. All modules use bottleneck 64 and share weights across tokens and diseases. Added pooling has no fitted parameters and is evaluated separately without the adapter. Identity initialization recovers the original scoring path for the four native-fusion backbones and the aggregation-only path for the other three.}
+\label{tab:token_mlp_backbones}
+\end{table}

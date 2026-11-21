@@ -1,0 +1,18 @@
+RadZero post_mlp 44 epoch 1 val 0.82805 best 1
+RadZero post_mlp 44 epoch 2 val 0.832832 best 2
+RadZero post_mlp 44 epoch 3 val 0.834765 best 3
+RadZero post_mlp 44 epoch 4 val 0.837933 best 4
+RadZero post_mlp 44 epoch 5 val 0.840956 best 5
+RadZero post_mlp 44 epoch 6 val 0.842306 best 6
+RadZero post_mlp 44 epoch 7 val 0.844565 best 7
+RadZero post_mlp 44 epoch 8 val 0.844316 best 7
+RadZero post_mlp 44 epoch 9 val 0.84491 best 9
+RadZero post_mlp 44 epoch 10 val 0.846578 best 10
+RadZero post_mlp 44 epoch 11 val 0.84605 best 10
+RadZero post_mlp 44 epoch 12 val 0.846826 best 12
+RadZero post_mlp 44 epoch 13 val 0.846228 best 12
+RadZero post_mlp 44 epoch 14 val 0.846254 best 12
+RadZero post_mlp 44 epoch 15 val 0.843473 best 12
+RadZero post_mlp 44 epoch 16 val 0.845858 best 12
+RadZero post_mlp 44 epoch 17 val 0.845715 best 12
+FIT COMPLETE RadZero post_mlp 44 TEST remains locked

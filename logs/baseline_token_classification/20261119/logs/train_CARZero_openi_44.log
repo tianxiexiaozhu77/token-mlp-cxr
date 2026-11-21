@@ -1,0 +1,25 @@
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/lightning_fabric/__init__.py:29: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__("pkg_resources").declare_namespace(__name__)
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+CARZero openi seed44 epoch1 val=0.858179 best=0.858179 sec=19.3
+CARZero openi seed44 epoch2 val=0.861640 best=0.861640 sec=19.4
+CARZero openi seed44 epoch3 val=0.863725 best=0.863725 sec=19.5
+CARZero openi seed44 epoch4 val=0.865482 best=0.865482 sec=18.5
+CARZero openi seed44 epoch5 val=0.867102 best=0.867102 sec=19.2
+CARZero openi seed44 epoch6 val=0.867718 best=0.867718 sec=19.7
+CARZero openi seed44 epoch7 val=0.869862 best=0.869862 sec=19.6
+CARZero openi seed44 epoch8 val=0.870530 best=0.870530 sec=20.5
+CARZero openi seed44 epoch9 val=0.870380 best=0.870530 sec=19.4
+CARZero openi seed44 epoch10 val=0.870409 best=0.870530 sec=19.7
+CARZero openi seed44 epoch11 val=0.871065 best=0.871065 sec=19.5
+CARZero openi seed44 epoch12 val=0.868805 best=0.871065 sec=18.5
+CARZero openi seed44 epoch13 val=0.869662 best=0.871065 sec=18.8
+CARZero openi seed44 epoch14 val=0.868230 best=0.871065 sec=18.4
+CARZero openi seed44 epoch15 val=0.868439 best=0.871065 sec=19.2
+CARZero openi seed44 epoch16 val=0.867458 best=0.871065 sec=17.3
+COMPLETE CARZero openi 44 0.8539499683801249

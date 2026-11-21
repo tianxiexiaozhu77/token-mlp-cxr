@@ -1,0 +1,60 @@
+/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+CACHE_PARITY AlphaRAD chexpert 0 668
+AlphaRAD chexpert both_mlp seed42 epoch1 val=0.920460 best=0.923703 sec=3.7
+AlphaRAD chexpert both_mlp seed42 epoch2 val=0.920622 best=0.923703 sec=3.1
+AlphaRAD chexpert both_mlp seed42 epoch3 val=0.923982 best=0.923982 sec=5.7
+AlphaRAD chexpert both_mlp seed42 epoch4 val=0.923634 best=0.923982 sec=2.5
+AlphaRAD chexpert both_mlp seed42 epoch5 val=0.924847 best=0.924847 sec=2.5
+AlphaRAD chexpert both_mlp seed42 epoch6 val=0.929389 best=0.929389 sec=2.7
+AlphaRAD chexpert both_mlp seed42 epoch7 val=0.931933 best=0.931933 sec=2.6
+AlphaRAD chexpert both_mlp seed42 epoch8 val=0.933105 best=0.933105 sec=2.8
+AlphaRAD chexpert both_mlp seed42 epoch9 val=0.934713 best=0.934713 sec=2.7
+AlphaRAD chexpert both_mlp seed42 epoch10 val=0.936286 best=0.936286 sec=2.7
+AlphaRAD chexpert both_mlp seed42 epoch11 val=0.936415 best=0.936415 sec=2.8
+AlphaRAD chexpert both_mlp seed42 epoch12 val=0.935470 best=0.936415 sec=2.7
+AlphaRAD chexpert both_mlp seed42 epoch13 val=0.937029 best=0.937029 sec=3.2
+AlphaRAD chexpert both_mlp seed42 epoch14 val=0.935575 best=0.937029 sec=2.4
+AlphaRAD chexpert both_mlp seed42 epoch15 val=0.932153 best=0.937029 sec=2.5
+AlphaRAD chexpert both_mlp seed42 epoch16 val=0.934424 best=0.937029 sec=2.9
+AlphaRAD chexpert both_mlp seed42 epoch17 val=0.932973 best=0.937029 sec=2.6
+AlphaRAD chexpert both_mlp seed42 epoch18 val=0.932951 best=0.937029 sec=2.4
+COMPLETE AlphaRAD chexpert 42 0.9524423485336798 0.7997658477706895
+AlphaRAD chexpert both_mlp seed43 epoch1 val=0.923319 best=0.923703 sec=3.4
+AlphaRAD chexpert both_mlp seed43 epoch2 val=0.923417 best=0.923703 sec=3.2
+AlphaRAD chexpert both_mlp seed43 epoch3 val=0.926400 best=0.926400 sec=3.2
+AlphaRAD chexpert both_mlp seed43 epoch4 val=0.927676 best=0.927676 sec=3.4
+AlphaRAD chexpert both_mlp seed43 epoch5 val=0.929880 best=0.929880 sec=3.4
+AlphaRAD chexpert both_mlp seed43 epoch6 val=0.932125 best=0.932125 sec=3.4
+AlphaRAD chexpert both_mlp seed43 epoch7 val=0.934058 best=0.934058 sec=3.3
+AlphaRAD chexpert both_mlp seed43 epoch8 val=0.936796 best=0.936796 sec=3.4
+AlphaRAD chexpert both_mlp seed43 epoch9 val=0.936586 best=0.936796 sec=3.4
+AlphaRAD chexpert both_mlp seed43 epoch10 val=0.937740 best=0.937740 sec=3.5
+AlphaRAD chexpert both_mlp seed43 epoch11 val=0.936763 best=0.937740 sec=3.4
+AlphaRAD chexpert both_mlp seed43 epoch12 val=0.937988 best=0.937988 sec=3.3
+AlphaRAD chexpert both_mlp seed43 epoch13 val=0.937460 best=0.937988 sec=3.4
+AlphaRAD chexpert both_mlp seed43 epoch14 val=0.936594 best=0.937988 sec=3.4
+AlphaRAD chexpert both_mlp seed43 epoch15 val=0.937769 best=0.937988 sec=3.5
+AlphaRAD chexpert both_mlp seed43 epoch16 val=0.934840 best=0.937988 sec=3.0
+AlphaRAD chexpert both_mlp seed43 epoch17 val=0.932695 best=0.937988 sec=3.2
+COMPLETE AlphaRAD chexpert 43 0.9513478456435113 0.7990838949794403
+AlphaRAD chexpert both_mlp seed44 epoch1 val=0.921813 best=0.923703 sec=2.9
+AlphaRAD chexpert both_mlp seed44 epoch2 val=0.920864 best=0.923703 sec=2.5
+AlphaRAD chexpert both_mlp seed44 epoch3 val=0.922392 best=0.923703 sec=2.5
+AlphaRAD chexpert both_mlp seed44 epoch4 val=0.924249 best=0.924249 sec=2.6
+AlphaRAD chexpert both_mlp seed44 epoch5 val=0.928214 best=0.928214 sec=2.4
+AlphaRAD chexpert both_mlp seed44 epoch6 val=0.929887 best=0.929887 sec=2.5
+AlphaRAD chexpert both_mlp seed44 epoch7 val=0.931204 best=0.931204 sec=2.5
+AlphaRAD chexpert both_mlp seed44 epoch8 val=0.934200 best=0.934200 sec=2.7
+AlphaRAD chexpert both_mlp seed44 epoch9 val=0.935031 best=0.935031 sec=2.5
+AlphaRAD chexpert both_mlp seed44 epoch10 val=0.933521 best=0.935031 sec=2.5
+AlphaRAD chexpert both_mlp seed44 epoch11 val=0.936331 best=0.936331 sec=2.5
+AlphaRAD chexpert both_mlp seed44 epoch12 val=0.937061 best=0.937061 sec=2.5
+AlphaRAD chexpert both_mlp seed44 epoch13 val=0.935670 best=0.937061 sec=2.5
+AlphaRAD chexpert both_mlp seed44 epoch14 val=0.937960 best=0.937960 sec=2.4
+AlphaRAD chexpert both_mlp seed44 epoch15 val=0.937667 best=0.937960 sec=2.4
+AlphaRAD chexpert both_mlp seed44 epoch16 val=0.931529 best=0.937960 sec=2.8
+AlphaRAD chexpert both_mlp seed44 epoch17 val=0.937127 best=0.937960 sec=2.4
+AlphaRAD chexpert both_mlp seed44 epoch18 val=0.936596 best=0.937960 sec=2.3
+AlphaRAD chexpert both_mlp seed44 epoch19 val=0.936433 best=0.937960 sec=2.4
+COMPLETE AlphaRAD chexpert 44 0.9509420620101735 0.7967837297858503

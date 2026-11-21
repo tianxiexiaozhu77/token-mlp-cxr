@@ -1,0 +1,5 @@
+openi RadZero pre_mlp seconds 3
+openi RadZero original seconds 4
+openi RadZero post_mlp seconds 7
+openi RadZero linear_probe seconds 9
+openi RadZero clip_global seconds 15

@@ -1,0 +1,19 @@
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MedKLIP/local_assets/Bio_ClinicalBERT
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+Image feature extractor: resnet50
+MedKLIP chexpert seed43 epoch1 val=0.825537 best=0.825537 sec=1.3
+MedKLIP chexpert seed43 epoch2 val=0.822415 best=0.825537 sec=0.5
+MedKLIP chexpert seed43 epoch3 val=0.821316 best=0.825537 sec=0.5
+MedKLIP chexpert seed43 epoch4 val=0.819067 best=0.825537 sec=0.5
+MedKLIP chexpert seed43 epoch5 val=0.810627 best=0.825537 sec=0.6
+MedKLIP chexpert seed43 epoch6 val=0.807225 best=0.825537 sec=0.5
+MedKLIP chexpert seed43 epoch7 val=0.798929 best=0.825537 sec=0.5
+MedKLIP chexpert seed43 epoch8 val=0.794940 best=0.825537 sec=0.5
+COMPLETE MedKLIP chexpert 43 0.9320473751588302

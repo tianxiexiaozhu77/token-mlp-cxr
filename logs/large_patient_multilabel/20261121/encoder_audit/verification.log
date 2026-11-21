@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/experiments/large_patient_multilabel/audit_encoder.py", line 49, in <module>
+    if __name__=='__main__':main()
+  File "/storage/3090group2/zjx/code/medical/experiments/large_patient_multilabel/audit_encoder.py", line 37, in main
+    np.testing.assert_allclose(a,b,atol=3e-5,rtol=3e-5)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/numpy/testing/_private/utils.py", line 1592, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/numpy/testing/_private/utils.py", line 862, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=3e-05, atol=3e-05
+
+Mismatched elements: 14 / 1052160 (0.00133%)
+Max absolute difference: 6.651878e-05
+Max relative difference: 2.9598393
+ x: memmap([[-0.852319, -2.244662, -2.926772, ...,  0.141107,  4.571404,
+         -2.940584],
+        [ 1.222479,  1.313315,  1.208856, ..., -1.983578, -1.021695,...
+ y: memmap([[-0.85232 , -2.244662, -2.926774, ...,  0.141105,  4.571406,
+         -2.940586],
+        [ 1.222479,  1.313317,  1.208856, ..., -1.983578, -1.021695,...
+Traceback (most recent call last):
+  File "<stdin>", line 11, in <module>
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['bash', '/storage/3090group2/zjx/code/medical/AlphaRAD/local_setup/python_local.sh', '/storage/3090group2/zjx/code/medical/experiments/large_patient_multilabel/audit_encoder.py']' returned non-zero exit status 1.

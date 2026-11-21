@@ -1,0 +1,17 @@
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+BiomedCLIP chexpert seed43 epoch1 val=0.594130 best=0.594130 sec=0.8
+BiomedCLIP chexpert seed43 epoch2 val=0.596620 best=0.596620 sec=0.4
+BiomedCLIP chexpert seed43 epoch3 val=0.593310 best=0.596620 sec=0.3
+BiomedCLIP chexpert seed43 epoch4 val=0.596925 best=0.596925 sec=0.4
+BiomedCLIP chexpert seed43 epoch5 val=0.597095 best=0.597095 sec=0.4
+BiomedCLIP chexpert seed43 epoch6 val=0.589353 best=0.597095 sec=0.4
+BiomedCLIP chexpert seed43 epoch7 val=0.580635 best=0.597095 sec=0.4
+BiomedCLIP chexpert seed43 epoch8 val=0.575703 best=0.597095 sec=0.4
+BiomedCLIP chexpert seed43 epoch9 val=0.567637 best=0.597095 sec=0.3
+BiomedCLIP chexpert seed43 epoch10 val=0.557822 best=0.597095 sec=0.4
+COMPLETE BiomedCLIP chexpert 43 0.7819517394749593

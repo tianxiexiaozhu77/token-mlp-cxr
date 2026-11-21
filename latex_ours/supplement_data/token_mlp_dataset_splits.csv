@@ -1,0 +1,6 @@
+setting,dataset,labels,unit,total_images,total_units,train_images,train_units,val_images,val_units,test_images,test_units
+Primary,OpenI,18,reports,7470,3851,5966,3081,755,385,749,385
+Primary,CheXpert,12,patients,668,500,534,400,67,50,67,50
+Primary,ChestXray14,14,patients,22433,6187,18140,4949,2097,619,2196,619
+Larger NIH,ChestXray14,14,patients,22433,6187,13406,3712,2300,619,6727,1856
+Transfer target,CheXpert,7,patients,668,500,0,0,0,0,668,500

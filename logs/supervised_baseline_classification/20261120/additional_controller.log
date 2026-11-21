@@ -1,0 +1,15 @@
+LAUNCHED bootstrap_chexpert 2480160
+LAUNCHED transfer_AlphaRAD 2483971
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/experiments/supervised_baseline_classification/run_additional.py", line 55, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/storage/3090group2/zjx/code/medical/experiments/supervised_baseline_classification/run_additional.py", line 51, in main
+    if failed and not active:raise RuntimeError('Additional worker failed; inspect before retry')
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Additional worker failed; inspect before retry
+LAUNCHED transfer_AlphaRAD 2490608
+LAUNCHED transfer_KAD 2490609
+LAUNCHED transfer_MaCo 2493850
+LAUNCHED bootstrap_openi 2501946
+LAUNCHED bootstrap_chestxray14 2524895

@@ -1,0 +1,138 @@
+/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+CACHE_PARITY AlphaRAD openi 0 7470
+CACHE_PARITY AlphaRAD openi 6400 7470
+AlphaRAD openi pre_bce seed42 epoch1 val=0.881238 best=0.881238 sec=36.9
+AlphaRAD openi pre_bce seed42 epoch2 val=0.883235 best=0.883235 sec=31.5
+AlphaRAD openi pre_bce seed42 epoch3 val=0.884443 best=0.884443 sec=22.9
+AlphaRAD openi pre_bce seed42 epoch4 val=0.886694 best=0.886694 sec=28.7
+AlphaRAD openi pre_bce seed42 epoch5 val=0.886314 best=0.886694 sec=29.3
+AlphaRAD openi pre_bce seed42 epoch6 val=0.884295 best=0.886694 sec=29.9
+AlphaRAD openi pre_bce seed42 epoch7 val=0.886524 best=0.886694 sec=31.4
+AlphaRAD openi pre_bce seed42 epoch8 val=0.884864 best=0.886694 sec=32.8
+AlphaRAD openi pre_bce seed42 epoch9 val=0.884927 best=0.886694 sec=33.9
+COMPLETE AlphaRAD openi pre_bce 42 0.8634980725872023 0.39286168916626313
+AlphaRAD openi pre_bce seed43 epoch1 val=0.879489 best=0.880889 sec=25.1
+AlphaRAD openi pre_bce seed43 epoch2 val=0.883521 best=0.883521 sec=23.2
+AlphaRAD openi pre_bce seed43 epoch3 val=0.884482 best=0.884482 sec=23.2
+AlphaRAD openi pre_bce seed43 epoch4 val=0.883805 best=0.884482 sec=26.5
+AlphaRAD openi pre_bce seed43 epoch5 val=0.887720 best=0.887720 sec=23.1
+AlphaRAD openi pre_bce seed43 epoch6 val=0.885200 best=0.887720 sec=22.8
+AlphaRAD openi pre_bce seed43 epoch7 val=0.887623 best=0.887720 sec=22.8
+AlphaRAD openi pre_bce seed43 epoch8 val=0.884806 best=0.887720 sec=23.8
+AlphaRAD openi pre_bce seed43 epoch9 val=0.886120 best=0.887720 sec=22.7
+AlphaRAD openi pre_bce seed43 epoch10 val=0.885580 best=0.887720 sec=23.1
+COMPLETE AlphaRAD openi pre_bce 43 0.8642609368943632 0.40691152114619444
+AlphaRAD openi pre_bce seed44 epoch1 val=0.880980 best=0.880980 sec=52.1
+AlphaRAD openi pre_bce seed44 epoch2 val=0.883309 best=0.883309 sec=47.0
+AlphaRAD openi pre_bce seed44 epoch3 val=0.883224 best=0.883309 sec=47.0
+AlphaRAD openi pre_bce seed44 epoch4 val=0.885809 best=0.885809 sec=47.5
+AlphaRAD openi pre_bce seed44 epoch5 val=0.887520 best=0.887520 sec=47.2
+AlphaRAD openi pre_bce seed44 epoch6 val=0.888183 best=0.888183 sec=45.7
+AlphaRAD openi pre_bce seed44 epoch7 val=0.886978 best=0.888183 sec=45.6
+AlphaRAD openi pre_bce seed44 epoch8 val=0.887460 best=0.888183 sec=45.7
+AlphaRAD openi pre_bce seed44 epoch9 val=0.886235 best=0.888183 sec=45.4
+AlphaRAD openi pre_bce seed44 epoch10 val=0.886612 best=0.888183 sec=47.5
+AlphaRAD openi pre_bce seed44 epoch11 val=0.884387 best=0.888183 sec=40.9
+COMPLETE AlphaRAD openi pre_bce 44 0.8672034124452849 0.41120166734136104
+AlphaRAD openi gated_bce seed42 epoch1 val=0.878778 best=0.880889 sec=34.0
+AlphaRAD openi gated_bce seed42 epoch2 val=0.883008 best=0.883008 sec=28.5
+AlphaRAD openi gated_bce seed42 epoch3 val=0.884620 best=0.884620 sec=25.8
+AlphaRAD openi gated_bce seed42 epoch4 val=0.886340 best=0.886340 sec=24.0
+AlphaRAD openi gated_bce seed42 epoch5 val=0.886254 best=0.886340 sec=27.3
+AlphaRAD openi gated_bce seed42 epoch6 val=0.883360 best=0.886340 sec=27.7
+AlphaRAD openi gated_bce seed42 epoch7 val=0.886717 best=0.886717 sec=34.2
+AlphaRAD openi gated_bce seed42 epoch8 val=0.885525 best=0.886717 sec=33.4
+AlphaRAD openi gated_bce seed42 epoch9 val=0.885779 best=0.886717 sec=26.5
+AlphaRAD openi gated_bce seed42 epoch10 val=0.885243 best=0.886717 sec=25.3
+AlphaRAD openi gated_bce seed42 epoch11 val=0.887711 best=0.887711 sec=26.7
+AlphaRAD openi gated_bce seed42 epoch12 val=0.886677 best=0.887711 sec=23.8
+AlphaRAD openi gated_bce seed42 epoch13 val=0.887484 best=0.887711 sec=26.6
+AlphaRAD openi gated_bce seed42 epoch14 val=0.882356 best=0.887711 sec=28.2
+AlphaRAD openi gated_bce seed42 epoch15 val=0.883169 best=0.887711 sec=30.6
+AlphaRAD openi gated_bce seed42 epoch16 val=0.883795 best=0.887711 sec=34.8
+COMPLETE AlphaRAD openi gated_bce 42 0.8688204721845678 0.40900228854797377
+AlphaRAD openi gated_bce seed43 epoch1 val=0.877984 best=0.880889 sec=36.7
+AlphaRAD openi gated_bce seed43 epoch2 val=0.881707 best=0.881707 sec=36.4
+AlphaRAD openi gated_bce seed43 epoch3 val=0.882914 best=0.882914 sec=35.9
+AlphaRAD openi gated_bce seed43 epoch4 val=0.882986 best=0.882986 sec=35.2
+AlphaRAD openi gated_bce seed43 epoch5 val=0.887545 best=0.887545 sec=35.7
+AlphaRAD openi gated_bce seed43 epoch6 val=0.884562 best=0.887545 sec=35.7
+AlphaRAD openi gated_bce seed43 epoch7 val=0.888148 best=0.888148 sec=35.8
+AlphaRAD openi gated_bce seed43 epoch8 val=0.885037 best=0.888148 sec=37.0
+AlphaRAD openi gated_bce seed43 epoch9 val=0.886044 best=0.888148 sec=37.5
+AlphaRAD openi gated_bce seed43 epoch10 val=0.886808 best=0.888148 sec=37.5
+AlphaRAD openi gated_bce seed43 epoch11 val=0.886327 best=0.888148 sec=36.9
+AlphaRAD openi gated_bce seed43 epoch12 val=0.884758 best=0.888148 sec=37.1
+COMPLETE AlphaRAD openi gated_bce 43 0.8671159915509931 0.40737164757314237
+AlphaRAD openi gated_bce seed44 epoch1 val=0.878669 best=0.880889 sec=37.0
+AlphaRAD openi gated_bce seed44 epoch2 val=0.881077 best=0.881077 sec=37.0
+AlphaRAD openi gated_bce seed44 epoch3 val=0.881285 best=0.881285 sec=35.5
+AlphaRAD openi gated_bce seed44 epoch4 val=0.885509 best=0.885509 sec=35.2
+AlphaRAD openi gated_bce seed44 epoch5 val=0.887270 best=0.887270 sec=35.8
+AlphaRAD openi gated_bce seed44 epoch6 val=0.887275 best=0.887275 sec=36.2
+AlphaRAD openi gated_bce seed44 epoch7 val=0.887823 best=0.887823 sec=33.4
+AlphaRAD openi gated_bce seed44 epoch8 val=0.887972 best=0.887972 sec=33.5
+AlphaRAD openi gated_bce seed44 epoch9 val=0.887078 best=0.887972 sec=32.5
+AlphaRAD openi gated_bce seed44 epoch10 val=0.886635 best=0.887972 sec=33.7
+AlphaRAD openi gated_bce seed44 epoch11 val=0.884019 best=0.887972 sec=33.8
+AlphaRAD openi gated_bce seed44 epoch12 val=0.887556 best=0.887972 sec=33.1
+AlphaRAD openi gated_bce seed44 epoch13 val=0.884699 best=0.887972 sec=34.0
+COMPLETE AlphaRAD openi gated_bce 44 0.8684642446167739 0.3978604405233938
+AlphaRAD openi pre_asl seed42 epoch1 val=0.877439 best=0.880889 sec=34.9
+AlphaRAD openi pre_asl seed42 epoch2 val=0.881223 best=0.881223 sec=34.7
+AlphaRAD openi pre_asl seed42 epoch3 val=0.882229 best=0.882229 sec=34.4
+AlphaRAD openi pre_asl seed42 epoch4 val=0.882421 best=0.882421 sec=34.4
+AlphaRAD openi pre_asl seed42 epoch5 val=0.878872 best=0.882421 sec=34.5
+AlphaRAD openi pre_asl seed42 epoch6 val=0.872940 best=0.882421 sec=34.7
+AlphaRAD openi pre_asl seed42 epoch7 val=0.876548 best=0.882421 sec=33.8
+AlphaRAD openi pre_asl seed42 epoch8 val=0.875517 best=0.882421 sec=33.9
+AlphaRAD openi pre_asl seed42 epoch9 val=0.876131 best=0.882421 sec=34.6
+COMPLETE AlphaRAD openi pre_asl 42 0.8491721730847976 0.3793793131578666
+AlphaRAD openi pre_asl seed43 epoch1 val=0.874989 best=0.880889 sec=31.5
+AlphaRAD openi pre_asl seed43 epoch2 val=0.880651 best=0.880889 sec=29.3
+AlphaRAD openi pre_asl seed43 epoch3 val=0.881435 best=0.881435 sec=29.6
+AlphaRAD openi pre_asl seed43 epoch4 val=0.881927 best=0.881927 sec=32.6
+AlphaRAD openi pre_asl seed43 epoch5 val=0.881861 best=0.881927 sec=33.7
+AlphaRAD openi pre_asl seed43 epoch6 val=0.877449 best=0.881927 sec=33.9
+AlphaRAD openi pre_asl seed43 epoch7 val=0.879595 best=0.881927 sec=33.2
+AlphaRAD openi pre_asl seed43 epoch8 val=0.877758 best=0.881927 sec=33.6
+AlphaRAD openi pre_asl seed43 epoch9 val=0.879265 best=0.881927 sec=33.0
+COMPLETE AlphaRAD openi pre_asl 43 0.8484319149248873 0.3863760352372
+AlphaRAD openi pre_asl seed44 epoch1 val=0.875005 best=0.880889 sec=33.1
+AlphaRAD openi pre_asl seed44 epoch2 val=0.879085 best=0.880889 sec=33.6
+AlphaRAD openi pre_asl seed44 epoch3 val=0.879026 best=0.880889 sec=34.0
+AlphaRAD openi pre_asl seed44 epoch4 val=0.879583 best=0.880889 sec=33.0
+AlphaRAD openi pre_asl seed44 epoch5 val=0.880053 best=0.880889 sec=34.5
+AlphaRAD openi pre_asl seed44 epoch6 val=0.879215 best=0.880889 sec=33.5
+AlphaRAD openi pre_asl seed44 epoch7 val=0.876091 best=0.880889 sec=33.4
+AlphaRAD openi pre_asl seed44 epoch8 val=0.877713 best=0.880889 sec=33.9
+COMPLETE AlphaRAD openi pre_asl 44 0.8523600417807696 0.3883152364046858
+AlphaRAD openi gated_asl seed42 epoch1 val=0.877914 best=0.880889 sec=34.0
+AlphaRAD openi gated_asl seed42 epoch2 val=0.881630 best=0.881630 sec=34.5
+AlphaRAD openi gated_asl seed42 epoch3 val=0.882487 best=0.882487 sec=33.4
+AlphaRAD openi gated_asl seed42 epoch4 val=0.883308 best=0.883308 sec=35.2
+AlphaRAD openi gated_asl seed42 epoch5 val=0.880148 best=0.883308 sec=34.1
+AlphaRAD openi gated_asl seed42 epoch6 val=0.876590 best=0.883308 sec=34.2
+AlphaRAD openi gated_asl seed42 epoch7 val=0.880010 best=0.883308 sec=35.1
+AlphaRAD openi gated_asl seed42 epoch8 val=0.878502 best=0.883308 sec=34.9
+AlphaRAD openi gated_asl seed42 epoch9 val=0.878760 best=0.883308 sec=35.3
+COMPLETE AlphaRAD openi gated_asl 42 0.847348297216304 0.36437813178909656
+AlphaRAD openi gated_asl seed43 epoch1 val=0.873763 best=0.880889 sec=32.2
+AlphaRAD openi gated_asl seed43 epoch2 val=0.880416 best=0.880889 sec=29.8
+AlphaRAD openi gated_asl seed43 epoch3 val=0.881500 best=0.881500 sec=30.1
+AlphaRAD openi gated_asl seed43 epoch4 val=0.881431 best=0.881500 sec=30.0
+AlphaRAD openi gated_asl seed43 epoch5 val=0.881123 best=0.881500 sec=30.7
+AlphaRAD openi gated_asl seed43 epoch6 val=0.878566 best=0.881500 sec=29.9
+AlphaRAD openi gated_asl seed43 epoch7 val=0.880044 best=0.881500 sec=30.1
+AlphaRAD openi gated_asl seed43 epoch8 val=0.877691 best=0.881500 sec=29.9
+COMPLETE AlphaRAD openi gated_asl 43 0.842051013175745 0.37893973253137125
+AlphaRAD openi gated_asl seed44 epoch1 val=0.873899 best=0.880889 sec=31.4
+AlphaRAD openi gated_asl seed44 epoch2 val=0.880306 best=0.880889 sec=31.8
+AlphaRAD openi gated_asl seed44 epoch3 val=0.880485 best=0.880889 sec=33.6
+AlphaRAD openi gated_asl seed44 epoch4 val=0.880439 best=0.880889 sec=29.5
+AlphaRAD openi gated_asl seed44 epoch5 val=0.879296 best=0.880889 sec=30.2
+AlphaRAD openi gated_asl seed44 epoch6 val=0.879591 best=0.880889 sec=34.1
+AlphaRAD openi gated_asl seed44 epoch7 val=0.877515 best=0.880889 sec=33.9
+AlphaRAD openi gated_asl seed44 epoch8 val=0.878030 best=0.880889 sec=34.2
+COMPLETE AlphaRAD openi gated_asl 44 0.8523600417807696 0.3883152364046858

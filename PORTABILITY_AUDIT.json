@@ -1,0 +1,895 @@
+{
+  "scope": "Static candidate locations, not an execution or completeness audit",
+  "findings": [
+    {
+      "path": "AlphaRAD/local_setup/run_pretrained.py",
+      "line": 2,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "AlphaRAD/local_setup/run_pretrained.py",
+      "line": 42,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "AlphaRAD/local_setup/run_pretrained.py",
+      "line": 227,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 18,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 19,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 20,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 22,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 23,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 24,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 27,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 29,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 31,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 32,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 36,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 37,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 39,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 40,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 43,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 45,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 47,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 50,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 63,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 69,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 100,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 102,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 105,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 107,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 110,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 128,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 134,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 136,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 141,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 148,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 159,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 189,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 191,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 192,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 193,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 195,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 203,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 207,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 209,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 210,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 218,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 219,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 221,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 225,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 226,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 229,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 240,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 252,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 253,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 254,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 267,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 269,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 270,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 275,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 277,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 289,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 311,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 313,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 317,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 320,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 324,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/CARZero/requirements.txt",
+      "line": 332,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/KAD/requirements.txt",
+      "line": 26,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "baselines/MaCo/requirements.txt",
+      "line": 17,
+      "category": "absolute_local_path"
+    },
+    {
+      "path": "experiments/adapter_placement_classification/prepare.py",
+      "line": 11,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/adapter_placement_classification/prepare.py",
+      "line": 12,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/adapter_placement_classification/prepare.py",
+      "line": 13,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/adapter_placement_classification/prepare.py",
+      "line": 47,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/adapter_placement_classification/report.py",
+      "line": 411,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/adapter_placement_classification/run.py",
+      "line": 21,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/baseline_token_classification/common.py",
+      "line": 12,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/baseline_token_classification/common.py",
+      "line": 13,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/baseline_token_classification/common.py",
+      "line": 104,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/baseline_token_classification/common.py",
+      "line": 105,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/baseline_token_classification/prepare.py",
+      "line": 42,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/baseline_token_classification/report.py",
+      "line": 212,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/baseline_token_classification/run.py",
+      "line": 1,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/baseline_token_classification/run.py",
+      "line": 36,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/baseline_token_classification/run.py",
+      "line": 66,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/baseline_token_classification/run.py",
+      "line": 71,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/baseline_token_classification/run.py",
+      "line": 82,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/baseline_token_classification/run.py",
+      "line": 120,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/both_adapter_classification/common.py",
+      "line": 12,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/both_adapter_classification/common.py",
+      "line": 13,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/both_adapter_classification/common.py",
+      "line": 14,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/both_adapter_classification/common.py",
+      "line": 15,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/both_adapter_classification/prepare.py",
+      "line": 64,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/both_adapter_classification/run.py",
+      "line": 1,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/both_adapter_classification/run.py",
+      "line": 18,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/both_adapter_classification/run.py",
+      "line": 21,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/both_adapter_classification/status.py",
+      "line": 9,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/both_adapter_classification/test_native_backends.py",
+      "line": 105,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/both_adapter_classification/test_native_backends.py",
+      "line": 137,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/both_adapter_classification/test_pooling_backends.py",
+      "line": 141,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/classification_uncertainty/external.py",
+      "line": 16,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/classification_uncertainty/external.py",
+      "line": 22,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/classification_uncertainty/external.py",
+      "line": 26,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/classification_uncertainty/plot_transfer.py",
+      "line": 11,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/classification_uncertainty/report.py",
+      "line": 10,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/classification_uncertainty/run.py",
+      "line": 35,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/classification_uncertainty/run.py",
+      "line": 40,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/classification_uncertainty/run.py",
+      "line": 48,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/report_alpha_token.py",
+      "line": 116,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/report_alpha_token.py",
+      "line": 178,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/report_alpha_token.py",
+      "line": 206,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/run_alpha_token.py",
+      "line": 1,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/run_alpha_token.py",
+      "line": 24,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/run_alpha_token.py",
+      "line": 27,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/run_alpha_token.py",
+      "line": 28,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/run_alpha_token.py",
+      "line": 93,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/run_training.py",
+      "line": 15,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/run_training.py",
+      "line": 28,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/test_alpha_token.py",
+      "line": 21,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/direct_anchor_classification/validate_alpha_token.py",
+      "line": 36,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/gated_asl_classification/prepare.py",
+      "line": 22,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/gated_asl_classification/prepare.py",
+      "line": 84,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/gated_asl_classification/report.py",
+      "line": 84,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/gated_asl_classification/report.py",
+      "line": 273,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/gated_asl_classification/run.py",
+      "line": 1,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/gated_asl_classification/run.py",
+      "line": 32,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/gated_asl_classification/run.py",
+      "line": 35,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/gated_asl_classification/run.py",
+      "line": 36,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/gated_asl_classification/test_migrate.py",
+      "line": 122,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/common.py",
+      "line": 12,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/common.py",
+      "line": 13,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/common.py",
+      "line": 14,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/common.py",
+      "line": 15,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/freeze.py",
+      "line": 21,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/freeze.py",
+      "line": 23,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/freeze.py",
+      "line": 56,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/prepare.py",
+      "line": 105,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/prepare.py",
+      "line": 116,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/prepare.py",
+      "line": 180,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/run.py",
+      "line": 34,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/run.py",
+      "line": 73,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/test_experiment.py",
+      "line": 19,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/test_experiment.py",
+      "line": 20,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/large_patient_multilabel/train.py",
+      "line": 46,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/nih_chexpert_transfer/common.py",
+      "line": 11,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/nih_chexpert_transfer/common.py",
+      "line": 12,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/nih_chexpert_transfer/prepare.py",
+      "line": 87,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/nih_chexpert_transfer/prepare.py",
+      "line": 129,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/nih_chexpert_transfer/run.py",
+      "line": 57,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/radzero_supervised_classification/common.py",
+      "line": 14,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/radzero_supervised_classification/common.py",
+      "line": 15,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/radzero_supervised_classification/prepare.py",
+      "line": 89,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/radzero_supervised_classification/run.py",
+      "line": 1,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/radzero_supervised_classification/uncertainty.py",
+      "line": 40,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/radzero_supervised_classification/uncertainty.py",
+      "line": 48,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/radzero_supervised_classification/uncertainty_external.py",
+      "line": 22,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/radzero_supervised_classification/uncertainty_external.py",
+      "line": 26,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/common.py",
+      "line": 14,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/finalize.py",
+      "line": 32,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/prepare.py",
+      "line": 47,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/prepare.py",
+      "line": 69,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/report.py",
+      "line": 73,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/report.py",
+      "line": 102,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/report_external.py",
+      "line": 14,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/run.py",
+      "line": 1,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/run_additional.py",
+      "line": 26,
+      "category": "host_gpu_constraint"
+    },
+    {
+      "path": "experiments/supervised_baseline_classification/run_additional.py",
+      "line": 33,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "latex_ours/scripts/build_token_mlp_ablation_tables.py",
+      "line": 21,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "latex_ours/scripts/build_token_mlp_ablation_tables.py",
+      "line": 22,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "latex_ours/scripts/build_token_mlp_ablation_tables.py",
+      "line": 23,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "latex_ours/scripts/build_token_mlp_dataset_splits.py",
+      "line": 66,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "latex_ours/scripts/build_token_mlp_dataset_splits.py",
+      "line": 78,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "latex_ours/scripts/build_token_mlp_large_patient_table.py",
+      "line": 12,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "latex_ours/scripts/build_token_mlp_supervised_table.py",
+      "line": 13,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "latex_ours/scripts/build_token_mlp_supervised_table.py",
+      "line": 14,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "latex_ours/scripts/build_token_mlp_tables.py",
+      "line": 33,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "latex_ours/scripts/build_token_mlp_tables.py",
+      "line": 35,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "latex_ours/scripts/build_token_mlp_tables.py",
+      "line": 36,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "latex_ours/scripts/build_token_mlp_tables.py",
+      "line": 37,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "latex_ours/scripts/build_token_mlp_transfer_table.py",
+      "line": 13,
+      "category": "fixed_historical_run"
+    },
+    {
+      "path": "latex_ours/scripts/export_token_mlp_figure_assets.py",
+      "line": 26,
+      "category": "fixed_historical_run"
+    }
+  ]
+}

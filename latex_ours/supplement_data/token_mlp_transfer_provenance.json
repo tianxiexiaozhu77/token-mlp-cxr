@@ -1,0 +1,25 @@
+{
+  "status": "verified",
+  "displayed_method_summaries": 10,
+  "underlying_evaluations": 26,
+  "additional_fits": 0,
+  "paired_comparisons": 8,
+  "source_run": "experiments/nih_chexpert_transfer/runs/20261121",
+  "source_sha256": {
+    "COMPLETION.json": "063754a7858cbbb4f8ca93cc96939b729d50e7dcb01d8d5965a3eaa43d2c63a0",
+    "FINAL_VERIFICATION.json": "70ff5cff496b4d2361a3056a12773ec0cf2bb23474f6486775f3896a1462c6e7",
+    "PROTOCOL.json": "5aaabd6829bb500c09e73395d15b926de908431a5afdcaff322037fd8b9bd893",
+    "COHORT_AUDIT.json": "7f43dbaf3c7e4144b4b752e0cd386a4a66e68505cd36b88a2ac97adb6b306de1",
+    "summary.csv": "269e96c31538618b07fce3e61cfc9c389544d14d2dda171c738c17d5bf6af192",
+    "per_seed_results.csv": "2f2ae32b581e8dfc50016a3f68b4c6753a2ae1ff0ce41d4f674921916be217d9",
+    "uncertainty/summary.json": "aa55bdbf855ad9b0e7329d5678287343773b582dcc74018275f290aa03f746af",
+    "uncertainty/macro_differences.csv": "a256ae4d3576e7b5228f3abd142322c7f7b375587251c4f1d719451052a86f04"
+  },
+  "table_sha256": "d63dc2c0487a8ec5054d33929675a42878a6ece91450883722e275a9fb81985b",
+  "csv_sha256": {
+    "token_mlp_transfer.csv": "269e96c31538618b07fce3e61cfc9c389544d14d2dda171c738c17d5bf6af192",
+    "token_mlp_transfer_per_seed.csv": "2f2ae32b581e8dfc50016a3f68b4c6753a2ae1ff0ce41d4f674921916be217d9",
+    "token_mlp_transfer_intervals.csv": "a256ae4d3576e7b5228f3abd142322c7f7b375587251c4f1d719451052a86f04"
+  },
+  "exporter_sha256": "aafb50f43cbd1cf57771c691d1ca156294f37fcae3ed188b64c00135960a518a"
+}

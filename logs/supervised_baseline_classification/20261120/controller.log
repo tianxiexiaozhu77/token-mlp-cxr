@@ -1,0 +1,16 @@
+LAUNCHED KAD chexpert 4 2469650
+LAUNCHED MaCo chexpert 5 2469651
+LAUNCHED AlphaRAD openi 6 2469654
+LAUNCHED KAD openi 7 2469657
+LAUNCHED MaCo openi 5 2472051
+LAUNCHED AlphaRAD chestxray14 6 2473557
+LAUNCHED KAD chestxray14 4 2474348
+LAUNCHED MaCo chestxray14 5 2475030
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/experiments/supervised_baseline_classification/run.py", line 49, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/storage/3090group2/zjx/code/medical/experiments/supervised_baseline_classification/run.py", line 45, in main
+    if failed and not active:raise RuntimeError('Worker failed; inspect before retry')
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Worker failed; inspect before retry

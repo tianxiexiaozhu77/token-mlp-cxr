@@ -1,0 +1,29 @@
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Image feature extractor: resnet50
+/storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Text feature extractor: /storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+bert encoder layers: 12
+KAD openi seed44 epoch1 val=0.774394 best=0.815067 sec=15.3
+KAD openi seed44 epoch2 val=0.797144 best=0.815067 sec=15.1
+KAD openi seed44 epoch3 val=0.813986 best=0.815067 sec=14.8
+KAD openi seed44 epoch4 val=0.813278 best=0.815067 sec=15.2
+KAD openi seed44 epoch5 val=0.825190 best=0.825190 sec=15.6
+KAD openi seed44 epoch6 val=0.822956 best=0.825190 sec=16.3
+KAD openi seed44 epoch7 val=0.829845 best=0.829845 sec=15.1
+KAD openi seed44 epoch8 val=0.836349 best=0.836349 sec=15.9
+KAD openi seed44 epoch9 val=0.833804 best=0.836349 sec=15.7
+KAD openi seed44 epoch10 val=0.836807 best=0.836807 sec=16.0
+KAD openi seed44 epoch11 val=0.842212 best=0.842212 sec=16.0
+KAD openi seed44 epoch12 val=0.842454 best=0.842454 sec=15.0
+KAD openi seed44 epoch13 val=0.840462 best=0.842454 sec=15.6
+KAD openi seed44 epoch14 val=0.844972 best=0.844972 sec=15.5
+KAD openi seed44 epoch15 val=0.847179 best=0.847179 sec=15.3
+KAD openi seed44 epoch16 val=0.851049 best=0.851049 sec=15.7
+KAD openi seed44 epoch17 val=0.852039 best=0.852039 sec=15.5
+KAD openi seed44 epoch18 val=0.853837 best=0.853837 sec=15.6
+KAD openi seed44 epoch19 val=0.850205 best=0.853837 sec=15.3
+KAD openi seed44 epoch20 val=0.852682 best=0.853837 sec=15.4
+COMPLETE KAD openi 44 0.8426704939927667

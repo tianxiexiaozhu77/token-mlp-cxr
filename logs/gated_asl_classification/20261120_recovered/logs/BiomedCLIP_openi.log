@@ -1,0 +1,116 @@
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+CACHE_PARITY BiomedCLIP openi 0 7470
+CACHE_PARITY BiomedCLIP openi 6400 7470
+BiomedCLIP openi pre_bce seed42 epoch1 val=0.644562 best=0.644562 sec=2.8
+BiomedCLIP openi pre_bce seed42 epoch2 val=0.664554 best=0.664554 sec=2.1
+BiomedCLIP openi pre_bce seed42 epoch3 val=0.660051 best=0.664554 sec=2.1
+BiomedCLIP openi pre_bce seed42 epoch4 val=0.653684 best=0.664554 sec=2.0
+BiomedCLIP openi pre_bce seed42 epoch5 val=0.642906 best=0.664554 sec=2.0
+BiomedCLIP openi pre_bce seed42 epoch6 val=0.662144 best=0.664554 sec=2.1
+BiomedCLIP openi pre_bce seed42 epoch7 val=0.644399 best=0.664554 sec=2.1
+BiomedCLIP openi pre_bce seed42 epoch8 val=0.637396 best=0.664554 sec=2.1
+COMPLETE BiomedCLIP openi pre_bce 42 0.6435353455667673 0.1045035520302419
+BiomedCLIP openi pre_bce seed43 epoch1 val=0.642119 best=0.642119 sec=2.3
+BiomedCLIP openi pre_bce seed43 epoch2 val=0.671617 best=0.671617 sec=2.1
+BiomedCLIP openi pre_bce seed43 epoch3 val=0.652561 best=0.671617 sec=2.1
+BiomedCLIP openi pre_bce seed43 epoch4 val=0.656145 best=0.671617 sec=2.2
+BiomedCLIP openi pre_bce seed43 epoch5 val=0.646710 best=0.671617 sec=2.0
+BiomedCLIP openi pre_bce seed43 epoch6 val=0.652115 best=0.671617 sec=2.1
+BiomedCLIP openi pre_bce seed43 epoch7 val=0.650179 best=0.671617 sec=2.1
+BiomedCLIP openi pre_bce seed43 epoch8 val=0.626848 best=0.671617 sec=2.1
+COMPLETE BiomedCLIP openi pre_bce 43 0.6451435527334588 0.10030433555448699
+BiomedCLIP openi pre_bce seed44 epoch1 val=0.628497 best=0.628497 sec=2.2
+BiomedCLIP openi pre_bce seed44 epoch2 val=0.664145 best=0.664145 sec=2.4
+BiomedCLIP openi pre_bce seed44 epoch3 val=0.658771 best=0.664145 sec=2.0
+BiomedCLIP openi pre_bce seed44 epoch4 val=0.643371 best=0.664145 sec=2.0
+BiomedCLIP openi pre_bce seed44 epoch5 val=0.645521 best=0.664145 sec=2.1
+BiomedCLIP openi pre_bce seed44 epoch6 val=0.662300 best=0.664145 sec=2.1
+BiomedCLIP openi pre_bce seed44 epoch7 val=0.638455 best=0.664145 sec=2.1
+BiomedCLIP openi pre_bce seed44 epoch8 val=0.638413 best=0.664145 sec=2.1
+COMPLETE BiomedCLIP openi pre_bce 44 0.6452945654841018 0.10097379354200157
+BiomedCLIP openi gated_bce seed42 epoch1 val=0.648345 best=0.648345 sec=2.3
+BiomedCLIP openi gated_bce seed42 epoch2 val=0.665660 best=0.665660 sec=2.3
+BiomedCLIP openi gated_bce seed42 epoch3 val=0.661538 best=0.665660 sec=2.3
+BiomedCLIP openi gated_bce seed42 epoch4 val=0.656956 best=0.665660 sec=2.2
+BiomedCLIP openi gated_bce seed42 epoch5 val=0.642322 best=0.665660 sec=2.2
+BiomedCLIP openi gated_bce seed42 epoch6 val=0.663210 best=0.665660 sec=2.2
+BiomedCLIP openi gated_bce seed42 epoch7 val=0.645543 best=0.665660 sec=2.2
+BiomedCLIP openi gated_bce seed42 epoch8 val=0.643051 best=0.665660 sec=2.2
+COMPLETE BiomedCLIP openi gated_bce 42 0.6419186903077881 0.10391285534982282
+BiomedCLIP openi gated_bce seed43 epoch1 val=0.645509 best=0.645509 sec=2.5
+BiomedCLIP openi gated_bce seed43 epoch2 val=0.671308 best=0.671308 sec=2.2
+BiomedCLIP openi gated_bce seed43 epoch3 val=0.653568 best=0.671308 sec=2.3
+BiomedCLIP openi gated_bce seed43 epoch4 val=0.660179 best=0.671308 sec=2.3
+BiomedCLIP openi gated_bce seed43 epoch5 val=0.646657 best=0.671308 sec=2.2
+BiomedCLIP openi gated_bce seed43 epoch6 val=0.652655 best=0.671308 sec=2.1
+BiomedCLIP openi gated_bce seed43 epoch7 val=0.652781 best=0.671308 sec=2.1
+BiomedCLIP openi gated_bce seed43 epoch8 val=0.637412 best=0.671308 sec=2.1
+COMPLETE BiomedCLIP openi gated_bce 43 0.6451056244059586 0.10414598450634006
+BiomedCLIP openi gated_bce seed44 epoch1 val=0.630181 best=0.630181 sec=2.1
+BiomedCLIP openi gated_bce seed44 epoch2 val=0.667207 best=0.667207 sec=2.0
+BiomedCLIP openi gated_bce seed44 epoch3 val=0.659343 best=0.667207 sec=2.4
+BiomedCLIP openi gated_bce seed44 epoch4 val=0.643173 best=0.667207 sec=2.2
+BiomedCLIP openi gated_bce seed44 epoch5 val=0.644113 best=0.667207 sec=2.1
+BiomedCLIP openi gated_bce seed44 epoch6 val=0.663366 best=0.667207 sec=2.0
+BiomedCLIP openi gated_bce seed44 epoch7 val=0.638031 best=0.667207 sec=2.1
+BiomedCLIP openi gated_bce seed44 epoch8 val=0.640125 best=0.667207 sec=2.0
+COMPLETE BiomedCLIP openi gated_bce 44 0.6454756712921079 0.10104534383239311
+BiomedCLIP openi pre_asl seed42 epoch1 val=0.631589 best=0.631589 sec=2.3
+BiomedCLIP openi pre_asl seed42 epoch2 val=0.635445 best=0.635445 sec=2.1
+BiomedCLIP openi pre_asl seed42 epoch3 val=0.662067 best=0.662067 sec=2.3
+BiomedCLIP openi pre_asl seed42 epoch4 val=0.650092 best=0.662067 sec=2.2
+BiomedCLIP openi pre_asl seed42 epoch5 val=0.638783 best=0.662067 sec=2.4
+BiomedCLIP openi pre_asl seed42 epoch6 val=0.658449 best=0.662067 sec=2.3
+BiomedCLIP openi pre_asl seed42 epoch7 val=0.641658 best=0.662067 sec=2.2
+BiomedCLIP openi pre_asl seed42 epoch8 val=0.655542 best=0.662067 sec=2.2
+COMPLETE BiomedCLIP openi pre_asl 42 0.6427601535636042 0.106766755220067
+BiomedCLIP openi pre_asl seed43 epoch1 val=0.632081 best=0.632081 sec=2.2
+BiomedCLIP openi pre_asl seed43 epoch2 val=0.639389 best=0.639389 sec=2.2
+BiomedCLIP openi pre_asl seed43 epoch3 val=0.651704 best=0.651704 sec=2.1
+BiomedCLIP openi pre_asl seed43 epoch4 val=0.651284 best=0.651704 sec=2.4
+BiomedCLIP openi pre_asl seed43 epoch5 val=0.648294 best=0.651704 sec=2.1
+BiomedCLIP openi pre_asl seed43 epoch6 val=0.640650 best=0.651704 sec=2.2
+BiomedCLIP openi pre_asl seed43 epoch7 val=0.647753 best=0.651704 sec=2.2
+BiomedCLIP openi pre_asl seed43 epoch8 val=0.644518 best=0.651704 sec=2.4
+COMPLETE BiomedCLIP openi pre_asl 43 0.639201652596771 0.1107953649480445
+BiomedCLIP openi pre_asl seed44 epoch1 val=0.624987 best=0.624987 sec=2.2
+BiomedCLIP openi pre_asl seed44 epoch2 val=0.635197 best=0.635197 sec=2.2
+BiomedCLIP openi pre_asl seed44 epoch3 val=0.658779 best=0.658779 sec=2.2
+BiomedCLIP openi pre_asl seed44 epoch4 val=0.638287 best=0.658779 sec=2.2
+BiomedCLIP openi pre_asl seed44 epoch5 val=0.636952 best=0.658779 sec=2.1
+BiomedCLIP openi pre_asl seed44 epoch6 val=0.658584 best=0.658779 sec=2.1
+BiomedCLIP openi pre_asl seed44 epoch7 val=0.643558 best=0.658779 sec=2.1
+BiomedCLIP openi pre_asl seed44 epoch8 val=0.641379 best=0.658779 sec=2.1
+COMPLETE BiomedCLIP openi pre_asl 44 0.6378713377581978 0.10772137642741603
+BiomedCLIP openi gated_asl seed42 epoch1 val=0.632738 best=0.632738 sec=2.8
+BiomedCLIP openi gated_asl seed42 epoch2 val=0.640583 best=0.640583 sec=2.1
+BiomedCLIP openi gated_asl seed42 epoch3 val=0.663022 best=0.663022 sec=2.3
+BiomedCLIP openi gated_asl seed42 epoch4 val=0.648463 best=0.663022 sec=2.2
+BiomedCLIP openi gated_asl seed42 epoch5 val=0.638853 best=0.663022 sec=2.1
+BiomedCLIP openi gated_asl seed42 epoch6 val=0.659817 best=0.663022 sec=2.1
+BiomedCLIP openi gated_asl seed42 epoch7 val=0.642067 best=0.663022 sec=2.2
+BiomedCLIP openi gated_asl seed42 epoch8 val=0.655715 best=0.663022 sec=2.2
+COMPLETE BiomedCLIP openi gated_asl 42 0.6431833847519451 0.10561268822027504
+BiomedCLIP openi gated_asl seed43 epoch1 val=0.633228 best=0.633228 sec=2.2
+BiomedCLIP openi gated_asl seed43 epoch2 val=0.642478 best=0.642478 sec=2.2
+BiomedCLIP openi gated_asl seed43 epoch3 val=0.655387 best=0.655387 sec=2.2
+BiomedCLIP openi gated_asl seed43 epoch4 val=0.651641 best=0.655387 sec=2.2
+BiomedCLIP openi gated_asl seed43 epoch5 val=0.648013 best=0.655387 sec=2.2
+BiomedCLIP openi gated_asl seed43 epoch6 val=0.641967 best=0.655387 sec=2.4
+BiomedCLIP openi gated_asl seed43 epoch7 val=0.649822 best=0.655387 sec=2.2
+BiomedCLIP openi gated_asl seed43 epoch8 val=0.645932 best=0.655387 sec=2.1
+COMPLETE BiomedCLIP openi gated_asl 43 0.6408674257169449 0.10676997055635021
+BiomedCLIP openi gated_asl seed44 epoch1 val=0.625877 best=0.625877 sec=2.2
+BiomedCLIP openi gated_asl seed44 epoch2 val=0.638850 best=0.638850 sec=2.1
+BiomedCLIP openi gated_asl seed44 epoch3 val=0.663969 best=0.663969 sec=2.2
+BiomedCLIP openi gated_asl seed44 epoch4 val=0.639985 best=0.663969 sec=2.1
+BiomedCLIP openi gated_asl seed44 epoch5 val=0.637980 best=0.663969 sec=2.1
+BiomedCLIP openi gated_asl seed44 epoch6 val=0.660252 best=0.663969 sec=2.2
+BiomedCLIP openi gated_asl seed44 epoch7 val=0.645278 best=0.663969 sec=2.0
+BiomedCLIP openi gated_asl seed44 epoch8 val=0.642641 best=0.663969 sec=2.5
+COMPLETE BiomedCLIP openi gated_asl 44 0.6431719393925404 0.10578171424433296

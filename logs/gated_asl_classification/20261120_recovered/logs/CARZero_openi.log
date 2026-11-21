@@ -1,0 +1,245 @@
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/lightning_fabric/__init__.py:29: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__("pkg_resources").declare_namespace(__name__)
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+CACHE_PARITY CARZero openi 0 7470
+CACHE_PARITY CARZero openi 1600 7470
+CACHE_PARITY CARZero openi 3200 7470
+CACHE_PARITY CARZero openi 4800 7470
+CACHE_PARITY CARZero openi 6400 7470
+CARZero openi pre_bce seed42 epoch1 val=0.858399 best=0.858399 sec=19.1
+CARZero openi pre_bce seed42 epoch2 val=0.861873 best=0.861873 sec=17.8
+CARZero openi pre_bce seed42 epoch3 val=0.864885 best=0.864885 sec=18.0
+CARZero openi pre_bce seed42 epoch4 val=0.866133 best=0.866133 sec=19.1
+CARZero openi pre_bce seed42 epoch5 val=0.867413 best=0.867413 sec=17.0
+CARZero openi pre_bce seed42 epoch6 val=0.868219 best=0.868219 sec=17.6
+CARZero openi pre_bce seed42 epoch7 val=0.869240 best=0.869240 sec=18.7
+CARZero openi pre_bce seed42 epoch8 val=0.870335 best=0.870335 sec=18.1
+CARZero openi pre_bce seed42 epoch9 val=0.869008 best=0.870335 sec=18.9
+CARZero openi pre_bce seed42 epoch10 val=0.871397 best=0.871397 sec=18.9
+CARZero openi pre_bce seed42 epoch11 val=0.870243 best=0.871397 sec=18.2
+CARZero openi pre_bce seed42 epoch12 val=0.871574 best=0.871574 sec=18.8
+CARZero openi pre_bce seed42 epoch13 val=0.868424 best=0.871574 sec=18.9
+CARZero openi pre_bce seed42 epoch14 val=0.867984 best=0.871574 sec=18.9
+CARZero openi pre_bce seed42 epoch15 val=0.867678 best=0.871574 sec=19.4
+CARZero openi pre_bce seed42 epoch16 val=0.865756 best=0.871574 sec=18.2
+CARZero openi pre_bce seed42 epoch17 val=0.864796 best=0.871574 sec=18.6
+COMPLETE CARZero openi pre_bce 42 0.8502982722308075 0.37538183010009685
+CARZero openi pre_bce seed43 epoch1 val=0.856349 best=0.856349 sec=18.9
+CARZero openi pre_bce seed43 epoch2 val=0.861469 best=0.861469 sec=18.0
+CARZero openi pre_bce seed43 epoch3 val=0.863722 best=0.863722 sec=17.5
+CARZero openi pre_bce seed43 epoch4 val=0.866415 best=0.866415 sec=19.4
+CARZero openi pre_bce seed43 epoch5 val=0.867820 best=0.867820 sec=19.0
+CARZero openi pre_bce seed43 epoch6 val=0.869467 best=0.869467 sec=19.4
+CARZero openi pre_bce seed43 epoch7 val=0.869552 best=0.869552 sec=18.8
+CARZero openi pre_bce seed43 epoch8 val=0.870516 best=0.870516 sec=20.0
+CARZero openi pre_bce seed43 epoch9 val=0.868230 best=0.870516 sec=18.8
+CARZero openi pre_bce seed43 epoch10 val=0.869064 best=0.870516 sec=18.7
+CARZero openi pre_bce seed43 epoch11 val=0.866945 best=0.870516 sec=17.8
+CARZero openi pre_bce seed43 epoch12 val=0.867257 best=0.870516 sec=18.9
+CARZero openi pre_bce seed43 epoch13 val=0.867491 best=0.870516 sec=20.6
+COMPLETE CARZero openi pre_bce 43 0.8526277332718621 0.3768247942471059
+CARZero openi pre_bce seed44 epoch1 val=0.858180 best=0.858180 sec=20.1
+CARZero openi pre_bce seed44 epoch2 val=0.861641 best=0.861641 sec=19.1
+CARZero openi pre_bce seed44 epoch3 val=0.863711 best=0.863711 sec=19.3
+CARZero openi pre_bce seed44 epoch4 val=0.865471 best=0.865471 sec=19.5
+CARZero openi pre_bce seed44 epoch5 val=0.867119 best=0.867119 sec=19.1
+CARZero openi pre_bce seed44 epoch6 val=0.867725 best=0.867725 sec=18.4
+CARZero openi pre_bce seed44 epoch7 val=0.869863 best=0.869863 sec=19.8
+CARZero openi pre_bce seed44 epoch8 val=0.870518 best=0.870518 sec=19.4
+CARZero openi pre_bce seed44 epoch9 val=0.870372 best=0.870518 sec=18.1
+CARZero openi pre_bce seed44 epoch10 val=0.870398 best=0.870518 sec=19.3
+CARZero openi pre_bce seed44 epoch11 val=0.871046 best=0.871046 sec=18.8
+CARZero openi pre_bce seed44 epoch12 val=0.868762 best=0.871046 sec=18.4
+CARZero openi pre_bce seed44 epoch13 val=0.869626 best=0.871046 sec=20.0
+CARZero openi pre_bce seed44 epoch14 val=0.868164 best=0.871046 sec=19.5
+CARZero openi pre_bce seed44 epoch15 val=0.868367 best=0.871046 sec=18.7
+CARZero openi pre_bce seed44 epoch16 val=0.867485 best=0.871046 sec=18.8
+COMPLETE CARZero openi pre_bce 44 0.853992257110602 0.37821172674778775
+CARZero openi gated_bce seed42 epoch1 val=0.853107 best=0.853107 sec=20.2
+CARZero openi gated_bce seed42 epoch2 val=0.860069 best=0.860069 sec=17.3
+CARZero openi gated_bce seed42 epoch3 val=0.863866 best=0.863866 sec=18.5
+CARZero openi gated_bce seed42 epoch4 val=0.865820 best=0.865820 sec=19.7
+CARZero openi gated_bce seed42 epoch5 val=0.867408 best=0.867408 sec=21.0
+CARZero openi gated_bce seed42 epoch6 val=0.868083 best=0.868083 sec=20.3
+CARZero openi gated_bce seed42 epoch7 val=0.870049 best=0.870049 sec=19.2
+CARZero openi gated_bce seed42 epoch8 val=0.870201 best=0.870201 sec=19.8
+CARZero openi gated_bce seed42 epoch9 val=0.870048 best=0.870201 sec=18.9
+CARZero openi gated_bce seed42 epoch10 val=0.871903 best=0.871903 sec=19.7
+CARZero openi gated_bce seed42 epoch11 val=0.872387 best=0.872387 sec=19.4
+CARZero openi gated_bce seed42 epoch12 val=0.872752 best=0.872752 sec=19.7
+CARZero openi gated_bce seed42 epoch13 val=0.870158 best=0.872752 sec=20.1
+CARZero openi gated_bce seed42 epoch14 val=0.873340 best=0.873340 sec=20.4
+CARZero openi gated_bce seed42 epoch15 val=0.871452 best=0.873340 sec=18.6
+CARZero openi gated_bce seed42 epoch16 val=0.870864 best=0.873340 sec=19.0
+CARZero openi gated_bce seed42 epoch17 val=0.869883 best=0.873340 sec=19.0
+CARZero openi gated_bce seed42 epoch18 val=0.868266 best=0.873340 sec=19.8
+CARZero openi gated_bce seed42 epoch19 val=0.869347 best=0.873340 sec=20.3
+COMPLETE CARZero openi gated_bce 42 0.8426098867224964 0.36328955700061605
+CARZero openi gated_bce seed43 epoch1 val=0.851226 best=0.851226 sec=20.2
+CARZero openi gated_bce seed43 epoch2 val=0.859826 best=0.859826 sec=20.4
+CARZero openi gated_bce seed43 epoch3 val=0.863484 best=0.863484 sec=20.5
+CARZero openi gated_bce seed43 epoch4 val=0.865817 best=0.865817 sec=20.3
+CARZero openi gated_bce seed43 epoch5 val=0.868068 best=0.868068 sec=20.0
+CARZero openi gated_bce seed43 epoch6 val=0.869719 best=0.869719 sec=19.1
+CARZero openi gated_bce seed43 epoch7 val=0.870452 best=0.870452 sec=16.4
+CARZero openi gated_bce seed43 epoch8 val=0.872953 best=0.872953 sec=17.9
+CARZero openi gated_bce seed43 epoch9 val=0.872575 best=0.872953 sec=20.3
+CARZero openi gated_bce seed43 epoch10 val=0.873511 best=0.873511 sec=16.8
+CARZero openi gated_bce seed43 epoch11 val=0.872831 best=0.873511 sec=18.6
+CARZero openi gated_bce seed43 epoch12 val=0.873922 best=0.873922 sec=19.0
+CARZero openi gated_bce seed43 epoch13 val=0.874400 best=0.874400 sec=16.8
+CARZero openi gated_bce seed43 epoch14 val=0.874431 best=0.874431 sec=17.4
+CARZero openi gated_bce seed43 epoch15 val=0.871234 best=0.874431 sec=19.0
+CARZero openi gated_bce seed43 epoch16 val=0.871923 best=0.874431 sec=18.5
+CARZero openi gated_bce seed43 epoch17 val=0.869121 best=0.874431 sec=19.4
+CARZero openi gated_bce seed43 epoch18 val=0.870642 best=0.874431 sec=17.3
+CARZero openi gated_bce seed43 epoch19 val=0.866238 best=0.874431 sec=18.8
+COMPLETE CARZero openi gated_bce 43 0.8417703688034142 0.3636329916765679
+CARZero openi gated_bce seed44 epoch1 val=0.850771 best=0.850771 sec=20.4
+CARZero openi gated_bce seed44 epoch2 val=0.859005 best=0.859005 sec=17.1
+CARZero openi gated_bce seed44 epoch3 val=0.863074 best=0.863074 sec=18.7
+CARZero openi gated_bce seed44 epoch4 val=0.864882 best=0.864882 sec=19.1
+CARZero openi gated_bce seed44 epoch5 val=0.866524 best=0.866524 sec=19.8
+CARZero openi gated_bce seed44 epoch6 val=0.868143 best=0.868143 sec=19.5
+CARZero openi gated_bce seed44 epoch7 val=0.870061 best=0.870061 sec=19.0
+CARZero openi gated_bce seed44 epoch8 val=0.871019 best=0.871019 sec=19.3
+CARZero openi gated_bce seed44 epoch9 val=0.871462 best=0.871462 sec=19.0
+CARZero openi gated_bce seed44 epoch10 val=0.872516 best=0.872516 sec=19.6
+CARZero openi gated_bce seed44 epoch11 val=0.873295 best=0.873295 sec=15.3
+CARZero openi gated_bce seed44 epoch12 val=0.871920 best=0.873295 sec=19.0
+CARZero openi gated_bce seed44 epoch13 val=0.871733 best=0.873295 sec=18.8
+CARZero openi gated_bce seed44 epoch14 val=0.871333 best=0.873295 sec=20.6
+CARZero openi gated_bce seed44 epoch15 val=0.871132 best=0.873295 sec=18.6
+CARZero openi gated_bce seed44 epoch16 val=0.872223 best=0.873295 sec=19.3
+COMPLETE CARZero openi gated_bce 44 0.8437816130337292 0.35888368684573213
+CARZero openi pre_asl seed42 epoch1 val=0.848528 best=0.850599 sec=19.4
+CARZero openi pre_asl seed42 epoch2 val=0.853911 best=0.853911 sec=18.1
+CARZero openi pre_asl seed42 epoch3 val=0.858296 best=0.858296 sec=18.4
+CARZero openi pre_asl seed42 epoch4 val=0.861608 best=0.861608 sec=19.6
+CARZero openi pre_asl seed42 epoch5 val=0.863611 best=0.863611 sec=18.8
+CARZero openi pre_asl seed42 epoch6 val=0.865105 best=0.865105 sec=18.0
+CARZero openi pre_asl seed42 epoch7 val=0.866032 best=0.866032 sec=18.8
+CARZero openi pre_asl seed42 epoch8 val=0.866754 best=0.866754 sec=19.6
+CARZero openi pre_asl seed42 epoch9 val=0.868095 best=0.868095 sec=18.2
+CARZero openi pre_asl seed42 epoch10 val=0.869011 best=0.869011 sec=18.1
+CARZero openi pre_asl seed42 epoch11 val=0.870149 best=0.870149 sec=18.9
+CARZero openi pre_asl seed42 epoch12 val=0.869813 best=0.870149 sec=20.2
+CARZero openi pre_asl seed42 epoch13 val=0.869689 best=0.870149 sec=20.0
+CARZero openi pre_asl seed42 epoch14 val=0.869951 best=0.870149 sec=19.5
+CARZero openi pre_asl seed42 epoch15 val=0.871162 best=0.871162 sec=18.9
+CARZero openi pre_asl seed42 epoch16 val=0.869949 best=0.871162 sec=18.6
+CARZero openi pre_asl seed42 epoch17 val=0.870381 best=0.871162 sec=19.9
+CARZero openi pre_asl seed42 epoch18 val=0.870655 best=0.871162 sec=19.9
+CARZero openi pre_asl seed42 epoch19 val=0.871365 best=0.871365 sec=18.1
+CARZero openi pre_asl seed42 epoch20 val=0.870655 best=0.871365 sec=19.8
+COMPLETE CARZero openi pre_asl 42 0.8421104995914122 0.3610268986662033
+CARZero openi pre_asl seed43 epoch1 val=0.844351 best=0.850599 sec=18.7
+CARZero openi pre_asl seed43 epoch2 val=0.854011 best=0.854011 sec=17.4
+CARZero openi pre_asl seed43 epoch3 val=0.857382 best=0.857382 sec=18.7
+CARZero openi pre_asl seed43 epoch4 val=0.860260 best=0.860260 sec=19.7
+CARZero openi pre_asl seed43 epoch5 val=0.862972 best=0.862972 sec=19.0
+CARZero openi pre_asl seed43 epoch6 val=0.865171 best=0.865171 sec=18.0
+CARZero openi pre_asl seed43 epoch7 val=0.865973 best=0.865973 sec=18.7
+CARZero openi pre_asl seed43 epoch8 val=0.867280 best=0.867280 sec=18.1
+CARZero openi pre_asl seed43 epoch9 val=0.868332 best=0.868332 sec=18.9
+CARZero openi pre_asl seed43 epoch10 val=0.868936 best=0.868936 sec=19.0
+CARZero openi pre_asl seed43 epoch11 val=0.870070 best=0.870070 sec=18.2
+CARZero openi pre_asl seed43 epoch12 val=0.870648 best=0.870648 sec=19.4
+CARZero openi pre_asl seed43 epoch13 val=0.872028 best=0.872028 sec=19.6
+CARZero openi pre_asl seed43 epoch14 val=0.872921 best=0.872921 sec=19.3
+CARZero openi pre_asl seed43 epoch15 val=0.872380 best=0.872921 sec=19.3
+CARZero openi pre_asl seed43 epoch16 val=0.872773 best=0.872921 sec=19.2
+CARZero openi pre_asl seed43 epoch17 val=0.873062 best=0.873062 sec=19.8
+CARZero openi pre_asl seed43 epoch18 val=0.872906 best=0.873062 sec=18.6
+CARZero openi pre_asl seed43 epoch19 val=0.872330 best=0.873062 sec=18.6
+CARZero openi pre_asl seed43 epoch20 val=0.872337 best=0.873062 sec=19.1
+COMPLETE CARZero openi pre_asl 43 0.8378508293245673 0.3638563955309411
+CARZero openi pre_asl seed44 epoch1 val=0.845036 best=0.850599 sec=17.5
+CARZero openi pre_asl seed44 epoch2 val=0.853403 best=0.853403 sec=19.7
+CARZero openi pre_asl seed44 epoch3 val=0.856893 best=0.856893 sec=19.4
+CARZero openi pre_asl seed44 epoch4 val=0.859470 best=0.859470 sec=19.0
+CARZero openi pre_asl seed44 epoch5 val=0.861365 best=0.861365 sec=17.1
+CARZero openi pre_asl seed44 epoch6 val=0.863331 best=0.863331 sec=20.3
+CARZero openi pre_asl seed44 epoch7 val=0.864406 best=0.864406 sec=20.0
+CARZero openi pre_asl seed44 epoch8 val=0.864785 best=0.864785 sec=20.0
+CARZero openi pre_asl seed44 epoch9 val=0.866032 best=0.866032 sec=18.2
+CARZero openi pre_asl seed44 epoch10 val=0.867142 best=0.867142 sec=19.9
+CARZero openi pre_asl seed44 epoch11 val=0.867836 best=0.867836 sec=19.0
+CARZero openi pre_asl seed44 epoch12 val=0.867942 best=0.867942 sec=18.8
+CARZero openi pre_asl seed44 epoch13 val=0.869414 best=0.869414 sec=19.1
+CARZero openi pre_asl seed44 epoch14 val=0.869240 best=0.869414 sec=15.7
+CARZero openi pre_asl seed44 epoch15 val=0.870024 best=0.870024 sec=19.5
+CARZero openi pre_asl seed44 epoch16 val=0.870632 best=0.870632 sec=19.2
+CARZero openi pre_asl seed44 epoch17 val=0.870735 best=0.870735 sec=18.6
+CARZero openi pre_asl seed44 epoch18 val=0.871093 best=0.871093 sec=18.3
+CARZero openi pre_asl seed44 epoch19 val=0.871592 best=0.871592 sec=20.7
+CARZero openi pre_asl seed44 epoch20 val=0.871699 best=0.871699 sec=16.7
+COMPLETE CARZero openi pre_asl 44 0.8363845908283154 0.3590503671471304
+CARZero openi gated_asl seed42 epoch1 val=0.844054 best=0.850599 sec=20.4
+CARZero openi gated_asl seed42 epoch2 val=0.854443 best=0.854443 sec=21.1
+CARZero openi gated_asl seed42 epoch3 val=0.858850 best=0.858850 sec=19.0
+CARZero openi gated_asl seed42 epoch4 val=0.861208 best=0.861208 sec=20.2
+CARZero openi gated_asl seed42 epoch5 val=0.863049 best=0.863049 sec=19.9
+CARZero openi gated_asl seed42 epoch6 val=0.865231 best=0.865231 sec=19.3
+CARZero openi gated_asl seed42 epoch7 val=0.866390 best=0.866390 sec=19.0
+CARZero openi gated_asl seed42 epoch8 val=0.867411 best=0.867411 sec=18.4
+CARZero openi gated_asl seed42 epoch9 val=0.868844 best=0.868844 sec=20.3
+CARZero openi gated_asl seed42 epoch10 val=0.869804 best=0.869804 sec=20.0
+CARZero openi gated_asl seed42 epoch11 val=0.870415 best=0.870415 sec=20.4
+CARZero openi gated_asl seed42 epoch12 val=0.870128 best=0.870415 sec=20.3
+CARZero openi gated_asl seed42 epoch13 val=0.870699 best=0.870699 sec=20.6
+CARZero openi gated_asl seed42 epoch14 val=0.870781 best=0.870781 sec=20.7
+CARZero openi gated_asl seed42 epoch15 val=0.871524 best=0.871524 sec=19.9
+CARZero openi gated_asl seed42 epoch16 val=0.871090 best=0.871524 sec=20.7
+CARZero openi gated_asl seed42 epoch17 val=0.871279 best=0.871524 sec=20.5
+CARZero openi gated_asl seed42 epoch18 val=0.871050 best=0.871524 sec=18.5
+CARZero openi gated_asl seed42 epoch19 val=0.871181 best=0.871524 sec=20.6
+CARZero openi gated_asl seed42 epoch20 val=0.870565 best=0.871524 sec=20.1
+COMPLETE CARZero openi gated_asl 42 0.839521651573505 0.3521953780317627
+CARZero openi gated_asl seed43 epoch1 val=0.838970 best=0.850599 sec=21.4
+CARZero openi gated_asl seed43 epoch2 val=0.853849 best=0.853849 sec=20.0
+CARZero openi gated_asl seed43 epoch3 val=0.857215 best=0.857215 sec=20.1
+CARZero openi gated_asl seed43 epoch4 val=0.859841 best=0.859841 sec=21.2
+CARZero openi gated_asl seed43 epoch5 val=0.861821 best=0.861821 sec=21.0
+CARZero openi gated_asl seed43 epoch6 val=0.863794 best=0.863794 sec=20.3
+CARZero openi gated_asl seed43 epoch7 val=0.865178 best=0.865178 sec=19.6
+CARZero openi gated_asl seed43 epoch8 val=0.865979 best=0.865979 sec=19.4
+CARZero openi gated_asl seed43 epoch9 val=0.866685 best=0.866685 sec=20.9
+CARZero openi gated_asl seed43 epoch10 val=0.868023 best=0.868023 sec=18.6
+CARZero openi gated_asl seed43 epoch11 val=0.868767 best=0.868767 sec=21.1
+CARZero openi gated_asl seed43 epoch12 val=0.869156 best=0.869156 sec=20.5
+CARZero openi gated_asl seed43 epoch13 val=0.870541 best=0.870541 sec=20.8
+CARZero openi gated_asl seed43 epoch14 val=0.871228 best=0.871228 sec=19.8
+CARZero openi gated_asl seed43 epoch15 val=0.870237 best=0.871228 sec=19.9
+CARZero openi gated_asl seed43 epoch16 val=0.871185 best=0.871228 sec=20.6
+CARZero openi gated_asl seed43 epoch17 val=0.871355 best=0.871355 sec=19.2
+CARZero openi gated_asl seed43 epoch18 val=0.871025 best=0.871355 sec=20.2
+CARZero openi gated_asl seed43 epoch19 val=0.870271 best=0.871355 sec=20.9
+CARZero openi gated_asl seed43 epoch20 val=0.870183 best=0.871355 sec=20.1
+COMPLETE CARZero openi gated_asl 43 0.8374391285119169 0.3560750097297885
+CARZero openi gated_asl seed44 epoch1 val=0.841064 best=0.850599 sec=20.5
+CARZero openi gated_asl seed44 epoch2 val=0.852033 best=0.852033 sec=20.1
+CARZero openi gated_asl seed44 epoch3 val=0.857022 best=0.857022 sec=19.2
+CARZero openi gated_asl seed44 epoch4 val=0.859802 best=0.859802 sec=18.9
+CARZero openi gated_asl seed44 epoch5 val=0.861681 best=0.861681 sec=19.4
+CARZero openi gated_asl seed44 epoch6 val=0.863712 best=0.863712 sec=20.0
+CARZero openi gated_asl seed44 epoch7 val=0.865167 best=0.865167 sec=19.8
+CARZero openi gated_asl seed44 epoch8 val=0.865253 best=0.865253 sec=20.2
+CARZero openi gated_asl seed44 epoch9 val=0.866625 best=0.866625 sec=20.6
+CARZero openi gated_asl seed44 epoch10 val=0.867191 best=0.867191 sec=20.0
+CARZero openi gated_asl seed44 epoch11 val=0.868179 best=0.868179 sec=19.6
+CARZero openi gated_asl seed44 epoch12 val=0.868334 best=0.868334 sec=21.2
+CARZero openi gated_asl seed44 epoch13 val=0.869813 best=0.869813 sec=20.3
+CARZero openi gated_asl seed44 epoch14 val=0.869484 best=0.869813 sec=19.6
+CARZero openi gated_asl seed44 epoch15 val=0.869720 best=0.869813 sec=20.2
+CARZero openi gated_asl seed44 epoch16 val=0.869976 best=0.869976 sec=19.9
+CARZero openi gated_asl seed44 epoch17 val=0.869883 best=0.869976 sec=20.9
+CARZero openi gated_asl seed44 epoch18 val=0.869576 best=0.869976 sec=19.8
+CARZero openi gated_asl seed44 epoch19 val=0.870039 best=0.870039 sec=20.1
+CARZero openi gated_asl seed44 epoch20 val=0.868859 best=0.870039 sec=20.0
+COMPLETE CARZero openi gated_asl 44 0.8445306188096661 0.36124636601939314

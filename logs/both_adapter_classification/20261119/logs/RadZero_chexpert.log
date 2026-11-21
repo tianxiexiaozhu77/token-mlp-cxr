@@ -1,0 +1,54 @@
+/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+CACHE_PARITY RadZero chexpert 0 668
+RadZero chexpert both_mlp seed42 epoch1 val=0.840878 best=0.840878 sec=7.5
+RadZero chexpert both_mlp seed42 epoch2 val=0.845211 best=0.845211 sec=2.5
+RadZero chexpert both_mlp seed42 epoch3 val=0.846057 best=0.846057 sec=2.6
+RadZero chexpert both_mlp seed42 epoch4 val=0.848542 best=0.848542 sec=2.5
+RadZero chexpert both_mlp seed42 epoch5 val=0.851654 best=0.851654 sec=2.5
+RadZero chexpert both_mlp seed42 epoch6 val=0.851218 best=0.851654 sec=2.7
+RadZero chexpert both_mlp seed42 epoch7 val=0.855156 best=0.855156 sec=2.9
+RadZero chexpert both_mlp seed42 epoch8 val=0.853979 best=0.855156 sec=2.5
+RadZero chexpert both_mlp seed42 epoch9 val=0.859947 best=0.859947 sec=2.7
+RadZero chexpert both_mlp seed42 epoch10 val=0.859069 best=0.859947 sec=2.8
+RadZero chexpert both_mlp seed42 epoch11 val=0.859321 best=0.859947 sec=2.6
+RadZero chexpert both_mlp seed42 epoch12 val=0.857134 best=0.859947 sec=2.4
+RadZero chexpert both_mlp seed42 epoch13 val=0.862231 best=0.862231 sec=2.5
+RadZero chexpert both_mlp seed42 epoch14 val=0.857373 best=0.862231 sec=2.4
+RadZero chexpert both_mlp seed42 epoch15 val=0.860829 best=0.862231 sec=2.5
+RadZero chexpert both_mlp seed42 epoch16 val=0.863575 best=0.863575 sec=2.6
+RadZero chexpert both_mlp seed42 epoch17 val=0.860335 best=0.863575 sec=2.8
+RadZero chexpert both_mlp seed42 epoch18 val=0.864499 best=0.864499 sec=2.6
+RadZero chexpert both_mlp seed42 epoch19 val=0.864053 best=0.864499 sec=2.6
+RadZero chexpert both_mlp seed42 epoch20 val=0.863296 best=0.864499 sec=2.8
+COMPLETE RadZero chexpert 42 0.9360416090060052 0.7426571126102735
+RadZero chexpert both_mlp seed43 epoch1 val=0.840294 best=0.840294 sec=2.8
+RadZero chexpert both_mlp seed43 epoch2 val=0.837453 best=0.840294 sec=2.6
+RadZero chexpert both_mlp seed43 epoch3 val=0.847169 best=0.847169 sec=2.7
+RadZero chexpert both_mlp seed43 epoch4 val=0.847893 best=0.847893 sec=2.6
+RadZero chexpert both_mlp seed43 epoch5 val=0.851739 best=0.851739 sec=3.1
+RadZero chexpert both_mlp seed43 epoch6 val=0.853044 best=0.853044 sec=2.5
+RadZero chexpert both_mlp seed43 epoch7 val=0.854249 best=0.854249 sec=2.7
+RadZero chexpert both_mlp seed43 epoch8 val=0.860615 best=0.860615 sec=2.6
+RadZero chexpert both_mlp seed43 epoch9 val=0.861607 best=0.861607 sec=2.8
+RadZero chexpert both_mlp seed43 epoch10 val=0.858580 best=0.861607 sec=2.6
+RadZero chexpert both_mlp seed43 epoch11 val=0.857850 best=0.861607 sec=2.6
+RadZero chexpert both_mlp seed43 epoch12 val=0.856086 best=0.861607 sec=2.6
+RadZero chexpert both_mlp seed43 epoch13 val=0.853866 best=0.861607 sec=2.6
+RadZero chexpert both_mlp seed43 epoch14 val=0.857182 best=0.861607 sec=2.6
+COMPLETE RadZero chexpert 43 0.9294983224240189 0.7205895557577321
+RadZero chexpert both_mlp seed44 epoch1 val=0.840226 best=0.840226 sec=2.9
+RadZero chexpert both_mlp seed44 epoch2 val=0.840652 best=0.840652 sec=2.7
+RadZero chexpert both_mlp seed44 epoch3 val=0.839658 best=0.840652 sec=2.6
+RadZero chexpert both_mlp seed44 epoch4 val=0.852009 best=0.852009 sec=2.7
+RadZero chexpert both_mlp seed44 epoch5 val=0.854375 best=0.854375 sec=2.6
+RadZero chexpert both_mlp seed44 epoch6 val=0.854193 best=0.854375 sec=2.9
+RadZero chexpert both_mlp seed44 epoch7 val=0.856833 best=0.856833 sec=3.0
+RadZero chexpert both_mlp seed44 epoch8 val=0.860377 best=0.860377 sec=2.9
+RadZero chexpert both_mlp seed44 epoch9 val=0.861167 best=0.861167 sec=2.4
+RadZero chexpert both_mlp seed44 epoch10 val=0.856235 best=0.861167 sec=2.5
+RadZero chexpert both_mlp seed44 epoch11 val=0.858379 best=0.861167 sec=2.6
+RadZero chexpert both_mlp seed44 epoch12 val=0.859595 best=0.861167 sec=2.5
+RadZero chexpert both_mlp seed44 epoch13 val=0.860735 best=0.861167 sec=2.5
+RadZero chexpert both_mlp seed44 epoch14 val=0.860170 best=0.861167 sec=2.5
+COMPLETE RadZero chexpert 44 0.9314909628067524 0.728703405264961

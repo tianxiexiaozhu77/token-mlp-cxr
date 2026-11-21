@@ -1,0 +1,39 @@
+radzero OpenI bias seed=44 epoch=1 val=0.836299 best=0.843093 sec=0.7
+radzero OpenI bias seed=44 epoch=2 val=0.836384 best=0.843093 sec=0.6
+radzero OpenI bias seed=44 epoch=3 val=0.836857 best=0.843093 sec=0.5
+radzero OpenI bias seed=44 epoch=4 val=0.837982 best=0.843093 sec=0.6
+radzero OpenI bias seed=44 epoch=5 val=0.838355 best=0.843093 sec=0.6
+radzero OpenI bias seed=44 epoch=6 val=0.839817 best=0.843093 sec=0.6
+radzero OpenI bias seed=44 epoch=7 val=0.840883 best=0.843093 sec=0.5
+radzero OpenI bias seed=44 epoch=8 val=0.841851 best=0.843093 sec=0.5
+COMPLETE radzero OpenI bias seed=44 test_AUROC=0.850552
+radzero OpenI direct seed=44 epoch=1 val=0.789637 best=0.843093 sec=1.0
+radzero OpenI direct seed=44 epoch=2 val=0.811126 best=0.843093 sec=0.6
+radzero OpenI direct seed=44 epoch=3 val=0.806881 best=0.843093 sec=0.8
+radzero OpenI direct seed=44 epoch=4 val=0.814274 best=0.843093 sec=0.8
+radzero OpenI direct seed=44 epoch=5 val=0.810291 best=0.843093 sec=0.8
+radzero OpenI direct seed=44 epoch=6 val=0.826356 best=0.843093 sec=0.6
+radzero OpenI direct seed=44 epoch=7 val=0.807542 best=0.843093 sec=0.8
+radzero OpenI direct seed=44 epoch=8 val=0.808047 best=0.843093 sec=0.9
+COMPLETE radzero OpenI direct seed=44 test_AUROC=0.850552
+radzero OpenI existing seed=44 epoch=1 val=0.834650 best=0.843093 sec=98.2
+radzero OpenI existing seed=44 epoch=2 val=0.838238 best=0.843093 sec=118.3
+radzero OpenI existing seed=44 epoch=3 val=0.842422 best=0.843093 sec=24.2
+radzero OpenI existing seed=44 epoch=4 val=0.844926 best=0.844926 sec=23.0
+radzero OpenI existing seed=44 epoch=5 val=0.845326 best=0.845326 sec=23.2
+radzero OpenI existing seed=44 epoch=6 val=0.847304 best=0.847304 sec=23.1
+radzero OpenI existing seed=44 epoch=7 val=0.849280 best=0.849280 sec=23.3
+radzero OpenI existing seed=44 epoch=8 val=0.848095 best=0.849280 sec=22.2
+radzero OpenI existing seed=44 epoch=9 val=0.848110 best=0.849280 sec=22.4
+radzero OpenI existing seed=44 epoch=10 val=0.853104 best=0.853104 sec=22.0
+radzero OpenI existing seed=44 epoch=11 val=0.851264 best=0.853104 sec=22.1
+radzero OpenI existing seed=44 epoch=12 val=0.850534 best=0.853104 sec=22.3
+radzero OpenI existing seed=44 epoch=13 val=0.855033 best=0.855033 sec=22.4
+radzero OpenI existing seed=44 epoch=14 val=0.854461 best=0.855033 sec=22.1
+radzero OpenI existing seed=44 epoch=15 val=0.852330 best=0.855033 sec=22.1
+radzero OpenI existing seed=44 epoch=16 val=0.854112 best=0.855033 sec=22.2
+radzero OpenI existing seed=44 epoch=17 val=0.856856 best=0.856856 sec=22.1
+radzero OpenI existing seed=44 epoch=18 val=0.850497 best=0.856856 sec=22.2
+radzero OpenI existing seed=44 epoch=19 val=0.851819 best=0.856856 sec=22.0
+radzero OpenI existing seed=44 epoch=20 val=0.853542 best=0.856856 sec=22.0
+COMPLETE radzero OpenI existing seed=44 test_AUROC=0.880311

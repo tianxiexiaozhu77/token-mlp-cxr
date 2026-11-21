@@ -1,0 +1,15 @@
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+BiomedCLIP chestxray14 seed43 epoch1 val=0.659201 best=0.659201 sec=6.5
+BiomedCLIP chestxray14 seed43 epoch2 val=0.660779 best=0.660779 sec=6.6
+BiomedCLIP chestxray14 seed43 epoch3 val=0.647922 best=0.660779 sec=6.0
+BiomedCLIP chestxray14 seed43 epoch4 val=0.637759 best=0.660779 sec=6.5
+BiomedCLIP chestxray14 seed43 epoch5 val=0.636152 best=0.660779 sec=7.1
+BiomedCLIP chestxray14 seed43 epoch6 val=0.639769 best=0.660779 sec=6.6
+BiomedCLIP chestxray14 seed43 epoch7 val=0.646542 best=0.660779 sec=6.5
+BiomedCLIP chestxray14 seed43 epoch8 val=0.648478 best=0.660779 sec=5.9
+COMPLETE BiomedCLIP chestxray14 43 0.6613318568643937

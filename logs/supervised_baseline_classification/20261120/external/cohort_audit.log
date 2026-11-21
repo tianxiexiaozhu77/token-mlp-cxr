@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "images": 5297,
+  "patients": 3713,
+  "positives": 1201,
+  "source_images": 668,
+  "source_patients": 500,
+  "mapping_verified": true,
+  "source_duplicate_overlap": {
+    "file_sha256": [],
+    "decoded_rgb_sha256": []
+  },
+  "cross_patient_exact_duplicate_groups": 0,
+  "protocol_sha256": "6441af45c2d50cda906a55c9c123c6049fd765d0fe2a027ffca6878cf226b53b",
+  "image_hashes_sha256": "03b3efcc00990e881eb960e3f9fb3ccfc555834fdbbaed1eb13833d814c82e46",
+  "code_sha256": "7bf876f620c3984cde0a011d5789d24b1963bcd63529fbc2ff50c147db3dc9fc",
+  "seconds": 79.43602705001831,
+  "independence_scope": "NIH-mapped target patients versus Stanford CheXpert adaptation cohort; exact image overlap checked. Cross-institution human identity linkage is unavailable; pretraining overlap is not ruled out.",
+  "official_split": false,
+  "selection": "Previously fixed local cohort, locked before this transfer evaluation; no current-target tuning."
+}

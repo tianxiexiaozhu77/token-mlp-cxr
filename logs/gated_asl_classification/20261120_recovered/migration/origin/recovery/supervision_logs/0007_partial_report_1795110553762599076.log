@@ -1,0 +1,13 @@
+{
+  "status": "partial",
+  "generated_at": "2026-11-19T17:49:26.809469+00:00",
+  "protocol_sha256": "f45a19ed0a9f67755af77893af7b85dc2931488e99a76e1b7c788a56db3bdb08",
+  "expected_new_fits": 252,
+  "completed_new_fits": 13,
+  "expected_reference_evaluations": 120,
+  "completed_reference_evaluations": 120,
+  "historical_supervised_fits": 90,
+  "deterministic_reference_evaluations": 30,
+  "old_fits_counted_as_new": 0,
+  "errors": []
+}

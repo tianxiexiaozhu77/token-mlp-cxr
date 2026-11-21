@@ -1,0 +1,17 @@
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/lightning_fabric/__init__.py:29: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__("pkg_resources").declare_namespace(__name__)
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+CARZero chexpert seed44 epoch1 val=0.927794 best=0.927794 sec=2.4
+CARZero chexpert seed44 epoch2 val=0.925978 best=0.927794 sec=2.0
+CARZero chexpert seed44 epoch3 val=0.926278 best=0.927794 sec=2.0
+CARZero chexpert seed44 epoch4 val=0.923012 best=0.927794 sec=2.1
+CARZero chexpert seed44 epoch5 val=0.916047 best=0.927794 sec=2.0
+CARZero chexpert seed44 epoch6 val=0.908937 best=0.927794 sec=1.9
+CARZero chexpert seed44 epoch7 val=0.904122 best=0.927794 sec=2.0
+CARZero chexpert seed44 epoch8 val=0.897554 best=0.927794 sec=1.9
+COMPLETE CARZero chexpert 44 0.9021878250593423

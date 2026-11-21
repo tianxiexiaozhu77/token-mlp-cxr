@@ -1,0 +1,6 @@
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/token_mlp_pipeline_real.pdf}
+\caption{\textbf{Shared Token MLP illustrated with a real chest X-ray.} (a) A real NIH image enters the frozen visual path; the feature-matrix inset shows a subset of its AlphaRAD token/channel values. Only the red MLP is trained, with 16,576--99,136 parameters depending on $d$. The dashed text-to-readout path applies to explicit similarity heads; native fusion and added-pooling differences are detailed in Appendix~\ref{app:architectures}. (b) One residual module is shared across tokens and diseases; zero-initialized up-projection recovers the identity. (c) Actual AlphaRAD attention before and after the NIH-validation-selected Pre MLP (seed 42), on the same prespecified NIH training image. Maps average eight FLaS heads over $37\times37$ patches. CLS remains in the attention normalization but is omitted from the spatial display. All four maps share one linear color scale, without separate map normalization. They illustrate computation, not localization accuracy or evidence of improved classification.}
+\label{fig:token_mlp_pipeline}
+\end{figure*}

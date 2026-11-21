@@ -1,0 +1,28 @@
+COMPLETE radzero chexpert baseline seed=42 test_AUROC=0.898074
+radzero chexpert bias seed=42 epoch=1 val=0.834774 best=0.835357 sec=0.3
+radzero chexpert bias seed=42 epoch=2 val=0.835169 best=0.835357 sec=0.1
+radzero chexpert bias seed=42 epoch=3 val=0.837259 best=0.837259 sec=0.1
+radzero chexpert bias seed=42 epoch=4 val=0.836950 best=0.837259 sec=0.1
+radzero chexpert bias seed=42 epoch=5 val=0.836656 best=0.837259 sec=0.1
+radzero chexpert bias seed=42 epoch=6 val=0.836118 best=0.837259 sec=0.1
+radzero chexpert bias seed=42 epoch=7 val=0.836791 best=0.837259 sec=0.1
+radzero chexpert bias seed=42 epoch=8 val=0.836730 best=0.837259 sec=0.1
+COMPLETE radzero chexpert bias seed=42 test_AUROC=0.900194
+radzero chexpert direct seed=42 epoch=1 val=0.818275 best=0.835357 sec=0.1
+radzero chexpert direct seed=42 epoch=2 val=0.823201 best=0.835357 sec=0.1
+radzero chexpert direct seed=42 epoch=3 val=0.818839 best=0.835357 sec=0.1
+radzero chexpert direct seed=42 epoch=4 val=0.813149 best=0.835357 sec=0.1
+radzero chexpert direct seed=42 epoch=5 val=0.818793 best=0.835357 sec=0.1
+radzero chexpert direct seed=42 epoch=6 val=0.808565 best=0.835357 sec=0.1
+radzero chexpert direct seed=42 epoch=7 val=0.807771 best=0.835357 sec=0.1
+radzero chexpert direct seed=42 epoch=8 val=0.805954 best=0.835357 sec=0.1
+COMPLETE radzero chexpert direct seed=42 test_AUROC=0.898074
+radzero chexpert existing seed=42 epoch=1 val=0.841436 best=0.841436 sec=18.5
+radzero chexpert existing seed=42 epoch=2 val=0.851365 best=0.851365 sec=2.4
+radzero chexpert existing seed=42 epoch=3 val=0.846824 best=0.851365 sec=2.3
+radzero chexpert existing seed=42 epoch=4 val=0.838910 best=0.851365 sec=2.3
+radzero chexpert existing seed=42 epoch=5 val=0.836733 best=0.851365 sec=2.3
+radzero chexpert existing seed=42 epoch=6 val=0.839428 best=0.851365 sec=2.3
+radzero chexpert existing seed=42 epoch=7 val=0.844259 best=0.851365 sec=2.3
+radzero chexpert existing seed=42 epoch=8 val=0.845448 best=0.851365 sec=2.3
+COMPLETE radzero chexpert existing seed=42 test_AUROC=0.909702

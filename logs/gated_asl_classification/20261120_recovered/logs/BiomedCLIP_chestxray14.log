@@ -1,0 +1,126 @@
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+CACHE_PARITY BiomedCLIP chestxray14 0 22433
+CACHE_PARITY BiomedCLIP chestxray14 6400 22433
+CACHE_PARITY BiomedCLIP chestxray14 12800 22433
+CACHE_PARITY BiomedCLIP chestxray14 19200 22433
+BiomedCLIP chestxray14 pre_bce seed42 epoch1 val=0.661295 best=0.661295 sec=7.3
+BiomedCLIP chestxray14 pre_bce seed42 epoch2 val=0.660967 best=0.661295 sec=6.4
+BiomedCLIP chestxray14 pre_bce seed42 epoch3 val=0.650457 best=0.661295 sec=6.4
+BiomedCLIP chestxray14 pre_bce seed42 epoch4 val=0.637950 best=0.661295 sec=6.4
+BiomedCLIP chestxray14 pre_bce seed42 epoch5 val=0.626999 best=0.661295 sec=6.3
+BiomedCLIP chestxray14 pre_bce seed42 epoch6 val=0.640372 best=0.661295 sec=6.2
+BiomedCLIP chestxray14 pre_bce seed42 epoch7 val=0.631946 best=0.661295 sec=6.2
+BiomedCLIP chestxray14 pre_bce seed42 epoch8 val=0.641538 best=0.661295 sec=6.2
+COMPLETE BiomedCLIP chestxray14 pre_bce 42 0.6518890840088994 0.09633629393195231
+BiomedCLIP chestxray14 pre_bce seed43 epoch1 val=0.659201 best=0.659201 sec=6.2
+BiomedCLIP chestxray14 pre_bce seed43 epoch2 val=0.660779 best=0.660779 sec=6.3
+BiomedCLIP chestxray14 pre_bce seed43 epoch3 val=0.647922 best=0.660779 sec=6.1
+BiomedCLIP chestxray14 pre_bce seed43 epoch4 val=0.637759 best=0.660779 sec=6.1
+BiomedCLIP chestxray14 pre_bce seed43 epoch5 val=0.636152 best=0.660779 sec=5.9
+BiomedCLIP chestxray14 pre_bce seed43 epoch6 val=0.639769 best=0.660779 sec=5.7
+BiomedCLIP chestxray14 pre_bce seed43 epoch7 val=0.646542 best=0.660779 sec=5.7
+BiomedCLIP chestxray14 pre_bce seed43 epoch8 val=0.648478 best=0.660779 sec=6.0
+COMPLETE BiomedCLIP chestxray14 pre_bce 43 0.6613318568643937 0.10395981534438359
+BiomedCLIP chestxray14 pre_bce seed44 epoch1 val=0.661755 best=0.661755 sec=6.7
+BiomedCLIP chestxray14 pre_bce seed44 epoch2 val=0.659782 best=0.661755 sec=6.6
+BiomedCLIP chestxray14 pre_bce seed44 epoch3 val=0.642777 best=0.661755 sec=6.6
+BiomedCLIP chestxray14 pre_bce seed44 epoch4 val=0.630567 best=0.661755 sec=6.6
+BiomedCLIP chestxray14 pre_bce seed44 epoch5 val=0.636971 best=0.661755 sec=6.2
+BiomedCLIP chestxray14 pre_bce seed44 epoch6 val=0.630329 best=0.661755 sec=5.9
+BiomedCLIP chestxray14 pre_bce seed44 epoch7 val=0.642125 best=0.661755 sec=6.1
+BiomedCLIP chestxray14 pre_bce seed44 epoch8 val=0.633928 best=0.661755 sec=6.1
+COMPLETE BiomedCLIP chestxray14 pre_bce 44 0.6506271931555999 0.09476363625003838
+BiomedCLIP chestxray14 gated_bce seed42 epoch1 val=0.661911 best=0.661911 sec=6.2
+BiomedCLIP chestxray14 gated_bce seed42 epoch2 val=0.658737 best=0.661911 sec=6.1
+BiomedCLIP chestxray14 gated_bce seed42 epoch3 val=0.649002 best=0.661911 sec=5.9
+BiomedCLIP chestxray14 gated_bce seed42 epoch4 val=0.637954 best=0.661911 sec=6.0
+BiomedCLIP chestxray14 gated_bce seed42 epoch5 val=0.627328 best=0.661911 sec=6.2
+BiomedCLIP chestxray14 gated_bce seed42 epoch6 val=0.640998 best=0.661911 sec=6.0
+BiomedCLIP chestxray14 gated_bce seed42 epoch7 val=0.638803 best=0.661911 sec=6.1
+BiomedCLIP chestxray14 gated_bce seed42 epoch8 val=0.648514 best=0.661911 sec=6.4
+COMPLETE BiomedCLIP chestxray14 gated_bce 42 0.6535571378372699 0.0970623071732576
+BiomedCLIP chestxray14 gated_bce seed43 epoch1 val=0.659973 best=0.659973 sec=5.9
+BiomedCLIP chestxray14 gated_bce seed43 epoch2 val=0.659420 best=0.659973 sec=5.6
+BiomedCLIP chestxray14 gated_bce seed43 epoch3 val=0.647676 best=0.659973 sec=5.7
+BiomedCLIP chestxray14 gated_bce seed43 epoch4 val=0.637147 best=0.659973 sec=5.5
+BiomedCLIP chestxray14 gated_bce seed43 epoch5 val=0.636326 best=0.659973 sec=5.9
+BiomedCLIP chestxray14 gated_bce seed43 epoch6 val=0.640068 best=0.659973 sec=5.5
+BiomedCLIP chestxray14 gated_bce seed43 epoch7 val=0.649785 best=0.659973 sec=5.6
+BiomedCLIP chestxray14 gated_bce seed43 epoch8 val=0.651352 best=0.659973 sec=5.7
+COMPLETE BiomedCLIP chestxray14 gated_bce 43 0.651162983736976 0.09390664724076594
+BiomedCLIP chestxray14 gated_bce seed44 epoch1 val=0.663215 best=0.663215 sec=7.1
+BiomedCLIP chestxray14 gated_bce seed44 epoch2 val=0.658432 best=0.663215 sec=6.2
+BiomedCLIP chestxray14 gated_bce seed44 epoch3 val=0.639603 best=0.663215 sec=6.3
+BiomedCLIP chestxray14 gated_bce seed44 epoch4 val=0.631199 best=0.663215 sec=6.0
+BiomedCLIP chestxray14 gated_bce seed44 epoch5 val=0.638186 best=0.663215 sec=6.1
+BiomedCLIP chestxray14 gated_bce seed44 epoch6 val=0.633416 best=0.663215 sec=6.7
+BiomedCLIP chestxray14 gated_bce seed44 epoch7 val=0.643807 best=0.663215 sec=6.0
+BiomedCLIP chestxray14 gated_bce seed44 epoch8 val=0.631097 best=0.663215 sec=6.0
+COMPLETE BiomedCLIP chestxray14 gated_bce 44 0.6525044399335086 0.09578007898212097
+BiomedCLIP chestxray14 pre_asl seed42 epoch1 val=0.663968 best=0.663968 sec=6.3
+BiomedCLIP chestxray14 pre_asl seed42 epoch2 val=0.670415 best=0.670415 sec=5.9
+BiomedCLIP chestxray14 pre_asl seed42 epoch3 val=0.677376 best=0.677376 sec=5.9
+BiomedCLIP chestxray14 pre_asl seed42 epoch4 val=0.671551 best=0.677376 sec=6.0
+BiomedCLIP chestxray14 pre_asl seed42 epoch5 val=0.672008 best=0.677376 sec=6.2
+BiomedCLIP chestxray14 pre_asl seed42 epoch6 val=0.672695 best=0.677376 sec=6.5
+BiomedCLIP chestxray14 pre_asl seed42 epoch7 val=0.654697 best=0.677376 sec=6.5
+BiomedCLIP chestxray14 pre_asl seed42 epoch8 val=0.645893 best=0.677376 sec=6.8
+COMPLETE BiomedCLIP chestxray14 pre_asl 42 0.6611684151495891 0.10295100086506048
+BiomedCLIP chestxray14 pre_asl seed43 epoch1 val=0.661490 best=0.661490 sec=6.1
+BiomedCLIP chestxray14 pre_asl seed43 epoch2 val=0.671856 best=0.671856 sec=6.0
+BiomedCLIP chestxray14 pre_asl seed43 epoch3 val=0.673239 best=0.673239 sec=6.0
+BiomedCLIP chestxray14 pre_asl seed43 epoch4 val=0.672263 best=0.673239 sec=5.7
+BiomedCLIP chestxray14 pre_asl seed43 epoch5 val=0.673239 best=0.673239 sec=5.7
+BiomedCLIP chestxray14 pre_asl seed43 epoch6 val=0.666666 best=0.673239 sec=5.6
+BiomedCLIP chestxray14 pre_asl seed43 epoch7 val=0.644370 best=0.673239 sec=5.6
+BiomedCLIP chestxray14 pre_asl seed43 epoch8 val=0.642500 best=0.673239 sec=5.6
+BiomedCLIP chestxray14 pre_asl seed43 epoch9 val=0.642924 best=0.673239 sec=5.7
+BiomedCLIP chestxray14 pre_asl seed43 epoch10 val=0.643022 best=0.673239 sec=6.7
+COMPLETE BiomedCLIP chestxray14 pre_asl 43 0.6652331166997401 0.10849047582844158
+BiomedCLIP chestxray14 pre_asl seed44 epoch1 val=0.661921 best=0.661921 sec=6.4
+BiomedCLIP chestxray14 pre_asl seed44 epoch2 val=0.671594 best=0.671594 sec=6.1
+BiomedCLIP chestxray14 pre_asl seed44 epoch3 val=0.670203 best=0.671594 sec=6.0
+BiomedCLIP chestxray14 pre_asl seed44 epoch4 val=0.671523 best=0.671594 sec=6.2
+BiomedCLIP chestxray14 pre_asl seed44 epoch5 val=0.672775 best=0.672775 sec=6.2
+BiomedCLIP chestxray14 pre_asl seed44 epoch6 val=0.674208 best=0.674208 sec=6.1
+BiomedCLIP chestxray14 pre_asl seed44 epoch7 val=0.657199 best=0.674208 sec=6.1
+BiomedCLIP chestxray14 pre_asl seed44 epoch8 val=0.639859 best=0.674208 sec=5.9
+BiomedCLIP chestxray14 pre_asl seed44 epoch9 val=0.643525 best=0.674208 sec=6.1
+BiomedCLIP chestxray14 pre_asl seed44 epoch10 val=0.641970 best=0.674208 sec=6.2
+BiomedCLIP chestxray14 pre_asl seed44 epoch11 val=0.642150 best=0.674208 sec=6.5
+COMPLETE BiomedCLIP chestxray14 pre_asl 44 0.6629440882289935 0.11065076293931395
+BiomedCLIP chestxray14 gated_asl seed42 epoch1 val=0.663585 best=0.663585 sec=6.7
+BiomedCLIP chestxray14 gated_asl seed42 epoch2 val=0.670684 best=0.670684 sec=6.5
+BiomedCLIP chestxray14 gated_asl seed42 epoch3 val=0.676793 best=0.676793 sec=6.5
+BiomedCLIP chestxray14 gated_asl seed42 epoch4 val=0.671744 best=0.676793 sec=6.5
+BiomedCLIP chestxray14 gated_asl seed42 epoch5 val=0.671814 best=0.676793 sec=6.5
+BiomedCLIP chestxray14 gated_asl seed42 epoch6 val=0.670196 best=0.676793 sec=6.3
+BiomedCLIP chestxray14 gated_asl seed42 epoch7 val=0.650177 best=0.676793 sec=6.6
+BiomedCLIP chestxray14 gated_asl seed42 epoch8 val=0.646009 best=0.676793 sec=6.5
+COMPLETE BiomedCLIP chestxray14 gated_asl 42 0.6609020401255362 0.1025205416266153
+BiomedCLIP chestxray14 gated_asl seed43 epoch1 val=0.660846 best=0.660846 sec=6.8
+BiomedCLIP chestxray14 gated_asl seed43 epoch2 val=0.670699 best=0.670699 sec=6.3
+BiomedCLIP chestxray14 gated_asl seed43 epoch3 val=0.673268 best=0.673268 sec=6.5
+BiomedCLIP chestxray14 gated_asl seed43 epoch4 val=0.672449 best=0.673268 sec=6.4
+BiomedCLIP chestxray14 gated_asl seed43 epoch5 val=0.672734 best=0.673268 sec=6.6
+BiomedCLIP chestxray14 gated_asl seed43 epoch6 val=0.665297 best=0.673268 sec=6.6
+BiomedCLIP chestxray14 gated_asl seed43 epoch7 val=0.642084 best=0.673268 sec=6.7
+BiomedCLIP chestxray14 gated_asl seed43 epoch8 val=0.643129 best=0.673268 sec=6.8
+COMPLETE BiomedCLIP chestxray14 gated_asl 43 0.6584991084667962 0.1007978189928719
+BiomedCLIP chestxray14 gated_asl seed44 epoch1 val=0.661863 best=0.661863 sec=6.3
+BiomedCLIP chestxray14 gated_asl seed44 epoch2 val=0.671324 best=0.671324 sec=6.4
+BiomedCLIP chestxray14 gated_asl seed44 epoch3 val=0.669904 best=0.671324 sec=6.6
+BiomedCLIP chestxray14 gated_asl seed44 epoch4 val=0.670268 best=0.671324 sec=6.6
+BiomedCLIP chestxray14 gated_asl seed44 epoch5 val=0.671521 best=0.671521 sec=6.8
+BiomedCLIP chestxray14 gated_asl seed44 epoch6 val=0.671773 best=0.671773 sec=6.5
+BiomedCLIP chestxray14 gated_asl seed44 epoch7 val=0.646557 best=0.671773 sec=6.6
+BiomedCLIP chestxray14 gated_asl seed44 epoch8 val=0.637774 best=0.671773 sec=6.5
+BiomedCLIP chestxray14 gated_asl seed44 epoch9 val=0.641604 best=0.671773 sec=7.1
+BiomedCLIP chestxray14 gated_asl seed44 epoch10 val=0.640310 best=0.671773 sec=6.6
+BiomedCLIP chestxray14 gated_asl seed44 epoch11 val=0.641086 best=0.671773 sec=6.3
+COMPLETE BiomedCLIP chestxray14 gated_asl 44 0.6566442891645036 0.10979788625468355

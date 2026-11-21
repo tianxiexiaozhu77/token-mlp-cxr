@@ -1,0 +1,45 @@
+{
+  "status": "verified",
+  "model": "AlphaRAD",
+  "seed": 42,
+  "source_run": "experiments/large_patient_multilabel/runs/20261121",
+  "selection_rule": "Lexicographically first NIH TRAIN image labeled Atelectasis and Effusion; independent of scores/maps.",
+  "sample_index": 21168,
+  "image_id": "radzero/prepared/ChestXray14/images_001/images/00000078_001.png",
+  "source_image": "/storage/3090group2/zjx/code/medical/data/radzero/prepared/ChestXray14/images_001/images/00000078_001.png",
+  "image_sha256": "bf5e09562555862c899860050ddab02e08a51fdc775069ab8ca089ee6dcbcc06",
+  "split": "train",
+  "positive_dataset_labels": [
+    "Atelectasis",
+    "Effusion"
+  ],
+  "checkpoint_sha256": "43444a85f304ca966a051935161eebe2b59fbbdf7c7e73db6ca2731589915e12",
+  "selected_epoch": 18,
+  "head_sha256": "f0fad3e1e89d3f1ed6070210638a19f0d519fa3a597ef5ca686e60605de88199",
+  "protocol_sha256": "f73f691594fa9d573910c79d8ffd0a0632f02fffe9c587e5b3c241bc17715d2a",
+  "source_manifest_sha256": "392322e1becac5d0c38e041968c08c0d4099f8dce30224021e137b3a0ce41195",
+  "source_token_file": "/storage/3090group2/zjx/code/medical/experiments/direct_anchor_classification/runs/20261118/cache/alpharad/chestxray14/tokens_00.npy",
+  "source_token_local_index": 10584,
+  "displayed_sample_tokens_sha256": "d401b135f358bc8b96253300206d754aa525c5d7c8818195062dd58d0dc85dce",
+  "encoder_geometry": {
+    "Resize": {
+      "size": 518
+    },
+    "CenterCrop": {
+      "size": 518
+    }
+  },
+  "preprocessing": "Native grayscale-to-RGB, bilinear Resize(518), CenterCrop(518).",
+  "attention": "Exact native softmax over CLS + 1369 patches, averaged over eight FLaS heads; CLS omitted only from the spatial display; no patch renormalization.",
+  "native_score_max_abs_error": 9.5367431640625e-07,
+  "validation": [
+    "Native context/logit agreement with verified cached features",
+    "Exact reconstructed native attention/context agreement",
+    "Attention sums to one including CLS",
+    "Source image and selected adapter SHA256",
+    "Zero-initialized adapter equals identity"
+  ],
+  "interpretation": "One training example illustrating computation; not localization validation or an estimate of classification improvement.",
+  "exported_assets_sha256": "eca15fee9b7bdaefcde2b871c290e47e97558121ff3f70772ec339b020b637e0",
+  "exporter_sha256": "fd626fd5f981c447b3f2db6cfea7e75b0a0ee5e35e112cc919112457adb97d33"
+}

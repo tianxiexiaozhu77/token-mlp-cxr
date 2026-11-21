@@ -1,0 +1,9 @@
+test_all_selected_modules_against_explicit_source_operations (__main__.TransferTests.test_all_selected_modules_against_explicit_source_operations) ... ok
+test_reject_wrong_source_class_axis_and_protocol (__main__.TransferTests.test_reject_wrong_source_class_axis_and_protocol) ... ok
+test_semantic_projection_with_reordered_axis (__main__.TransferTests.test_semantic_projection_with_reordered_axis) ... ok
+test_weighted_ties_match_expanded_patient_resampling (__main__.TransferTests.test_weighted_ties_match_expanded_patient_resampling) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.911s
+
+OK

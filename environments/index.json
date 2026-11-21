@@ -1,0 +1,79 @@
+[
+  {
+    "name": "AlphaRAD",
+    "python": "3.10.22",
+    "path": "AlphaRAD/.venv",
+    "torch": "2.9.0",
+    "torchvision": "0.24.0",
+    "index": "cu128",
+    "requirements": "environments/AlphaRAD.txt",
+    "source": "AlphaRAD/local_setup/runtime.lock.txt",
+    "source_sha256": "0a807a941a5194e421c30dba15ad077ca4f104eca217fd3018e161da8a83c753"
+  },
+  {
+    "name": "RadZero",
+    "python": "3.12.7",
+    "path": ".envs/radzero",
+    "torch": "2.2.1",
+    "torchvision": "0.17.1",
+    "index": "cu121",
+    "requirements": "environments/RadZero/requirements-freeze.txt",
+    "source": "environments/RadZero/requirements-freeze.txt",
+    "source_sha256": "a739eaf067e1c162871b759cb94c54ca3e8a98d28c7f0e4a5a515a6fb4b01e89"
+  },
+  {
+    "name": "BiomedCLIP",
+    "python": "3.10.22",
+    "path": "baselines/BiomedCLIP/.venv",
+    "torch": "2.2.2",
+    "torchvision": "0.17.2",
+    "index": "cu121",
+    "requirements": "environments/BiomedCLIP.txt",
+    "source": "baselines/BiomedCLIP/local_setup/requirements.lock.txt",
+    "source_sha256": "47c4e2b5da717fec40b5df81956d264ea16c8b4eb039888f2707d289978906b9"
+  },
+  {
+    "name": "BioViL-T",
+    "python": "3.10.22",
+    "path": "baselines/BioViL-T/.venv",
+    "torch": "2.2.2",
+    "torchvision": "0.17.2",
+    "index": "cu121",
+    "requirements": "environments/BioViL-T.txt",
+    "source": "baselines/BioViL-T/local_setup/requirements.lock.txt",
+    "source_sha256": "47c4e2b5da717fec40b5df81956d264ea16c8b4eb039888f2707d289978906b9"
+  },
+  {
+    "name": "KAD",
+    "python": "3.10.22",
+    "path": "baselines/KAD/.venv",
+    "torch": "2.2.2",
+    "torchvision": "0.17.2",
+    "index": "cu121",
+    "requirements": "environments/KAD.txt",
+    "source": "baselines/KAD/local_setup/requirements.lock.txt",
+    "source_sha256": "e7ff106a07c71e75807a5cea6ba3ca186ac489a9cf65e6a6c8a1dc10bd5fa5df"
+  },
+  {
+    "name": "MaCo",
+    "python": "3.10.12",
+    "path": "baselines/MaCo/.venv",
+    "torch": "2.2.2",
+    "torchvision": "0.17.2",
+    "index": "cu121",
+    "requirements": "environments/MaCo.txt",
+    "source": "baselines/MaCo/local_setup/environment_freeze.txt",
+    "source_sha256": "8f2e20b8c2fbb941a0776d290eac58f74a1f0d99d7a3902f22ba8b0a1dc86291"
+  },
+  {
+    "name": "CARZero",
+    "python": "3.10.12",
+    "path": "baselines/CARZero/.venv",
+    "torch": "2.2.2",
+    "torchvision": "0.17.2",
+    "index": "cu121",
+    "requirements": "environments/CARZero.txt",
+    "source": "baselines/CARZero/local_setup/environment_freeze.txt",
+    "source_sha256": "68093b755c3210789766e77367ad3589460d489a322c29c7d04d85580962963e"
+  }
+]

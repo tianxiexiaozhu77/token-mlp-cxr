@@ -1,0 +1,29 @@
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/lightning_fabric/__init__.py:29: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__("pkg_resources").declare_namespace(__name__)
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+CARZero chestxray14 seed42 epoch1 val=0.825796 best=0.825796 sec=60.1
+CARZero chestxray14 seed42 epoch2 val=0.833343 best=0.833343 sec=57.4
+CARZero chestxray14 seed42 epoch3 val=0.836872 best=0.836872 sec=60.7
+CARZero chestxray14 seed42 epoch4 val=0.840142 best=0.840142 sec=57.9
+CARZero chestxray14 seed42 epoch5 val=0.841835 best=0.841835 sec=60.1
+CARZero chestxray14 seed42 epoch6 val=0.842981 best=0.842981 sec=60.3
+CARZero chestxray14 seed42 epoch7 val=0.843520 best=0.843520 sec=60.1
+CARZero chestxray14 seed42 epoch8 val=0.844707 best=0.844707 sec=59.4
+CARZero chestxray14 seed42 epoch9 val=0.844976 best=0.844976 sec=59.2
+CARZero chestxray14 seed42 epoch10 val=0.845996 best=0.845996 sec=57.5
+CARZero chestxray14 seed42 epoch11 val=0.845354 best=0.845996 sec=57.9
+CARZero chestxray14 seed42 epoch12 val=0.845502 best=0.845996 sec=58.4
+CARZero chestxray14 seed42 epoch13 val=0.846196 best=0.846196 sec=58.7
+CARZero chestxray14 seed42 epoch14 val=0.846208 best=0.846208 sec=58.7
+CARZero chestxray14 seed42 epoch15 val=0.844965 best=0.846208 sec=57.3
+CARZero chestxray14 seed42 epoch16 val=0.846331 best=0.846331 sec=57.7
+CARZero chestxray14 seed42 epoch17 val=0.844618 best=0.846331 sec=58.0
+CARZero chestxray14 seed42 epoch18 val=0.843827 best=0.846331 sec=58.5
+CARZero chestxray14 seed42 epoch19 val=0.845199 best=0.846331 sec=57.2
+CARZero chestxray14 seed42 epoch20 val=0.844534 best=0.846331 sec=56.9
+COMPLETE CARZero chestxray14 42 0.8389160147043855

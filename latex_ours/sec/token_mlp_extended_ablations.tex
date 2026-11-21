@@ -1,0 +1,44 @@
+\onecolumn
+\section{Joint Pre- and Post-Aggregation Adaptation}
+\label{app:both_mlp}
+The \emph{Both MLP} condition jointly fits two independent copies of Eq.~\eqref{eq:adapter}: one at the existing token boundary and one after aggregation or fusion, before the frozen readout. Each copy is shared across diseases and the tokens or contexts on which it operates. The aggregation remains differentiable with respect to the Pre module; contexts are recomputed during training. Encoders, queries, aggregation parameters, and readout parameters remain frozen. All 63 Both fits use weighted BCE and the training and validation-selection protocol in Sec.~\ref{sec:ablation_protocol}. Historical Pre and available Post fits are reused only as comparisons.
+
+\paragraph{Post boundaries and parameter counts.}
+For AlphaRAD, the Post MLP acts on the concatenated eight head contexts before their native per-head normalization; for RadZero it acts on the VL-CABS context before final normalization and scoring. KAD and CARZero place Post after the decoder's final normalization and evaluation-mode dropout, before their native classifiers. CARZero uses the same Post MLP for both fusion directions and retains their logit average. BiomedCLIP and BioViL-T apply Post to each raw positive/negative context before final L2 normalization; MaCo applies it before the raw-dot readout without adding normalization. Both therefore has $2P(d)$ parameters: 33,152 for BioViL-T, 132,224 for BiomedCLIP, and 198,272 for each of the other five backbones. For the three added-pooling models, two identity adapters still reproduce aggregation-only rather than Original. Standalone Post runs are available only for AlphaRAD, KAD, and MaCo; the remaining cells are explicitly unrun.
+
+\paragraph{Results and attribution.}
+Tables~\ref{tab:token_mlp_both_openi}--\ref{tab:token_mlp_both_chestxray14} retain all seven models and all three datasets. Both improves BiomedCLIP/CheXpert from Pre's 71.05/40.96 to 76.30/45.25, but decreases MaCo/ChestXray14 from 82.80/26.24 to 82.64/25.57. KAD/OpenI Post reaches 84.41/33.43, exceeding Both's 84.15/31.26 on both metrics. BioViL-T/OpenI selects epoch zero in all three Both runs, matching its aggregation-only control. These outcomes do not support uniform gains from adding a second location. Because Both doubles capacity and lacks a single-location control with the same total parameter budget, any gains cannot be attributed uniquely to complementary insertion points. Three-seed SDs describe fitting variability, not patient-level uncertainty.
+
+\input{tables/token_mlp_both_openi}
+\input{tables/token_mlp_both_chexpert}
+\input{tables/token_mlp_both_chestxray14}
+
+\clearpage
+\section{Token Gating and Loss Factorial Experiment}
+\label{app:gated_asl}
+We evaluate four pre-aggregation conditions: Pre+BCE, Gated+BCE, Pre+ASL, and Gated+ASL. All four are trained anew for every model, dataset, and seed, giving $7\times3\times3\times4=252$ fits. The Pre+BCE condition is the control within this experiment; its values are not filled from the historical main-study runs. The original frozen representations, prompts, aggregation, splits, optimizer settings, and validation-AUROC checkpoint rule remain fixed. Epoch zero is eligible for every condition. The restarted experiment preserves completed current-experiment fits and their provenance; it does not count historical comparison runs as new fits.
+
+\paragraph{Scalar token gate.}
+Let $u_\theta(t)=W_u\GELU(W_dt+b_d)+b_u$ denote the residual branch of Eq.~\eqref{eq:adapter}. The gated update is
+\begin{equation}
+g_{\theta,\phi}(t)=t+a_\phi(t)u_\theta(t),\qquad
+a_\phi(t)=\sigmoid\!\left(w_g^\top\operatorname{LN}_0(t)+b_g\right),
+\label{eq:token_gate}
+\end{equation}
+where $\operatorname{LN}_0$ is nonaffine LayerNorm with $\epsilon=10^{-5}$. Only the gate input is normalized; the residual MLP receives the raw token. One scalar-valued gate function is shared across tokens and diseases, with $w_g=0$ and $b_g=\log(0.1/0.9)$ initially. The residual output still starts at zero, preserving identity initialization. The gate adds $d+1$ trainable parameters, giving 16,705, 66,625, or 99,905 total parameters for feature widths 128, 512, or 768. Its initial value of 0.1 also changes the initial residual-branch gradient scale, so this experiment does not isolate token-dependent weighting from that optimization change.
+
+\paragraph{Loss settings.}
+BCE retains the training-only positive weights capped at 20. The asymmetric loss (ASL)~\cite{ridnik2021asl} uses positive focusing exponent 0, negative exponent 4, negative-probability shift 0.05, and logarithm clamp $10^{-8}$. Specifically, for $p=\sigmoid(s)$ and $p_-=\min(1,1-p+0.05)$, the per-entry loss is
+\begin{equation}
+\ell_{\mathrm{ASL}}(s,y)=-y\log\max(p,10^{-8})
+-(1-y)(1-p_-)^4\log\max(p_-,10^{-8}).
+\label{eq:token_asl}
+\end{equation}
+It is averaged over images and classes, with full differentiation through the focal factor and no positive-class weights. The comparison therefore changes the loss and its class-weighting treatment together; it is not an isolated comparison of focusing exponents.
+
+\paragraph{Results and identity selections.}
+Tables~\ref{tab:token_mlp_gated_asl_openi}--\ref{tab:token_mlp_gated_asl_chestxray14} show that neither gating nor ASL is uniformly beneficial. On ChestXray14, BioViL-T improves from Pre+BCE's 76.30/14.14 to Pre+ASL's 78.52/18.62, whereas MaCo falls from 82.80/26.24 to 79.95/23.36. Gating under BCE improves both metrics for AlphaRAD/OpenI, from 86.50/40.37 to 86.81/40.47, but lowers both for AlphaRAD/CheXpert, from 95.04/79.76 to 94.17/76.18. RadZero/OpenI's two ASL conditions both select identity checkpoints in every seed, returning 85.06/42.11: the higher AP relative to Pre+BCE comes from retaining Original, not from a learned improvement. Across the 63 fits per condition, epoch zero is selected 3 times for Pre+BCE, 4 for Gated+BCE, 13 for Pre+ASL, and 14 for Gated+ASL. For BiomedCLIP, BioViL-T, and MaCo, identity refers to the added-pooling control. These fixed-setting results describe interactions among backbone, loss, and gating without establishing the best achievable performance of each condition.
+
+\input{tables/token_mlp_gated_asl_openi}
+\input{tables/token_mlp_gated_asl_chexpert}
+\input{tables/token_mlp_gated_asl_chestxray14}

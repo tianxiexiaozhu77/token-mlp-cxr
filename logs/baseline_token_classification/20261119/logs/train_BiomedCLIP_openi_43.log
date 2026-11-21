@@ -1,0 +1,15 @@
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+BiomedCLIP openi seed43 epoch1 val=0.642119 best=0.642119 sec=2.5
+BiomedCLIP openi seed43 epoch2 val=0.671617 best=0.671617 sec=2.0
+BiomedCLIP openi seed43 epoch3 val=0.652561 best=0.671617 sec=2.1
+BiomedCLIP openi seed43 epoch4 val=0.656145 best=0.671617 sec=1.9
+BiomedCLIP openi seed43 epoch5 val=0.646710 best=0.671617 sec=2.1
+BiomedCLIP openi seed43 epoch6 val=0.652115 best=0.671617 sec=2.1
+BiomedCLIP openi seed43 epoch7 val=0.650179 best=0.671617 sec=2.1
+BiomedCLIP openi seed43 epoch8 val=0.626848 best=0.671617 sec=2.1
+COMPLETE BiomedCLIP openi 43 0.6451435527334588

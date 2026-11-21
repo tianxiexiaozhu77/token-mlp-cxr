@@ -1,0 +1,92 @@
+/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+AlphaRAD chexpert linear_probe 42 1 val 0.611544 best 1
+AlphaRAD chexpert linear_probe 42 2 val 0.711946 best 2
+AlphaRAD chexpert linear_probe 42 3 val 0.76629 best 3
+AlphaRAD chexpert linear_probe 42 4 val 0.790696 best 4
+AlphaRAD chexpert linear_probe 42 5 val 0.805203 best 5
+AlphaRAD chexpert linear_probe 42 6 val 0.816754 best 6
+AlphaRAD chexpert linear_probe 42 7 val 0.822484 best 7
+AlphaRAD chexpert linear_probe 42 8 val 0.83005 best 8
+AlphaRAD chexpert linear_probe 42 9 val 0.838376 best 9
+AlphaRAD chexpert linear_probe 42 10 val 0.836017 best 9
+AlphaRAD chexpert linear_probe 42 11 val 0.841961 best 11
+AlphaRAD chexpert linear_probe 42 12 val 0.842659 best 12
+AlphaRAD chexpert linear_probe 42 13 val 0.849385 best 13
+AlphaRAD chexpert linear_probe 42 14 val 0.854117 best 14
+AlphaRAD chexpert linear_probe 42 15 val 0.854493 best 15
+AlphaRAD chexpert linear_probe 42 16 val 0.855001 best 16
+AlphaRAD chexpert linear_probe 42 17 val 0.853647 best 16
+AlphaRAD chexpert linear_probe 42 18 val 0.86095 best 18
+AlphaRAD chexpert linear_probe 42 19 val 0.861382 best 19
+AlphaRAD chexpert linear_probe 42 20 val 0.861665 best 20
+COMPLETE AlphaRAD chexpert linear_probe 42
+AlphaRAD chexpert linear_probe 43 1 val 0.726063 best 1
+AlphaRAD chexpert linear_probe 43 2 val 0.806993 best 2
+AlphaRAD chexpert linear_probe 43 3 val 0.835784 best 3
+AlphaRAD chexpert linear_probe 43 4 val 0.848728 best 4
+AlphaRAD chexpert linear_probe 43 5 val 0.856606 best 5
+AlphaRAD chexpert linear_probe 43 6 val 0.864952 best 6
+AlphaRAD chexpert linear_probe 43 7 val 0.876926 best 7
+AlphaRAD chexpert linear_probe 43 8 val 0.884446 best 8
+AlphaRAD chexpert linear_probe 43 9 val 0.886 best 9
+AlphaRAD chexpert linear_probe 43 10 val 0.887353 best 10
+AlphaRAD chexpert linear_probe 43 11 val 0.889761 best 11
+AlphaRAD chexpert linear_probe 43 12 val 0.891936 best 12
+AlphaRAD chexpert linear_probe 43 13 val 0.893951 best 13
+AlphaRAD chexpert linear_probe 43 14 val 0.89986 best 14
+AlphaRAD chexpert linear_probe 43 15 val 0.897027 best 14
+AlphaRAD chexpert linear_probe 43 16 val 0.897259 best 14
+AlphaRAD chexpert linear_probe 43 17 val 0.901619 best 17
+AlphaRAD chexpert linear_probe 43 18 val 0.898542 best 17
+AlphaRAD chexpert linear_probe 43 19 val 0.904898 best 19
+AlphaRAD chexpert linear_probe 43 20 val 0.898599 best 19
+COMPLETE AlphaRAD chexpert linear_probe 43
+AlphaRAD chexpert linear_probe 44 1 val 0.632893 best 1
+AlphaRAD chexpert linear_probe 44 2 val 0.756768 best 2
+AlphaRAD chexpert linear_probe 44 3 val 0.80788 best 3
+AlphaRAD chexpert linear_probe 44 4 val 0.830186 best 4
+AlphaRAD chexpert linear_probe 44 5 val 0.848478 best 5
+AlphaRAD chexpert linear_probe 44 6 val 0.862239 best 6
+AlphaRAD chexpert linear_probe 44 7 val 0.868267 best 7
+AlphaRAD chexpert linear_probe 44 8 val 0.880106 best 8
+AlphaRAD chexpert linear_probe 44 9 val 0.883683 best 9
+AlphaRAD chexpert linear_probe 44 10 val 0.887706 best 10
+AlphaRAD chexpert linear_probe 44 11 val 0.888208 best 11
+AlphaRAD chexpert linear_probe 44 12 val 0.890243 best 12
+AlphaRAD chexpert linear_probe 44 13 val 0.891252 best 13
+AlphaRAD chexpert linear_probe 44 14 val 0.892183 best 14
+AlphaRAD chexpert linear_probe 44 15 val 0.896809 best 15
+AlphaRAD chexpert linear_probe 44 16 val 0.898552 best 16
+AlphaRAD chexpert linear_probe 44 17 val 0.898328 best 16
+AlphaRAD chexpert linear_probe 44 18 val 0.895442 best 16
+AlphaRAD chexpert linear_probe 44 19 val 0.895466 best 16
+AlphaRAD chexpert linear_probe 44 20 val 0.897123 best 16
+COMPLETE AlphaRAD chexpert linear_probe 44
+AlphaRAD chexpert clip_global 42 1 val 0.707192 best 1
+AlphaRAD chexpert clip_global 42 2 val 0.709633 best 2
+AlphaRAD chexpert clip_global 42 3 val 0.700716 best 2
+AlphaRAD chexpert clip_global 42 4 val 0.69407 best 2
+AlphaRAD chexpert clip_global 42 5 val 0.687393 best 2
+AlphaRAD chexpert clip_global 42 6 val 0.680267 best 2
+AlphaRAD chexpert clip_global 42 7 val 0.680247 best 2
+AlphaRAD chexpert clip_global 42 8 val 0.679652 best 2
+COMPLETE AlphaRAD chexpert clip_global 42
+AlphaRAD chexpert clip_global 43 1 val 0.707479 best 1
+AlphaRAD chexpert clip_global 43 2 val 0.712491 best 2
+AlphaRAD chexpert clip_global 43 3 val 0.700584 best 2
+AlphaRAD chexpert clip_global 43 4 val 0.699274 best 2
+AlphaRAD chexpert clip_global 43 5 val 0.682005 best 2
+AlphaRAD chexpert clip_global 43 6 val 0.682533 best 2
+AlphaRAD chexpert clip_global 43 7 val 0.68318 best 2
+AlphaRAD chexpert clip_global 43 8 val 0.678556 best 2
+COMPLETE AlphaRAD chexpert clip_global 43
+AlphaRAD chexpert clip_global 44 1 val 0.705115 best 0
+AlphaRAD chexpert clip_global 44 2 val 0.704763 best 0
+AlphaRAD chexpert clip_global 44 3 val 0.697139 best 0
+AlphaRAD chexpert clip_global 44 4 val 0.691139 best 0
+AlphaRAD chexpert clip_global 44 5 val 0.687543 best 0
+AlphaRAD chexpert clip_global 44 6 val 0.683149 best 0
+AlphaRAD chexpert clip_global 44 7 val 0.681991 best 0
+AlphaRAD chexpert clip_global 44 8 val 0.68301 best 0
+COMPLETE AlphaRAD chexpert clip_global 44

@@ -1,0 +1,20 @@
+/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+AlphaRAD pre_mlp 43 epoch 1 val 0.832182 best 1
+AlphaRAD pre_mlp 43 epoch 2 val 0.839593 best 2
+AlphaRAD pre_mlp 43 epoch 3 val 0.845083 best 3
+AlphaRAD pre_mlp 43 epoch 4 val 0.845232 best 4
+AlphaRAD pre_mlp 43 epoch 5 val 0.845608 best 5
+AlphaRAD pre_mlp 43 epoch 6 val 0.847874 best 6
+AlphaRAD pre_mlp 43 epoch 7 val 0.847517 best 6
+AlphaRAD pre_mlp 43 epoch 8 val 0.849633 best 8
+AlphaRAD pre_mlp 43 epoch 9 val 0.849715 best 9
+AlphaRAD pre_mlp 43 epoch 10 val 0.850929 best 10
+AlphaRAD pre_mlp 43 epoch 11 val 0.851009 best 11
+AlphaRAD pre_mlp 43 epoch 12 val 0.851422 best 12
+AlphaRAD pre_mlp 43 epoch 13 val 0.851012 best 12
+AlphaRAD pre_mlp 43 epoch 14 val 0.851138 best 12
+AlphaRAD pre_mlp 43 epoch 15 val 0.851148 best 12
+AlphaRAD pre_mlp 43 epoch 16 val 0.851043 best 12
+AlphaRAD pre_mlp 43 epoch 17 val 0.851239 best 12
+FIT COMPLETE AlphaRAD pre_mlp 43 TEST remains locked

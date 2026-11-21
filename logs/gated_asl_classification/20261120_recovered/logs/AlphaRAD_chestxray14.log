@@ -1,0 +1,27 @@
+/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+CACHE_PARITY AlphaRAD chestxray14 0 22433
+CACHE_PARITY AlphaRAD chestxray14 6400 22433
+CACHE_PARITY AlphaRAD chestxray14 12800 22433
+CACHE_PARITY AlphaRAD chestxray14 19200 22433
+AlphaRAD chestxray14 gated_asl seed44 epoch1 val=0.811281 best=0.824086 sec=79.5
+AlphaRAD chestxray14 gated_asl seed44 epoch2 val=0.817982 best=0.824086 sec=82.2
+AlphaRAD chestxray14 gated_asl seed44 epoch3 val=0.823065 best=0.824086 sec=82.2
+AlphaRAD chestxray14 gated_asl seed44 epoch4 val=0.826136 best=0.826136 sec=88.9
+AlphaRAD chestxray14 gated_asl seed44 epoch5 val=0.828711 best=0.828711 sec=81.4
+AlphaRAD chestxray14 gated_asl seed44 epoch6 val=0.831479 best=0.831479 sec=74.3
+AlphaRAD chestxray14 gated_asl seed44 epoch7 val=0.833823 best=0.833823 sec=71.2
+AlphaRAD chestxray14 gated_asl seed44 epoch8 val=0.837639 best=0.837639 sec=69.2
+AlphaRAD chestxray14 gated_asl seed44 epoch9 val=0.840034 best=0.840034 sec=69.2
+AlphaRAD chestxray14 gated_asl seed44 epoch10 val=0.841951 best=0.841951 sec=67.4
+AlphaRAD chestxray14 gated_asl seed44 epoch11 val=0.844575 best=0.844575 sec=69.4
+AlphaRAD chestxray14 gated_asl seed44 epoch12 val=0.846480 best=0.846480 sec=79.8
+AlphaRAD chestxray14 gated_asl seed44 epoch13 val=0.847909 best=0.847909 sec=72.4
+AlphaRAD chestxray14 gated_asl seed44 epoch14 val=0.849290 best=0.849290 sec=70.8
+AlphaRAD chestxray14 gated_asl seed44 epoch15 val=0.851152 best=0.851152 sec=68.4
+AlphaRAD chestxray14 gated_asl seed44 epoch16 val=0.852614 best=0.852614 sec=68.9
+AlphaRAD chestxray14 gated_asl seed44 epoch17 val=0.852671 best=0.852671 sec=69.4
+AlphaRAD chestxray14 gated_asl seed44 epoch18 val=0.854380 best=0.854380 sec=69.3
+AlphaRAD chestxray14 gated_asl seed44 epoch19 val=0.854341 best=0.854380 sec=69.4
+AlphaRAD chestxray14 gated_asl seed44 epoch20 val=0.856718 best=0.856718 sec=70.6
+COMPLETE AlphaRAD chestxray14 gated_asl 44 0.8574620767231432 0.3166805765175673

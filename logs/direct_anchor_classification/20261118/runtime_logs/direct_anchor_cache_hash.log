@@ -1,0 +1,22 @@
+tokens_01.npy 4.29 GB 93.4 s
+tokens_00.npy 4.29 GB 106.8 s
+tokens_01.npy 8.59 GB 229.8 s
+tokens_00.npy 8.59 GB 239.2 s
+tokens_01.npy 12.88 GB 362.5 s
+tokens_00.npy 12.88 GB 382.6 s
+tokens_01.npy 17.18 GB 480.2 s
+tokens_00.npy 17.18 GB 495.7 s
+tokens_01.npy 21.47 GB 574.7 s
+tokens_00.npy 21.47 GB 589.8 s
+tokens_01.npy 25.77 GB 651.0 s
+tokens_00.npy 25.77 GB 659.0 s
+tokens_01.npy 30.06 GB 706.2 s
+tokens_00.npy 30.06 GB 713.8 s
+tokens_01.npy 34.36 GB 738.2 s
+tokens_00.npy 34.36 GB 749.6 s
+tokens_01.npy 38.65 GB 765.6 s
+tokens_00.npy 38.65 GB 773.1 s
+tokens_01.npy 42.95 GB 782.1 s
+tokens_00.npy 42.95 GB 787.4 s
+{'path': '/storage/3090group2/zjx/code/medical/experiments/direct_anchor_classification/runs/20261118/cache/radzero/chestxray14/tokens_01.npy', 'bytes': 47204106368, 'sha256': '36696c4b357f48d37a10b167db8f7ed64efb065381fbbfcc5c7e8f2bced9e203', 'seconds': 794.1191818714142}
+{'path': '/storage/3090group2/zjx/code/medical/experiments/direct_anchor_classification/runs/20261118/cache/radzero/chestxray14/tokens_00.npy', 'bytes': 47208315008, 'sha256': '091c0d7c1bc69fd4a6e5d09980c0610e8bb51da9e7a337f06295bc3b0df27409', 'seconds': 797.5070469379425}

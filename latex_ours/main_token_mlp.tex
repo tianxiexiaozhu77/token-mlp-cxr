@@ -1,0 +1,317 @@
+% !TeX program = pdflatex
+% Standalone Token MLP manuscript. Results are generated from saved experiments.
+% Build: latexmk -norc -pdf -outdir=build_token_mlp main_token_mlp.tex
+\documentclass[10pt,twocolumn,letterpaper]{article}
+\usepackage[pagenumbers]{cvpr}
+\usepackage{microtype}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{colortbl}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\definecolor{tokenblue}{HTML}{EAF2FA}
+\definecolor{tokengreen}{HTML}{E9F4ED}
+\definecolor{tokenink}{HTML}{295778}
+\definecolor{tokenred}{HTML}{B42318}
+\definecolor{tokenredfill}{HTML}{FFF0ED}
+\usepackage[breaklinks,colorlinks,allcolors=tokenink]{hyperref}
+\hypersetup{pdftitle={Shared Token Adaptation before Disease-Conditioned Aggregation in Frozen Chest X-ray Vision-Language Models},pdfauthor={Anonymous authors}}
+\newcommand{\tokenmlp}{Token MLP}
+\newcommand{\norm}[1]{\frac{#1}{\lVert #1\rVert_2}}
+\newcommand{\R}{\mathbb{R}}
+\DeclareMathOperator{\GELU}{GELU}
+\DeclareMathOperator{\softmax}{softmax}
+\DeclareMathOperator{\sigmoid}{sigmoid}
+
+\title{Shared Token Adaptation before Disease-Conditioned Aggregation\\
+in Frozen Chest X-ray Vision--Language Models}
+\author{Anonymous authors}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Frozen biomedical vision--language models provide useful chest X-ray representations, but their scoring functions may transfer unevenly to a labeled target cohort. We study a supervised residual bottleneck MLP placed between frozen visual projection and disease-conditioned aggregation or fusion. One module is shared across tokens and diseases, while encoders, text features, and downstream scoring parameters remain fixed. A bottleneck of 64 yields 16,576--99,136 trainable parameters. On fixed local OpenI, CheXpert, and ChestXray14 splits, with three training seeds for each of seven backbones, the selected systems improve macro AUROC in 20 of 21 comparisons and macro AUPRC in 16, with a maximum AUROC gain of 7.24 percentage points. Aggregation-only controls separate pooling changes from learned updates in three backbones; BioViL-T/OpenI selects identity in every seed. CARZero/CheXpert degrades on both metrics, and RadZero/OpenI loses AUPRC. MaCo's native-pooling controls do not establish a consistent benefit from added text guidance. Joint pre/post adaptation and a gating--loss factorial experiment across all seven backbones also yield mixed outcomes. NIH-only adapter fitting followed by CheXpert evaluation does not consistently improve on the original models: AlphaRAD loses both metrics, while RadZero shows no clear benefit. The evidence supports a practical supervised baseline with explicit attribution limits. Evaluation uses local cohorts and repartitions rather than official benchmark protocols; the transfer cohort was previously used in separate experiments and is not a new blind cohort.
+\end{abstract}
+
+\section{Introduction}
+Vision--language pretraining makes it possible to score images against textual disease descriptions without learning a separate classifier for each downstream label set~\cite{radford2021clip}. Biomedical and chest radiology models extend this idea using domain-specific image--text supervision and visual--textual alignment~\cite{zhang2025biomedclip,huang2024maco,park2025radzero,you2026alpharad}. After pretraining, however, a fixed text representation may interact differently with the visual tokens of a new cohort. A downstream label set, image distribution, or disease prevalence can differ from the conditions under which the representation was learned. When training labels are available, a small adaptation module provides an alternative to updating the entire encoder.
+
+The location of this module matters. A module applied after disease-conditioned pooling changes a representation that has already been aggregated for a particular query. A module applied to visual tokens before pooling can instead change both the evidence available to the pooling operator and the similarities that determine its weights. This distinction is relevant to models whose classifiers use disease queries to combine visual evidence. AlphaRAD uses Factorized Latent Supervision (FLaS) with a factorized similarity-based readout~\cite{you2026alpharad}, RadZero uses vision--language cross-attention based on similarity (VL-CABS)~\cite{park2025radzero}, and CARZero and KAD use query-driven fusion networks~\cite{lai2024carzero,zhang2023kad}. These models expose a boundary between projected visual tokens and existing disease-conditioned computation.
+
+We investigate a shared residual token MLP at this boundary. The module maps each token through a 64-dimensional bottleneck and adds the result back to the input. Its input and output dimensions match the backbone. A single set of parameters is shared across positions and diseases; disease dependence remains in the frozen text features and aggregation or fusion operator. AlphaRAD, RadZero, CARZero, and KAD retain their native downstream fusion and readout. BiomedCLIP, BioViL-T, and MaCo start from global image baselines; for them, we introduce fixed text-guided pooling and separately evaluate that change without fitting the MLP.
+
+The bottleneck architecture itself is established. Residual adapters have been studied in language models~\cite{houlsby2019adapters}, vision--language feature adaptation~\cite{gao2024clipadapter}, and visual Transformers~\cite{chen2022adaptformer}. In addition, the local RadZero implementation already contained the residual token module used here. Our focus is therefore an empirical study of a specific insertion point across seven biomedical and radiology backbones, rather than a claim that residual MLP adapters are new.
+
+The study makes three concrete contributions. First, it specifies a shared token adaptation interface that retains backbone-specific normalization and scoring, and distinguishes native fusion from added pooling. Second, it reports a primary study of 63 supervised training runs across seven backbones and three datasets under a common training and validation protocol, including both macro AUROC and macro AUPRC. Third, it adds MaCo pooling controls and Post MLP baselines, together with seven-backbone joint-adaptation and gating--loss experiments. These ablations add 360 fits; reused main-study runs are not counted again. A further comparison with linear probes and CLIP-Adapter-style global adapters in AlphaRAD and RadZero adds 36 baseline fits and nine RadZero Post fits. Aggregation-only controls, negative results, and identity-checkpoint selections remain explicit. These controls constrain the attribution of improvements and identify failure modes. A larger patient-disjoint NIH repartition adds 24 fits; reusing its selected checkpoints for 26 CheXpert evaluations tests transfer without target-cohort fitting. The evidence supports a useful baseline, without establishing superiority over all parameter-efficient adaptation methods or consistent gains across institutions.
+
+\section{Related Work}
+\paragraph{Biomedical and radiology vision--language models.}
+MaCo studies masked contrastive learning for image--report representation learning~\cite{huang2024maco}. RadZero uses similarity-based cross-attention~\cite{park2025radzero}, while AlphaRAD combines $\alpha$-corrected binary cross entropy with FLaS~\cite{you2026alpharad}. CARZero learns cross-attention-based image--text similarity representations~\cite{lai2024carzero}; KAD uses medical knowledge to guide representation learning and disease queries~\cite{zhang2023kad}. BiomedCLIP is pretrained on the broad biomedical PMC-15M image--text collection, rather than chest images alone~\cite{zhang2025biomedclip}. BioViL-T uses temporal structure in radiology image--text pretraining~\cite{bannur2023biovilt}; our single-image evaluation does not separately assess its longitudinal capabilities. These diverse representations motivate a common adaptation interface with explicit backbone-specific scoring details. We evaluate downstream adaptation of their released representations, not their original pretraining objectives.
+
+\paragraph{Residual bottleneck adapters.}
+Houlsby \etal~\cite{houlsby2019adapters} established compact down-projection, nonlinearity, and up-projection adapters with residual connections. CLIP-Adapter adapts visual or textual output features through residual feature mixing~\cite{gao2024clipadapter}. AdaptFormer inserts lightweight bottleneck modules alongside the feed-forward networks inside a visual Transformer~\cite{chen2022adaptformer}. Our implementation uses the same general family of adapter components, but places one shared module after the frozen visual projection and before disease-conditioned aggregation. Parameter-matched Post MLP controls accompany the AlphaRAD/RadZero baseline comparison, MaCo pooling study, and joint-adaptation experiment. They retain the same residual module and training protocol, with backbone-specific normalization at each insertion point. For AlphaRAD and RadZero, we additionally transplant the CLIP-Adapter visual-adapter structure into their frozen scoring paths using multilabel supervision. This is a CLIP-Adapter-style baseline, not an exact reproduction of its original experiment; AdaptFormer remains unevaluated.
+
+\section{Method}
+\label{sec:method}
+\subsection{Frozen Representation and Token Adaptation}
+Let $x$ denote an image and let $T=E_v(x)\in\R^{N\times d}$ denote its projected visual tokens. Here $E_v$ includes the frozen image encoder and visual projection. The token set is backbone-specific: it may include a global or CLS token as well as patches. Frozen text features $Q=E_t(\mathcal P)$ are obtained from the fixed prompts of each local model integration. Depending on the backbone, $Q$ contains disease queries, positive/negative hypotheses, or global and local text memories. No prompt vector or text encoder parameter is optimized.
+
+For a token $t_i\in\R^d$ written as a column vector, the shared adapter is
+\begin{equation}
+\tilde t_i=t_i+W_u\GELU(W_d t_i+b_d)+b_u,
+\label{eq:adapter}
+\end{equation}
+where $W_d\in\R^{r\times d}$, $W_u\in\R^{d\times r}$, $b_d\in\R^r$, and $b_u\in\R^d$. All backbones use $r=64$, while $d$ matches the projected visual space. Both linear layers have biases, giving
+\begin{equation}
+P(d)=2dr+r+d=129d+64
+\label{eq:params}
+\end{equation}
+trainable parameters per fitted model. BiomedCLIP uses $d=512$ (66,112 parameters), BioViL-T uses $d=128$ (16,576 parameters), and the other five backbones use $d=768$ (99,136 parameters). The count is independent of the number of classes and tokens, but is not identical across backbones. The up-projection weight and bias are initialized to zero; the down-projection uses the default linear-layer initialization. Thus $\tilde T=T$ before training.
+
+Writing $F_m$ for model $m$'s complete frozen aggregation, fusion, and readout, prediction is
+\begin{equation}
+s(x;\theta)=F_m(\tilde T,Q)\in\R^C,
+\label{eq:generic}
+\end{equation}
+where the full query set $Q$ is retained because KAD permits interactions among disease queries and CARZero uses bidirectional fusion. Only the parameters $\theta$ of Eq.~\eqref{eq:adapter} are updated. Although $F_m$ has frozen parameters, its computations remain differentiable during training, allowing the classification loss to update the adapter through the downstream computation. Figure~\ref{fig:token_mlp_pipeline} illustrates this interface with a real NIH training image, cached visual features, and attention computed from the existing AlphaRAD checkpoints.
+
+\input{figures/token_mlp_pipeline}
+
+\input{tables/token_mlp_backbones}
+\subsection{Integration with Seven Backbones}
+\paragraph{AlphaRAD: native FLaS aggregation.}
+We concatenate the projected raw CLS token and patch tokens and apply Eq.~\eqref{eq:adapter} before splitting the feature dimension into FLaS heads. The evaluated checkpoint uses eight heads of dimension 96. Each head's visual tokens and disease query are L2-normalized, cosine similarities determine attention over tokens, and the resulting context is normalized before scoring against the same disease query. The frozen scale is applied to both attention similarities and head scores, and the final score averages the eight heads. The adapter therefore acts before all of these head-specific normalizations and pooling operations. The queries, scale, and averaging rule remain unchanged. With the zero-initialized adapter, this branch recovers the original classifier up to floating-point differences.
+
+\paragraph{RadZero: native VL-CABS aggregation.}
+The same residual MLP acts on the output of the frozen visual alignment module. The native frozen LayerNorm is then applied, followed by the original VL-CABS computation. In the evaluated configuration the CLS token participates in pooling. L2-normalized visual tokens and queries determine cosine attention; the pooled context is normalized and compared with the query using the frozen scoring temperature. The adapter is consequently before LayerNorm and disease-conditioned aggregation, not after a disease context has been formed. The existing local RadZero adapter has this architecture and insertion point; we evaluate it under the same target-data protocol as the other models.
+
+\paragraph{CARZero: native bidirectional DQN fusion.}
+CARZero supplies 197 projected visual tokens: a global token and 196 spatial tokens. The shared MLP precedes the frozen DQN fusion and its LayerNorm. In one direction, disease text queries attend to the adapted visual memory; in the reverse direction, the adapted global image token queries each disease's fixed global and local text memory. The final score remains the arithmetic mean of the two native logits. Thus the adapter changes both visual memory and the reverse-direction visual query, while the text features, fusion network, and classifier remain frozen. This is native DQN fusion, not an added FLaS module.
+
+\paragraph{KAD: native disease-query decoder.}
+The MLP acts on 196 projected ResNet spatial tokens, without CLS, before the native disease-query network and its LayerNorm. The original paper calls this network DQN; its local implementation uses the TQN class name. The disease queries, query interactions, cross-attention layers, and two-class readout are retained and frozen. We train and evaluate the positive-minus-negative logit margin. Its sigmoid equals the native positive-class softmax probability, preserving the binary score interpretation without fitting a new classifier.
+
+\paragraph{MaCo: added fixed text-guided aggregation.}
+MaCo's native classification path mean-pools 196 patch tokens and applies its frozen linear image projection. Because that projection is linear, projecting individual patches and then averaging preserves the native pooled feature. We use these projected patches as $T$ and exclude CLS. For each disease, MaCo provides fixed positive and negative text features $q_c^+$ and $q_c^-$: the former comes from one positive prompt, and the latter is the arithmetic mean of four negative prompt embeddings. We retain this existing prompt construction. For either query $q$, the added pooling operator is
+\begin{align}
+a_{qi}&=\frac{\exp\!\left(\langle\bar q,\bar{\tilde t}_i\rangle/\tau\right)}
+{\sum_j\exp\!\left(\langle\bar q,\bar{\tilde t}_j\rangle/\tau\right)},\quad \tau=1,\label{eq:macoattn}\\
+h_q&=\sum_i a_{qi}\tilde t_i,\label{eq:macocontext}\\
+s_c&=\langle h_{q_c^+},q_c^+\rangle-\langle h_{q_c^-},q_c^-\rangle.
+\label{eq:macoscore}
+\end{align}
+Bars denote L2 normalization for attention weights only. The values in Eq.~\eqref{eq:macocontext} and the dot products in Eq.~\eqref{eq:macoscore} retain their original feature magnitudes. Positive and negative prompts have separate contexts. This score is the binary logit margin underlying MaCo's positive/negative readout; it avoids recovering logits from already saturated probabilities. The attention temperature and native visual/text projections remain fixed; only the adapter's projections are trained.
+
+The \emph{Original} MaCo result uses its native global mean pooling. The \emph{aggregation-only} control uses Eqs.~\eqref{eq:macoattn}--\eqref{eq:macoscore} with $\tilde T=T$ and no fitting. The \emph{Token MLP} result learns Eq.~\eqref{eq:adapter} before this added pooling. Accordingly, MaCo's identity initialization reproduces the aggregation-only control, not necessarily its native global classifier. This distinction is essential when interpreting the comparison with Original.
+
+\paragraph{BiomedCLIP and BioViL-T: added cosine pooling.}
+BiomedCLIP supplies a CLS token and 196 patches in a 512-dimensional projected space. The frozen projection used for its CLS representation is applied to every patch as well; this extension does not imply that its native classifier was trained to align patch tokens. BioViL-T supplies 196 projected 128-dimensional spatial embeddings without CLS. In both cases, the MLP precedes fixed cosine attention with temperature 1. Attention uses normalized tokens and queries, but aggregates unnormalized adapted token values as in Eqs.~\eqref{eq:macoattn}--\eqref{eq:macocontext}. Unlike MaCo, the context is then normalized, and the score is
+\begin{equation}
+s_c=\langle\bar h_{q_c^+},\bar q_c^+\rangle
+     -\langle\bar h_{q_c^-},\bar q_c^-\rangle.
+\label{eq:cosmargin}
+\end{equation}
+For these two backbones, the local fixed binary prompt protocol uses ``There is [disease].'' and ``There is no [disease].'' with an unscaled cosine margin. No learned logit scale is applied. Their \emph{Original} baselines use these same prompts with native global representations: CLS pooling for BiomedCLIP and mean pooling of projected patches for BioViL-T. They are frozen local baselines, not claims of reproducing every aspect of the authors' original evaluation protocols. Their aggregation-only controls retain Eq.~\eqref{eq:cosmargin} and the added attention without the MLP. Identity initialization therefore reproduces the aggregation-only control in all three added-pooling models.
+
+\paragraph{Frozen scoring settings.}
+For the evaluated AlphaRAD checkpoint, the FLaS similarity scale is approximately 15.07514 and eight heads are averaged. For RadZero, the native LayerNorm uses $\epsilon=10^{-5}$ and both recorded attention and scoring temperatures are approximately 0.0702110. These values are checkpoint configuration, not new target-data hyperparameters. CARZero keeps bidirectional decoder logits, and KAD keeps the two-class decoder logit margin. All three added-pooling models use attention temperature 1; MaCo retains raw-dot score magnitudes, whereas BiomedCLIP and BioViL-T use normalized-context cosine margins. Preserving these distinctions is necessary for reproducing the implementations; a single generic normalized cosine classifier would not reproduce all seven.
+
+\subsection{Why Adapt before Aggregation?}
+For a query-conditioned weighted sum, modifying tokens can change both the attention weights and the values being aggregated. A post-pooling module sees only the aggregated context and cannot directly recompute those token weights. If $A$ denotes such an aggregation operator, in general,
+\begin{equation}
+A(g_\theta(T),q_c)\ne g_\theta\!\left(A(T,q_c)\right).
+\end{equation}
+The shared module can thus alter a query-dependent computation without introducing a different parameter block for every disease. This is a mechanism motivating the insertion point, not experimental proof that attention becomes more anatomically correct. The present evaluation measures classification only and contains no localization supervision or localization benchmark.
+
+\subsection{Supervised Fitting}
+Let $y_{nc}\in\{0,1\}$ be the training label for image $n$ and disease $c$. For the main study, we minimize weighted binary cross entropy over the training partition:
+\begin{align}
+\mathcal L(\theta)=-\frac{1}{N_{\mathrm{tr}}C}\sum_{n,c}
+\Big[&w_c y_{nc}\log\sigmoid(s_{nc})\nonumber\\
+&+(1-y_{nc})\log(1-\sigmoid(s_{nc}))\Big],
+\end{align}
+where $w_c=\min(N_c^-/\max(N_c^+,1),20)$ is computed from training labels only. The implementation uses logits directly for numerical stability. We fit a separate shared adapter for each model--dataset pair and each seed; sharing refers to tokens and diseases within a fit, not to a single adapter transferred among all datasets.
+
+The encoders run in evaluation mode with their existing preprocessing. Their projected tokens and text features are cached, and training operates on these fixed features. Disease-conditioned aggregation is recomputed after every adapter update. Thus caching avoids repeated encoder computation without freezing the adapted attention maps. This procedure uses target training labels and gradient optimization; it is a supervised adaptation method.
+
+\section{Experimental Setup}
+\label{sec:setup}
+\subsection{Datasets and Evaluation Scope}
+We use the existing local classification manifests for OpenI~\cite{demnerfushman2016openi}, CheXpert~\cite{irvin2019chexpert}, and ChestXray14~\cite{wang2017chestxray8}. Table~\ref{tab:token_mlp_dataset_splits} summarizes the datasets, label counts, and exact training/validation/test memberships for the primary study, larger NIH evaluation, and NIH-to-CheXpert transfer. It reports both image counts and patient counts (report counts for OpenI); repeated rows describe reuse of the same cohorts rather than additional independent data. Each primary dataset has one fixed train/validation/test membership, shared by all seven backbones and methods. The three training seeds do not create three different data splits. A separate ChestXray14 repartition with a larger test set for AlphaRAD and RadZero is specified in Sec.~\ref{sec:large_patient_protocol}; its selected checkpoints are evaluated on CheXpert in Sec.~\ref{sec:transfer_protocol}.
+
+\input{tables/token_mlp_dataset_splits}
+
+OpenI uses an existing split grouped by report and duplicate-image identity. Longitudinal patient independence has not been established for this split. CheXpert and ChestXray14 use local cohorts that were originally held for testing and were subsequently repartitioned for the present supervised adaptation study. Their new partitions are grouped by patient and exact-file duplicates. The CheXpert subset follows the existing AlphaRAD prompt configuration's 12 labels, including No Finding and excluding Pleural Other and Support Devices; classes were not selected by their performance in this experiment. This differs from the commonly reported five-pathology benchmark. Its test partition contains only 67 images from 50 patients, with 1--33 positive images per retained class. All 12 classes have both positive and negative test examples. Full class lists are provided in Appendix~\ref{app:labels}.
+
+These are local supervised evaluations, not results under the official CheXpert or ChestXray14 benchmark split protocols. The numbers should not be directly ranked against published official-benchmark scores. Grouping within these local datasets also does not establish absence of overlap with the pretrained models' training data.
+
+\subsection{Compared Systems and Training Protocol}
+\emph{Original} denotes the frozen local baseline without target-label fitting, with backbone-specific scoring as described in Sec.~\ref{sec:method}. \emph{Token MLP} fits the shared module on all images in the designated training partition and uses the validation-selected checkpoint, which may be the identity initialization. AlphaRAD, RadZero, CARZero, and KAD retain their native downstream aggregation or fusion in both conditions. BiomedCLIP, BioViL-T, and MaCo additionally require aggregation-only controls. All methods for a given model share the frozen checkpoint, label order, and preprocessing; text-scored conditions also share the fixed prompts.
+
+For each main-study run, we use AdamW with learning rate $10^{-4}$, weight decay $10^{-4}$, effective batch size 32, and gradient norm clipping at 1. CARZero and KAD use microbatches of 8 accumulated within that effective batch. Training lasts at most 20 epochs; early stopping is allowed from epoch 8 with patience 5. We run seeds 42, 43, and 44. The checkpoint with the highest validation macro AUROC is selected, with earlier epochs retained on ties. Epoch zero is eligible. Test predictions are generated after checkpoint selection, and test metrics do not choose an epoch or a seed. Of the 63 selected checkpoints, 60 come from positive epochs; BioViL-T on OpenI selects epoch zero for all three seeds (Appendix~\ref{app:epochs}).
+
+The Original classifier is evaluated once because it has no seed-dependent fitting in this protocol. Token MLP values are the mean and sample standard deviation of three independently initialized training runs on the same split. No seed is omitted. The standard deviations quantify training variability on a fixed cohort; they are not confidence intervals for population performance or uncertainty over alternative dataset splits.
+
+\subsection{Additional Ablation Protocols}
+\label{sec:ablation_protocol}
+The supervised-baseline, MaCo pooling, and joint-adaptation comparisons reuse main-study Pre fits and include 27 additional Post fits for AlphaRAD, KAD, and MaCo. These controls use the same $768\to64\to768$ module (99,136 parameters), feature cache, labels, seeds, effective batch size, learning rate, epoch budget, and validation-selection rule. AlphaRAD's Post MLP acts on concatenated FLaS contexts before per-head normalization; KAD's acts after the decoder's final normalization and evaluation-mode dropout, before its two-class readout; MaCo's acts on raw positive/negative contexts before the original dot products. Each Post module remains shared across diseases and prompt polarities where applicable. MaCo additionally crosses placement with native mean pooling, adding 18 fits. Pre and Post encounter different feature distributions and surrounding normalizations, and matching epoch budgets does not equalize computation. Hyperparameters are fixed rather than separately optimized for each placement.
+
+Two further experiments cover all seven models and three datasets. Both MLP jointly trains independent Pre and Post modules, adding 63 fits and doubling the parameter count. The gating $\times$ loss study newly trains ungated/gated modules with weighted BCE or asymmetric loss (ASL), adding 252 fits including fresh ungated BCE controls. Appendix~\ref{app:both_mlp} specifies the joint-adaptation boundaries; Appendix~\ref{app:gated_asl} specifies the gate and loss. The optimization budget and validation-AUROC selection rule, including epoch-zero eligibility, are retained across these conditions. Together with the primary study, these experiments comprise 423 distinct supervised fits: 63 primary fits, 45 additional Post/pooling fits, 63 Both fits, and 252 gating/loss fits. All use the same local data splits; these experiments do not add an independent evaluation cohort.
+
+\subsection{Supervised Global-Feature Baselines}
+\label{sec:supervised_baseline_protocol}
+For AlphaRAD and RadZero, we add a linear probe and a CLIP-Adapter-style global adapter using the 768-dimensional aligned raw CLS feature. The probe standardizes each feature using training-partition statistics only, then fits an affine $768\to C$ classifier with $769C$ parameters. The global adapter uses two bias-free linear layers, $768\to192\to768$, with ReLU after each layer, and mixes 0.2 of the adapter output with 0.8 of the original feature. Its 294,912 parameters are trained with the same weighted multilabel BCE. AlphaRAD retains its frozen head-wise cosine scoring; RadZero retains its frozen visual LayerNorm, text queries, and scoring temperature. This implementation replaces disease-conditioned aggregation with a global feature, so the comparison changes both the representation path and the adaptation module.
+
+We also add RadZero Post MLP after VL-CABS aggregation and before the final cosine normalization. This shared $768\to64\to768$ GELU residual module has the same 99,136 parameters and identity initialization as Pre MLP. All new methods use the existing training labels, splits, seeds, optimizer, epoch budget, and validation-AUROC selection rule, including epoch-zero eligibility. This fixed common budget does not guarantee that each baseline is individually optimized. Original, Pre MLP, and AlphaRAD Post results are reused. The 36 new linear/global-adapter fits and nine RadZero Post fits bring the total on the primary splits to 468 distinct supervised fits.
+
+\subsection{Larger Patient-Disjoint ChestXray14 Evaluation}
+\label{sec:large_patient_protocol}
+For AlphaRAD and RadZero, we additionally repartition the same 22,433-image local NIH cohort into 13,406 training, 2,300 validation, and 6,727 test images from 3,712, 619, and 1,856 patients, respectively. A single multilabel-stratified patient-group split uses proportions 60/10/30 and seed 20261121; all 14 labels and memberships are fixed before fitting, without searching over split seeds. Patient identities, exact-file duplicates, and decoded RGB duplicates have zero overlap across the new partitions. This is a repartition of a previously used cohort, not a new blind external cohort or an official NIH benchmark split.
+
+Linear probe, global adapter, Post MLP, and Pre MLP are initialized afresh for both models and seeds 42/43/44, adding 24 fits and bringing the manuscript total to 492. Only verified frozen encoder features are reused; training statistics and fitted adapters are not transferred from the earlier split. The optimizer, epoch budget, and validation-only selection rule remain fixed. All 24 selected checkpoint hashes are locked before any test evaluation. Paired differences use 2,000 patient-group bootstrap resamples, averaging per-seed metrics rather than predictions. The resulting 95\% percentile intervals describe test-patient uncertainty conditional on the fitted checkpoints; they do not capture training-cohort uncertainty and are not adjusted for multiple comparisons. A resample missing either label for any class is excluded from the full 14-class macro interval; all 2,000 resamples are valid here.
+
+\subsection{Transfer from ChestXray14 to CheXpert}
+\label{sec:transfer_protocol}
+We reuse all 24 NIH checkpoints from Sec.~\ref{sec:large_patient_protocol}, selected exclusively by NIH validation macro AUROC, and apply them directly to CheXpert. This adds 26 evaluations: two Original classifiers and four fitted methods for two models and three seeds. No additional training is performed, so the total remains 492 fits. CheXpert is not used for fitting, checkpoint selection, tuning, or recalibration in this transfer experiment. The frozen encoders, NIH prompts, complete 14-query scoring heads, and NIH training-derived linear-probe normalization statistics are retained.
+
+The target set contains all 668 images from 500 patients in the local CheXpert cohort, including 518 frontal and 150 lateral images in the fixed manifest order. We score all 14 NIH outputs before selecting seven prespecified shared labels: Atelectasis, Cardiomegaly, Effusion mapped to Pleural Effusion, Pneumonia, Pneumothorax, Consolidation, and Edema. No broader label substitutions are made. Exact-file and decoded-RGB comparisons detect no image overlap with the NIH cohort. These image-level seven-label metrics are not directly comparable to the primary 12-label CheXpert results or the official five-task benchmark. The same 668-image cohort was previously partitioned into 534/67/67 images for separate CheXpert training/validation/testing experiments; it is external to the current NIH adapter fitting, but is not a newly acquired blind cohort.
+
+We average per-seed metrics and use 2,000 paired patient-group bootstrap draws with the same conditional interpretation as in Sec.~\ref{sec:large_patient_protocol}. All images of a sampled patient remain together, and all seven classes must contain both labels for a macro draw to be valid; all 2,000 draws are valid here. Comparisons are fixed as Pre minus Original, Post, linear probe, and global adapter for each model, without choosing methods or seeds from target results.
+
+\subsection{Metrics and Aggregation}
+We report macro AUROC and macro AUPRC as percentages, computing a metric for each disease and averaging over the evaluated classes. In this manuscript, AUPRC refers specifically to average precision (AP), implemented with \texttt{average\_precision\_score}; it is not trapezoidal integration of the precision--recall curve. AP weights precision by successive increments in recall. Both metrics use continuous classifier scores, and neither requires choosing a classification threshold.
+
+The main table retains a separate row for every model--dataset pair. A mean row averages the seven backbones \emph{within each dataset}. These rows do not pool datasets or equate their different class sets. For the adapted averages, we first average the seven models at each seed and then compute the mean and sample standard deviation of those three averages. These summaries are descriptive and depend on the selected backbone set. Differences reported in the text are percentage points, computed before rounding.
+
+\section{Results}
+\label{sec:results}
+\input{tables/token_mlp_results}
+
+\subsection{Original versus Token MLP}
+Table~\ref{tab:token_mlp_results} reports 21 comparisons. Macro AUROC improves in 20, with changes ranging from $-0.18$ points for CARZero on CheXpert to $+7.24$ points for MaCo on ChestXray14. Macro AUPRC improves in 16 comparisons. Its changes range from $-4.67$ points for RadZero on OpenI to $+12.56$ points for AlphaRAD on CheXpert. For models with added pooling, these changes compare the complete selected system with the global baseline; the aggregation controls below are required to identify the contribution of learning the MLP.
+
+\paragraph{AlphaRAD.}
+AlphaRAD improves both metrics on every dataset. On OpenI, AUROC rises from 85.24 to 86.50 and AUPRC from 38.83 to 40.37. On CheXpert, its corresponding changes are 92.28 to 95.04 and 67.20 to 79.76. On ChestXray14, AUROC increases from 82.79 to 86.38 and AUPRC from 27.57 to 31.38. Thus a small update before the frozen FLaS head remains useful even though this backbone already provides disease-conditioned visual aggregation.
+
+\paragraph{RadZero.}
+RadZero improves both metrics on CheXpert and ChestXray14, with ChestXray14 AUPRC increasing from 21.14 to 30.89. OpenI exhibits a different pattern: AUROC rises from 85.06 to 87.94, but AUPRC falls from 42.11 to 37.44. Since checkpoint selection optimizes validation AUROC rather than AUPRC, it offers no guarantee of improving the precision--recall ordering on the held-out set. The two metrics emphasize different properties of the score ranking, and macro aggregation can additionally conceal which classes contribute to a change. The current aggregate results do not identify the responsible classes or establish a unique cause. They do show why AUROC alone is insufficient to characterize adaptation quality.
+
+\paragraph{MaCo.}
+MaCo improves both metrics on all three datasets. Its AUROC changes from 80.30 to 82.94 on OpenI, 87.21 to 93.31 on CheXpert, and 75.56 to 82.80 on ChestXray14. The corresponding AUPRC gains are 3.04, 8.08, and 9.41 points. Because this comparison includes a change from global pooling to disease-conditioned pooling, the additional control below is needed to attribute the improvement more narrowly.
+
+\paragraph{CARZero and KAD.}
+CARZero improves both metrics on OpenI and ChestXray14, but decreases on CheXpert: AUROC changes from 90.38 to 90.20 and AUPRC from 68.50 to 67.84. All three CheXpert runs select epoch 1, so the decline is not an identity-checkpoint fallback. KAD improves AUROC on all three datasets, but its OpenI AUPRC falls from 31.79 to 30.54. Its CheXpert and ChestXray14 comparisons improve both metrics. Thus preserving a pretrained query decoder does not guarantee that supervised token adaptation improves both ranking metrics on every cohort.
+
+\paragraph{BiomedCLIP and BioViL-T.}
+BiomedCLIP improves AUROC on all datasets and AUPRC on OpenI and CheXpert. On ChestXray14 its AUROC increases from 61.34 to 65.46, but AUPRC changes slightly downward from 9.87 to 9.84. BioViL-T improves both metrics on CheXpert and ChestXray14. Its OpenI result changes from 73.66/14.57 to 74.06/14.47 for AUROC/AUPRC; all selected adapters are identity mappings, so this small AUROC increase and AUPRC decrease arise from added pooling alone. In total, the five AUPRC decreases occur for RadZero/OpenI, KAD/OpenI, BioViL-T/OpenI, CARZero/CheXpert, and BiomedCLIP/ChestXray14.
+
+\subsection{Dataset-Specific Averages}
+Averaging the seven backbones within OpenI raises AUROC from 78.35 to 80.77 and AUPRC from 27.92 to 28.59, gains of 2.43 and 0.67 points. On CheXpert the averages rise from 85.42 to 88.37 and from 56.54 to 63.47, gains of 2.95 and 6.93 points. On ChestXray14 they increase from 75.90 to 80.44 and from 19.00 to 24.09, gains of 4.54 and 5.09 points. These dataset-specific averages improve on both metrics but do not remove the individual negative results. Their values describe the seven-model set rather than a dataset-independent overall score.
+
+\subsection{Comparison with Supervised Global-Feature Baselines}
+\label{sec:supervised_baseline_results}
+\input{tables/token_mlp_supervised_baselines}
+Table~\ref{tab:token_mlp_supervised_baselines} compares Original, linear probing, global feature adaptation, and matched Pre/Post MLPs for AlphaRAD and RadZero. Pre MLP has higher mean AUROC and AP than both global-feature baselines in all six model--dataset settings. On ChestXray14, AlphaRAD Pre obtains 86.38/31.38, compared with 83.36/29.51 for the probe and 81.63/26.15 for the global adapter. RadZero Pre obtains 84.89/30.89, compared with 78.59/23.65 and 78.96/23.57, respectively. These are descriptive comparisons of observed means under the fixed protocol, not claims of statistical significance or optimal baseline tuning. Because the CLS route replaces native disease-conditioned aggregation, these differences cannot be attributed solely to the MLP architecture or insertion point.
+
+The matched placement controls also retain exceptions: AlphaRAD/OpenI has higher AUROC with Post, and RadZero/OpenI has higher AP with Original and Post than with Pre (42.11 versus 37.44). All three RadZero/OpenI Post runs select epoch zero, recovering Original. Thus the results support the utility of adapting the native disease-aggregation path relative to these implemented global-feature baselines, while neither metric nor insertion-point superiority is universal.
+
+\subsection{Results on the Larger Patient-Disjoint Test Set}
+\input{tables/token_mlp_large_patient}
+Table~\ref{tab:token_mlp_large_patient} reports the separate ChestXray14 repartition. AlphaRAD Pre MLP reaches 85.24/29.34 AUROC/AP, compared with 82.35/25.81 for Original; RadZero reaches 84.09/27.00, compared with 79.83/20.64. Both models also exceed their linear probes and global adapters on both metrics. The patient-group bootstrap intervals for Pre minus Original, linear probe, and global adapter exclude zero for both metrics in each model under this fixed protocol.
+
+Placement differences are smaller. AlphaRAD Pre minus Post is $+0.36$ AUROC points (95\% interval $[0.03,0.64]$) and $+0.16$ AP points ($[-0.39,0.79]$). RadZero's corresponding differences are $+0.08$ ($[-0.70,0.67]$) and $+0.23$ ($[-0.47,1.06]$). These results support the benefit of adaptation but do not establish a consistent advantage of Pre over Post. Differences use unrounded metrics. Hernia remains included despite only 11 positive test images from nine patients; the larger overall test size does not remove uncertainty for rare classes.
+
+\subsection{Results of NIH-to-CheXpert Transfer}
+\label{sec:transfer_results}
+\input{tables/token_mlp_transfer}
+Table~\ref{tab:token_mlp_transfer} shows that the benefits observed within NIH do not consistently extend to CheXpert. AlphaRAD Pre obtains 88.56/58.46 AUROC/AP, below Original at 90.55/62.55. The Pre-minus-Original differences are $-1.99$ AUROC points (95\% interval $[-2.98,-0.86]$) and $-4.09$ AP points ($[-8.65,-1.19]$). RadZero Pre obtains 89.25/51.29 versus Original at 89.10/51.63: its differences are $+0.15$ AUROC points ($[-1.21,1.36]$) and $-0.34$ AP points ($[-4.38,4.09]$), with neither interval excluding zero.
+
+Pre remains above the linear probe and global adapter on both metrics for both models; all eight corresponding unadjusted macro-difference intervals exclude zero in the positive direction. Relative to Post, Pre has higher mean AUROC and lower mean AP in both models, but all four intervals include zero. The transfer results therefore support an advantage over these implemented global-feature baselines under the fixed protocol, while establishing neither consistent improvement over the original models nor a clear Pre-over-Post advantage. NIH validation gains alone do not establish improved performance at another institution.
+
+\subsection{Separating Added Pooling from Adaptation}
+\input{tables/token_mlp_aggregation_control}
+Table~\ref{tab:token_mlp_aggregation_control} contrasts Original, aggregation-only, and the selected Token MLP system for BiomedCLIP, BioViL-T, and MaCo. For MaCo, adding fixed cosine attention changes AUROC by less than 0.05 points in absolute value and AUPRC by less than 0.23 points on each cohort. These changes are small relative to the gains after fitting the MLP: on ChestXray14, aggregation-only obtains 75.56/16.84, compared with 82.80/26.24 after token adaptation.
+
+The other backbones show why this attribution cannot be assumed universally. BiomedCLIP's aggregation-only CheXpert AUROC drops from the global baseline's 67.28 to 62.15 before rising to 71.05 with the selected MLP. On ChestXray14 its learned system improves AUPRC relative to aggregation-only (9.61 to 9.84), yet remains slightly below the global baseline (9.87). BioViL-T's CheXpert pooling control already raises AUROC from 81.48 to 83.04, and the fitted system reaches 84.24. On OpenI, its selected system equals the pooling control on both metrics. Across the nine added-pooling settings, the selected MLP improves both metrics over the aggregation-only control in eight and leaves them unchanged in one.
+
+These controls distinguish the effects of changing the scoring path and learning a token mapping. The MaCo pooling-by-placement experiment below additionally tests whether added attention is necessary for learned gains. Equivalent native-pooling MLP comparisons are not included for BiomedCLIP and BioViL-T, and attention temperature remains fixed.
+
+\input{sec/token_mlp_placement_results}
+
+\subsection{Variability and Checkpoint Selection}
+In the primary study, seed variability is particularly visible on CheXpert: BiomedCLIP has AUROC/AUPRC standard deviations of 6.21/4.28 points, KAD 2.01/6.46, and RadZero 1.13/4.47. The small test cohort additionally limits how much low training-seed variability alone can establish. BioViL-T/OpenI reports zero standard deviation for a different reason: all three runs train for eight epochs but select epoch zero, and the saved up-projection weights and biases remain exactly zero. Its zero variation therefore reflects selection of the same identity mapping, not evidence of stable effective learning. The other 60 primary checkpoints come from positive epochs. Neither positive-epoch selection nor low seed variability is a test of statistical significance.
+
+\section{Discussion and Limitations}
+\paragraph{What the evidence supports.}
+The experiments show that a compact, shared visual-token update can improve classification while encoders and downstream scoring remain frozen, but the effect depends on the backbone, cohort, and metric. AlphaRAD, RadZero, CARZero, and KAD retain their native aggregation or fusion. For BiomedCLIP, BioViL-T, and MaCo, separately reported controls make the pooling modifications explicit. The bottleneck dimension is shared across implementations; parameter counts differ with feature width. MaCo's native-pooling controls show that added disease-conditioned attention is not required for substantial learned gains. Joint adaptation and gating/loss extensions also have mixed outcomes. The identity fallbacks and negative comparisons demonstrate limits to learning and held-out performance under the chosen protocol.
+
+\paragraph{Scope of the comparison.}
+This manuscript focuses on seven selected backbones from a broader local experimental collection. It should not be read as a systematic survey or a claim of universal gains. In the within-cohort comparisons, Original does not use target training labels, whereas Token MLP training and checkpoint selection do; differences therefore reflect access to supervision as well as the adaptation design. In the NIH-to-CheXpert transfer experiment, all fitted methods instead use NIH supervision only. For BiomedCLIP and BioViL-T, Original specifically denotes the local fixed binary-prompt protocol with native global image pooling. A parameter-matched Post MLP is evaluated for AlphaRAD, RadZero, KAD, and MaCo, but standalone Post runs are absent for the other three backbones. Linear probes and CLIP-Adapter-style global adapters are reported for AlphaRAD and RadZero; their CLS inputs change the aggregation path, and the global adapter has more parameters than a single Pre/Post module. Exact reproductions of competing adaptation methods, text adaptation, and full fine-tuning remain unevaluated. Both doubles the parameter count without a capacity-matched single-location control. The gating and loss experiments also change gradient scaling or class weighting, respectively, so they do not isolate every mechanism. These comparisons cannot determine the best use of the supervision or parameter budget; bottleneck size, learning rate, and the training schedule are fixed rather than extensively optimized.
+
+\paragraph{Data and uncertainty.}
+The primary evaluation uses a single split for each dataset. The additional ChestXray14 experiment adds one prespecified patient-disjoint repartition and patient-group bootstrap intervals for AlphaRAD and RadZero, but reuses the same local cohort. NIH-to-CheXpert evaluation tests transfer across institutions relative to adapter fitting, yet finds no consistent gain over Original and reuses a cohort seen in earlier separate experiments. It therefore does not establish performance on a new blind external cohort. The primary CheXpert test partition is particularly small; even the 668-image transfer set contains only 14 Pneumonia-positive images from 11 patients and ten Pneumothorax-positive images from nine patients. Local protocols and label sets differ from official benchmarks, and OpenI grouping does not establish longitudinal patient separation. Newly acquired external cohorts and broader repeated patient-level splits remain necessary for stronger generalization claims. Training-seed standard deviations capture optimizer and initialization variability; patient-group intervals condition on fixed checkpoints and have no multiplicity adjustment. Neither within-cohort separation nor the absence of exact NIH--CheXpert image duplicates rules out overlap with backbone pretraining data or institutions.
+
+\paragraph{Clinical interpretation.}
+AUROC and AUPRC quantify ranking performance. The study does not evaluate calibration, decision thresholds, subgroup robustness, clinical workflow impact, or diagnostic safety. The attention example in Fig.~\ref{fig:token_mlp_pipeline} illustrates how adapted tokens change model computation. It is not evaluated against localization labels and does not establish more faithful disease localization. Performance gains on these local retrospective cohorts should therefore be interpreted as classification results rather than clinical validation.
+
+\paragraph{Efficiency.}
+The single ungated adapter introduces 16,576, 66,112, or 99,136 trainable parameters depending on feature dimension, and permits reuse of frozen encoder features during training. Both doubles these counts, while gating adds $d+1$ parameters. Post-only fitting can additionally cache frozen aggregated contexts, so equal parameter counts and epochs do not imply equal training costs. Pre adaptation is applied to every token and requires recomputing aggregation or fusion on the adapted tokens. The backbones also have different token counts and frozen downstream networks. We have not performed a controlled inference-latency, memory, or energy comparison. Parameter efficiency alone should not be interpreted as a measured deployment speedup.
+
+\section{Conclusion}
+We studied a shared residual token MLP before disease-conditioned aggregation or fusion in seven frozen biomedical and radiology vision--language models. Across fixed local OpenI, CheXpert, and ChestXray14 splits, the primary selected systems improve macro AUROC in 20 of 21 comparisons and macro AUPRC in 16, with 16,576--99,136 trainable parameters per fit. Aggregation-only controls distinguish pooling changes from learned updates in three backbones. BioViL-T's OpenI identity fallback, CARZero's CheXpert decrease, and the other AUPRC declines prevent attributing every favorable change to successful MLP learning. AlphaRAD and RadZero favor Pre over the evaluated linear and global-adapter baselines on both metrics across all three datasets, while global-input changes limit architectural attribution and the additional RadZero Post results retain an OpenI AP advantage over Pre. MaCo's pooling controls do not show a consistent additional benefit from text guidance, and the joint-adaptation and gating/loss experiments yield mixed gains. With NIH-only fitting and checkpoint selection, transfer to CheXpert retains an advantage over the implemented global-feature baselines, but AlphaRAD declines relative to Original and RadZero shows no clear improvement. Within-cohort gains therefore do not establish general improvements across institutions. The findings support a reproducible supervised baseline; stronger methodological conclusions require broader comparisons with established adaptation methods, capacity-matched controls, and independent evaluation beyond these cohorts.
+
+{\small
+\bibliographystyle{ieeenat_fullname}
+\bibliography{token_mlp_refs}
+}
+
+\clearpage
+\appendix
+\section{Label Sets and Split Interpretation}
+\label{app:labels}
+The following primary-study label sets follow the saved dataset manifests; labels are not merged across datasets when calculating primary macro metrics. The separate transfer experiment uses the explicit seven-label mapping below.
+
+\paragraph{OpenI (18 labels).}
+Atelectases, Cardiomegaly, Effusion, Infiltrate, Mass, Nodule, Pneumonia, Pneumothorax, Edema, Emphysema, Fibrosis, Pleural Thickening, Hernia, Fracture, Lung Opacity, Lung Lesion, Calcified Granuloma, and Granuloma.
+
+\paragraph{CheXpert (12 labels).}
+No Finding, Enlarged Cardiomediastinum, Cardiomegaly, Lung Opacity, Lung Lesion, Edema, Consolidation, Pneumonia, Atelectasis, Pneumothorax, Pleural Effusion, and Fracture. These are the retained classes of the local manifest; this label set is not the standard five-pathology comparison.
+
+\paragraph{ChestXray14 (14 labels).}
+Atelectasis, Cardiomegaly, Effusion, Infiltration, Mass, Nodule, Pneumonia, Pneumothorax, Consolidation, Edema, Emphysema, Fibrosis, Pleural Thickening, and Hernia.
+
+\paragraph{NIH-to-CheXpert transfer (seven labels).}
+Atelectasis, Cardiomegaly, Pleural Effusion, Pneumonia, Pneumothorax, Consolidation, and Edema. The source NIH label Effusion maps to target Pleural Effusion; the other six names match directly. Infiltration is not mapped to Lung Opacity, and Mass/Nodule are not mapped to Lung Lesion. All 14 NIH outputs are computed before selecting these seven columns.
+
+In the primary study, all seven backbones use the complete label set of each of the three original manifests. In particular, the OpenI results here cover 18 classes, not the 16-class subset used by some other local model integrations. The exact manifest and sample-file hashes are recorded with the machine-readable result export.
+
+\section{Selection and Reproducibility}
+\label{app:epochs}
+\input{tables/token_mlp_selected_epochs}
+Table~\ref{tab:token_mlp_selected_epochs} records the selected epoch for the 63 primary training runs in seed order. BioViL-T/OpenI selects epoch zero for seeds 42, 43, and 44; the other 60 selected epochs are positive. For these three identity checkpoints, the saved up-projection weights and biases are exactly zero, and test metrics match aggregation-only. The maximum score difference from that control is below $2.4\times10^{-7}$, consistent with floating-point computation. The same validation metric and tie rule are used across all seven backbones. Test results do not determine these epoch choices.
+
+\paragraph{Result provenance.}
+The primary exporter, \nolinkurl{scripts/build_token_mlp_tables.py}, recomputes 93 saved test evaluations: 21 Original baselines, 63 selected Token MLP checkpoints, and nine aggregation-only controls. It maps RadZero's source method \texttt{existing} to \texttt{token\_mlp} after architecture/training checks, retains every seed including identity fallbacks, and averages backbones within each dataset. Checksums, unrounded metrics, and selected epochs are saved under \nolinkurl{supplement_data/}.
+
+The additional exporter, \nolinkurl{scripts/build_token_mlp_ablation_tables.py}, generates seven tables, checks fitted means/SDs against per-seed exports, and verifies dataset hashes against the primary study. It records CSV, protocol, and audit hashes in \nolinkurl{supplement_data/token_mlp_ablation_provenance.json}. Seed exports retain selected epochs and distinguish reused and additional fits, including fresh gating/loss controls. This reporting check performs no training or inference replay and does not replace external validation.
+
+The supervised-baseline exporter, \nolinkurl{scripts/build_token_mlp_supervised_table.py}, checks the 30 method summaries underlying Table~\ref{tab:token_mlp_supervised_baselines} against 78 saved per-seed evaluations, including reused Original and MLP results. It verifies shared dataset/training protocols and parameter counts. Unrounded means, sample SDs, and epoch-zero selection counts are retained in \nolinkurl{supplement_data/token_mlp_supervised_baselines.csv}; source and output hashes are recorded in \nolinkurl{supplement_data/token_mlp_supervised_provenance.json}.
+
+The exporter for this repartition, \nolinkurl{scripts/build_token_mlp_large_patient_table.py}, verifies the ten method summaries in Table~\ref{tab:token_mlp_large_patient} against 26 saved evaluations from the new split. Unrounded means, sample SDs, and selected epochs are retained in \nolinkurl{supplement_data/token_mlp_large_patient.csv}; source and output hashes are recorded in \nolinkurl{supplement_data/token_mlp_large_patient_provenance.json}. The experiment directory, \nolinkurl{experiments/large_patient_multilabel/runs/20261121}, retains the locked split and checkpoint manifests, predictions, per-class results, and bootstrap intervals. Its full audit covers 24 fresh fits and 28 evaluations, including two additional unfitted global-CLS controls not displayed in the table.
+
+The transfer exporter, \nolinkurl{scripts/build_token_mlp_transfer_table.py}, verifies the ten method summaries in Table~\ref{tab:token_mlp_transfer} against 26 saved evaluations and checks all 16 paired macro-metric intervals. Unrounded means and sample SDs, individual seeds, and intervals are exported as \nolinkurl{supplement_data/token_mlp_transfer.csv}, \nolinkurl{supplement_data/token_mlp_transfer_per_seed.csv}, and \nolinkurl{supplement_data/token_mlp_transfer_intervals.csv}; source hashes are recorded in the corresponding provenance JSON. The experiment directory, \nolinkurl{experiments/nih_chexpert_transfer/runs/20261121}, retains the locked protocol, target-image audit, predictions, per-class results, and shared patient-bootstrap draws. Frozen-head checks, NIH validation-sample re-encoding, full-checkpoint reload replay, and metric recomputation passed; this experiment adds no fitted checkpoints.
+
+The dataset exporter, \nolinkurl{scripts/build_token_mlp_dataset_splits.py}, recomputes all counts in Table~\ref{tab:token_mlp_dataset_splits} from the saved image manifests, checks their split statistics and group separation, and verifies that the two NIH rows and the two CheXpert rows reuse their respective cohorts. Machine-readable counts and source hashes are retained in \nolinkurl{supplement_data/token_mlp_dataset_splits.csv} and its provenance JSON.
+
+\paragraph{Real-image method figure.}
+Figure~\ref{fig:token_mlp_pipeline} uses the lexicographically first image in the larger NIH training partition with both Atelectasis and Effusion dataset labels, independently of model scores or attention. The export script, \nolinkurl{scripts/export_token_mlp_figure_assets.py}, reuses its frozen AlphaRAD tokens and the NIH-validation-selected seed-42 Pre MLP, checks native context/score agreement, and reconstructs the actual eight-head attention. Native image resizing/cropping is retained, with no synthetic chest image or manually drawn disease map. \nolinkurl{scripts/draw_token_mlp_pipeline.py} renders the vector figure with one shared attention scale. The asset package and source/checkpoint hashes are recorded in \nolinkurl{supplement_data/token_mlp_figure_provenance.json}; rendering settings and output hashes are retained alongside it.
+
+\paragraph{Implementation boundaries.}
+Primary integrations are \nolinkurl{AlphaRAD/local_setup/token_adapter_model.py}, \nolinkurl{RadZero/scripts/adapter_model.py}, and \nolinkurl{local_setup/token_mlp_adapter.py} within each of the other five backbone directories under \nolinkurl{baselines/}. Additional experiment directories are recorded in the ablation provenance. Paths are relative to the medical workspace.
+
+\input{sec/token_mlp_extended_ablations}
+
+\input{sec/token_mlp_architecture_appendix}
+
+\end{document}

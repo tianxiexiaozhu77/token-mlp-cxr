@@ -1,0 +1,146 @@
+launched alpharad_chexpert_42_token_mlp on physical GPU 4
+launched alpharad_chexpert_43_token_mlp on physical GPU 5
+launched alpharad_chexpert_44_token_mlp on physical GPU 6
+launched alpharad_openi_42_token_mlp on physical GPU 4
+launched alpharad_openi_43_token_mlp on physical GPU 5
+launched alpharad_openi_44_token_mlp on physical GPU 6
+launched alpharad_chestxray14_42_token_mlp on physical GPU 7
+launched alpharad_chestxray14_43_token_mlp on physical GPU 4
+launched alpharad_chestxray14_44_token_mlp on physical GPU 5
+[
+  {
+    "dataset": "openi",
+    "seed": 42,
+    "checked_test_rows": [
+      0,
+      374,
+      748
+    ],
+    "max_absolute_error": 1.1920928955078125e-06,
+    "checkpoint_sha256": "83e947b07113516e310ea5147db144fd0bad54aad991dfbd5dd9508233adb5ac",
+    "physical_gpu": 4
+  },
+  {
+    "dataset": "openi",
+    "seed": 43,
+    "checked_test_rows": [
+      0,
+      374,
+      748
+    ],
+    "max_absolute_error": 9.5367431640625e-07,
+    "checkpoint_sha256": "2ad95dac3515acced6be4e5b765b17945e92f878d6baa743c450ca1d8c18be66",
+    "physical_gpu": 5
+  },
+  {
+    "dataset": "openi",
+    "seed": 44,
+    "checked_test_rows": [
+      0,
+      374,
+      748
+    ],
+    "max_absolute_error": 9.5367431640625e-07,
+    "checkpoint_sha256": "9c0d6775651a805379b767d4cad29aeb69b93b9033ea994ea7167a1b7116dddc",
+    "physical_gpu": 6
+  },
+  {
+    "dataset": "chexpert",
+    "seed": 42,
+    "checked_test_rows": [
+      0,
+      33,
+      66
+    ],
+    "max_absolute_error": 9.5367431640625e-07,
+    "checkpoint_sha256": "dc2db5d2e103e7de595018b9e6c200a990613cc4915b27ccfd6a2fd64a499ab6",
+    "physical_gpu": 4
+  },
+  {
+    "dataset": "chexpert",
+    "seed": 43,
+    "checked_test_rows": [
+      0,
+      33,
+      66
+    ],
+    "max_absolute_error": 9.5367431640625e-07,
+    "checkpoint_sha256": "3ff8052ed93473ab112e4d2a522085d57350249600be7d3c75f60aa1bf0b96e1",
+    "physical_gpu": 5
+  },
+  {
+    "dataset": "chexpert",
+    "seed": 44,
+    "checked_test_rows": [
+      0,
+      33,
+      66
+    ],
+    "max_absolute_error": 4.76837158203125e-07,
+    "checkpoint_sha256": "481dd767e49f47afa22b811b075034677b6ad7c7797d8fc4b1c80f0956b8a35f",
+    "physical_gpu": 6
+  },
+  {
+    "dataset": "chestxray14",
+    "seed": 42,
+    "checked_test_rows": [
+      0,
+      1098,
+      2195
+    ],
+    "max_absolute_error": 1.2516975402832031e-06,
+    "checkpoint_sha256": "f6aa8df022d138b25e0061267cccfdf4d5877decd41b542d8ae7be23a9e12c4d",
+    "physical_gpu": 7
+  },
+  {
+    "dataset": "chestxray14",
+    "seed": 43,
+    "checked_test_rows": [
+      0,
+      1098,
+      2195
+    ],
+    "max_absolute_error": 1.430511474609375e-06,
+    "checkpoint_sha256": "d518c9c13975bfb27fea7fab1b785334faa2ed619ce5979cf02e0fce1060bb82",
+    "physical_gpu": 4
+  },
+  {
+    "dataset": "chestxray14",
+    "seed": 44,
+    "checked_test_rows": [
+      0,
+      1098,
+      2195
+    ],
+    "max_absolute_error": 1.6689300537109375e-06,
+    "checkpoint_sha256": "0a14741b12c24e53af786b370b5cff3abc8630aacb80cb02ce60ccd17362de88",
+    "physical_gpu": 5
+  }
+]
+openi,baseline,85.24,38.83,32.14,0,0
+openi,bias,85.12 +/- 0.05,38.88 +/- 0.05,34.62 +/- 0.89,13824,2/2/1
+openi,direct,86.90 +/- 0.59,39.61 +/- 1.93,40.30 +/- 1.42,130560,5/4/4
+openi,existing,86.84,41.53,32.11,0,None
+openi,token_mlp,86.50 +/- 0.20,40.37 +/- 0.96,40.21 +/- 0.62,99136,4/5/6
+chexpert,baseline,92.28,67.20,48.11,0,0
+chexpert,bias,92.21 +/- 0.10,66.98 +/- 0.20,53.69 +/- 3.32,9216,6/12/5
+chexpert,direct,93.36 +/- 1.82,80.01 +/- 0.49,81.62 +/- 1.22,89088,20/19/20
+chexpert,existing,94.56,76.86,57.80,0,None
+chexpert,token_mlp,95.04 +/- 0.08,79.76 +/- 0.17,74.73 +/- 0.90,99136,10/14/14
+chestxray14,baseline,82.79,27.57,25.73,0,0
+chestxray14,bias,82.79 +/- 0.00,27.57 +/- 0.00,25.73 +/- 0.00,10752,0/0/0
+chestxray14,direct,85.30 +/- 0.30,30.78 +/- 0.17,32.27 +/- 1.19,102912,20/6/11
+chestxray14,existing,83.83,28.22,26.54,0,None
+chestxray14,token_mlp,86.38 +/- 0.19,31.38 +/- 0.10,32.22 +/- 0.40,99136,20/19/20
+
+Token-MLP mean deltas (percentage points):
+dataset,metric,vs_original,vs_direct_anchor,vs_query_refinement
+openi,macro_auroc,+1.26,-0.40,-0.34
+openi,macro_auprc,+1.53,+0.76,-1.16
+openi,micro_auprc,+8.06,-0.10,+8.10
+chexpert,macro_auroc,+2.76,+1.67,+0.48
+chexpert,macro_auprc,+12.56,-0.25,+2.90
+chexpert,micro_auprc,+26.62,-6.89,+16.93
+chestxray14,macro_auroc,+3.59,+1.09,+2.56
+chestxray14,macro_auprc,+3.81,+0.60,+3.16
+chestxray14,micro_auprc,+6.49,-0.05,+5.68

@@ -1,0 +1,33 @@
+/storage/3090group2/zjx/code/medical/baselines/BioViL-T/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BioViL-T/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/storage/3090group2/zjx/code/medical/baselines/BioViL-T/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Some weights of the model checkpoint at /storage/3090group2/zjx/code/medical/baselines/BioViL-T/checkpoints were not used when initializing CXRBertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing CXRBertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing CXRBertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+The tokenizer class you load from this checkpoint is not the same type as the class this function is called from. It may result in unexpected tokenization. 
+The tokenizer class you load from this checkpoint is 'BertTokenizer'. 
+The class this function is called from is 'CXRBertTokenizer'.
+BioViL-T chexpert seed43 epoch1 val=0.699763 best=0.699763 sec=0.6
+BioViL-T chexpert seed43 epoch2 val=0.699401 best=0.699763 sec=0.2
+BioViL-T chexpert seed43 epoch3 val=0.702598 best=0.702598 sec=0.3
+BioViL-T chexpert seed43 epoch4 val=0.708002 best=0.708002 sec=0.2
+BioViL-T chexpert seed43 epoch5 val=0.710753 best=0.710753 sec=0.3
+BioViL-T chexpert seed43 epoch6 val=0.710941 best=0.710941 sec=0.3
+BioViL-T chexpert seed43 epoch7 val=0.711537 best=0.711537 sec=0.3
+BioViL-T chexpert seed43 epoch8 val=0.713762 best=0.713762 sec=0.7
+BioViL-T chexpert seed43 epoch9 val=0.715973 best=0.715973 sec=1.5
+BioViL-T chexpert seed43 epoch10 val=0.719481 best=0.719481 sec=0.3
+BioViL-T chexpert seed43 epoch11 val=0.720477 best=0.720477 sec=0.3
+BioViL-T chexpert seed43 epoch12 val=0.720027 best=0.720477 sec=0.3
+BioViL-T chexpert seed43 epoch13 val=0.721340 best=0.721340 sec=0.3
+BioViL-T chexpert seed43 epoch14 val=0.723179 best=0.723179 sec=0.3
+BioViL-T chexpert seed43 epoch15 val=0.727531 best=0.727531 sec=0.3
+BioViL-T chexpert seed43 epoch16 val=0.733295 best=0.733295 sec=0.2
+BioViL-T chexpert seed43 epoch17 val=0.734706 best=0.734706 sec=0.3
+BioViL-T chexpert seed43 epoch18 val=0.736616 best=0.736616 sec=0.3
+BioViL-T chexpert seed43 epoch19 val=0.737960 best=0.737960 sec=0.3
+BioViL-T chexpert seed43 epoch20 val=0.740522 best=0.740522 sec=0.3
+COMPLETE BioViL-T chexpert 43 0.8411188533015159

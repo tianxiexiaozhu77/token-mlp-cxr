@@ -1,0 +1,215 @@
+/storage/3090group2/zjx/code/medical/baselines/BioViL-T/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BioViL-T/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/storage/3090group2/zjx/code/medical/baselines/BioViL-T/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Some weights of the model checkpoint at /storage/3090group2/zjx/code/medical/baselines/BioViL-T/checkpoints were not used when initializing CXRBertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing CXRBertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing CXRBertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+The tokenizer class you load from this checkpoint is not the same type as the class this function is called from. It may result in unexpected tokenization. 
+The tokenizer class you load from this checkpoint is 'BertTokenizer'. 
+The class this function is called from is 'CXRBertTokenizer'.
+CACHE_PARITY BioViL-T chexpert 0 668
+BioViL-T chexpert pre_bce seed42 epoch1 val=0.699427 best=0.699496 sec=0.6
+BioViL-T chexpert pre_bce seed42 epoch2 val=0.699693 best=0.699693 sec=0.3
+BioViL-T chexpert pre_bce seed42 epoch3 val=0.703748 best=0.703748 sec=0.3
+BioViL-T chexpert pre_bce seed42 epoch4 val=0.707012 best=0.707012 sec=0.3
+BioViL-T chexpert pre_bce seed42 epoch5 val=0.710574 best=0.710574 sec=0.3
+BioViL-T chexpert pre_bce seed42 epoch6 val=0.712289 best=0.712289 sec=0.3
+BioViL-T chexpert pre_bce seed42 epoch7 val=0.710765 best=0.712289 sec=0.2
+BioViL-T chexpert pre_bce seed42 epoch8 val=0.713082 best=0.713082 sec=0.3
+BioViL-T chexpert pre_bce seed42 epoch9 val=0.717117 best=0.717117 sec=0.2
+BioViL-T chexpert pre_bce seed42 epoch10 val=0.716950 best=0.717117 sec=0.2
+BioViL-T chexpert pre_bce seed42 epoch11 val=0.719302 best=0.719302 sec=0.2
+BioViL-T chexpert pre_bce seed42 epoch12 val=0.720515 best=0.720515 sec=0.3
+BioViL-T chexpert pre_bce seed42 epoch13 val=0.724238 best=0.724238 sec=0.3
+BioViL-T chexpert pre_bce seed42 epoch14 val=0.726249 best=0.726249 sec=0.3
+BioViL-T chexpert pre_bce seed42 epoch15 val=0.731009 best=0.731009 sec=0.3
+BioViL-T chexpert pre_bce seed42 epoch16 val=0.732365 best=0.732365 sec=0.2
+BioViL-T chexpert pre_bce seed42 epoch17 val=0.733639 best=0.733639 sec=0.3
+BioViL-T chexpert pre_bce seed42 epoch18 val=0.735153 best=0.735153 sec=0.3
+BioViL-T chexpert pre_bce seed42 epoch19 val=0.735951 best=0.735951 sec=0.3
+BioViL-T chexpert pre_bce seed42 epoch20 val=0.739431 best=0.739431 sec=0.2
+COMPLETE BioViL-T chexpert pre_bce 42 0.843946503931024 0.5483991733109799
+BioViL-T chexpert pre_bce seed43 epoch1 val=0.699763 best=0.699763 sec=0.4
+BioViL-T chexpert pre_bce seed43 epoch2 val=0.699401 best=0.699763 sec=0.2
+BioViL-T chexpert pre_bce seed43 epoch3 val=0.702598 best=0.702598 sec=0.2
+BioViL-T chexpert pre_bce seed43 epoch4 val=0.708002 best=0.708002 sec=0.2
+BioViL-T chexpert pre_bce seed43 epoch5 val=0.710753 best=0.710753 sec=0.3
+BioViL-T chexpert pre_bce seed43 epoch6 val=0.710941 best=0.710941 sec=0.3
+BioViL-T chexpert pre_bce seed43 epoch7 val=0.711537 best=0.711537 sec=0.3
+BioViL-T chexpert pre_bce seed43 epoch8 val=0.713762 best=0.713762 sec=0.3
+BioViL-T chexpert pre_bce seed43 epoch9 val=0.715973 best=0.715973 sec=0.3
+BioViL-T chexpert pre_bce seed43 epoch10 val=0.719481 best=0.719481 sec=0.3
+BioViL-T chexpert pre_bce seed43 epoch11 val=0.720477 best=0.720477 sec=0.3
+BioViL-T chexpert pre_bce seed43 epoch12 val=0.720027 best=0.720477 sec=0.2
+BioViL-T chexpert pre_bce seed43 epoch13 val=0.721340 best=0.721340 sec=0.2
+BioViL-T chexpert pre_bce seed43 epoch14 val=0.723179 best=0.723179 sec=0.2
+BioViL-T chexpert pre_bce seed43 epoch15 val=0.727531 best=0.727531 sec=0.2
+BioViL-T chexpert pre_bce seed43 epoch16 val=0.733295 best=0.733295 sec=0.3
+BioViL-T chexpert pre_bce seed43 epoch17 val=0.734706 best=0.734706 sec=0.2
+BioViL-T chexpert pre_bce seed43 epoch18 val=0.736616 best=0.736616 sec=0.2
+BioViL-T chexpert pre_bce seed43 epoch19 val=0.737960 best=0.737960 sec=0.3
+BioViL-T chexpert pre_bce seed43 epoch20 val=0.740522 best=0.740522 sec=0.2
+COMPLETE BioViL-T chexpert pre_bce 43 0.8411188533015159 0.504960063982348
+BioViL-T chexpert pre_bce seed44 epoch1 val=0.699292 best=0.699496 sec=0.3
+BioViL-T chexpert pre_bce seed44 epoch2 val=0.698862 best=0.699496 sec=0.2
+BioViL-T chexpert pre_bce seed44 epoch3 val=0.704319 best=0.704319 sec=0.2
+BioViL-T chexpert pre_bce seed44 epoch4 val=0.706480 best=0.706480 sec=0.2
+BioViL-T chexpert pre_bce seed44 epoch5 val=0.707692 best=0.707692 sec=0.2
+BioViL-T chexpert pre_bce seed44 epoch6 val=0.707391 best=0.707692 sec=0.2
+BioViL-T chexpert pre_bce seed44 epoch7 val=0.706954 best=0.707692 sec=0.2
+BioViL-T chexpert pre_bce seed44 epoch8 val=0.709827 best=0.709827 sec=0.2
+BioViL-T chexpert pre_bce seed44 epoch9 val=0.711125 best=0.711125 sec=0.2
+BioViL-T chexpert pre_bce seed44 epoch10 val=0.716739 best=0.716739 sec=0.2
+BioViL-T chexpert pre_bce seed44 epoch11 val=0.716089 best=0.716739 sec=0.2
+BioViL-T chexpert pre_bce seed44 epoch12 val=0.718211 best=0.718211 sec=0.3
+BioViL-T chexpert pre_bce seed44 epoch13 val=0.720966 best=0.720966 sec=0.3
+BioViL-T chexpert pre_bce seed44 epoch14 val=0.725348 best=0.725348 sec=0.2
+BioViL-T chexpert pre_bce seed44 epoch15 val=0.727107 best=0.727107 sec=0.2
+BioViL-T chexpert pre_bce seed44 epoch16 val=0.730429 best=0.730429 sec=0.2
+BioViL-T chexpert pre_bce seed44 epoch17 val=0.732037 best=0.732037 sec=0.3
+BioViL-T chexpert pre_bce seed44 epoch18 val=0.731894 best=0.732037 sec=0.2
+BioViL-T chexpert pre_bce seed44 epoch19 val=0.732858 best=0.732858 sec=0.2
+BioViL-T chexpert pre_bce seed44 epoch20 val=0.736374 best=0.736374 sec=0.2
+COMPLETE BioViL-T chexpert pre_bce 44 0.8421893478240228 0.5046271282309662
+BioViL-T chexpert gated_bce seed42 epoch1 val=0.699496 best=0.699496 sec=0.4
+BioViL-T chexpert gated_bce seed42 epoch2 val=0.699646 best=0.699646 sec=0.2
+BioViL-T chexpert gated_bce seed42 epoch3 val=0.699785 best=0.699785 sec=0.2
+BioViL-T chexpert gated_bce seed42 epoch4 val=0.699353 best=0.699785 sec=0.3
+BioViL-T chexpert gated_bce seed42 epoch5 val=0.698946 best=0.699785 sec=0.2
+BioViL-T chexpert gated_bce seed42 epoch6 val=0.699695 best=0.699785 sec=0.2
+BioViL-T chexpert gated_bce seed42 epoch7 val=0.706213 best=0.706213 sec=0.3
+BioViL-T chexpert gated_bce seed42 epoch8 val=0.708506 best=0.708506 sec=0.3
+BioViL-T chexpert gated_bce seed42 epoch9 val=0.705881 best=0.708506 sec=0.2
+BioViL-T chexpert gated_bce seed42 epoch10 val=0.704297 best=0.708506 sec=0.3
+BioViL-T chexpert gated_bce seed42 epoch11 val=0.701723 best=0.708506 sec=0.2
+BioViL-T chexpert gated_bce seed42 epoch12 val=0.701174 best=0.708506 sec=0.3
+BioViL-T chexpert gated_bce seed42 epoch13 val=0.702371 best=0.708506 sec=0.3
+COMPLETE BioViL-T chexpert gated_bce 42 0.8342820812093258 0.5075708173728323
+BioViL-T chexpert gated_bce seed43 epoch1 val=0.699572 best=0.699572 sec=0.4
+BioViL-T chexpert gated_bce seed43 epoch2 val=0.699572 best=0.699572 sec=0.2
+BioViL-T chexpert gated_bce seed43 epoch3 val=0.700019 best=0.700019 sec=0.3
+BioViL-T chexpert gated_bce seed43 epoch4 val=0.699563 best=0.700019 sec=0.3
+BioViL-T chexpert gated_bce seed43 epoch5 val=0.698313 best=0.700019 sec=0.3
+BioViL-T chexpert gated_bce seed43 epoch6 val=0.699408 best=0.700019 sec=0.2
+BioViL-T chexpert gated_bce seed43 epoch7 val=0.702331 best=0.702331 sec=0.3
+BioViL-T chexpert gated_bce seed43 epoch8 val=0.708815 best=0.708815 sec=0.2
+BioViL-T chexpert gated_bce seed43 epoch9 val=0.709505 best=0.709505 sec=0.3
+BioViL-T chexpert gated_bce seed43 epoch10 val=0.708691 best=0.709505 sec=0.3
+BioViL-T chexpert gated_bce seed43 epoch11 val=0.707475 best=0.709505 sec=0.2
+BioViL-T chexpert gated_bce seed43 epoch12 val=0.705350 best=0.709505 sec=0.2
+BioViL-T chexpert gated_bce seed43 epoch13 val=0.702792 best=0.709505 sec=0.3
+BioViL-T chexpert gated_bce seed43 epoch14 val=0.703419 best=0.709505 sec=0.2
+COMPLETE BioViL-T chexpert gated_bce 43 0.8337842929406397 0.5080632625664994
+BioViL-T chexpert gated_bce seed44 epoch1 val=0.699572 best=0.699572 sec=0.3
+BioViL-T chexpert gated_bce seed44 epoch2 val=0.699572 best=0.699572 sec=0.2
+BioViL-T chexpert gated_bce seed44 epoch3 val=0.699144 best=0.699572 sec=0.2
+BioViL-T chexpert gated_bce seed44 epoch4 val=0.699353 best=0.699572 sec=0.2
+BioViL-T chexpert gated_bce seed44 epoch5 val=0.698745 best=0.699572 sec=0.3
+BioViL-T chexpert gated_bce seed44 epoch6 val=0.699464 best=0.699572 sec=0.3
+BioViL-T chexpert gated_bce seed44 epoch7 val=0.706540 best=0.706540 sec=0.3
+BioViL-T chexpert gated_bce seed44 epoch8 val=0.708237 best=0.708237 sec=0.3
+BioViL-T chexpert gated_bce seed44 epoch9 val=0.706742 best=0.708237 sec=0.3
+BioViL-T chexpert gated_bce seed44 epoch10 val=0.705137 best=0.708237 sec=0.2
+BioViL-T chexpert gated_bce seed44 epoch11 val=0.701666 best=0.708237 sec=0.2
+BioViL-T chexpert gated_bce seed44 epoch12 val=0.701015 best=0.708237 sec=0.2
+BioViL-T chexpert gated_bce seed44 epoch13 val=0.701253 best=0.708237 sec=0.2
+COMPLETE BioViL-T chexpert gated_bce 44 0.8337390947839864 0.5075863062266208
+BioViL-T chexpert pre_asl seed42 epoch1 val=0.699096 best=0.699496 sec=0.3
+BioViL-T chexpert pre_asl seed42 epoch2 val=0.699639 best=0.699639 sec=0.3
+BioViL-T chexpert pre_asl seed42 epoch3 val=0.700295 best=0.700295 sec=0.3
+BioViL-T chexpert pre_asl seed42 epoch4 val=0.699287 best=0.700295 sec=0.3
+BioViL-T chexpert pre_asl seed42 epoch5 val=0.700877 best=0.700877 sec=0.3
+BioViL-T chexpert pre_asl seed42 epoch6 val=0.701296 best=0.701296 sec=0.3
+BioViL-T chexpert pre_asl seed42 epoch7 val=0.703541 best=0.703541 sec=0.3
+BioViL-T chexpert pre_asl seed42 epoch8 val=0.710028 best=0.710028 sec=0.3
+BioViL-T chexpert pre_asl seed42 epoch9 val=0.711365 best=0.711365 sec=0.3
+BioViL-T chexpert pre_asl seed42 epoch10 val=0.712341 best=0.712341 sec=0.3
+BioViL-T chexpert pre_asl seed42 epoch11 val=0.712282 best=0.712341 sec=0.2
+BioViL-T chexpert pre_asl seed42 epoch12 val=0.713611 best=0.713611 sec=0.3
+BioViL-T chexpert pre_asl seed42 epoch13 val=0.715075 best=0.715075 sec=0.3
+BioViL-T chexpert pre_asl seed42 epoch14 val=0.716799 best=0.716799 sec=0.3
+BioViL-T chexpert pre_asl seed42 epoch15 val=0.716945 best=0.716945 sec=0.3
+BioViL-T chexpert pre_asl seed42 epoch16 val=0.717782 best=0.717782 sec=0.2
+BioViL-T chexpert pre_asl seed42 epoch17 val=0.718423 best=0.718423 sec=0.3
+BioViL-T chexpert pre_asl seed42 epoch18 val=0.720850 best=0.720850 sec=0.3
+BioViL-T chexpert pre_asl seed42 epoch19 val=0.721751 best=0.721751 sec=0.3
+BioViL-T chexpert pre_asl seed42 epoch20 val=0.722149 best=0.722149 sec=0.3
+COMPLETE BioViL-T chexpert pre_asl 42 0.8465833118232499 0.5173675648588849
+BioViL-T chexpert pre_asl seed43 epoch1 val=0.699325 best=0.699496 sec=0.3
+BioViL-T chexpert pre_asl seed43 epoch2 val=0.700523 best=0.700523 sec=0.3
+BioViL-T chexpert pre_asl seed43 epoch3 val=0.700999 best=0.700999 sec=0.3
+BioViL-T chexpert pre_asl seed43 epoch4 val=0.701297 best=0.701297 sec=0.3
+BioViL-T chexpert pre_asl seed43 epoch5 val=0.703178 best=0.703178 sec=0.3
+BioViL-T chexpert pre_asl seed43 epoch6 val=0.702634 best=0.703178 sec=0.2
+BioViL-T chexpert pre_asl seed43 epoch7 val=0.705361 best=0.705361 sec=0.3
+BioViL-T chexpert pre_asl seed43 epoch8 val=0.708242 best=0.708242 sec=0.3
+BioViL-T chexpert pre_asl seed43 epoch9 val=0.709988 best=0.709988 sec=0.3
+BioViL-T chexpert pre_asl seed43 epoch10 val=0.712122 best=0.712122 sec=0.3
+BioViL-T chexpert pre_asl seed43 epoch11 val=0.711940 best=0.712122 sec=0.3
+BioViL-T chexpert pre_asl seed43 epoch12 val=0.712392 best=0.712392 sec=0.3
+BioViL-T chexpert pre_asl seed43 epoch13 val=0.713314 best=0.713314 sec=0.3
+BioViL-T chexpert pre_asl seed43 epoch14 val=0.717099 best=0.717099 sec=0.3
+BioViL-T chexpert pre_asl seed43 epoch15 val=0.718138 best=0.718138 sec=0.3
+BioViL-T chexpert pre_asl seed43 epoch16 val=0.719659 best=0.719659 sec=0.4
+BioViL-T chexpert pre_asl seed43 epoch17 val=0.720832 best=0.720832 sec=0.3
+BioViL-T chexpert pre_asl seed43 epoch18 val=0.721390 best=0.721390 sec=0.3
+BioViL-T chexpert pre_asl seed43 epoch19 val=0.723864 best=0.723864 sec=0.3
+BioViL-T chexpert pre_asl seed43 epoch20 val=0.723037 best=0.723864 sec=0.2
+COMPLETE BioViL-T chexpert pre_asl 43 0.8393528047630214 0.47384612038901713
+BioViL-T chexpert pre_asl seed44 epoch1 val=0.699401 best=0.699496 sec=0.4
+BioViL-T chexpert pre_asl seed44 epoch2 val=0.699931 best=0.699931 sec=0.3
+BioViL-T chexpert pre_asl seed44 epoch3 val=0.701157 best=0.701157 sec=0.3
+BioViL-T chexpert pre_asl seed44 epoch4 val=0.700139 best=0.701157 sec=0.2
+BioViL-T chexpert pre_asl seed44 epoch5 val=0.700058 best=0.701157 sec=0.3
+BioViL-T chexpert pre_asl seed44 epoch6 val=0.701303 best=0.701303 sec=0.3
+BioViL-T chexpert pre_asl seed44 epoch7 val=0.706599 best=0.706599 sec=0.3
+BioViL-T chexpert pre_asl seed44 epoch8 val=0.710747 best=0.710747 sec=0.3
+BioViL-T chexpert pre_asl seed44 epoch9 val=0.712223 best=0.712223 sec=0.3
+BioViL-T chexpert pre_asl seed44 epoch10 val=0.713883 best=0.713883 sec=0.3
+BioViL-T chexpert pre_asl seed44 epoch11 val=0.714239 best=0.714239 sec=0.3
+BioViL-T chexpert pre_asl seed44 epoch12 val=0.714385 best=0.714385 sec=0.3
+BioViL-T chexpert pre_asl seed44 epoch13 val=0.715650 best=0.715650 sec=0.3
+BioViL-T chexpert pre_asl seed44 epoch14 val=0.716087 best=0.716087 sec=0.2
+BioViL-T chexpert pre_asl seed44 epoch15 val=0.718583 best=0.718583 sec=0.3
+BioViL-T chexpert pre_asl seed44 epoch16 val=0.719264 best=0.719264 sec=0.3
+BioViL-T chexpert pre_asl seed44 epoch17 val=0.720936 best=0.720936 sec=0.3
+BioViL-T chexpert pre_asl seed44 epoch18 val=0.720433 best=0.720936 sec=0.2
+BioViL-T chexpert pre_asl seed44 epoch19 val=0.720491 best=0.720936 sec=0.2
+BioViL-T chexpert pre_asl seed44 epoch20 val=0.722349 best=0.722349 sec=0.3
+COMPLETE BioViL-T chexpert pre_asl 44 0.84496521567729 0.510310433357021
+BioViL-T chexpert gated_asl seed42 epoch1 val=0.699571 best=0.699571 sec=0.4
+BioViL-T chexpert gated_asl seed42 epoch2 val=0.699396 best=0.699571 sec=0.3
+BioViL-T chexpert gated_asl seed42 epoch3 val=0.699634 best=0.699634 sec=0.3
+BioViL-T chexpert gated_asl seed42 epoch4 val=0.700626 best=0.700626 sec=0.3
+BioViL-T chexpert gated_asl seed42 epoch5 val=0.699864 best=0.700626 sec=0.4
+BioViL-T chexpert gated_asl seed42 epoch6 val=0.699276 best=0.700626 sec=0.3
+BioViL-T chexpert gated_asl seed42 epoch7 val=0.698726 best=0.700626 sec=0.3
+BioViL-T chexpert gated_asl seed42 epoch8 val=0.696852 best=0.700626 sec=0.3
+BioViL-T chexpert gated_asl seed42 epoch9 val=0.695079 best=0.700626 sec=0.3
+COMPLETE BioViL-T chexpert gated_asl 42 0.8286978208727435 0.48294195440035237
+BioViL-T chexpert gated_asl seed43 epoch1 val=0.699571 best=0.699571 sec=0.4
+BioViL-T chexpert gated_asl seed43 epoch2 val=0.699511 best=0.699571 sec=0.3
+BioViL-T chexpert gated_asl seed43 epoch3 val=0.699638 best=0.699638 sec=0.3
+BioViL-T chexpert gated_asl seed43 epoch4 val=0.700667 best=0.700667 sec=0.3
+BioViL-T chexpert gated_asl seed43 epoch5 val=0.700228 best=0.700667 sec=0.3
+BioViL-T chexpert gated_asl seed43 epoch6 val=0.701522 best=0.701522 sec=0.3
+BioViL-T chexpert gated_asl seed43 epoch7 val=0.700202 best=0.701522 sec=0.2
+BioViL-T chexpert gated_asl seed43 epoch8 val=0.701162 best=0.701522 sec=0.2
+BioViL-T chexpert gated_asl seed43 epoch9 val=0.699760 best=0.701522 sec=0.2
+BioViL-T chexpert gated_asl seed43 epoch10 val=0.700249 best=0.701522 sec=0.3
+BioViL-T chexpert gated_asl seed43 epoch11 val=0.701129 best=0.701522 sec=0.3
+COMPLETE BioViL-T chexpert gated_asl 43 0.8287103573326484 0.4835452008237106
+BioViL-T chexpert gated_asl seed44 epoch1 val=0.699495 best=0.699496 sec=0.4
+BioViL-T chexpert gated_asl seed44 epoch2 val=0.699435 best=0.699496 sec=0.3
+BioViL-T chexpert gated_asl seed44 epoch3 val=0.699339 best=0.699496 sec=0.2
+BioViL-T chexpert gated_asl seed44 epoch4 val=0.700591 best=0.700591 sec=0.3
+BioViL-T chexpert gated_asl seed44 epoch5 val=0.700681 best=0.700681 sec=0.3
+BioViL-T chexpert gated_asl seed44 epoch6 val=0.699100 best=0.700681 sec=0.3
+BioViL-T chexpert gated_asl seed44 epoch7 val=0.697321 best=0.700681 sec=0.3
+BioViL-T chexpert gated_asl seed44 epoch8 val=0.695963 best=0.700681 sec=0.3
+BioViL-T chexpert gated_asl seed44 epoch9 val=0.693313 best=0.700681 sec=0.3
+BioViL-T chexpert gated_asl seed44 epoch10 val=0.693627 best=0.700681 sec=0.3
+COMPLETE BioViL-T chexpert gated_asl 44 0.8288541473371193 0.483897652194498

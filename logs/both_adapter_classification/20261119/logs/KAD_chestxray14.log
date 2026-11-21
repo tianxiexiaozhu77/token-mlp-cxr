@@ -1,0 +1,82 @@
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Image feature extractor: resnet50
+/storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Text feature extractor: /storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+bert encoder layers: 12
+CACHE_PARITY KAD chestxray14 0 22433
+CACHE_PARITY KAD chestxray14 1600 22433
+CACHE_PARITY KAD chestxray14 3200 22433
+CACHE_PARITY KAD chestxray14 4800 22433
+CACHE_PARITY KAD chestxray14 6400 22433
+CACHE_PARITY KAD chestxray14 8000 22433
+CACHE_PARITY KAD chestxray14 9600 22433
+CACHE_PARITY KAD chestxray14 11200 22433
+CACHE_PARITY KAD chestxray14 12800 22433
+CACHE_PARITY KAD chestxray14 14400 22433
+CACHE_PARITY KAD chestxray14 16000 22433
+CACHE_PARITY KAD chestxray14 17600 22433
+CACHE_PARITY KAD chestxray14 19200 22433
+CACHE_PARITY KAD chestxray14 20800 22433
+CACHE_PARITY KAD chestxray14 22400 22433
+KAD chestxray14 both_mlp seed42 epoch1 val=0.818798 best=0.818798 sec=48.9
+KAD chestxray14 both_mlp seed42 epoch2 val=0.822375 best=0.822375 sec=46.9
+KAD chestxray14 both_mlp seed42 epoch3 val=0.824568 best=0.824568 sec=46.2
+KAD chestxray14 both_mlp seed42 epoch4 val=0.825761 best=0.825761 sec=47.6
+KAD chestxray14 both_mlp seed42 epoch5 val=0.827061 best=0.827061 sec=48.2
+KAD chestxray14 both_mlp seed42 epoch6 val=0.827506 best=0.827506 sec=47.4
+KAD chestxray14 both_mlp seed42 epoch7 val=0.828258 best=0.828258 sec=47.9
+KAD chestxray14 both_mlp seed42 epoch8 val=0.829060 best=0.829060 sec=48.0
+KAD chestxray14 both_mlp seed42 epoch9 val=0.828617 best=0.829060 sec=48.2
+KAD chestxray14 both_mlp seed42 epoch10 val=0.828815 best=0.829060 sec=47.2
+KAD chestxray14 both_mlp seed42 epoch11 val=0.829624 best=0.829624 sec=47.8
+KAD chestxray14 both_mlp seed42 epoch12 val=0.829722 best=0.829722 sec=46.4
+KAD chestxray14 both_mlp seed42 epoch13 val=0.830202 best=0.830202 sec=47.9
+KAD chestxray14 both_mlp seed42 epoch14 val=0.830111 best=0.830202 sec=48.1
+KAD chestxray14 both_mlp seed42 epoch15 val=0.829963 best=0.830202 sec=47.7
+KAD chestxray14 both_mlp seed42 epoch16 val=0.831243 best=0.831243 sec=46.6
+KAD chestxray14 both_mlp seed42 epoch17 val=0.830244 best=0.831243 sec=48.7
+KAD chestxray14 both_mlp seed42 epoch18 val=0.831273 best=0.831273 sec=48.1
+KAD chestxray14 both_mlp seed42 epoch19 val=0.832174 best=0.832174 sec=48.8
+KAD chestxray14 both_mlp seed42 epoch20 val=0.830039 best=0.832174 sec=47.3
+COMPLETE KAD chestxray14 42 0.8209840941349319 0.25463796765855967
+KAD chestxray14 both_mlp seed43 epoch1 val=0.819223 best=0.819223 sec=47.0
+KAD chestxray14 both_mlp seed43 epoch2 val=0.824694 best=0.824694 sec=48.3
+KAD chestxray14 both_mlp seed43 epoch3 val=0.825708 best=0.825708 sec=47.5
+KAD chestxray14 both_mlp seed43 epoch4 val=0.826318 best=0.826318 sec=48.2
+KAD chestxray14 both_mlp seed43 epoch5 val=0.827637 best=0.827637 sec=48.1
+KAD chestxray14 both_mlp seed43 epoch6 val=0.827838 best=0.827838 sec=48.3
+KAD chestxray14 both_mlp seed43 epoch7 val=0.828629 best=0.828629 sec=47.0
+KAD chestxray14 both_mlp seed43 epoch8 val=0.830260 best=0.830260 sec=47.4
+KAD chestxray14 both_mlp seed43 epoch9 val=0.830586 best=0.830586 sec=48.9
+KAD chestxray14 both_mlp seed43 epoch10 val=0.831094 best=0.831094 sec=47.1
+KAD chestxray14 both_mlp seed43 epoch11 val=0.830601 best=0.831094 sec=47.8
+KAD chestxray14 both_mlp seed43 epoch12 val=0.831118 best=0.831118 sec=48.3
+KAD chestxray14 both_mlp seed43 epoch13 val=0.831155 best=0.831155 sec=49.0
+KAD chestxray14 both_mlp seed43 epoch14 val=0.829551 best=0.831155 sec=48.8
+KAD chestxray14 both_mlp seed43 epoch15 val=0.828139 best=0.831155 sec=47.7
+KAD chestxray14 both_mlp seed43 epoch16 val=0.830093 best=0.831155 sec=48.3
+KAD chestxray14 both_mlp seed43 epoch17 val=0.828217 best=0.831155 sec=48.3
+KAD chestxray14 both_mlp seed43 epoch18 val=0.831208 best=0.831208 sec=48.5
+KAD chestxray14 both_mlp seed43 epoch19 val=0.826251 best=0.831208 sec=49.3
+KAD chestxray14 both_mlp seed43 epoch20 val=0.828840 best=0.831208 sec=48.2
+COMPLETE KAD chestxray14 43 0.8205018891646514 0.25868343141743333
+KAD chestxray14 both_mlp seed44 epoch1 val=0.819272 best=0.819272 sec=47.0
+KAD chestxray14 both_mlp seed44 epoch2 val=0.821946 best=0.821946 sec=49.1
+KAD chestxray14 both_mlp seed44 epoch3 val=0.824854 best=0.824854 sec=48.1
+KAD chestxray14 both_mlp seed44 epoch4 val=0.826751 best=0.826751 sec=47.6
+KAD chestxray14 both_mlp seed44 epoch5 val=0.827725 best=0.827725 sec=47.8
+KAD chestxray14 both_mlp seed44 epoch6 val=0.828631 best=0.828631 sec=48.4
+KAD chestxray14 both_mlp seed44 epoch7 val=0.829107 best=0.829107 sec=49.2
+KAD chestxray14 both_mlp seed44 epoch8 val=0.827853 best=0.829107 sec=49.2
+KAD chestxray14 both_mlp seed44 epoch9 val=0.829302 best=0.829302 sec=47.9
+KAD chestxray14 both_mlp seed44 epoch10 val=0.830482 best=0.830482 sec=49.0
+KAD chestxray14 both_mlp seed44 epoch11 val=0.830526 best=0.830526 sec=47.1
+KAD chestxray14 both_mlp seed44 epoch12 val=0.830328 best=0.830526 sec=47.7
+KAD chestxray14 both_mlp seed44 epoch13 val=0.829426 best=0.830526 sec=48.0
+KAD chestxray14 both_mlp seed44 epoch14 val=0.830183 best=0.830526 sec=49.3
+KAD chestxray14 both_mlp seed44 epoch15 val=0.829195 best=0.830526 sec=48.5
+KAD chestxray14 both_mlp seed44 epoch16 val=0.829779 best=0.830526 sec=45.8
+COMPLETE KAD chestxray14 44 0.8254206497805503 0.25490670720204295

@@ -1,0 +1,336 @@
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo chestxray14 linear_probe 42 1 val 0.819856 best 1
+MaCo chestxray14 linear_probe 42 2 val 0.823825 best 2
+MaCo chestxray14 linear_probe 42 3 val 0.828137 best 3
+MaCo chestxray14 linear_probe 42 4 val 0.828857 best 4
+MaCo chestxray14 linear_probe 42 5 val 0.828347 best 4
+MaCo chestxray14 linear_probe 42 6 val 0.827774 best 4
+MaCo chestxray14 linear_probe 42 7 val 0.829812 best 7
+MaCo chestxray14 linear_probe 42 8 val 0.831309 best 8
+MaCo chestxray14 linear_probe 42 9 val 0.830925 best 8
+MaCo chestxray14 linear_probe 42 10 val 0.833278 best 10
+MaCo chestxray14 linear_probe 42 11 val 0.832049 best 10
+MaCo chestxray14 linear_probe 42 12 val 0.83171 best 10
+MaCo chestxray14 linear_probe 42 13 val 0.831921 best 10
+MaCo chestxray14 linear_probe 42 14 val 0.83325 best 10
+MaCo chestxray14 linear_probe 42 15 val 0.834908 best 15
+MaCo chestxray14 linear_probe 42 16 val 0.833606 best 15
+MaCo chestxray14 linear_probe 42 17 val 0.834139 best 15
+MaCo chestxray14 linear_probe 42 18 val 0.832652 best 15
+MaCo chestxray14 linear_probe 42 19 val 0.833074 best 15
+MaCo chestxray14 linear_probe 42 20 val 0.833948 best 15
+COMPLETE MaCo chestxray14 linear_probe 42
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+OSError: [Errno 16] Device or resource busy: '.nfs00000004157ca20100001e4f'
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000417fad50100001e50'
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo chestxray14 linear_probe 43 1 val 0.821784 best 1
+MaCo chestxray14 linear_probe 43 2 val 0.828373 best 2
+MaCo chestxray14 linear_probe 43 3 val 0.829684 best 3
+MaCo chestxray14 linear_probe 43 4 val 0.831799 best 4
+MaCo chestxray14 linear_probe 43 5 val 0.831203 best 4
+MaCo chestxray14 linear_probe 43 6 val 0.832759 best 6
+MaCo chestxray14 linear_probe 43 7 val 0.833178 best 7
+MaCo chestxray14 linear_probe 43 8 val 0.832923 best 7
+MaCo chestxray14 linear_probe 43 9 val 0.835027 best 9
+MaCo chestxray14 linear_probe 43 10 val 0.833879 best 9
+MaCo chestxray14 linear_probe 43 11 val 0.831471 best 9
+MaCo chestxray14 linear_probe 43 12 val 0.832677 best 9
+MaCo chestxray14 linear_probe 43 13 val 0.833163 best 9
+MaCo chestxray14 linear_probe 43 14 val 0.833611 best 9
+COMPLETE MaCo chestxray14 linear_probe 43
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs000000041449360100001e53'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs000000041748500100001e54'
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo chestxray14 linear_probe 44 1 val 0.817005 best 1
+MaCo chestxray14 linear_probe 44 2 val 0.823967 best 2
+MaCo chestxray14 linear_probe 44 3 val 0.826669 best 3
+MaCo chestxray14 linear_probe 44 4 val 0.830066 best 4
+MaCo chestxray14 linear_probe 44 5 val 0.828404 best 4
+MaCo chestxray14 linear_probe 44 6 val 0.828546 best 4
+MaCo chestxray14 linear_probe 44 7 val 0.831063 best 7
+MaCo chestxray14 linear_probe 44 8 val 0.830514 best 7
+MaCo chestxray14 linear_probe 44 9 val 0.831224 best 9
+MaCo chestxray14 linear_probe 44 10 val 0.831676 best 10
+MaCo chestxray14 linear_probe 44 11 val 0.831573 best 10
+MaCo chestxray14 linear_probe 44 12 val 0.832 best 12
+MaCo chestxray14 linear_probe 44 13 val 0.8319 best 12
+MaCo chestxray14 linear_probe 44 14 val 0.833077 best 14
+MaCo chestxray14 linear_probe 44 15 val 0.831606 best 14
+MaCo chestxray14 linear_probe 44 16 val 0.831494 best 14
+MaCo chestxray14 linear_probe 44 17 val 0.832819 best 14
+MaCo chestxray14 linear_probe 44 18 val 0.832649 best 14
+MaCo chestxray14 linear_probe 44 19 val 0.832374 best 14
+COMPLETE MaCo chestxray14 linear_probe 44
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+OSError: [Errno 16] Device or resource busy: '.nfs000000041557f80100001e55'
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000416be0d0100001e56'
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo chestxray14 clip_global 42 1 val 0.794408 best 1
+MaCo chestxray14 clip_global 42 2 val 0.808853 best 2
+MaCo chestxray14 clip_global 42 3 val 0.816133 best 3
+MaCo chestxray14 clip_global 42 4 val 0.820471 best 4
+MaCo chestxray14 clip_global 42 5 val 0.824298 best 5
+MaCo chestxray14 clip_global 42 6 val 0.823805 best 5
+MaCo chestxray14 clip_global 42 7 val 0.83019 best 7
+MaCo chestxray14 clip_global 42 8 val 0.831194 best 8
+MaCo chestxray14 clip_global 42 9 val 0.831129 best 8
+MaCo chestxray14 clip_global 42 10 val 0.833887 best 10
+MaCo chestxray14 clip_global 42 11 val 0.834347 best 11
+MaCo chestxray14 clip_global 42 12 val 0.832439 best 11
+MaCo chestxray14 clip_global 42 13 val 0.834644 best 13
+MaCo chestxray14 clip_global 42 14 val 0.834209 best 13
+MaCo chestxray14 clip_global 42 15 val 0.834685 best 15
+MaCo chestxray14 clip_global 42 16 val 0.836605 best 16
+MaCo chestxray14 clip_global 42 17 val 0.835505 best 16
+MaCo chestxray14 clip_global 42 18 val 0.83559 best 16
+MaCo chestxray14 clip_global 42 19 val 0.837206 best 19
+MaCo chestxray14 clip_global 42 20 val 0.835826 best 19
+COMPLETE MaCo chestxray14 clip_global 42
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000417cd6e0100001e59'
+OSError: [Errno 16] Device or resource busy: '.nfs0000000417fadc0100001e5a'
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo chestxray14 clip_global 43 1 val 0.799025 best 1
+MaCo chestxray14 clip_global 43 2 val 0.809511 best 2
+MaCo chestxray14 clip_global 43 3 val 0.819786 best 3
+MaCo chestxray14 clip_global 43 4 val 0.823572 best 4
+MaCo chestxray14 clip_global 43 5 val 0.825592 best 5
+MaCo chestxray14 clip_global 43 6 val 0.824812 best 5
+MaCo chestxray14 clip_global 43 7 val 0.828743 best 7
+MaCo chestxray14 clip_global 43 8 val 0.831638 best 8
+MaCo chestxray14 clip_global 43 9 val 0.833004 best 9
+MaCo chestxray14 clip_global 43 10 val 0.833059 best 10
+MaCo chestxray14 clip_global 43 11 val 0.83207 best 10
+MaCo chestxray14 clip_global 43 12 val 0.835059 best 12
+MaCo chestxray14 clip_global 43 13 val 0.834338 best 12
+MaCo chestxray14 clip_global 43 14 val 0.83446 best 12
+MaCo chestxray14 clip_global 43 15 val 0.835549 best 15
+MaCo chestxray14 clip_global 43 16 val 0.834517 best 15
+MaCo chestxray14 clip_global 43 17 val 0.833898 best 15
+MaCo chestxray14 clip_global 43 18 val 0.836235 best 18
+MaCo chestxray14 clip_global 43 19 val 0.833991 best 18
+MaCo chestxray14 clip_global 43 20 val 0.835065 best 18
+COMPLETE MaCo chestxray14 clip_global 43
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000003ba872a0100001e5b'
+OSError: [Errno 16] Device or resource busy: '.nfs000000041755f60100001e5c'
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+MaCo chestxray14 clip_global 44 1 val 0.795071 best 1
+MaCo chestxray14 clip_global 44 2 val 0.811888 best 2
+MaCo chestxray14 clip_global 44 3 val 0.818093 best 3
+MaCo chestxray14 clip_global 44 4 val 0.82221 best 4
+MaCo chestxray14 clip_global 44 5 val 0.82693 best 5
+MaCo chestxray14 clip_global 44 6 val 0.828554 best 6
+MaCo chestxray14 clip_global 44 7 val 0.831108 best 7
+MaCo chestxray14 clip_global 44 8 val 0.830722 best 7
+MaCo chestxray14 clip_global 44 9 val 0.833213 best 9
+MaCo chestxray14 clip_global 44 10 val 0.833151 best 9
+MaCo chestxray14 clip_global 44 11 val 0.835724 best 11
+MaCo chestxray14 clip_global 44 12 val 0.835463 best 11
+MaCo chestxray14 clip_global 44 13 val 0.836374 best 13
+MaCo chestxray14 clip_global 44 14 val 0.836577 best 14
+MaCo chestxray14 clip_global 44 15 val 0.835812 best 14
+MaCo chestxray14 clip_global 44 16 val 0.834981 best 14
+MaCo chestxray14 clip_global 44 17 val 0.83475 best 14
+MaCo chestxray14 clip_global 44 18 val 0.836184 best 14
+MaCo chestxray14 clip_global 44 19 val 0.83573 best 14
+COMPLETE MaCo chestxray14 clip_global 44
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000004157bb10100001e5f'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/usr/lib/python3.10/shutil.py", line 725, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/usr/lib/python3.10/shutil.py", line 681, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/usr/lib/python3.10/shutil.py", line 679, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000417d6be0100001e60'

@@ -1,0 +1,44 @@
+/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+/storage/3090group2/zjx/code/medical/experiments/direct_anchor_classification/train.py:229: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  losses += float(loss) * len(index); seen_train += len(index)
+alpharad chexpert bias seed=43 epoch=1 val=0.923716 best=0.923716 sec=0.3
+alpharad chexpert bias seed=43 epoch=2 val=0.923633 best=0.923716 sec=0.1
+alpharad chexpert bias seed=43 epoch=3 val=0.923954 best=0.923954 sec=0.1
+alpharad chexpert bias seed=43 epoch=4 val=0.923954 best=0.923954 sec=0.1
+alpharad chexpert bias seed=43 epoch=5 val=0.925014 best=0.925014 sec=0.1
+alpharad chexpert bias seed=43 epoch=6 val=0.925015 best=0.925015 sec=0.1
+alpharad chexpert bias seed=43 epoch=7 val=0.925014 best=0.925015 sec=0.1
+alpharad chexpert bias seed=43 epoch=8 val=0.924765 best=0.925015 sec=0.1
+alpharad chexpert bias seed=43 epoch=9 val=0.925087 best=0.925087 sec=0.1
+alpharad chexpert bias seed=43 epoch=10 val=0.924937 best=0.925087 sec=0.1
+alpharad chexpert bias seed=43 epoch=11 val=0.925087 best=0.925087 sec=0.1
+alpharad chexpert bias seed=43 epoch=12 val=0.925705 best=0.925705 sec=0.1
+alpharad chexpert bias seed=43 epoch=13 val=0.925138 best=0.925705 sec=0.1
+alpharad chexpert bias seed=43 epoch=14 val=0.925077 best=0.925705 sec=0.1
+alpharad chexpert bias seed=43 epoch=15 val=0.925195 best=0.925705 sec=0.1
+alpharad chexpert bias seed=43 epoch=16 val=0.925044 best=0.925705 sec=0.1
+alpharad chexpert bias seed=43 epoch=17 val=0.925204 best=0.925705 sec=0.1
+COMPLETE alpharad chexpert bias seed=43 test_AUROC=0.920967
+alpharad chexpert direct seed=43 epoch=1 val=0.922087 best=0.923703 sec=0.1
+alpharad chexpert direct seed=43 epoch=2 val=0.921923 best=0.923703 sec=0.1
+alpharad chexpert direct seed=43 epoch=3 val=0.928247 best=0.928247 sec=0.1
+alpharad chexpert direct seed=43 epoch=4 val=0.931708 best=0.931708 sec=0.1
+alpharad chexpert direct seed=43 epoch=5 val=0.936945 best=0.936945 sec=0.1
+alpharad chexpert direct seed=43 epoch=6 val=0.939507 best=0.939507 sec=0.1
+alpharad chexpert direct seed=43 epoch=7 val=0.941997 best=0.941997 sec=0.1
+alpharad chexpert direct seed=43 epoch=8 val=0.941918 best=0.941997 sec=0.1
+alpharad chexpert direct seed=43 epoch=9 val=0.943055 best=0.943055 sec=0.1
+alpharad chexpert direct seed=43 epoch=10 val=0.944921 best=0.944921 sec=0.1
+alpharad chexpert direct seed=43 epoch=11 val=0.945452 best=0.945452 sec=0.1
+alpharad chexpert direct seed=43 epoch=12 val=0.945585 best=0.945585 sec=0.1
+alpharad chexpert direct seed=43 epoch=13 val=0.945771 best=0.945771 sec=0.1
+alpharad chexpert direct seed=43 epoch=14 val=0.945302 best=0.945771 sec=0.1
+alpharad chexpert direct seed=43 epoch=15 val=0.944742 best=0.945771 sec=0.1
+alpharad chexpert direct seed=43 epoch=16 val=0.945534 best=0.945771 sec=0.1
+alpharad chexpert direct seed=43 epoch=17 val=0.945283 best=0.945771 sec=0.1
+alpharad chexpert direct seed=43 epoch=18 val=0.946093 best=0.946093 sec=0.1
+alpharad chexpert direct seed=43 epoch=19 val=0.946831 best=0.946831 sec=0.1
+alpharad chexpert direct seed=43 epoch=20 val=0.946029 best=0.946831 sec=0.1
+COMPLETE alpharad chexpert direct seed=43 test_AUROC=0.946871

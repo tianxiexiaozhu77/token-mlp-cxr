@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "manifest_files": 246,
+  "published_log_files": 399,
+  "log_checksums_verified": true,
+  "python_syntax_checked": 163,
+  "shell_syntax_checked": 8,
+  "explicit_experiments_imports_checked": true,
+  "forbidden_payload_check": true,
+  "inference_or_training_executed": false,
+  "full_runtime_dependency_closure_verified": false,
+  "fresh_environment_reproduction_verified": false,
+  "errors": []
+}

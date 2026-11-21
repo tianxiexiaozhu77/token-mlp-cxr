@@ -1,0 +1,16 @@
+test_native_global_and_post (experiments.radzero_supervised_classification.test_radzero.RadZeroTests.test_native_global_and_post) ... /storage/3090group2/zjx/code/medical/RadZero/checkpoints/RadZero/losses.py:210: UserWarning: The use of `x.T` on tensors of dimension other than 2 to reverse their shape is deprecated and it will throw an error in a future release. Consider `x.mT` to transpose batches of matrices or `x.permute(*torch.arange(x.ndim - 1, -1, -1))` to reverse the dimensions of a tensor. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3637.)
+  logits = logits.T
+/storage/3090group2/zjx/code/medical/RadZero/checkpoints/RadZero/losses.py:210: UserWarning: Tensor.T is deprecated on 0-D tensors. This function is the identity in these cases. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3645.)
+  logits = logits.T
+ok
+test_clip_formula_and_parameters (experiments.supervised_baseline_classification.test_components.BaselineTests.test_clip_formula_and_parameters) ... ok
+test_kad_global_memory_keeps_gradient (experiments.supervised_baseline_classification.test_components.BaselineTests.test_kad_global_memory_keeps_gradient) ... ok
+test_linear_standardization_train_only (experiments.supervised_baseline_classification.test_components.BaselineTests.test_linear_standardization_train_only) ... ok
+test_cluster_pairing_seed_average_and_missing_class (experiments.classification_uncertainty.test_bootstrap.BootstrapTests.test_cluster_pairing_seed_average_and_missing_class) ... ok
+test_reject_nonfinite_or_misaligned (experiments.classification_uncertainty.test_bootstrap.BootstrapTests.test_reject_nonfinite_or_misaligned) ... ok
+test_weighted_ties_match_expanded_sklearn (experiments.classification_uncertainty.test_bootstrap.BootstrapTests.test_weighted_ties_match_expanded_sklearn) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.934s
+
+OK

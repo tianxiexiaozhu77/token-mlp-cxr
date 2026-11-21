@@ -1,0 +1,23 @@
+/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+AlphaRAD clip_global 42 epoch 1 val 0.702252 best 1
+AlphaRAD clip_global 42 epoch 2 val 0.738224 best 2
+AlphaRAD clip_global 42 epoch 3 val 0.760135 best 3
+AlphaRAD clip_global 42 epoch 4 val 0.770916 best 4
+AlphaRAD clip_global 42 epoch 5 val 0.779883 best 5
+AlphaRAD clip_global 42 epoch 6 val 0.783965 best 6
+AlphaRAD clip_global 42 epoch 7 val 0.789528 best 7
+AlphaRAD clip_global 42 epoch 8 val 0.793501 best 8
+AlphaRAD clip_global 42 epoch 9 val 0.793426 best 8
+AlphaRAD clip_global 42 epoch 10 val 0.797563 best 10
+AlphaRAD clip_global 42 epoch 11 val 0.798561 best 11
+AlphaRAD clip_global 42 epoch 12 val 0.799172 best 12
+AlphaRAD clip_global 42 epoch 13 val 0.799885 best 13
+AlphaRAD clip_global 42 epoch 14 val 0.801208 best 14
+AlphaRAD clip_global 42 epoch 15 val 0.802006 best 15
+AlphaRAD clip_global 42 epoch 16 val 0.802981 best 16
+AlphaRAD clip_global 42 epoch 17 val 0.803246 best 17
+AlphaRAD clip_global 42 epoch 18 val 0.802991 best 17
+AlphaRAD clip_global 42 epoch 19 val 0.803717 best 19
+AlphaRAD clip_global 42 epoch 20 val 0.804652 best 20
+FIT COMPLETE AlphaRAD clip_global 42 TEST remains locked

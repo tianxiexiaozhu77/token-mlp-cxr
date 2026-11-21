@@ -1,0 +1,29 @@
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Image feature extractor: resnet50
+/storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Text feature extractor: /storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+bert encoder layers: 12
+KAD chexpert seed43 epoch1 val=0.885194 best=0.885606 sec=1.9
+KAD chexpert seed43 epoch2 val=0.881630 best=0.885606 sec=1.8
+KAD chexpert seed43 epoch3 val=0.882023 best=0.885606 sec=1.7
+KAD chexpert seed43 epoch4 val=0.884522 best=0.885606 sec=1.6
+KAD chexpert seed43 epoch5 val=0.899485 best=0.899485 sec=1.7
+KAD chexpert seed43 epoch6 val=0.899474 best=0.899485 sec=1.5
+KAD chexpert seed43 epoch7 val=0.906250 best=0.906250 sec=1.5
+KAD chexpert seed43 epoch8 val=0.907503 best=0.907503 sec=1.5
+KAD chexpert seed43 epoch9 val=0.905183 best=0.907503 sec=1.6
+KAD chexpert seed43 epoch10 val=0.907323 best=0.907503 sec=1.6
+KAD chexpert seed43 epoch11 val=0.904996 best=0.907503 sec=1.6
+KAD chexpert seed43 epoch12 val=0.900432 best=0.907503 sec=1.6
+KAD chexpert seed43 epoch13 val=0.907573 best=0.907573 sec=1.7
+KAD chexpert seed43 epoch14 val=0.908748 best=0.908748 sec=1.7
+KAD chexpert seed43 epoch15 val=0.910412 best=0.910412 sec=1.6
+KAD chexpert seed43 epoch16 val=0.910200 best=0.910412 sec=1.6
+KAD chexpert seed43 epoch17 val=0.911792 best=0.911792 sec=1.6
+KAD chexpert seed43 epoch18 val=0.911196 best=0.911792 sec=1.6
+KAD chexpert seed43 epoch19 val=0.913016 best=0.913016 sec=3.2
+KAD chexpert seed43 epoch20 val=0.912342 best=0.913016 sec=1.6
+COMPLETE KAD chexpert 43 0.9343828183456666

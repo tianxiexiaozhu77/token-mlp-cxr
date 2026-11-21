@@ -1,0 +1,5 @@
+chexpert RadZero pre_mlp seconds 1
+chexpert RadZero original seconds 1
+chexpert RadZero post_mlp seconds 2
+chexpert RadZero linear_probe seconds 2
+chexpert RadZero clip_global seconds 2
